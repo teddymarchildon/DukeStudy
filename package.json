@@ -1,0 +1,27 @@
+{
+  "name": "DukeStudy",
+  "version": "1.0.0",
+  "description": "Final Project for CS316",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmarchildon/DukeStudy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmarchildon/DukeStudy/issues"
+  },
+  "homepage": "https://github.com/tmarchildon/DukeStudy#readme",
+  "dependencies": {
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}

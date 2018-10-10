@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import '../components/index.css';
+import React from 'react'
+import '../components/index.css'
 
 function Square(props) {
   return (
@@ -125,7 +124,7 @@ class Game extends React.Component {
 
 // ========================================
 
-export default () => (<Game />);
+export default () => (<Game />)
 
 function calculateWinner(squares) {
   const lines = [

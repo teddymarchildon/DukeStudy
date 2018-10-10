@@ -51,7 +51,8 @@ INSERT INTO Takes_Course VALUES
 
 INSERT INTO Rates_Course VALUES
 ('mmd21', 'CHEM101', 'Spring 2018', 001, 5, 5, 3, 3),
-('cfp65', 'BME244', 'Spring 2017', 03, 1, 1, 5, 5);
+('cfp65', 'BME244', 'Spring 2017', 03, 1, 1, 5, 5)
+('agp11', 'BME244', 'Spring 2017', 03, 2, 4, 3, 2);;
 
 INSERT INTO In_Study_Group VALUES
 (1, 'aa111'),

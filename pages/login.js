@@ -3,7 +3,7 @@ import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap"
 import Router from 'next/router'
 import "../components/login.css"
 
-export default class Login extends Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
 

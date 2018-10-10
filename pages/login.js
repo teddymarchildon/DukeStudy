@@ -25,7 +25,15 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    Router.push('/index')
+    if (this.state.email.includes('duke.edu')) {
+      Router.push('/index')
+    } else {
+      alert('Make sure you are using your Duke email')
+      this.setState({
+        email: "",
+        password: "",
+      })
+    }
   }
 
   render() {
@@ -33,7 +41,7 @@ export default class Login extends Component {
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
-            <ControlLabel>Email</ControlLabel>
+            <ControlLabel>Duke Email</ControlLabel>
             <FormControl
               autoFocus
               type="email"

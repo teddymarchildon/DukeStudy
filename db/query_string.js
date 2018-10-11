@@ -1,16 +1,10 @@
-exports.createInsertQueryString = function createInsertQueryStringFromData(data) {
-  let netid = data.netid;
-  let table = data.table;
-
+exports.createInsertQueryString = function createInsertQueryStringFromData(netid, table) {
   let queryString = 'INSERT INTO ' + table + getValuesForTable(table, data);
   return queryString;
 }
 
-exports.createSelectQueryString = function createSelectQueryStringFromData(data) {
-  let netid = data.netid;
-  let table = data.table;
-
-  return 'SELECT * FROM ' + table + ' WHERE NetID=' + netid;
+exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
+  return 'SELECT * FROM Student WHERE NetID=\'' + netid + '\';';
 }
 
 function getValuesForTable(table, data) {

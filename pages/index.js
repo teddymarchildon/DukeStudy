@@ -27,7 +27,7 @@ export default class HomePage extends React.Component {
 
     fetch('http://localhost:3000/api/v1/select/' + query.netid)
     .then(function(response){
-        return response.json();
+        return response;
     }).then(function(json){
         console.log(json);
     }).catch(err => console.error(err));

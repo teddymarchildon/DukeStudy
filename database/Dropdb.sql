@@ -14,8 +14,8 @@ DROP TABLE Professor;
 
 DROP TABLE Tutors_For;
 
-DROP TABLE Course;
-
 DROP TABLE Tutor;
 
 DROP TABLE Student;
+
+DROP TABLE Course;

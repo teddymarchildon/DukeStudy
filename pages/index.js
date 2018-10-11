@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { Component } from "react"
 import { withRouter } from 'next/router'
-import QueryDatabase from '../database/connect'
+import fetch from 'node-fetch';
 
 class Header extends React.Component {
   render() {
@@ -25,18 +25,12 @@ export default class HomePage extends React.Component {
 
   static async getInitialProps({ query }) {
 
-    // let queryString = "SELECT Primary_Major from Student where NetID = " + query.netid;
-
-    // let results = QueryDatabase(queryString)
-
-    // const { Client } = require('pg')
-    // const client = new Client()
-    //
-    // await client.connect()
-    //
-    // const res = await client.query('SELECT $1::text as message', ['Hello world!'])
-    // console.log(res.rows[0].message) // Hello world!
-    // await client.end()
+    fetch('http://localhost:3000/api/v1/select/' + query.netid)
+    .then(function(response){
+        return response.json();
+    }).then(function(json){
+        console.log(json);
+    }).catch(err => console.error(err));
 
     return {
       netid: query.netid,

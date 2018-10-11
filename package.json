@@ -4,7 +4,7 @@
   "description": "Final Project for CS316",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start"
   },
@@ -24,6 +24,7 @@
     "express": "^4.16.3",
     "net": "^1.0.2",
     "next": "^7.0.1",
+    "node-fetch": "^2.2.0",
     "pg": "^7.5.0",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",

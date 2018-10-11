@@ -27,7 +27,7 @@ export default class Login extends React.Component {
     event.preventDefault();
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]
-      Router.push('/index?netid=' + netid)
+      Router.push(`/index?netid=${netid}`)
     } else {
       alert('Make sure you are using your Duke email')
       this.setState({

@@ -22,20 +22,13 @@ class Header extends React.Component {
 
 export default class HomePage extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      netid: props.netid,
-    };
-  }
-
   static async getInitialProps({ query }) {
     return { netid: query.netid }
   }
 
   render() {
     return (
-        <Header netid={this.state.netid}/>
+        <Header netid={this.props.netid}/>
     );
   }
 }

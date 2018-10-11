@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap"
 import Router from 'next/router'
-import "../components/login.css"
+// import "../components/login.css"
 
 export default class Login extends React.Component {
   constructor(props) {

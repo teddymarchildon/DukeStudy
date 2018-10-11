@@ -24,23 +24,14 @@ class Header extends React.Component {
 export default class HomePage extends React.Component {
 
   static async getInitialProps({ query }) {
-
-    fetch('http://localhost:3000/api/v1/select/' + query.netid)
-    .then(function(response){
-        return response;
-    }).then(function(json){
-        console.log(json);
-    }).catch(err => console.error(err));
-
-    return {
-      netid: query.netid,
-      major: 'CompSci'
-    }
+    const res = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
+    const json = await res.json()
+    return json[0];
   }
 
   render() {
     return (
-        <Header netid={this.props.netid} major={this.props.major}/>
+        <Header netid={this.props.name} major={this.props.primary_major}/>
     );
   }
 }

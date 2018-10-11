@@ -17,12 +17,12 @@ app.prepare().then(() => {
     // Grab data from http request
     const table = req.params.table;
     let queryString = dbHelper.createInsertQueryString(table);
-    
+
 
   });
 
   server.get('/api/v1/select/:netid', (req, res, next) => {
-    const results = [];
+    const results = []
     const data = req.body;
     const netid = req.params.netid;
     console.log('Selecting data for: ' + netid)
@@ -31,9 +31,17 @@ app.prepare().then(() => {
 
     client.connect()
 
-    client.query(queryString, (err, res) => {
-      console.log(err, res);
-      client.end()
+    client.query(queryString, (dberr, dbres) => {
+      if (dberr != null) {
+        console.error(dberr);
+        return null
+      } else {
+        results.push(dbres.rows[0]);
+      }
+      client.end();
+      console.log('results:');
+      console.log(results);
+      return res.json(results);
     });
   });
 

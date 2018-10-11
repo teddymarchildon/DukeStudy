@@ -2,7 +2,9 @@ INSERT INTO Student VALUES
 ('aa111', 'Amy', 4.0, 'CS316', 'Jun Yang', 'Computer Science', 'Economics', NULL),
 ('jb151', 'Jonny', 3.7, 'CS201', NULL, 'Biomedical Engineering', 'Computer Science','French'),
 ('mmd21', 'Matt', 3.2, NULL, 'Dorian Canelas', 'Chemistry', 'Math', 'I&E'),
-('cfp65', 'Chris', NULL, 'BME244', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering');
+('cfp65', 'Chris', NULL, 'BME244', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering'),
+('agp11', 'Gray', NULL, 'CS316', 'Jun Yang', 'Computer Science', NULL, 'Biomedical Engineering'),
+('cs11', 'Chloe', NULL, 'CS316', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering');
 
 INSERT INTO Tutor VALUES
 ('mmd21', 12.00, 'MTuThFSat'),
@@ -47,8 +49,9 @@ INSERT INTO Takes_Course VALUES
 ('aa111', 'CS316', 'Fall 2018', 01, 'A'),
 ('mmd21', 'CHEM101', 'Spring 2018', 001, 'A-'),
 ('cfp65', 'BME244', 'Spring 2017', 03, 'A+'),
-('jb151', 'CS316', 'Fall 2018', 02, 'A');
-
+('jb151', 'CS316', 'Fall 2018', 02, 'A')
+('agp11', 'CS316', 'Fall 2018', 02, 'A')
+('cs11', 'CS316','Fall 2018', 02, 'A');
 INSERT INTO Rates_Course VALUES
 ('mmd21', 'CHEM101', 'Spring 2018', 001, 5, 5, 3, 3),
 ('cfp65', 'BME244', 'Spring 2017', 03, 1, 1, 5, 5)

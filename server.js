@@ -1,7 +1,5 @@
 const express = require('express')
 const next = require('next')
-const pg = require('pg');
-const path = require('path');
 const dbHelper = require('./db/query_string.js');
 const config = require('./db/config.js')
 const { Client } = require('pg')
@@ -14,11 +12,11 @@ const router = express.Router();
 app.prepare().then(() => {
   const server = express();
 
-  router.post('/api/v1/insert/:table', (req, res, next) => {
+  server.post('/api/v1/insert/:table', (req, res, next) => {
     const results = [];
     // Grab data from http request
-    const data = req.body;
-    let queryString = dbHelper.createInsertQueryString(data);
+    const table = req.params.table;
+    let queryString = dbHelper.createInsertQueryString(table);
     // Get a Postgres client from the connection pool
     pg.connect(config, (err, client, done) => {
       // Handle connection errors
@@ -46,13 +44,7 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting data for: ' + netid)
     let queryString = dbHelper.createSelectQueryString(netid);
-    const client = new Client({
-      user: 'tedmarchildon',
-      host: 'localhost',
-      database: 'dukestudy',
-      password: 'teddy',
-      port: 5432,
-    })
+    const client = new Client(config.config);
 
     client.connect()
 

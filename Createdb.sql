@@ -1,3 +1,11 @@
+CREATE TABLE Course
+(Course_Number CHAR(7) NOT NULL primary key,
+Department VARCHAR(256) NOT NULL,
+Level DECIMAL(3,0) NOT NULL,
+Prerequesites VARCHAR(256),
+When_Class_Meets VARCHAR(256) NOT NULL,
+UNIQUE (Department, Level));
+
 CREATE TABLE Student
 (NetID CHAR(5) NOT NULL primary key,
 Name VARCHAR(256) NOT NULL,
@@ -6,21 +14,14 @@ Favorite_Class CHAR(7),
 Favorite_Professor VARCHAR(256),
 Primary_Major VARCHAR(256),
 Primary_Minor VARCHAR(256),
-Certificate VARCHAR(256));
+Certificate VARCHAR(256),
+FOREIGN KEY (Favorite_Class) REFERENCES Course(Course_Number));
 
 CREATE TABLE Tutor
 (NetID CHAR(5) NOT NULL primary key,
 Rate_Per_Hour DECIMAL(4,2),
 Days_Available CHAR(12),
 FOREIGN KEY (NetID) REFERENCES Student(NetID));
-
-CREATE TABLE Course
-(Course_Number CHAR(7) NOT NULL primary key,
-Department VARCHAR(256) NOT NULL,
-Level DECIMAL(3,0) NOT NULL,
-Prerequesites VARCHAR(256),
-When_Class_Meets VARCHAR(256) NOT NULL,
-UNIQUE (Department, Level));
 
 CREATE TABLE Tutors_For
 (NetID CHAR(5) NOT NULL,

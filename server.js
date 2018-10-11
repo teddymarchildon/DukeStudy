@@ -17,25 +17,8 @@ app.prepare().then(() => {
     // Grab data from http request
     const table = req.params.table;
     let queryString = dbHelper.createInsertQueryString(table);
-    // Get a Postgres client from the connection pool
-    pg.connect(config, (err, client, done) => {
-      // Handle connection errors
-      if(err) {
-        done();
-        console.log(err);
-        return res.status(500).json({success: false, data: err});
-      }
-      const query = client.query(queryString);
+    
 
-      query.on('row', (row) => {
-        results.push(row);
-      });
-      // After all data is returned, close connection and return results
-      query.on('end', () => {
-        done();
-        return res.json(results)
-      });
-    });
   });
 
   server.get('/api/v1/select/:netid', (req, res, next) => {

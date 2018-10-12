@@ -7,7 +7,6 @@ select netid
 from Takes_Course
 where Course_Number = 'BME244';
 
-
 -- for a given course, what is the mean hours studied, average difficulty rating, mean number of hours studied and mean grade?
 -- parameter: course_number c, example 'CS316'
 select avg(Quality_Of_Course) as avgQualityRating, avg(Quality_Of_Instruction) as avgInstructionRating,
@@ -91,3 +90,41 @@ select NetID
 from TAs_Course
 where Course_Number = 'CHEM101'
 and Year_Semester = 'Spring 2018';
+
+-- SQL Data modifications
+
+-- User updates their GPA, can apply to any attrubute for user
+UPDATE Student
+SET GPA = 4.0
+WHERE NetID = 'jb151';
+
+-- Course Days and Times Change, can apply to any attrubute for Course
+UPDATE Course
+SET When_Class_Meets = 'WF 3:05-4:20'
+WHERE Course_Number = 'CS201';
+
+-- Tutor increases their hourly Rate
+UPDATE Tutor
+SET Rate_Per_Hour = 13.00
+WHERE NetID = 'jb151';
+
+-- Student gets regrade request
+UPDATE Takes_Course
+SET Grade = 'A'
+WHERE NetID = 'mmd21'
+AND Course_Number = 'CHEM101'
+AND Year_Semester = 'Spring 2018';
+
+-- Student wants to change their rating
+UPDATE Rates_Course
+SET Difficulty = 5
+WHERE NetID = 'mmd21'
+AND Course_Number = 'CHEM101'
+AND Year_Semester = 'Spring 2018';
+
+-- TA Switches Section
+UPDATE TAs_Course
+SET Section_Number = 04
+WHERE NetID = 'cfp65'
+AND Course_Number = 'BME244'
+AND Year_Semester = 'Spring 2017';

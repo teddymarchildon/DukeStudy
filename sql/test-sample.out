@@ -154,3 +154,40 @@ and Year_Semester = 'Spring 2018';
  mmd21
 (1 row)
 
+-- SQL Data modifications
+-- User updates their GPA, can apply to any attrubute for user
+UPDATE Student
+SET GPA = 4.0
+WHERE NetID = 'jb151';
+UPDATE 1
+-- Course Days and Times Change, can apply to any attrubute for Course
+UPDATE Course
+SET When_Class_Meets = 'WF 3:05-4:20'
+WHERE Course_Number = 'CS201';
+UPDATE 1
+-- Tutor increases their hourly Rate
+UPDATE Tutor
+SET Rate_Per_Hour = 13.00
+WHERE NetID = 'jb151';
+UPDATE 1
+-- Student gets regrade request
+UPDATE Takes_Course
+SET Grade = 'A'
+WHERE NetID = 'mmd21'
+AND Course_Number = 'CHEM101'
+AND Year_Semester = 'Spring 2018';
+UPDATE 1
+-- Student wants to change their rating
+UPDATE Rates_Course
+SET Difficulty = 5
+WHERE NetID = 'mmd21'
+AND Course_Number = 'CHEM101'
+AND Year_Semester = 'Spring 2018';
+UPDATE 1
+-- TA Switches Section
+UPDATE TAs_Course
+SET Section_Number = 04
+WHERE NetID = 'cfp65'
+AND Course_Number = 'BME244'
+AND Year_Semester = 'Spring 2017';
+UPDATE 1

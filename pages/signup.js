@@ -87,4 +87,5 @@ async function registerNewUser(netid) {
   const res = await fetch('http://localhost:3000/api/v1/insert/' + netid);
   const json = await res.json();
   console.log('submitted new user request: ', json)
+  return json;
 }

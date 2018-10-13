@@ -25,13 +25,15 @@ INSERT INTO Professor VALUES
 ('Steven Wallace', 'Biomedical Engineering', 'walace.steve@duke.edu'),
 ('Arya Roy', 'Physics', 'roy.arya@duke.edu'),
 ('Jeffery Forbes', 'Computer Science', 'forbes.jeffery@duke.edu'),
-('Chris Roy', 'Math', 'chris.roy@duke.edu');
+('Chris Roy', 'Math', 'chris.roy@duke.edu'),
+('Lisa Satterwhite', 'Biomedical Engineering', 'satterwhite.lisa@duke.edu');
 
 INSERT INTO Teaches_Course VALUES
 ('Jun Yang', 'Computer Science', 'CS316', 'Fall 2018', 01),
 ('Jeffery Forbes', 'Computer Science', 'CS316', 'Fall 2018', 02),
 ('Dorian Canelas', 'Chemsitry', 'CHEM101', 'Spring 2018', 001),
 ('Steven Wallace', 'Biomedical Engineering', 'BME244', 'Spring 2017', 03),
+('Lisa Satterwhite', 'Biomedical Engineering', 'BME244', 'Spring 2017', 04),
 ('Arya Roy', 'Physics', 'MATH356', 'Fall 2016', 02);
 
 INSERT INTO TAs_Course VALUES

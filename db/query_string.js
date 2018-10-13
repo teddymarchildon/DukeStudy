@@ -7,6 +7,10 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
   return 'SELECT * FROM Student WHERE NetID=\'' + netid + '\';';
 }
 
+exports.createNewUserQueryString = function createNewUserQueryString(netid, name) {
+  return `INSERT INTO Student VALUES (\'${netid}\', \'${name}\');`;
+}
+
 function getValuesForTable(table, data) {
   return valueString = ' values($1, $2)', [
     'teddy',

@@ -1,9 +1,10 @@
 import React, { Component } from "react"
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap"
 import Router from 'next/router'
+import fetch from 'node-fetch';
 import '../components/login.css'
 
-export default class Login extends React.Component {
+export default class SignUp extends React.Component {
   constructor(props) {
     super(props);
 
@@ -26,7 +27,8 @@ export default class Login extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     if (this.state.email.includes('duke.edu')) {
-      const netid = this.state.email.split('@')[0]
+      const netid = this.state.email.split('@')[0];
+      registerNewUser(netid)
       Router.push(`/index?netid=${netid}`)
     } else {
       alert('Make sure you are using your Duke email')
@@ -64,7 +66,7 @@ export default class Login extends React.Component {
             disabled={!this.validateForm()}
             type="submit"
           >
-            Login
+            Submit!
           </Button>
         </form>
 
@@ -72,12 +74,17 @@ export default class Login extends React.Component {
           block
           bsSize="large"
           disabled={false}
-          onClick= {() => Router.push('/signup')}
+          onClick= {() => Router.push('/login')}
         >
-          Sign Up
+          Already have an account? Login
         </Button>
-
       </div>
     );
   }
+}
+
+async function registerNewUser(netid) {
+  const res = await fetch('http://localhost:3000/api/v1/insert/' + netid);
+  const json = await res.json();
+  console.log('submitted new user request: ', json)
 }

@@ -4,4 +4,6 @@ Gray Perrone: I wrote the SQL queries that will go in the website and help users
 
 Adam Davidovich: I designed the database schema, identified the keys, created the E/R diagram. I also identified the assumptions we were making about the data; wrote the create, load, and destroy SQL scripts; wrote the description of the website interface; and wrote the update data SQL codes
 
+Daniel Bass-Blue: I helped manage the project's outline and distributed roles accordingly. I put in input on the description of the application.
+
 Ted Marchildon: I have been writing the codes for the preliminary website. I have successfully connected our website to our sample database and have created an API for each table to be able to query them which, when called, will send JSON data back to the client.

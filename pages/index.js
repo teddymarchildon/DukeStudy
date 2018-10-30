@@ -1,38 +1,54 @@
-import Link from 'next/link'
-import React, { Component } from "react"
-import { withRouter } from 'next/router'
-import fetch from 'node-fetch';
-import SearchAppBar from '../components/app_bar.js'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <header>
-            <p> Welcome to DukeStudy, {this.props.name} </p>
-            <p> You major in {this.props.major} </p>
-          </header>
-        </div>
-      </div>
-    );
-  }
+const styles = {
+  card: {
+    minWidth: 100,
+    maxWidth: 200
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)',
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+};
+
+function InformationCard(props) {
+  const { classes } = props;
+
+  return (
+     <div style={{width: '50%', margin: '0 auto'}}>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography className={classes.title} color="textSecondary" gutterBottom>
+            Welcome to DukeStudy
+          </Typography>
+          <Typography variant="p" component="p">
+            A place for Duke Students to discuss classes and form study groups.
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button href = "/login" size="small"> Login </Button>
+        </CardActions>
+      </Card>
+    </div>
+  );
 }
 
-export default class HomePage extends React.Component {
+InformationCard.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
-  static async getInitialProps({ query }) {
-    const res = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
-    const json = await res.json()
-    return json[0];
-  }
-
-  render() {
-    return (
-      <div>
-        <SearchAppBar> </SearchAppBar>
-        <Header name={this.props.name} major={this.props.primary_major}/>
-      </div>
-    );
-  }
-}
+export default withStyles(styles)(InformationCard);

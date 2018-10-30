@@ -2,7 +2,7 @@
   "name": "DukeStudy",
   "version": "1.0.0",
   "description": "Final Project for CS316",
-  "main": "index.js",
+  "main": "landing.js",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",

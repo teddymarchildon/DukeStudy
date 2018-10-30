@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap"
 import Router from 'next/router'
 import fetch from 'node-fetch';
-import '../components/login.css'
 
 export default class SignUp extends React.Component {
   constructor(props) {

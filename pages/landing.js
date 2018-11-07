@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { Component } from "react"
-import { withRouter } from 'next/router'
+import Router from 'next/router'
 import fetch from 'node-fetch';
 import SearchAppBar from '../components/app_bar.js'
 import PropTypes from 'prop-types';
@@ -10,24 +10,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
-const styles = {
-  card: {
-    minWidth: 100,
-    maxWidth: 200
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-};
 
 class Header extends React.Component {
   render() {
@@ -44,6 +26,7 @@ class Header extends React.Component {
 }
 
 class Content extends React.Component {
+
   render() {
     return (
       <div style={{width: '50%', margin: '0 auto'}}>
@@ -66,7 +49,7 @@ class Content extends React.Component {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button href = "/edit" size="small"> Edit </Button>
+            <Button onClick={() => Router.push(`/editProfile?netid=${this.props.netid}`)} size="small"> Edit </Button>
           </CardActions>
         </Card>
       </div>
@@ -92,6 +75,7 @@ export default class HomePage extends React.Component {
         <SearchAppBar> </SearchAppBar>
         <Header name={this.props.name}/>
         <Content
+          netid={this.props.netid}
           major={this.props.primary_major}
           favClass={this.props.favorite_class}
           favProf={this.props.favorite_professor}

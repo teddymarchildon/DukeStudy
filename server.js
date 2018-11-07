@@ -3,15 +3,17 @@ const next = require('next')
 const dbHelper = require('./db/query_string.js');
 const config = require('./db/config.js')
 const { Client } = require('pg')
+var bodyParser = require('body-parser')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 const router = express.Router();
 
+
 app.prepare().then(() => {
   const server = express();
-
+  server.use(bodyParser.urlencoded({ extended: false }));
   /**
   API for inserting a new user after sign up
   */
@@ -34,6 +36,23 @@ app.prepare().then(() => {
 
     let queryString = dbHelper.createSelectQueryString(netid);
     return submitQueryString(res, queryString);
+  });
+
+
+  /**
+  API for updating User Info
+  */
+
+  server.post('/api/v1/student/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST **')
+    // const netid = req.body.netid;
+    // const major = req.body.major;
+    // const minor = req.params.minor;
+    // const cert = req.params.cert;
+    // const favClass = req.params.favClass;
+    // const favProf = req.params.favProf;
+
+    console.log(req.body)
   });
 
   /**

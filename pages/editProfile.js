@@ -74,11 +74,7 @@ class StudyForm extends React.Component {
     }
   }
 
-
   handleChange = (key, value) => {
-    console.log('*handling change in parent*')
-    console.log('key: ', key)
-    console.log('value: ', value)
     this.setState({
       [key]: value,
     });

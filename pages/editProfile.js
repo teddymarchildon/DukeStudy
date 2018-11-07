@@ -43,6 +43,7 @@ class StudyTextField extends React.Component {
     this.setState({
       [value]: event.target.value,
     });
+    this.props.onChange(this.props.id, event.target.value);
   };
 
   render() {
@@ -74,26 +75,29 @@ class StudyForm extends React.Component {
   }
 
 
-  handleChange = value => event => {
+  handleChange = (key, value) => {
+    console.log('*handling change in parent*')
+    console.log('key: ', key)
+    console.log('value: ', value)
     this.setState({
-      [value]: event.target.value,
+      [key]: value,
     });
   };
 
   saveChanges = () => {
     saveChangesAsync(this.state)
-  }
+  };
 
   render() {
     return (
       <div style={{width: '50%', margin: '0 auto'}}>
         <Card className={this.props.card}>
           <CardContent>
-            <StudyTextField label='Major' value={this.props.major} onChange={this.handleChange('major')}/>
-            <StudyTextField label='Minor' value={this.props.minor} onChange={this.handleChange('minor')}/>
-            <StudyTextField label='Certificate' value={this.props.certificate} onChange={this.handleChange('certificate')}/>
-            <StudyTextField label='Favorite Class' value={this.props.favClass} onChange={this.handleChange('favClass')}/>
-            <StudyTextField label='Favorite Professor' value={this.props.favProf} onChange={this.handleChange('favProf')}/>
+            <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
+            <StudyTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
+            <StudyTextField label='Certificate' id='cert' value={this.props.certificate} onChange={this.handleChange}/>
+            <StudyTextField label='Favorite Class' id='favClass' value={this.props.favClass} onChange={this.handleChange}/>
+            <StudyTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
           </CardContent>
           <CardActions>
             <Button onClick={this.saveChanges} size="small"> Save </Button>

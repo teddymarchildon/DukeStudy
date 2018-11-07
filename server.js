@@ -45,14 +45,10 @@ app.prepare().then(() => {
 
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST **')
-    // const netid = req.body.netid;
-    // const major = req.body.major;
-    // const minor = req.params.minor;
-    // const cert = req.params.cert;
-    // const favClass = req.params.favClass;
-    // const favProf = req.params.favProf;
-
     console.log(req.body)
+    let queryString = dbHelper.createInsertQueryString(req.body);
+    console.log(queryString)
+    return submitQueryString(res, queryString);
   });
 
   /**

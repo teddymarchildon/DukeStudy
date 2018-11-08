@@ -7,32 +7,12 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const styles = {
-  card: {
-    minWidth: 100,
-    maxWidth: 200
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  title: {
-    fontSize: 14,
-  },
-  pos: {
-    marginBottom: 12,
-  },
-};
-
 function InformationCard(props) {
-  const { classes } = props;
-
   return (
      <div style={{width: '50%', margin: '0 auto'}}>
-      <Card className={classes.card}>
+      <Card className={props.card}>
         <CardContent>
-          <Typography className={classes.title} color="textSecondary" gutterBottom>
+          <Typography className={props.title} color="textSecondary" gutterBottom>
             Welcome to DukeStudy
           </Typography>
           <Typography variant="p" component="p">
@@ -51,4 +31,4 @@ InformationCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(InformationCard);
+export default InformationCard;

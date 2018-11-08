@@ -1,6 +1,6 @@
 Michael Horenstein: I wrote the description of the application and helped refine the E/R diagram deciding what was essential and what needed to be connected. I also helped with the list of database tables and what attributes should be keys. Like everyone else in the group, I helped formulate the idea of the project.
 
-Gray Perrone: I wrote the SQL queries that will go in the website and help users access interesting and helpful information. In addition, I helped with the brainstorming of this project.
+Gray Perrone: I brainstormed and wrote more premade SQL queries. These queries can easily be incorporated into the website and adds interesting information for the user to get from our website that will help them pick courses, find TAs and fellow classmates. I also helped Adam on the Website Description document and outlining what the website will look like and how an user will go through it. 
 
 Adam Davidovich: I designed the database schema, identified the keys, created the E/R diagram. I also identified the assumptions we were making about the data; wrote the create, load, and destroy SQL scripts; wrote the description of the website interface; and wrote the update data SQL codes
 

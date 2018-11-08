@@ -4,6 +4,6 @@ Gray Perrone: I brainstormed and wrote more premade SQL queries. These queries c
 
 Adam Davidovich: I created the overall website design. This includes what pages we will have as a part of our website, what information is displayed on each of those pages, and how each page interacts with one another as well as how the user interacts with each page. On top of this, I have written the code to load our large database into SQL and helped with the creation and design of the premade SQL queries.
 
-Daniel Bass-Blue: I helped manage the project's outline and distributed roles accordingly. I put in input on the description of the application.
+Daniel Bass-Blue: I helped manage the project's outline and distributed roles accordingly. I put in input on the description of the application. Began wireframing the UI of the application and iterating on design. Additionally, we are looking to design the user imput portal for courses they have taken when signing up. 
 
 Ted Marchildon: I have been writing the codes for the preliminary website. I have successfully connected our website to our sample database and have created an API for each table to be able to query them which, when called, will send JSON data back to the client.

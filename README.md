@@ -21,12 +21,12 @@ then in your browser, navigate to localhost:3000
 
 ## Database
 
-We are running a PostgreSQL database. Before running the website, the Postgres server must be started, and your credentials must be entered in the server file. 
+We are running a PostgreSQL database. Before running the website, the Postgres server must be started, and your credentials must be entered in the server file.
 
 ### Generation of Production database
 
-To generate the production dataset, you can run the queries in the folder named 'sql'. The first one is the create command, the following loads some test data into the database. After running those queries, the database is populated with some test data. 
+To generate the production database, at a psql command prompt, you should run the commands located in load_large_database.sql file. **Be sure to update the filepath in the COPY commands with your file path**. We have a csv with all of the course data right now. We are still querying for other data, but the process will be the same with that new data.
 
 ## Functionality
 
-The web app currently displays the data in the Student table and provides a way for users to modify their data.
+The web app currently displays the data in the test version of Student table and provides a way for users to modify their data. The next steps include adding a way for Users to view courses.

@@ -9,7 +9,7 @@ limit 10;
 
 select distinct NetID
 from Student 
-where Favorite_Professor = 'Jun Yang'
+where Favorite_Professor = 'Ashley Moskovich'
 limit 10;
 
 
@@ -20,11 +20,7 @@ where Days_Available like '%F%'
 and Rate_Per_Hour < 15
 limit 10;
 
--- all the TAs that teach for a certain course - check 
-select NetID
-from TAs_Course 
-where Course_Number = '82'
-limit 10;
+
 
 -- all the TAs that teach for a certain course - check 
 select Course_Number

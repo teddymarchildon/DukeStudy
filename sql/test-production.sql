@@ -1,7 +1,7 @@
 --all the courses that the professor is teaching this semester and when that class meets 
 select Course_Number
 from Course 
-where Professor_Name = 'Jun Yang'
+where Professor_Name = 'Ashley Moskovich'
 group by Course_Number
 limit 10;
 
@@ -29,5 +29,5 @@ limit 10;
 -- all the TAs that teach for a certain course - check 
 select Course_Number
 from Course  
-where Prerequesites like '%ALP%'
+where Tags like '%ALP%'
 limit 10;

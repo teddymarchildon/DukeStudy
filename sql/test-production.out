@@ -1,0 +1,54 @@
+select tt.NetID, Days_Available, Rate_Per_Hour
+from Tutor tt
+where Days_Available like '%F%'
+and Rate_Per_Hour < 15
+limit 10;
+ netid | days_available | rate_per_hour 
+-------+----------------+---------------
+ alc87 | T:TH:F         |         10.00
+ arh86 | M:T:W:F        |         13.00
+ ana19 | T:W:TH:F       |         14.00
+ arc66 | M:T:W:F        |         12.00
+ aey11 | M:T:F          |         10.00
+ ahk22 | M:T:TH:F       |         14.00
+ apk22 | M:T:W:TH:F     |         10.00
+ aep55 | F              |         14.00
+ ajm70 | T:TH:F         |         13.00
+ ach79 | M:T:F          |         13.00
+(10 rows)
+
+select Course_Number
+from Course
+where Tags like '%ALP%'
+limit 10;
+ course_number 
+---------------
+ 64     
+ 82     
+ 964    
+ 2965   
+ 2974   
+ 3033   
+ 3807   
+ 3815   
+ 3824   
+ 3845   
+(10 rows)
+
+select distinct NetID
+from Student
+where Favorite_Professor = 'Ashley Moskovich'
+limit 10;
+ netid 
+-------
+ aaf24
+ ahc26
+ aja26
+ ajb91
+ ame50
+ aro16
+ asc78
+ ath28
+ atl16
+(9 rows)
+

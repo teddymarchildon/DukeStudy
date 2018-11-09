@@ -1,6 +1,6 @@
 --all the courses that the professor is teaching this semester and when that class meets 
 select Course_Number
-from Teaches_Course 
+from Course 
 where Professor_Name = 'Jun Yang'
 group by Course_Number
 limit 10;
@@ -11,6 +11,7 @@ select distinct NetID
 from Student 
 where Favorite_Professor = 'Jun Yang'
 limit 10;
+
 
 
 -- 10 students that have taken this course (random)

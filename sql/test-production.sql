@@ -1,6 +1,6 @@
---all the courses that the professor is teaching this semester and when that class meets 
+-- 10 courses that a given professor is teaching 
 select Course_Number
-from Course 
+from Teaches_Course
 where Professor_Name = 'Jun Yang'
 group by Course_Number
 limit 10;
@@ -34,8 +34,8 @@ from TAs_Course
 where Course_Number = '82'
 limit 10;
 
--- all the TAs that teach for a certain course - check 
+-- all the classes that satisfy the pre-rep ALP 
 select Course_Number
-from Course  
+from Course 
 where Prerequesites like '%ALP%'
 limit 10;

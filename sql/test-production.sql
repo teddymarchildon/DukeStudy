@@ -16,8 +16,7 @@ limit 10;
 -- tutors that are avaliable on a given day 
 select tt.NetID, Days_Available, Rate_Per_Hour
 from Tutor tt 
-and Course_Number = '12572'
-and Days_Available like '%F%'
+where Days_Available like '%F%'
 and Rate_Per_Hour < 15
 limit 10;
 

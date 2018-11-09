@@ -1,8 +1,7 @@
---all the courses that the professor is teaching this semester - check! 
+--all the courses that the professor is teaching this semester and when that class meets 
 select Course_Number
 from Teaches_Course 
 where Professor_Name = 'Jun Yang'
-and Year_Semester = 'Fall 2018'
 group by Course_Number
 limit 10;
 
@@ -14,10 +13,10 @@ where Favorite_Professor = 'Jun Yang'
 limit 10;
 
 
--- 10 students that have taken his course (random) - of a certain current year?, check! 
+-- 10 students that have taken this course (random)
 select NetID, Course_Number
 from Takes_Course 
-where Course_Number = 'CS316'
+where Course_Number = '82'
 group by NetID, Course_Number
 limit 10;
 
@@ -26,12 +25,16 @@ select t.Professor_Name, t.Course_Number
 from Student s, Teaches_Course t 
 where NetID = 'aa111'
 and s.Favorite_Professor = t.Professor_Name
-and Year_Semester = 'Fall 2018'
 limit 10;
 
--- students that have voted him their favorite professor - check! 
+-- all the TAs that teach for a certain course - check 
+select NetID
+from TAs_Course 
+where Course_Number = '82'
+limit 10;
 
-select distinct NetID
-from Student 
-where Favorite_Professor = 'Jun Yang'
+-- all the TAs that teach for a certain course - check 
+select Course_Number
+from Course  
+where Prerequesites like '%ALP%'
 limit 10;

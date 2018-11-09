@@ -1,10 +1,3 @@
---all the courses that the professor is teaching this semester and when that class meets 
-select Course_Number
-from Course 
-where Professor_Name = 'Ashley Moskovich'
-group by Course_Number
-limit 10;
-
 -- students that have voted him their favorite professor - check! 
 
 select distinct NetID

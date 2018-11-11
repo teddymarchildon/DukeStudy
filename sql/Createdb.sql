@@ -4,7 +4,6 @@ Department VARCHAR(256) NOT NULL,
 Level VARCHAR(10) NOT NULL,
 Tags VARCHAR(50),
 Prerequesites VARCHAR(256),
-When_Class_Meets VARCHAR(256) NOT NULL,
 UNIQUE (Department, Level));
 
 CREATE TABLE Student
@@ -43,6 +42,7 @@ CREATE TABLE Teaches_Course
 Professor_Department VARCHAR(256) NOT NULL,
 Course_Number CHAR(7) NOT NULL,
 Year_Semester VARCHAR(20) NOT NULL,
+When_Class_Meets VARCHAR(256) NOT NULL,
 -- Section_Number DECIMAL(3,0) NOT NULL,
 PRIMARY KEY (Course_Number, Year_Semester),
 FOREIGN KEY (Course_Number) REFERENCES Course(Course_Number),

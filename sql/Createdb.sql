@@ -38,15 +38,14 @@ Email VARCHAR(256),
 UNIQUE (Name, Department));
 
 CREATE TABLE Teaches_Course
-(Professor_Name VARCHAR(256) NOT NULL,
-Professor_Department VARCHAR(256) NOT NULL,
+(Professor_NetID CHAR(5) NOT NULL,
 Course_Number CHAR(7) NOT NULL,
 Year_Semester VARCHAR(20) NOT NULL,
 When_Class_Meets VARCHAR(256) NOT NULL,
 -- Section_Number DECIMAL(3,0) NOT NULL,
 PRIMARY KEY (Course_Number, Year_Semester),
 FOREIGN KEY (Course_Number) REFERENCES Course(Course_Number),
-FOREIGN KEY (Professor_Name, Professor_Department) REFERENCES Professor(Name, Department));
+FOREIGN KEY (Professor_NetID) REFERENCES Professor(NetID));
 
 CREATE TABLE TAs_Course
 (NetID CHAR(5) NOT NULL,

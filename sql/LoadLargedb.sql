@@ -1,4 +1,4 @@
-COPY Course(Course_Number, Department, Level, Tags, Prerequesites, When_Class_Meets)
+COPY Course(Course_Number, Department, Level, Tags, Prerequesites)
 FROM '/vagrant/Project/DukeStudy-master/CS316_Final_Project/course.csv' DELIMITER ',';
 
 COPY Student(NetID, Name, Primary_Major, Primary_Minor, GPA, Favorite_Professor, Favorite_Class)
@@ -13,7 +13,7 @@ FROM '/vagrant/Project/DukeStudy-master/CS316_Final_Project/tutor.csv' DELIMITER
 COPY Professor(Name, NetID, Email, Department)
 FROM '/vagrant/Project/DukeStudy-master/CS316_Final_Project/professor.csv' DELIMITER ',' CSV HEADER;
 
--- COPY Teaches_Course(Course_Number, Year_Semester, Professor_Name, Professor_Department)
+-- COPY Teaches_Course(Course_Number, Year_Semester, Professor_NetID, When_Class_Meets)
 -- FROM '/vagrant/Project/DukeStudy-master/CS316_Final_Project/teaches_course.csv' DELIMITER ',' CSV HEADER;
 
 -- COPY TAs_Course(NetID, Course_Number, Year_Semester)

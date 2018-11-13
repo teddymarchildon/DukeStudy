@@ -7,24 +7,26 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-function InformationCard(props) {
-  return (
-     <div style={{width: '50%', margin: '0 auto'}}>
-      <Card className={props.card}>
-        <CardContent>
-          <Typography className={props.title} color="textSecondary" gutterBottom>
-            Welcome to DukeStudy
-          </Typography>
-          <Typography variant="p" component="p">
-            A place for Duke Students to discuss classes and form study groups.
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button href = "/login" size="small"> Login </Button>
-        </CardActions>
-      </Card>
-    </div>
-  );
+class InformationCard extends React.Component {
+  render() {
+    return (
+       <div>
+        <Card className={this.props.card}>
+          <CardContent>
+            <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              Welcome to DukeStudy
+            </Typography>
+            <Typography variant="p" component="p">
+              A place for Duke Students to discuss classes and form study groups.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button href = "/login" size="small"> Login </Button>
+          </CardActions>
+        </Card>
+      </div>
+    )
+  };
 }
 
 InformationCard.propTypes = {

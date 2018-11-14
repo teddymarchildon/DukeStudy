@@ -44,12 +44,71 @@ app.prepare().then(() => {
   */
 
   server.post('/api/v1/student/post', (req, res, next) => {
-    console.log('** RECEIVED POST REQUEST **')
-    console.log(req.body)
-    let queryString = dbHelper.createInsertQueryString(req.body);
+    console.log('** RECEIVED POST REQUEST for Student **')
+    let queryString = dbHelper.createInsertQueryString(req.body)
     console.log(queryString)
     return submitQueryString(res, queryString);
   });
+
+  /**
+  API for registering as a tutor
+  */
+
+  server.post('/api/v1/tutor/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for Tutor **')
+
+  });
+
+  /**
+    API for registering as a TA
+  */
+
+  server.post('/api/v1/ta/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for TA **')
+
+  });
+
+  /**
+    API for registering that a user takes a course
+    one call to the API for each course
+  */
+
+  server.post('/api/v1/takesCourse/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for Taking course **')
+
+  });
+
+  /**
+    API for rating a course
+  */
+
+  server.post('/api/v1/ratesCourse/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for rating course **')
+
+  });
+
+  /**
+  API for creating a study group for a particular class
+  */
+
+  server.post('/api/v1/studyGroup/post', (req, res, next) => {
+    //Here we need to generate a random ID, and be sure to
+    //return that ID to the browser
+    //The parameter should be the courseID
+    console.log('** RECEIVED POST REQUEST for creating a new study group **')
+
+  });
+
+  /**
+  API for adding a user to a study group
+  */
+
+  server.post('/api/v1/inStudyGroup/post', (req, res, next) => {
+    //We need to be sure we have the GroupID here
+    console.log('** RECEIVED POST REQUEST for adding to a study group **')
+
+  });
+
 
   /**
   Handling all requests

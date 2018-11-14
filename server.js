@@ -56,7 +56,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/tutor/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Tutor **')
-
+    console.log(req.body)
   });
 
   /**
@@ -65,7 +65,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/ta/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for TA **')
-
+    console.log(req.body)
   });
 
   /**
@@ -75,7 +75,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/takesCourse/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Taking course **')
-
+    console.log(req.body)
   });
 
   /**
@@ -84,7 +84,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/ratesCourse/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for rating course **')
-
+    console.log(req.body)
   });
 
   /**
@@ -96,6 +96,7 @@ app.prepare().then(() => {
     //return that ID to the browser
     //The parameter should be the courseID
     console.log('** RECEIVED POST REQUEST for creating a new study group **')
+    console.log(req.body)
 
   });
 
@@ -106,6 +107,7 @@ app.prepare().then(() => {
   server.post('/api/v1/inStudyGroup/post', (req, res, next) => {
     //We need to be sure we have the GroupID here
     console.log('** RECEIVED POST REQUEST for adding to a study group **')
+    console.log(req.body)
 
   });
 

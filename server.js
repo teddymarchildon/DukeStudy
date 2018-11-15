@@ -35,12 +35,12 @@ app.prepare().then(() => {
   API for selecting course information
   */
 
-  server.get('/api/v1/select/:course', (req, res, next) => {
+  server.get('/api/v1/select/course/:course', (req, res, next) => {
     const courseNumber = req.params.course;
     console.log('Selecting Course data for: ' + courseNumber)
 
-    let queryString = dbHelper.createSelectCourseQueryString(courseNumber);
-    return submitQueryString(queryString);
+    let queryString = dbHelper.selectCourseQueryString(courseNumber);
+    return submitQueryString(res, queryString);
   });
 
   /**

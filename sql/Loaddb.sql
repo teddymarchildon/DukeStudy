@@ -1,21 +1,21 @@
 INSERT INTO Student VALUES
-('aa111', 'Amy', 4.0, 'CS316', 'Jun Yang', 'Computer Science', 'Economics', NULL),
-('jb151', 'Jonny', 3.7, 'CS201', NULL, 'Biomedical Engineering', 'Computer Science','French'),
+('aa111', 'Amy', 4.0, '1234', 'Jun Yang', 'Computer Science', 'Economics', NULL),
+('jb151', 'Jonny', 3.7, '5678', NULL, 'Biomedical Engineering', 'Computer Science','French'),
 ('mmd21', 'Matt', 3.2, NULL, 'Dorian Canelas', 'Chemistry', 'Math', 'I&E'),
-('cfp65', 'Chris', NULL, 'BME244', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering'),
-('agp11', 'Gray', NULL, 'CS316', 'Jun Yang', 'Computer Science', NULL, 'Biomedical Engineering'),
-('cs11', 'Chloe', NULL, 'CS316', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering');
+('cfp65', 'Chris', NULL, '1213', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering'),
+('agp11', 'Gray', NULL, '1234', 'Jun Yang', 'Computer Science', NULL, 'Biomedical Engineering'),
+('cs11', 'Chloe', NULL, '1234', 'Steven Wallace', 'Physics', NULL, 'Biomedical Engineering');
 
 INSERT INTO Tutor VALUES
 ('mmd21', 12.00, 'MTuThFSat'),
 ('jb151', 9.00, 'MThFSun');
 
 INSERT INTO Course VALUES
-('CS316','Computer Science', 316, 'CS201, CS101','TuTh 1:25-2:40'),
-('CS201','Computer Science', 201, 'CS101', 'MW 8:30-9:45'),
-('CHEM101','Chemistry', 101, NULL, 'TuTh 8:30-9:45'),
-('BME244','Biomedical Engineering', 244, 'EGR103', 'WF 3:05-4:20'),
-('MATH356','Math', 356, 'MATH111, MATH112, MATH221, MATH222', 'TuTh 10:05-11:20');
+('1234','Computer Science', '316', 'CS201, CS101','TuTh 1:25-2:40'),
+('5678','Computer Science', '201', 'CS101', 'MW 8:30-9:45'),
+('91011','Chemistry', '101', NULL, 'TuTh 8:30-9:45'),
+('1213','Biomedical Engineering', '244', 'EGR103', 'WF 3:05-4:20'),
+('1415','Math', '356', 'MATH111, MATH112, MATH221, MATH222', 'TuTh 10:05-11:20');
 
 INSERT INTO Tutors_For VALUES
 ('mmd21', 'CHEM101'),

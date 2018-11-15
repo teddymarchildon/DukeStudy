@@ -14,17 +14,10 @@ const router = express.Router();
 app.prepare().then(() => {
   const server = express();
   server.use(bodyParser.urlencoded({ extended: false }));
-  /**
-  API for inserting a new user after sign up
-  */
 
-  server.get('/api/v1/insert/:netid', (req, res, next) => {
-    const netid = req.params.netid;
-    console.log('Creating new entry for user: ' + netid);
-    // TODO: access Duke api to get name, major
-    let queryString = dbHelper.createNewUserQueryString(netid, 'test');
-    return submitQueryString(res, queryString);
-  });
+  /**
+    Here is the API for selecting information to display
+  */
 
   /**
   API for selecting the user data on homepage
@@ -38,6 +31,33 @@ app.prepare().then(() => {
     return submitQueryString(res, queryString);
   });
 
+  /**
+  API for selecting course information
+  */
+
+  server.get('/api/v1/select/:course', (req, res, next) => {
+    const courseNumber = req.params.course;
+    console.log('Selecting Course data for: ' + courseNumber)
+
+    let queryString = dbHelper.createSelectCourseQueryString(courseNumber);
+    return submitQueryString(queryString);
+  });
+
+  /**
+    Below is the updating information API
+
+  */
+  /**
+  API for inserting a new user after sign up
+  */
+
+  server.post('/api/v1/user/post', (req, res, next) => {
+    const netid = req.body.netid;
+    const name = req.body.name;
+
+    let queryString = dbHelper.createNewUserQueryString(netid, name);
+    return submitQueryString(queryString);
+  })
 
   /**
   API for updating User Info
@@ -45,7 +65,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Student **')
-    let queryString = dbHelper.createInsertQueryString(req.body)
+    let queryString = dbHelper.createUpdateStudentQueryString(req.body)
     console.log(queryString)
     return submitQueryString(res, queryString);
   });

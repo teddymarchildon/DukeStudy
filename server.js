@@ -57,7 +57,7 @@ app.prepare().then(() => {
 
     let queryString = dbHelper.createNewUserQueryString(netid, name);
     return submitQueryString(queryString);
-  })
+  });
 
   /**
   API for updating User Info

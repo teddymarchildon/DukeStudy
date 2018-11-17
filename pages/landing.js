@@ -79,16 +79,18 @@ class HomePage extends React.Component {
     return (
       <main className={this.props.main}>
         <SearchAppBar name={this.props.name} />
-        <Content
-          netid={this.props.netid}
-          major={this.props.primary_major}
-          favClass={this.props.courseName}
-          favProf={this.props.favorite_professor}
-          major={this.props.primary_major}
-          minor={this.props.primary_minor}
-          certificate={this.props.certificate}
-        />
-        <SideButtons netid={this.props.netid}/>
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <SideButtons netid={this.props.netid}/>
+          <Content
+            netid={this.props.netid}
+            major={this.props.primary_major}
+            favClass={this.props.courseName}
+            favProf={this.props.favorite_professor}
+            major={this.props.primary_major}
+            minor={this.props.primary_minor}
+            certificate={this.props.certificate}
+            />
+        </div>
       </main >
     );
   }

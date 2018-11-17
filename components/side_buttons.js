@@ -18,7 +18,8 @@ const styles = theme => ({
   },
   button: {
     margin: theme.spacing.unit,
-    marginTop: 10
+    marginTop: 10,
+    left: 100
   },
   input: {
     display: 'none',

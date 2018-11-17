@@ -7,10 +7,24 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+const styles = theme => ({
+  main: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+});
+
 class InformationCard extends React.Component {
   render() {
     return (
-       <div>
+       <main className={this.props.main}>
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -24,7 +38,7 @@ class InformationCard extends React.Component {
             <Button href = "/login" size="small"> Login </Button>
           </CardActions>
         </Card>
-      </div>
+      </main>
     )
   };
 }
@@ -33,4 +47,4 @@ InformationCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default InformationCard;
+export default withStyles(styles)(InformationCard);

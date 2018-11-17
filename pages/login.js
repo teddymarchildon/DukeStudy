@@ -45,6 +45,12 @@ const styles = theme => ({
   submit: {
     marginTop: theme.spacing.unit * 3,
   },
+  text: {
+    marginTop: theme.spacing.unit * 2,
+  },
+  register: {
+    marginLeft: theme.spacing.unit * 2,
+  }
 });
 
 class Login extends React.Component {
@@ -64,13 +70,30 @@ class Login extends React.Component {
   }
 
   handleSubmit = event => {
-    console.log(this.state)
     event.preventDefault();
     if (this.state.email.length <= 0 || this.state.password.length <= 0) {
       return
     }
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]
+      Router.push(`/landing?netid=${netid}`)
+    } else {
+      alert('Make sure you are using your Duke email')
+      this.setState({
+        email: "",
+        password: "",
+      })
+    }
+  }
+
+  handleNewUser = event => {
+    event.preventDefault();
+    if (this.state.email.length <= 0 || this.state.password.length <= 0) {
+      return
+    }
+    if (this.state.email.includes('duke.edu')) {
+      const netid = this.state.email.split('@')[0]
+      registerNewUser(netid)
       Router.push(`/landing?netid=${netid}`)
     } else {
       alert('Make sure you are using your Duke email')
@@ -95,7 +118,7 @@ class Login extends React.Component {
           </Typography>
           <form className={classes.form}>
             <FormControl margin="normal" required fullWidth>
-              <InputLabel htmlFor="email">Email Address</InputLabel>
+              <InputLabel htmlFor="email">Duke Email Address</InputLabel>
               <Input id="email" name="email" autoComplete="email" autoFocus onChange={this.handleChange} />
             </FormControl>
             <FormControl margin="normal" required fullWidth>
@@ -116,6 +139,19 @@ class Login extends React.Component {
             >
               Sign in
             </Button>
+            <Typography component="p" className={classes.text}>
+              Don't have an account?
+              <Button
+                type="submit"
+                halfWidth
+                variant="contained"
+                color="secondary"
+                className={classes.register}
+                onClick={this.handleNewUser}
+              >
+                Register
+              </Button>
+            </Typography>
           </form>
         </Paper>
       </main>
@@ -128,3 +164,10 @@ Login.propTypes = {
 };
 
 export default withStyles(styles)(Login)
+
+async function registerNewUser(netid) {
+  const res = await fetch('http://localhost:3000/api/v1/insert/' + netid);
+  const json = await res.json();
+  console.log('submitted new user request: ', json)
+  return json;
+}

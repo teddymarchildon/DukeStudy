@@ -14,20 +14,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import url from 'url';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <header>
-            <p> Edit your Profile </p>
-          </header>
-        </div>
-      </div>
-    );
-  }
-}
-
 class StudyTextField extends React.Component {
 
   constructor(props) {
@@ -85,7 +71,7 @@ class StudyForm extends React.Component {
 
   render() {
     return (
-      <div style={{width: '50%', margin: '0 auto'}}>
+      <div style={{width: '25%', margin: '0 auto'}}>
         <Card className={this.props.card}>
           <CardContent>
             <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
@@ -122,8 +108,7 @@ export default class EditProfilePage extends React.Component {
   render() {
     return (
       <div>
-        <SearchAppBar> </SearchAppBar>
-        <Header name={this.props.name}/>
+        <SearchAppBar name={this.props.name}/>
         <StudyForm
           netid={this.props.netid}
           major={this.props.primary_major}

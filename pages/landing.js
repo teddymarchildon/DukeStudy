@@ -11,25 +11,25 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          <header>
-            <p> Welcome to DukeStudy, {this.props.name} </p>
-          </header>
-        </div>
-      </div>
-    );
-  }
-}
+const styles = theme => ({
+  main: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+});
 
 class Content extends React.Component {
 
   render() {
     return (
-      <div style={{width: '50%', margin: '0 auto'}}>
+      <div style={{width: '25%', margin: '0 auto'}}>
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -57,11 +57,11 @@ class Content extends React.Component {
   }
 }
 
-Content.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
+// Content.propTypes = {
+//   classes: PropTypes.object.isRequired,
+// };
 
-export default class HomePage extends React.Component {
+class HomePage extends React.Component {
 
   static async getInitialProps({ query }) {
     const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
@@ -75,9 +75,8 @@ export default class HomePage extends React.Component {
 
   render() {
     return (
-      <div>
-        <SearchAppBar> </SearchAppBar>
-        <Header name={this.props.name}/>
+      <main className={this.props.main}>
+        <SearchAppBar name={this.props.name} />
         <Content
           netid={this.props.netid}
           major={this.props.primary_major}
@@ -87,7 +86,9 @@ export default class HomePage extends React.Component {
           minor={this.props.primary_minor}
           certificate={this.props.certificate}
         />
-      </div>
+      </main >
     );
   }
 }
+
+export default withStyles(styles)(HomePage)

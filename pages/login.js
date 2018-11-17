@@ -46,10 +46,12 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3,
   },
   text: {
-    marginTop: theme.spacing.unit * 2,
+    marginTop: theme.spacing.unit * 3,
   },
-  register: {
+  registerButton: {
     marginLeft: theme.spacing.unit * 2,
+    float: 'right',
+    marginTop: -10,
   }
 });
 
@@ -146,10 +148,10 @@ class Login extends React.Component {
                 halfWidth
                 variant="contained"
                 color="secondary"
-                className={classes.register}
+                className={classes.registerButton}
                 onClick={this.handleNewUser}
               >
-                Register
+                Create Account
               </Button>
             </Typography>
           </form>

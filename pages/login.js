@@ -145,7 +145,7 @@ class Login extends React.Component {
               Don't have an account?
               <Button
                 type="submit"
-                halfWidth
+                halfwidth
                 variant="contained"
                 color="secondary"
                 className={classes.registerButton}

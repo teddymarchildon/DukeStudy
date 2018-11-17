@@ -10,6 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import SideButtons from '../components/side_buttons.js';
 
 const styles = theme => ({
   main: {
@@ -28,6 +29,7 @@ const styles = theme => ({
 class Content extends React.Component {
 
   render() {
+    const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: '0 auto'}}>
         <Card className={this.props.card}>
@@ -57,9 +59,9 @@ class Content extends React.Component {
   }
 }
 
-// Content.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
+Content.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 class HomePage extends React.Component {
 
@@ -86,6 +88,7 @@ class HomePage extends React.Component {
           minor={this.props.primary_minor}
           certificate={this.props.certificate}
         />
+        <SideButtons netid={this.props.netid}/>
       </main >
     );
   }

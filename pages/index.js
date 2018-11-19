@@ -24,7 +24,7 @@ const styles = theme => ({
 class InformationCard extends React.Component {
   render() {
     return (
-       <main className={this.props.main}>
+      <div style={{width: '25%', margin: 'auto'}}>
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -38,7 +38,7 @@ class InformationCard extends React.Component {
             <Button href = "/login" size="small"> Login </Button>
           </CardActions>
         </Card>
-      </main>
+        </div>
     )
   };
 }

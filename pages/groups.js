@@ -7,17 +7,42 @@ import Button from '@material-ui/core/Button';
 import SearchAppBar from '../components/app_bar.js'
 import SideButtons from '../components/side_buttons.js'
 import fetch from 'node-fetch';
+import Typography from '@material-ui/core/Typography';
 
-class Groups extends React.Component {
+class GroupsContent extends React.Component {
+
+  render() {
+    return (
+      <div style={{width: '25%', margin: 'auto'}}>
+      {this.props.groups.map((group, index) => (
+        <Card className={this.props.card}>
+          <CardContent>
+            <Typography key={index} className={this.props.title} color="textSecondary" gutterBottom>
+              Group {index}: {group.courseName} has ID {group.group.group_id}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button onClick={() => Router.push(`/editGroups?netid=${this.props.netid}&groupid=${group.group.group_id}`)} size="small"> Edit </Button>
+          </CardActions>
+        </Card>
+        ))}
+      </div>
+    )
+  }
+}
+
+
+class GroupsPage extends React.Component {
 
   static async getInitialProps({ query }) {
     const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
     const groups = await fetch('http://localhost:3000/api/v1/select/groups/' + query.netid);
     const studentJson = await student.json()
     const groupsJson = await groups.json();
+
     const groupsResults = []
-    groupsJson.forEach(async function(group) {
-      const groupData = await fetch('http://localhost:3000/api/v1/select/group/' + group.group_id);
+    for (var i = 0; i < groupsJson.length; i++){
+      const groupData = await fetch('http://localhost:3000/api/v1/select/group/' + groupsJson[i].group_id);
       const groupJson = await groupData.json();
 
       const courseData = await fetch('http://localhost:3000/api/v1/select/course/' + groupJson[0].course_number)
@@ -28,26 +53,27 @@ class Groups extends React.Component {
         courseName: `${courseJson[0]['department']} ${courseJson[0]['level']}`
       }
       groupsResults.push(data);
-    });
+    };
 
     const props = {
       netid: studentJson[0].netid,
       name: studentJson[0].name,
       groups: groupsResults
-    }
-    return props
+    };
+    return props;
   }
 
   render() {
     return (
       <div>
         <SearchAppBar name={this.props.name}/>
-          <div style={{display: 'flex', alignItems: 'center'}}>
-            <SideButtons netid={this.props.netid}/>
-          </div>
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <SideButtons netid={this.props.netid}/>
+          <GroupsContent groups={this.props.groups} />
+        </div>
       </div>
     )
   };
 }
 
-export default Groups
+export default GroupsPage

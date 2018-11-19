@@ -49,11 +49,10 @@ app.prepare().then(() => {
 
   server.get('/api/v1/select/groups/:netid', (req, res, next) => {
     const netid = req.params.netid;
-    console.log('Selecting Group data for netid: ' + netid)
+    console.log('Selecting Group data for netid: ' + netid);
 
     let queryString = dbHelper.selectGroupsQueryString(netid);
-    console.log("query: " + queryString)
-    return submitQueryString(res, queryString)
+    return submitQueryString(res, queryString);
   });
 
   /**
@@ -175,7 +174,6 @@ app.prepare().then(() => {
 })
 
 submitQueryString = function(res, queryString) {
-  const results = [];
   const client = new Client(config.config);
   client.connect();
   console.log('Submitting query: ' + queryString);
@@ -183,11 +181,9 @@ submitQueryString = function(res, queryString) {
     if (dberr != null) {
       console.error(dberr);
       return null;
-    } else {
-      results.push(dbres.rows[0]);
     }
     client.end();
-    console.log('results: ', results);
-    return res.json(results)
+    console.log('results: ', dbres.rows);
+    return res.json(dbres.rows)
   });
 }

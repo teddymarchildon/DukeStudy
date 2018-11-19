@@ -25,12 +25,12 @@ const styles = theme => ({
   },
 });
 
-class Content extends React.Component {
+class LandingContent extends React.Component {
 
   render() {
     const { classes } = this.props;
     return (
-      <div style={{width: '25%', margin: '0 auto'}}>
+      <div style={{width: '25%', margin: 'auto'}}>
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -58,7 +58,7 @@ class Content extends React.Component {
   }
 }
 
-Content.propTypes = {
+LandingContent.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
@@ -69,7 +69,6 @@ class HomePage extends React.Component {
     const studentJson = await student.json()
     const course = await fetch('http://localhost:3000/api/v1/select/course/' + studentJson[0]['favorite_class'])
     const courseJson = await course.json()
-    console.log('course json: ' + courseJson[0])
     studentJson[0]['courseName'] = `${courseJson[0]['department']} ${courseJson[0]['level']}`
     return studentJson[0];
   }
@@ -80,7 +79,7 @@ class HomePage extends React.Component {
         <SearchAppBar name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'center'}}>
           <SideButtons netid={this.props.netid}/>
-          <Content
+          <LandingContent
             netid={this.props.netid}
             major={this.props.primary_major}
             favClass={this.props.courseName}

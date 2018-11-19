@@ -44,9 +44,9 @@ INSERT INTO TAs_Course VALUES
 ('cfp65', 'BME244', 'Spring 2017', 03);
 
 INSERT INTO Study_Group VALUES
-(1, 'CS316', 'Fall 2018'),
-(2, 'CHEM101', 'Spring 2018'),
-(3, 'MATH356', 'Fall 2016');
+(1, '1234', 'Fall 2018'),
+(2, '91011', 'Spring 2018'),
+(3, '1415', 'Fall 2016');
 
 INSERT INTO Takes_Course VALUES
 ('aa111', 'CS316', 'Fall 2018', 01, 'A'),

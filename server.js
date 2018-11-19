@@ -44,6 +44,31 @@ app.prepare().then(() => {
   });
 
   /**
+    API for selecting Groups information for a User
+  */
+
+  server.get('/api/v1/select/groups/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting Group data for netid: ' + netid)
+
+    let queryString = dbHelper.selectGroupsQueryString(netid);
+    console.log("query: " + queryString)
+    return submitQueryString(res, queryString)
+  });
+
+  /**
+    API for selecting Group information by GroupID
+  */
+
+  server.get('/api/v1/select/group/:groupid', (req, res, next) => {
+    const groupid = req.params.groupid;
+    console.log('Selecting Group data for groupid: ' + groupid);
+
+    let queryString = dbHelper.selectGroupQueryString(groupid);
+    return submitQueryString(res, queryString);
+  });
+
+  /**
     Below is the updating information API
 
   */

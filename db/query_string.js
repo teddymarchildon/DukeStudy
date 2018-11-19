@@ -13,3 +13,11 @@ exports.createNewUserQueryString = function createNewUserQueryString(netid, name
 exports.selectCourseQueryString = function createSelectCourseQueryString(courseNumber) {
   return `SELECT * FROM Course WHERE Course_Number=\'${courseNumber}\';`
 }
+
+exports.selectGroupsQueryString = function selectGroupsQueryString(netid) {
+  return `SELECT * FROM In_Study_Group WHERE NetID=\'${netid}\';`
+}
+
+exports.selectGroupQueryString = function selectGroupQueryString(groupID) {
+  return `SELECT * FROM Study_Group WHERE Group_ID=\'${groupID}\';`
+}

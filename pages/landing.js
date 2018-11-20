@@ -67,9 +67,6 @@ class HomePage extends React.Component {
   static async getInitialProps({ query }) {
     const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
     const studentJson = await student.json()
-    const course = await fetch('http://localhost:3000/api/v1/select/course/' + studentJson[0]['favorite_class'])
-    const courseJson = await course.json()
-    studentJson[0]['courseName'] = `${courseJson[0]['department']} ${courseJson[0]['level']}`
     return studentJson[0];
   }
 
@@ -82,7 +79,7 @@ class HomePage extends React.Component {
           <LandingContent
             netid={this.props.netid}
             major={this.props.primary_major}
-            favClass={this.props.courseName}
+            favClass={`${this.props.department} ${this.props.level}`}
             favProf={this.props.favorite_professor}
             major={this.props.primary_major}
             minor={this.props.primary_minor}

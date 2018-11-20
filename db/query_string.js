@@ -3,23 +3,13 @@ exports.createUpdateStudentQueryString = function createStudentInsertQueryString
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
-  return 'SELECT * FROM Student WHERE NetID=\'' + netid + '\';';
+  return `SELECT * FROM
+  Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
+  WHERE NetID=\'${netid}\';`
 }
 
 exports.createNewUserQueryString = function createNewUserQueryString(netid, name) {
   return `INSERT INTO Student VALUES (\'${netid}\', \'${name}\');`;
-}
-
-exports.selectCourseQueryString = function createSelectCourseQueryString(courseNumber) {
-  return `SELECT * FROM Course WHERE Course_Number=\'${courseNumber}\';`
-}
-
-exports.selectGroupsQueryString = function selectGroupsQueryString(netid) {
-  return `SELECT * FROM In_Study_Group WHERE NetID=\'${netid}\';`
-}
-
-exports.selectGroupQueryString = function selectGroupQueryString(groupID) {
-  return `SELECT * FROM Study_Group WHERE Group_ID=\'${groupID}\';`
 }
 
 exports.groupsPageQueryString = function groupsPageQueryString(netid) {

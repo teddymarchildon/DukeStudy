@@ -21,3 +21,7 @@ exports.selectGroupsQueryString = function selectGroupsQueryString(netid) {
 exports.selectGroupQueryString = function selectGroupQueryString(groupID) {
   return `SELECT * FROM Study_Group WHERE Group_ID=\'${groupID}\';`
 }
+
+exports.groupsPageQueryString = function groupsPageQueryString(netid) {
+  return `SELECT * FROM In_Study_Group WHERE NetID != \'${netid}\' AND Group_ID IN (SELECT Group_ID FROM In_Study_Group WHERE NetID=\'${netid}\');`
+}

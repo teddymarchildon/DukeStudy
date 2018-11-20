@@ -18,7 +18,7 @@ class GroupsContent extends React.Component {
         <Card className={this.props.card}>
           <CardContent>
             <Typography key={index} className={this.props.title} color="textSecondary" gutterBottom>
-              Group {index}: {group.courseName} has ID {group.group.group_id}
+              Group {index}: {group.courseName} has ID {group.group_id}
             </Typography>
           </CardContent>
           <CardActions>
@@ -35,30 +35,15 @@ class GroupsContent extends React.Component {
 class GroupsPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
+    const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid);
     const groups = await fetch('http://localhost:3000/api/v1/select/groups/' + query.netid);
-    const studentJson = await student.json()
+    const studentJson = await student.json();
     const groupsJson = await groups.json();
-
-    const groupsResults = []
-    for (var i = 0; i < groupsJson.length; i++){
-      const groupData = await fetch('http://localhost:3000/api/v1/select/group/' + groupsJson[i].group_id);
-      const groupJson = await groupData.json();
-
-      const courseData = await fetch('http://localhost:3000/api/v1/select/course/' + groupJson[0].course_number)
-      const courseJson = await courseData.json();
-
-      const data = {
-        group: groupJson[0],
-        courseName: `${courseJson[0]['department']} ${courseJson[0]['level']}`
-      }
-      groupsResults.push(data);
-    };
 
     const props = {
       netid: studentJson[0].netid,
       name: studentJson[0].name,
-      groups: groupsResults
+      groups: groupsJson
     };
     return props;
   }

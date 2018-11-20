@@ -51,7 +51,9 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting Group data for netid: ' + netid);
 
-    let queryString = dbHelper.selectGroupsQueryString(netid);
+    // let queryString = dbHelper.selectGroupsQueryString(netid);
+    // return submitQueryString(res, queryString);
+    let queryString = dbHelper.groupsPageQueryString(netid);
     return submitQueryString(res, queryString);
   });
 
@@ -64,7 +66,8 @@ app.prepare().then(() => {
     console.log('Selecting Group data for groupid: ' + groupid);
 
     let queryString = dbHelper.selectGroupQueryString(groupid);
-    return submitQueryString(res, queryString);
+    let json = submitQueryString(res, queryString);
+
   });
 
   /**
@@ -184,6 +187,6 @@ submitQueryString = function(res, queryString) {
     }
     client.end();
     console.log('results: ', dbres.rows);
-    return res.json(dbres.rows)
+    return res.json(dbres.rows);
   });
 }

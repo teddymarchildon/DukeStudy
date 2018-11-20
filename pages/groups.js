@@ -35,8 +35,8 @@ class GroupsContent extends React.Component {
 class GroupsPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid);
-    const groups = await fetch('http://localhost:3000/api/v1/select/groups/' + query.netid);
+    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
+    const groups = await fetch('http://localhost:3000/api/v1/groups/' + query.netid);
     const studentJson = await student.json();
     const groupsJson = await groups.json();
 

@@ -23,7 +23,7 @@ app.prepare().then(() => {
   API for selecting the user data on homepage
   */
 
-  server.get('/api/v1/select/:netid', (req, res, next) => {
+  server.get('/api/v1/student/:netid', (req, res, next) => {
     const netid = req.params.netid;
     console.log('Selecting data for: ' + netid)
 
@@ -32,22 +32,10 @@ app.prepare().then(() => {
   });
 
   /**
-  API for selecting course information
-  */
-
-  // server.get('/api/v1/select/course/:course', (req, res, next) => {
-  //   const courseNumber = req.params.course;
-  //   console.log('Selecting Course data for: ' + courseNumber)
-  //
-  //   let queryString = dbHelper.selectCourseQueryString(courseNumber);
-  //   return submitQueryString(res, queryString);
-  // });
-
-  /**
     API for selecting Groups information for a User
   */
 
-  server.get('/api/v1/select/groups/:netid', (req, res, next) => {
+  server.get('/api/v1/groups/:netid', (req, res, next) => {
     const netid = req.params.netid;
     console.log('Selecting Group data for netid: ' + netid);
 
@@ -56,19 +44,6 @@ app.prepare().then(() => {
     let queryString = dbHelper.groupsPageQueryString(netid);
     return submitQueryString(res, queryString);
   });
-
-  /**
-    API for selecting Group information by GroupID
-  */
-
-  // server.get('/api/v1/select/group/:groupid', (req, res, next) => {
-  //   const groupid = req.params.groupid;
-  //   console.log('Selecting Group data for groupid: ' + groupid);
-  //
-  //   let queryString = dbHelper.selectGroupQueryString(groupid);
-  //   let json = submitQueryString(res, queryString);
-  //
-  // });
 
   /**
     Below is the updating information API

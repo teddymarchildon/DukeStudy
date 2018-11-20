@@ -96,7 +96,7 @@ StudyForm.propTypes = {
 export default class EditProfilePage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/select/' + query.netid)
+    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid)
     const studentJson = await student.json()
     return studentJson[0];
   }

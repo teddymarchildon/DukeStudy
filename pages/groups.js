@@ -18,7 +18,7 @@ class GroupsContent extends React.Component {
         <Card className={this.props.card}>
           <CardContent>
             <Typography key={index} className={this.props.title} color="textSecondary" gutterBottom>
-              Group {index}: {group.courseName} has ID {group.group_id}
+              Group {group.group_id}: {group.department} {group.level} has member {group.netid}
             </Typography>
           </CardContent>
           <CardActions>

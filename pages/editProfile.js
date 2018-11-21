@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import url from 'url';
+import SideButtons from '../components/side_buttons.js'
 
 class StudyTextField extends React.Component {
 
@@ -105,15 +106,18 @@ export default class EditProfilePage extends React.Component {
     return (
       <div>
         <SearchAppBar name={this.props.name}/>
-        <StudyForm
-          netid={this.props.netid}
-          major={this.props.primary_major}
-          favClass={`${this.props.department} ${this.props.level}`}
-          favProf={this.props.favorite_professor}
-          major={this.props.primary_major}
-          minor={this.props.primary_minor}
-          certificate={this.props.certificate}
-        />
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <SideButtons netid={this.props.netid}/>
+          <StudyForm
+            netid={this.props.netid}
+            major={this.props.primary_major}
+            favClass={`${this.props.department} ${this.props.level}`}
+            favProf={this.props.favorite_professor}
+            major={this.props.primary_major}
+            minor={this.props.primary_minor}
+            certificate={this.props.certificate}
+          />
+        </div>
       </div>
     );
   }

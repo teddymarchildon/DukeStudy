@@ -67,12 +67,14 @@ class StudyForm extends React.Component {
   };
 
   handleSelectCourse = (courseNumber) => {
+    console.log(courseNumber)
     this.setState({
       favClass: courseNumber
     });
   };
 
   saveChanges = async () => {
+    console.log(this.state)
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://localhost:3000/api/v1/student/post', { method: 'POST', body: params })
   };
@@ -84,9 +86,9 @@ class StudyForm extends React.Component {
           <CardContent>
             <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
             <StudyTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
-            <StudyTextField label='Certificate' id='cert' value={this.props.certificate} onChange={this.handleChange}/>
-            <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
+            <StudyTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
             <StudyTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
+            <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
           </CardContent>
           <CardActions>
             <Button onClick={this.saveChanges} size="small"> Save </Button>
@@ -118,12 +120,12 @@ export default class EditProfilePage extends React.Component {
     return (
       <div>
         <SearchAppBar name={this.props.name}/>
-        <div style={{display: 'flex', alignItems: 'center'}}>
+        <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <StudyForm
             netid={this.props.netid}
             major={this.props.primary_major}
-            favClass={`${this.props.department} ${this.props.level}`}
+            favClass={this.props.course_number}
             favProf={this.props.favorite_professor}
             major={this.props.primary_major}
             minor={this.props.primary_minor}

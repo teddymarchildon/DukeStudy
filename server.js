@@ -90,8 +90,9 @@ app.prepare().then(() => {
 
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Student **')
+
+    
     let queryString = dbHelper.createUpdateStudentQueryString(req.body)
-    console.log(queryString)
     return submitQueryString(res, queryString);
   });
 

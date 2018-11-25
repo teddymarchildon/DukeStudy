@@ -8,17 +8,40 @@ import SearchAppBar from '../components/app_bar.js'
 import SideButtons from '../components/side_buttons.js'
 import fetch from 'node-fetch';
 import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+
+const styles = theme => ({
+  main: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+  groupCard: {
+    marginTop: theme.spacing.unit * 2
+  }
+});
 
 class GroupsContent extends React.Component {
 
   render() {
+    const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
       {this.props.groups.map((group, index) => (
-        <Card className={this.props.card}>
+        <Card className={classes.groupCard}>
           <CardContent>
-            <Typography key={index} className={this.props.title} color="textSecondary" gutterBottom>
-              Group {group.group_id}: {group.department} {group.level} has member {group.netid}
+            <Typography key={index} className={this.props.title} color="textPrimary" gutterBottom>
+              {group.department} {group.level}
+            </Typography>
+            <Typography key={index} className={this.props.title} color="textSecondary">
+              {group.netid}
             </Typography>
           </CardContent>
           <CardActions>
@@ -30,6 +53,10 @@ class GroupsContent extends React.Component {
     )
   }
 }
+
+GroupsContent.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 
 class GroupsPage extends React.Component {
@@ -50,15 +77,15 @@ class GroupsPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <main>
         <SearchAppBar name={this.props.name}/>
-        <div style={{display: 'flex', alignItems: 'center'}}>
+        <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <GroupsContent groups={this.props.groups} />
+          <GroupsContent groups={this.props.groups} classes={this.props.classes}/>
         </div>
-      </div>
+      </main>
     )
   };
 }
 
-export default GroupsPage
+export default withStyles(styles)(GroupsPage);

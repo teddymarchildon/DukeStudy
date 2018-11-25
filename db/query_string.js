@@ -28,3 +28,15 @@ exports.dropDownCourseQueryString = function dropDownCourseQueryString(departmen
   return `SELECT Course_Number, Department, Level FROM Course WHERE
   Department=\'${department}\';`
 }
+
+exports.selectTutoringQueryString = function selectTutoringQueryString(netid) {
+  return `SELECT * FROM Tutor WHERE NetID=\'${netid}\';`
+}
+
+exports.insertTutorQueryString = function insertTutorQueryString(data) {
+  return `INSERT INTO Tutor VALUES (\'${data['netid']}\', \'${data['rate']}\', \'${data['availability']}\');`
+}
+
+exports.updateTutorQueryString = function updateTutorQueryString(data) {
+  return `UPDATE Tutor SET Rate_Per_Hour=\'${data['rate']}\', Days_Available=\'${data['availability']}\' WHERE NetID=\'${data['netid']};`
+}

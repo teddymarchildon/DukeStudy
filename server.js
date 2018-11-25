@@ -69,6 +69,18 @@ app.prepare().then(() => {
   });
 
   /**
+    API For fetching tutoring information
+  */
+
+  server.get('/api/v1/tutoring/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting tutoring information for: ' + netid);
+
+    let queryString = dbHelper.selectTutoringQueryString(netid);
+    return submitQueryString(res, queryString);
+  });
+
+  /**
     Below is the updating information API
 
   */
@@ -91,8 +103,7 @@ app.prepare().then(() => {
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Student **')
 
-    
-    let queryString = dbHelper.createUpdateStudentQueryString(req.body)
+    let queryString = dbHelper.createUpdateStudentQueryString(req.body);
     return submitQueryString(res, queryString);
   });
 
@@ -103,6 +114,9 @@ app.prepare().then(() => {
   server.post('/api/v1/tutor/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Tutor **')
     console.log(req.body)
+
+    let queryString = dbHelper.insertTutorQueryString(req.body);
+    return submitQueryString(res, queryString);
   });
 
   /**

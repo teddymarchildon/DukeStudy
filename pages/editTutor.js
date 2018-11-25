@@ -10,6 +10,8 @@ import SideButtons from '../components/side_buttons.js';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import FormTextField from '../components/form_text_field.js';
+import url from 'url';
 
 const styles = theme => ({
   main: {
@@ -25,11 +27,27 @@ const styles = theme => ({
   },
 });
 
-class TutoringContent extends React.Component {
+class TutorForm extends React.Component {
 
-  handleRegister = event => {
+  constructor(props){
+    super(props);
+    this.state = {
+      netid: this.props.netid,
+      rate: this.props.rate_per_hour,
+      availability: this.props.days_available,
+    };
+  };
 
-  }
+  handleChange = (key, value) => {
+    this.setState({
+      [key]: value,
+    });
+  };
+
+  saveChanges = async event => {
+    let params = new URLSearchParams(this.state);
+    const res = await fetch('http://localhost:3000/api/v1/tutor/post', { method: 'POST', body: params })
+  };
 
   render() {
     const { classes } = this.props;
@@ -37,15 +55,12 @@ class TutoringContent extends React.Component {
       <div style={{width: '25%', margin: 'auto'}}>
         <Card className={this.props.card}>
           <CardContent>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Rate Per Hour: {this.props.info.rate_per_hour}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Availability: {this.props.info.days_available}
-            </Typography>
+            <FormTextField label='Rate Per Hour' id='rate' value={this.props.rate_per_hour} onChange={this.handleChange}/>
+            <br></br>
+            <FormTextField label='Availability' id='availability' value={this.props.days_available} onChange={this.handleChange}/>
           </CardContent>
           <CardActions>
-            <Button onClick={() => Router.push(`/editTutor?netid=${this.props.netid}`)} size="small"> Edit </Button>
+            <Button onClick={this.saveChanges} size="small"> Save </Button>
           </CardActions>
         </Card>
       </div>
@@ -53,7 +68,7 @@ class TutoringContent extends React.Component {
   };
 }
 
-TutoringContent.propTypes = {
+TutorForm.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
@@ -74,7 +89,7 @@ class TutoringPage extends React.Component {
         <SearchAppBar name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <TutoringContent netid={this.props.netid} info={this.props.tutorInfo}/>
+          <TutorForm netid={this.props.netid} info={this.props.tutorInfo}/>
         </div>
       </main >
     );

@@ -15,36 +15,7 @@ import TextField from '@material-ui/core/TextField';
 import url from 'url';
 import SideButtons from '../components/side_buttons.js';
 import CourseDropDown from '../components/course_drop_down.js';
-
-class StudyTextField extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: this.props.value,
-    };
-  }
-
-  handleChange = value => event => {
-    this.setState({
-      [value]: event.target.value,
-    });
-    this.props.onChange(this.props.id, event.target.value);
-  };
-
-  render() {
-    return (
-      <TextField
-        id="standard-name"
-        label={this.props.label}
-        className={this.props.textField}
-        value={this.state.value}
-        onChange={this.handleChange('value')}
-        margin="normal"
-      />
-    )
-  }
-}
+import FormTextField from '../components/form_text_field.js';
 
 class StudyForm extends React.Component {
 
@@ -67,14 +38,12 @@ class StudyForm extends React.Component {
   };
 
   handleSelectCourse = (courseNumber) => {
-    console.log(courseNumber)
     this.setState({
       favClass: courseNumber
     });
   };
 
   saveChanges = async () => {
-    console.log(this.state)
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://localhost:3000/api/v1/student/post', { method: 'POST', body: params })
   };
@@ -84,10 +53,10 @@ class StudyForm extends React.Component {
       <div style={{width: '25%', margin: '0 auto'}}>
         <Card className={this.props.card}>
           <CardContent>
-            <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
-            <StudyTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
-            <StudyTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
-            <StudyTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
+            <FormTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
+            <FormTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
+            <FormTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
+            <FormTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
             <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
           </CardContent>
           <CardActions>

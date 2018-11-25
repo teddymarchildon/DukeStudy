@@ -11,8 +11,9 @@ class CourseDropDown extends React.Component {
     this.state = {
       anchorDepartmentEl: null,
       anchorCourseEl: null,
-      selectedDepartment: null,
-      selectedCourse: null,
+      selectedDepartment: 'Department',
+      selectedCourseID: null,
+      selectedCourseName: 'Course',
       courses: [],
     };
   };
@@ -42,8 +43,10 @@ class CourseDropDown extends React.Component {
   handleCloseCourse = event => {
     this.setState({
       anchorCourseEl: null,
-      selectedCourse: event.target.id
+      selectedCourseID: event.target.id,
+      selectedCourseName: event.target.value,
     });
+    console.log(this.state)
   };
 
   render() {
@@ -56,7 +59,7 @@ class CourseDropDown extends React.Component {
           aria-haspopup="true"
           onClick={this.handleOpenDepartment}
         >
-          Department
+          {this.state.selectedDepartment}
         </Button>
         <Menu
           id='department-drop-down'
@@ -76,7 +79,7 @@ class CourseDropDown extends React.Component {
           aria-haspopup="true"
           onClick={this.handleOpenCourse}
         >
-          Course
+          {this.state.selectedCourseName}
         </Button>
         <Menu
           id="course-drop-down"
@@ -85,7 +88,7 @@ class CourseDropDown extends React.Component {
           onClose={this.handleCloseCourse}
         >
         {this.state.courses.map((course, index) => (
-          <MenuItem key={course.course_number} id={course.course_number} onClick={this.handleCloseCourse}>
+          <MenuItem key={course.course_number} id={course.course_number} value={course.level} onClick={this.handleCloseCourse}>
           {course.department} {course.level}
           </MenuItem>
         ))}

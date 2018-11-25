@@ -19,3 +19,12 @@ exports.groupsPageQueryString = function groupsPageQueryString(netid) {
   Study_Group ON In_Study_Group.Group_ID=Study_Group.Group_ID
   INNER JOIN Course ON Study_Group.Course_Number=Course.Course_Number WHERE In_Study_Group.NetID != \'${netid}\' AND In_Study_Group.Group_ID IN (SELECT Group_ID FROM In_Study_Group WHERE NetID=\'${netid}\');`
 }
+
+exports.dropDownDepartmentQueryString = function dropDownDepartmentQueryString() {
+  return `SELECT DISTINCT Department FROM Course;`
+}
+
+exports.dropDownCourseQueryString = function dropDownCourseQueryString(department) {
+  return `SELECT Course_Number, Department, Level FROM Course WHERE
+  Department=\'${department}\';`
+}

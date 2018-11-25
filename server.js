@@ -46,6 +46,29 @@ app.prepare().then(() => {
   });
 
   /**
+    API for getting the department data with a course drop down
+  */
+
+  server.get('/api/v1/dropdown/department', (req, res, next) => {
+    console.log('Selecting data to populate the Course Drop Down');
+
+    let queryString = dbHelper.dropDownDepartmentQueryString();
+    return submitQueryString(res, queryString);
+  });
+
+  /**
+    API for getting the course data with a course drop down
+  */
+
+  server.get('/api/v1/dropdown/course/:department', (req, res, next) => {
+    const department = req.params.department;
+    console.log('Selecting courses within dept: ' + department);
+
+    let queryString = dbHelper.dropDownCourseQueryString(department);
+    return submitQueryString(res, queryString);
+  });
+
+  /**
     Below is the updating information API
 
   */

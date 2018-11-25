@@ -13,7 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import url from 'url';
-import SideButtons from '../components/side_buttons.js'
+import SideButtons from '../components/side_buttons.js';
+import CourseDropDown from '../components/course_drop_down.js';
 
 class StudyTextField extends React.Component {
 
@@ -78,7 +79,7 @@ class StudyForm extends React.Component {
             <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
             <StudyTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <StudyTextField label='Certificate' id='cert' value={this.props.certificate} onChange={this.handleChange}/>
-            <StudyTextField label='Favorite Class' id='favClass' value={this.props.favClass} onChange={this.handleChange}/>
+            <CourseDropDown departments={this.props.departments} />
             <StudyTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
           </CardContent>
           <CardActions>
@@ -97,8 +98,13 @@ StudyForm.propTypes = {
 export default class EditProfilePage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid)
-    const studentJson = await student.json()
+    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
+    const studentJson = await student.json();
+
+    const departments = await fetch('http://localhost:3000/api/v1/dropdown/department');
+    const departmentsJson = await departments.json();
+
+    studentJson[0]['departments'] = departmentsJson;
     return studentJson[0];
   }
 
@@ -116,6 +122,7 @@ export default class EditProfilePage extends React.Component {
             major={this.props.primary_major}
             minor={this.props.primary_minor}
             certificate={this.props.certificate}
+            departments={this.props.departments}
           />
         </div>
       </div>

@@ -54,6 +54,16 @@ class GroupsContent extends React.Component {
   }
 }
 
+class NewGroupButton extends React.Component {
+  render() {
+    return (
+      <Button variant="contained" id='landing' color="Primary" onClick={() => Router.push(`/newGroup?netid=${this.props.netid}`)}>
+        New Group
+      </Button>
+    );
+  };
+}
+
 GroupsContent.propTypes = {
   classes: PropTypes.object.isRequired,
 };
@@ -82,6 +92,7 @@ class GroupsPage extends React.Component {
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <GroupsContent groups={this.props.groups} classes={this.props.classes}/>
+          <NewGroupButton netid={this.props.netid} />
         </div>
       </main>
     )

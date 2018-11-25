@@ -64,7 +64,6 @@ class CourseDropDown extends React.Component {
           id='department-drop-down'
           anchorEl={anchorDepartmentEl}
           open={Boolean(anchorDepartmentEl)}
-          onClose={this.handleClose}
         >
         {this.props.departments.map((department, index) => (
           <MenuItem key={department.department} id={department.department} onClick={this.handleCloseDepartment}>

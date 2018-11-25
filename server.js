@@ -69,6 +69,17 @@ app.prepare().then(() => {
   });
 
   /**
+    Selecting all users for dropdown
+  */
+
+  server.get('/api/v1/dropdown/user', (req, res, next) => {
+    console.log('Selecting all users for dropdown');
+
+    let queryString = dbHelper.allUsersQueryString();
+    return submitQueryString(res, queryString);
+  });
+
+  /**
     API For fetching tutoring information
   */
 

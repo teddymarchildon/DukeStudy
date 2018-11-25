@@ -25,7 +25,6 @@ class StudyTextField extends React.Component {
     };
   }
 
-
   handleChange = value => event => {
     this.setState({
       [value]: event.target.value,
@@ -67,8 +66,15 @@ class StudyForm extends React.Component {
     });
   };
 
-  saveChanges = () => {
-    saveChangesAsync(this.state)
+  handleSelectCourse = (courseNumber) => {
+    this.setState({
+      favClass: courseNumber
+    });
+  };
+
+  saveChanges = async () => {
+    let params = new URLSearchParams(this.state);
+    const res = await fetch('http://localhost:3000/api/v1/student/post', { method: 'POST', body: params })
   };
 
   render() {
@@ -79,7 +85,7 @@ class StudyForm extends React.Component {
             <StudyTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
             <StudyTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <StudyTextField label='Certificate' id='cert' value={this.props.certificate} onChange={this.handleChange}/>
-            <CourseDropDown departments={this.props.departments} />
+            <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
             <StudyTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
           </CardContent>
           <CardActions>
@@ -128,11 +134,4 @@ export default class EditProfilePage extends React.Component {
       </div>
     );
   }
-}
-
-async function saveChangesAsync(state) {
-  let params = new URLSearchParams(state);
-  const res = await fetch('http://localhost:3000/api/v1/student/post', { method: 'POST', body: params })
-  const json = await res.json();
-  return json;
 }

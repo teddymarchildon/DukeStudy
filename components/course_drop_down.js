@@ -37,7 +37,6 @@ class CourseDropDown extends React.Component {
      this.setState({
        courses: coursesJson,
      });
-
   };
 
   handleCloseCourse = event => {
@@ -46,7 +45,7 @@ class CourseDropDown extends React.Component {
       selectedCourseID: event.target.id,
       selectedCourseName: event.target.value,
     });
-    console.log(this.state)
+    this.props.onSelectCourse(event.target.id);
   };
 
   render() {

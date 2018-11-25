@@ -34,9 +34,5 @@ exports.selectTutoringQueryString = function selectTutoringQueryString(netid) {
 }
 
 exports.insertTutorQueryString = function insertTutorQueryString(data) {
-  return `INSERT INTO Tutor VALUES (\'${data['netid']}\', \'${data['rate']}\', \'${data['availability']}\');`
-}
-
-exports.updateTutorQueryString = function updateTutorQueryString(data) {
-  return `UPDATE Tutor SET Rate_Per_Hour=\'${data['rate']}\', Days_Available=\'${data['availability']}\' WHERE NetID=\'${data['netid']};`
+  return `INSERT INTO Tutor VALUES (\'${data['netid']}\', \'${data['rate']}\', \'${data['availability']}\') ON CONFLICT (NetID) DO UPDATE SET Rate_Per_Hour=\'${data['rate']}\', Days_Available=\'${data['availability']}\';`
 }

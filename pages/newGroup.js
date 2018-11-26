@@ -73,6 +73,9 @@ class NewGroupContent extends React.Component {
             Users
           </Typography>
           <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
         </CardContent>
         <CardActions>
           <Button onClick={this.saveChanges} size="small"> Save </Button>
@@ -87,22 +90,12 @@ NewGroupContent.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-class NewGroupButton extends React.Component {
-  render() {
-    return (
-      <Button variant="contained" id='landing' color="Primary" onClick={this.handleInformationClick}>
-        New Group
-      </Button>
-    );
-  };
-}
-
 class NewGroupPage extends React.Component {
 
   static async getInitialProps({ query }) {
     const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
     const departments = await fetch('http://localhost:3000/api/v1/dropdown/department');
-    const allUsers = await fetch('http://localhost:3000/api/v1/dropdown/user');
+    const allUsers = await fetch('http://localhost:3000/api/v1/dropdown/user/' + query.netid);
     const studentJson = await student.json();
     const departmentsJson = await departments.json();
     const userJson = await allUsers.json();

@@ -37,6 +37,14 @@ exports.insertTutorQueryString = function insertTutorQueryString(data) {
   return `INSERT INTO Tutor VALUES (\'${data['netid']}\', \'${data['rate']}\', \'${data['availability']}\') ON CONFLICT (NetID) DO UPDATE SET Rate_Per_Hour=\'${data['rate']}\', Days_Available=\'${data['availability']}\';`
 }
 
-exports.allUsersQueryString = function allUsersQueryString() {
-  return 'SELECT NetID, Name FROM Student;'
+exports.allUsersQueryString = function allUsersQueryString(netid) {
+  return `SELECT NetID, Name FROM Student WHERE NetID != \'${netid}\';`
+}
+
+exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(groupID, courseID, year) {
+  return `INSERT INTO Study_Group VALUES (\'${groupID}\', \'${courseID}\', \'${year}\');`
+}
+
+exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, netID) {
+  return `INSERT INTO In_Study_Group VALUES (\'${groupID}\', \'${netID}\');`
 }

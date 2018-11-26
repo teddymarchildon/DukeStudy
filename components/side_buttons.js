@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const styles = theme => ({
   main: {
     width: 'auto',
-    display: 'block', // Fix IE 11 issue.
+    display: 'block',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
@@ -19,7 +19,7 @@ const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
     marginTop: 10,
-    left: 100
+    left: 300
   },
   input: {
     display: 'none',

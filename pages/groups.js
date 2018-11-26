@@ -25,7 +25,13 @@ const styles = theme => ({
   },
   groupCard: {
     marginTop: theme.spacing.unit * 2
-  }
+  },
+  button: {
+    margin: theme.spacing.unit,
+    marginTop: 10,
+    right: 300,
+    height: 'auto'
+  },
 });
 
 class GroupsContent extends React.Component {
@@ -54,20 +60,26 @@ class GroupsContent extends React.Component {
   }
 }
 
-class NewGroupButton extends React.Component {
-  render() {
-    return (
-      <Button variant="contained" id='landing' color="Primary" onClick={() => Router.push(`/newGroup?netid=${this.props.netid}`)}>
-        New Group
-      </Button>
-    );
-  };
-}
-
 GroupsContent.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
+class NewGroupButton extends React.Component {
+  render() {
+    const { classes } = this.props;
+    return (
+      <main>
+        <Button variant="contained" id='landing' className={classes.button} color="Primary" onClick={() => Router.push(`/newGroup?netid=${this.props.netid}`)}>
+          New Group
+        </Button>
+      </main>
+    );
+  };
+}
+
+NewGroupButton.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
 
 class GroupsPage extends React.Component {
 
@@ -86,13 +98,14 @@ class GroupsPage extends React.Component {
   }
 
   render() {
+    const NewGroupButtonS = withStyles(styles)(NewGroupButton);
     return (
       <main>
         <SearchAppBar name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <GroupsContent groups={this.props.groups} classes={this.props.classes}/>
-          <NewGroupButton netid={this.props.netid} />
+          <NewGroupButtonS netid={this.props.netid} />
         </div>
       </main>
     )

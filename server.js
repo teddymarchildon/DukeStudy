@@ -2,7 +2,7 @@ const express = require('express')
 const next = require('next')
 const dbHelper = require('./db/query_string.js');
 const config = require('./db/config.js')
-const { Client } = require('pg')
+const { Pool } = require('pg')
 var bodyParser = require('body-parser')
 
 const dev = process.env.NODE_ENV !== 'production'
@@ -14,6 +14,12 @@ const router = express.Router();
 app.prepare().then(() => {
   const server = express();
   server.use(bodyParser.urlencoded({ extended: false }));
+
+  /**
+  initialize the DB
+  */
+
+  const pool = new Pool(config.config)
 
   /**
     Here is the API for selecting information to display
@@ -28,7 +34,7 @@ app.prepare().then(() => {
     console.log('Selecting data for: ' + netid)
 
     let queryString = dbHelper.createSelectQueryString(netid);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
@@ -39,10 +45,8 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting Group data for netid: ' + netid);
 
-    // let queryString = dbHelper.selectGroupsQueryString(netid);
-    // return submitQueryString(res, queryString);
     let queryString = dbHelper.groupsPageQueryString(netid);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
@@ -53,7 +57,7 @@ app.prepare().then(() => {
     console.log('Selecting data to populate the Course Drop Down');
 
     let queryString = dbHelper.dropDownDepartmentQueryString();
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
@@ -65,18 +69,19 @@ app.prepare().then(() => {
     console.log('Selecting courses within dept: ' + department);
 
     let queryString = dbHelper.dropDownCourseQueryString(department);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
     Selecting all users for dropdown
   */
 
-  server.get('/api/v1/dropdown/user', (req, res, next) => {
+  server.get('/api/v1/dropdown/user/:netid', (req, res, next) => {
+    const netid = req.params.netid;
     console.log('Selecting all users for dropdown');
 
-    let queryString = dbHelper.allUsersQueryString();
-    return submitQueryString(res, queryString);
+    let queryString = dbHelper.allUsersQueryString(netid);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
@@ -88,7 +93,7 @@ app.prepare().then(() => {
     console.log('Selecting tutoring information for: ' + netid);
 
     let queryString = dbHelper.selectTutoringQueryString(netid);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, true);
   });
 
   /**
@@ -104,7 +109,7 @@ app.prepare().then(() => {
     const name = req.body.name;
 
     let queryString = dbHelper.createNewUserQueryString(netid, name);
-    return submitQueryString(queryString);
+    return submitQueryString(pool, queryString, false);
   });
 
   /**
@@ -115,7 +120,7 @@ app.prepare().then(() => {
     console.log('** RECEIVED POST REQUEST for Student **')
 
     let queryString = dbHelper.createUpdateStudentQueryString(req.body);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, false);
   });
 
   /**
@@ -127,7 +132,7 @@ app.prepare().then(() => {
     console.log(req.body)
 
     let queryString = dbHelper.insertTutorQueryString(req.body);
-    return submitQueryString(res, queryString);
+    return submitQueryString(pool, res, queryString, false);
   });
 
   /**
@@ -166,9 +171,21 @@ app.prepare().then(() => {
     //Here we need to generate a random ID, and be sure to
     //return that ID to the browser
     //The parameter should be the courseID
-    console.log('** RECEIVED POST REQUEST for creating a new study group **')
-    console.log(req.body)
+    console.log('** RECEIVED POST REQUEST for creating a new study group **');
+    console.log(req.body);
 
+    const groupID = generateGroupID();
+    const course = req.body.courseID;
+    const year = 'Fall 2018';
+    let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
+    let result = submitQueryString(pool, res, studyGroupQueryString, false);
+
+    const users = req.body.users.split(",");
+    for (user in users) {
+      let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users[user])
+      let result = submitQueryString(pool, res, inStudyGroupQueryString, false);
+    }
+    return;
   });
 
   /**
@@ -178,7 +195,8 @@ app.prepare().then(() => {
   server.post('/api/v1/inStudyGroup/post', (req, res, next) => {
     //We need to be sure we have the GroupID here
     console.log('** RECEIVED POST REQUEST for adding to a study group **')
-    console.log(req.body)
+    console.log(req.body);
+
 
   });
 
@@ -200,17 +218,23 @@ app.prepare().then(() => {
   process.exit(1)
 })
 
-submitQueryString = function(res, queryString) {
-  const client = new Client(config.config);
-  client.connect();
+submitQueryString = function(pool, res, queryString, shouldSend) {
   console.log('Submitting query: ' + queryString);
-  client.query(queryString, (dberr, dbres) => {
+  pool.query(queryString, (dberr, dbres) => {
     if (dberr != null) {
       console.error(dberr);
       return null;
     }
-    client.end();
     console.log('results: ', dbres.rows);
-    return res.json(dbres.rows);
+    if (shouldSend) {
+      return res.json(dbres.rows);
+    }
+    return;
   });
+}
+
+generateGroupID = function() {
+  let max = 9999;
+  let min = 1;
+  return Math.floor(Math.random() * (max-min) + min);
 }

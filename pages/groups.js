@@ -43,12 +43,14 @@ class GroupsContent extends React.Component {
       {this.props.groups.map((group, index) => (
         <Card className={classes.groupCard}>
           <CardContent>
-            <Typography key={index} className={this.props.title} color="textPrimary" gutterBottom>
+            <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
               {group.department} {group.level}
             </Typography>
-            <Typography key={index} className={this.props.title} color="textSecondary">
-              {group.netid}
-            </Typography>
+            {group.members.map((member, index2) => (
+              <Typography key={index2} className={classes.title} color="textSecondary">
+                {member}
+              </Typography>
+            ))}
           </CardContent>
           <CardActions>
             <Button onClick={() => Router.push(`/editGroups?netid=${this.props.netid}&groupid=${group.group.group_id}`)} size="small"> Edit </Button>
@@ -89,10 +91,30 @@ class GroupsPage extends React.Component {
     const studentJson = await student.json();
     const groupsJson = await groups.json();
 
+    const groupDict = {};
+
+    groupsJson.map(function (group, index) {
+      if (!(group.group_id in groupDict)) {
+        groupDict[group.group_id] = [];
+      }
+      var members = groupDict[group.group_id];
+      members.push(group.netid);
+      groupDict[group.group_id] = members;
+      group['members'] = members;
+    });
+
+    var groupsUnique = {};
+    var finalGroups = [];
+    groupsJson.map(function(group, index) {
+      if (!(group.group_id in groupsUnique)) {
+        finalGroups.push(group);
+        groupsUnique[group.group_id] = 1;
+      }
+    });
     const props = {
       netid: studentJson[0].netid,
       name: studentJson[0].name,
-      groups: groupsJson
+      groups: finalGroups
     };
     return props;
   }

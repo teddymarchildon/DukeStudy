@@ -110,6 +110,17 @@ app.prepare().then(() => {
   });
 
   /**
+    Flow API
+  */
+  server.get('/api/v1/flow/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting flow data for: ' + netid);
+
+    let queryString = dbHelper.flowQueryString(netid);
+    return submitQueryString(pool, res, queryString, true);
+  });
+
+  /**
     Below is the updating information API
 
   */
@@ -122,7 +133,7 @@ app.prepare().then(() => {
     const name = req.body.name;
 
     let queryString = dbHelper.createNewUserQueryString(netid, name);
-    return submitQueryString(pool, queryString, false);
+    return submitQueryString(pool, res, queryString, false);
   });
 
   /**

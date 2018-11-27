@@ -13,7 +13,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import Router from 'next/router'
-
+import url from 'url';
 
 const styles = theme => ({
   main: {
@@ -95,7 +95,7 @@ class Login extends React.Component {
     }
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]
-      registerNewUser(netid)
+      registerNewUser('test', netid)
       Router.push(`/userFlow?netid=${netid}`)
     } else {
       alert('Make sure you are using your Duke email')
@@ -167,9 +167,12 @@ Login.propTypes = {
 
 export default withStyles(styles)(Login)
 
-async function registerNewUser(netid) {
-  const res = await fetch('http://localhost:3000/api/v1/insert/' + netid);
-  const json = await res.json();
-  console.log('submitted new user request: ', json)
+async function registerNewUser(name, netid) {
+  let obj = {
+    netid: netid,
+    name: name,
+  };
+  let params = new URLSearchParams(obj);
+  const res = await fetch('http://localhost:3000/api/v1/user/post', { method: 'POST', body: params });
   return json;
 }

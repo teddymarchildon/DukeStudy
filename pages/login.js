@@ -174,5 +174,5 @@ async function registerNewUser(name, netid) {
   };
   let params = new URLSearchParams(obj);
   const res = await fetch('http://localhost:3000/api/v1/user/post', { method: 'POST', body: params });
-  return json;
+  return;
 }

@@ -140,6 +140,26 @@ app.prepare().then(() => {
   API for updating User Info
   */
 
+  server.post('/api/v1/takesCourses/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for Taking Courses **')
+    const netid = req.body.netid;
+    const courses = JSON.parse(req.body.selectedCourses);
+    const favCourse = req.body.favoriteCourse;
+
+    let queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
+    submitQueryString(pool, res, queryString, false);
+
+    for (course in courses) {
+      let queryString = dbHelper.takesCourseQueryString(netid, courses[course].courseNumber);
+      submitQueryString(pool, res, queryString, false);
+    }
+    return res.json({success: true});
+  });
+
+  /**
+    Takes Courses API
+  */
+
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Student **')
 

@@ -10,6 +10,8 @@ import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import CourseDropDown from '../components/course_drop_down.js';
 import RatingsDropDown from '../components/ratings_drop_down.js';
+import Checkbox from '@material-ui/core/Checkbox';
+import url from 'url';
 
 const styles = theme => ({
   main: {
@@ -29,7 +31,8 @@ const styles = theme => ({
   doneButton: {
     margin: theme.spacing.unit,
     marginTop: 20,
-    right: 400,
+    alignItems: 'right',
+    left: 450,
     height: 'auto'
   },
   addButton: {
@@ -65,12 +68,13 @@ class FlowContent extends React.Component {
       renderedCourses: [1],
       selectedCourses: [],
       currentCourse: null,
+      favoriteCourse: null,
     };
   }
 
   onSelectCourse = (courseNumber) => {
     var course = {
-      courseNumer: courseNumber
+      courseNumber: courseNumber
     }
     course['qualityRating'] = -1;
     course['qualityInstructionRating'] = -1;
@@ -89,7 +93,7 @@ class FlowContent extends React.Component {
     renderedCourses.push(1);
     this.setState({
       renderedCourses: renderedCourses
-    })
+    });
   }
 
   onSelectedQualityCourse = rating => {
@@ -108,13 +112,41 @@ class FlowContent extends React.Component {
     this.state.currentCourse['workloadRating'] = rating;
   }
 
+  onFavoriteClassChange = (event, checked) => {
+    if (checked) {
+      this.setState({
+        favoriteCourse: this.state.currentCourse,
+      });
+    }
+  }
+
+  handleDone = async (event) => {
+    var obj = {
+      netid: this.props.netid,
+      selectedCourses: JSON.stringify(this.state.selectedCourses),
+      favoriteCourse: this.state.favoriteCourse.courseNumber,
+    };
+    let params = new URLSearchParams(obj);
+    const res = await fetch('http://localhost:3000/api/v1/takesCourses/post', {
+      method: 'POST',
+      body: params
+    });
+    const json = await res.json();
+    Router.push(`/landing?netid=${this.props.netid}`)
+  }
+
   render() {
     const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
-        <Button variant="contained" className={classes.addButton} color="secondary" onClick={this.onAddCourse}>
-          Add Course
-        </Button>
+        <div style={{display: 'flex', alignItems: 'top'}}>
+          <Button variant="contained" className={classes.addButton} color="secondary" onClick={this.onAddCourse}>
+            Add Course
+          </Button>
+          <Button variant="contained" className={classes.doneButton} color="primary" onClick={this.handleDone}>
+            Done
+          </Button>
+        </div>
         {this.state.renderedCourses.map((course, index) => (
           <Card className={classes.card}>
             <CardContent>
@@ -138,6 +170,10 @@ class FlowContent extends React.Component {
                 Workload
               </Typography>
               <RatingsDropDown onSelectedRating={this.onSelectedWorkload} />
+              <Typography className={classes.title} color="textSecondary">
+                Is this your favorite class?
+              </Typography>
+              <Checkbox value='favorite' color="primary" onChange={this.onFavoriteClassChange}/>
             </CardContent>
           </Card>
         ))}
@@ -147,32 +183,6 @@ class FlowContent extends React.Component {
 }
 
 FlowContent.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-class NextButton extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  handleClick = event => {
-    Router.push(`/landing?netid=${this.props.netid}`)
-  }
-
-  render() {
-    const { classes } = this.props;
-    return (
-      <main>
-        <Button variant="contained" className={classes.doneButton} color="primary" onClick={this.handleClick}>
-          Done
-        </Button>
-      </main>
-    );
-  };
-}
-
-NextButton.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
@@ -192,8 +202,7 @@ class Flow extends React.Component {
       <main>
         <Header />
         <div style={{display: 'flex', alignItems: 'top'}}>
-          <FlowContent classes={this.props.classes} departments={this.props.departments} netid={this.props.netid}/>
-          <NextButton netid={this.props.netid} classes={this.props.classes}/>
+          <FlowContent netid={this.props.netid} classes={this.props.classes} departments={this.props.departments} netid={this.props.netid}/>
         </div>
       </main>
     );

@@ -68,7 +68,8 @@ Year_Semester VARCHAR(20) NOT NULL,
 -- Section_Number DECIMAL(3,0),
 Grade DECIMAL(3,0),
 PRIMARY KEY (NetID, Course_Number, Year_Semester),
-FOREIGN KEY (NetID) REFERENCES Student(NetID),
+FOREIGN KEY (NetID) REFERENCES Student(NetID));,
+--MODIFIED THIS SLIGHTLY
 FOREIGN KEY (Course_Number, Year_Semester) REFERENCES Teaches_Course(Course_Number, Year_Semester));
 
 CREATE TABLE Rates_Course

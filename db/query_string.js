@@ -56,3 +56,11 @@ exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString
 exports.flowQueryString = function flowQueryString(netid) {
   return `SELECT * FROM Student WHERE NetID=\'${netid}\';`
 }
+
+exports.favoriteClassQueryString = function favoriteClassQueryString(netid, courseNumber) {
+  return `UPDATE Student SET Favorite_Class=\'${courseNumber}\' WHERE NetID=\'${netid}\';`
+}
+
+exports.takesCourseQueryString = function takesCourseQueryString(netid, courseNumber) {
+  return `INSERT INTO Takes_Course VALUES (\'${netid}\', \'${courseNumber}\', \'Fall18\');`
+}

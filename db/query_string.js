@@ -48,3 +48,7 @@ exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(group
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, netID) {
   return `INSERT INTO In_Study_Group VALUES (\'${groupID}\', \'${netID}\');`
 }
+
+exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {
+  return `DELETE FROM In_Study_Group WHERE Group_ID=\'${groupID}\' AND NetID=\'${netid}\';`
+}

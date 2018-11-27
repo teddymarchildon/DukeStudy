@@ -97,6 +97,19 @@ app.prepare().then(() => {
   });
 
   /**
+    Hits this API to remove the specified user from the specified group
+  */
+
+  server.get('/api/v1/leaveStudyGroup', (req, res, next) => {
+    const netid = req.query.netid;
+    const groupID = req.query.groupID;
+    console.log('Removing user: ' + netid + ' from group: ' + groupID);
+
+    let queryString = dbHelper.removeUserFromGroupQueryString(netid, groupID);
+    return submitQueryString(pool, res, queryString, true);
+  });
+
+  /**
     Below is the updating information API
 
   */

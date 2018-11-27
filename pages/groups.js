@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 const styles = theme => ({
   main: {
     width: 'auto',
-    display: 'block', // Fix IE 11 issue.
+    display: 'block',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
     [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
@@ -36,6 +36,17 @@ const styles = theme => ({
 
 class GroupsContent extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
+  handleLeaveGroup = async (groupID) => {
+    console.log(groupID);
+    const result = await fetch('http://localhost:3000/api/v1/leaveStudyGroup?netid=' + this.props.netid + '&groupID=' + groupID);
+    const json = await result.json();
+    window.location.reload();
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -53,7 +64,7 @@ class GroupsContent extends React.Component {
             ))}
           </CardContent>
           <CardActions>
-            <Button onClick={() => Router.push(`/editGroups?netid=${this.props.netid}&groupid=${group.group.group_id}`)} size="small"> Edit </Button>
+            <Button value={group.group_id} onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>
           </CardActions>
         </Card>
         ))}
@@ -126,7 +137,7 @@ class GroupsPage extends React.Component {
         <SearchAppBar name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <GroupsContent groups={this.props.groups} classes={this.props.classes}/>
+          <GroupsContent netid={this.props.netid} groups={this.props.groups} classes={this.props.classes}/>
           <NewGroupButtonS netid={this.props.netid} />
         </div>
       </main>

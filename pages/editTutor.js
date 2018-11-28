@@ -48,7 +48,6 @@ class TutorForm extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
         <Card className={this.props.card}>

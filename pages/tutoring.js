@@ -64,7 +64,11 @@ class TutoringPage extends React.Component {
     const tutor = await fetch('http://localhost:3000/api/v1/tutoring/' + query.netid);
     const studentJson = await student.json();
     const tutorJson = await tutor.json();
-    studentJson[0]['tutorInfo'] = tutorJson[0];
+    if (tutorJson[0] == null) {
+      studentJson[0]['tutorInfo'] = []
+    } else {
+      studentJson[0]['tutorInfo'] = tutorJson[0];
+    }
     return studentJson[0];
   }
 

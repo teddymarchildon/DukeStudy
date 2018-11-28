@@ -1,17 +1,11 @@
-import Link from 'next/link'
 import React, { Component } from "react"
-import { withRouter } from 'next/router'
 import fetch from 'node-fetch';
 import SearchAppBar from '../components/app_bar.js'
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import MenuItem from '@material-ui/core/MenuItem';
-import TextField from '@material-ui/core/TextField';
 import url from 'url';
 import SideButtons from '../components/side_buttons.js';
 import CourseDropDown from '../components/course_drop_down.js';

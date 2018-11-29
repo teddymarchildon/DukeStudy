@@ -36,7 +36,7 @@ class NewGroupContent extends React.Component {
       department: null,
       level: null,
       users:[this.props.netid]
-    }
+    };
   }
 
   onSelectCourse = (courseNumber) => {

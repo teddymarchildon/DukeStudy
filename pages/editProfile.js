@@ -10,6 +10,22 @@ import url from 'url';
 import SideButtons from '../components/side_buttons.js';
 import CourseDropDown from '../components/course_drop_down.js';
 import FormTextField from '../components/form_text_field.js';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = theme => ({
+  main: {
+    width: 'auto',
+    display: 'block', // Fix IE 11 issue.
+    marginLeft: theme.spacing.unit * 3,
+    marginRight: theme.spacing.unit * 3,
+    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
+      width: 400,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+});
 
 class StudyForm extends React.Component {
 
@@ -51,7 +67,10 @@ class StudyForm extends React.Component {
             <FormTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <FormTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
             <FormTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
-            <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
+              <Typography className={this.props.title} color='textSecondary'>
+                Favorite Course
+              </Typography>
+          <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
           </CardContent>
           <CardActions>
             <Button onClick={this.saveChanges} size="small"> Save </Button>
@@ -66,7 +85,7 @@ StudyForm.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default class EditProfilePage extends React.Component {
+class EditProfilePage extends React.Component {
 
   static async getInitialProps({ query }) {
     const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
@@ -94,9 +113,12 @@ export default class EditProfilePage extends React.Component {
             minor={this.props.primary_minor}
             certificate={this.props.certificate}
             departments={this.props.departments}
+            title={this.props.title}
           />
         </div>
       </div>
     );
   }
 }
+
+export default withStyles(styles)(EditProfilePage);

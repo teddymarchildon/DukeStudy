@@ -115,6 +115,17 @@ app.prepare().then(() => {
   });
 
   /**
+    API for searching a term
+  */
+
+  server.get('/api/v1/search/:term', (req, res, next) => {
+    const term = req.params.term;
+    console.log('Submitting search for term: ' + term);
+
+    return;
+  });
+
+  /**
     Below is the updating information API
 
   */

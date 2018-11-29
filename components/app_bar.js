@@ -10,6 +10,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import LogoutButton from './log_out_button.js';
+import fetch from 'node-fetch';
 
 const styles = theme => ({
   root: {
@@ -78,9 +79,10 @@ class SearchAppBar extends React.Component {
     super(props)
   }
 
-  onKeyPress = (event) => {
+  onKeyPress = async (event) => {
     if (event.key=='Enter') {
-      console.log(event.target.value);
+      const search = await fetch('http://localhost:3000/api/v1/search/' + event.target.value);
+      const result = await search.json();
     }
   }
 

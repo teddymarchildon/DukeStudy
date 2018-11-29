@@ -41,10 +41,19 @@ class GroupsContent extends React.Component {
   }
 
   handleLeaveGroup = async (groupID) => {
-    console.log(groupID);
     const result = await fetch('http://localhost:3000/api/v1/leaveStudyGroup?netid=' + this.props.netid + '&groupID=' + groupID);
     const json = await result.json();
     window.location.reload();
+  }
+
+  handleContactGroup = async (members) => {
+    var recipients = '';
+    members.map(function(member) {
+      recipients += `${member}@duke.edu,`;
+    });
+    recipients = recipients.substring(0, recipients.length - 1);
+    const mailString = `mailto:${recipients}`;
+    window.location.href = mailString;
   }
 
   render() {
@@ -65,6 +74,7 @@ class GroupsContent extends React.Component {
           </CardContent>
           <CardActions>
             <Button onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>
+            <Button onClick={() => this.handleContactGroup(group.members)} size="small"> Contact Group </Button>
           </CardActions>
         </Card>
         ))}

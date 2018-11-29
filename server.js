@@ -1,7 +1,7 @@
 const express = require('express')
 const next = require('next')
 const dbHelper = require('./db/query_string.js');
-const config = require('./db/config.js')
+const db = require('./db/query.js');
 const { Pool } = require('pg')
 var bodyParser = require('body-parser')
 
@@ -16,12 +16,6 @@ app.prepare().then(() => {
   server.use(bodyParser.urlencoded({ extended: false }));
 
   /**
-  initialize the DB
-  */
-
-  const pool = new Pool(config.config)
-
-  /**
     Here is the API for selecting information to display
   */
 
@@ -34,7 +28,7 @@ app.prepare().then(() => {
     console.log('Selecting data for: ' + netid)
 
     let queryString = dbHelper.createSelectQueryString(netid);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -46,7 +40,7 @@ app.prepare().then(() => {
     console.log('Selecting Group data for netid: ' + netid);
 
     let queryString = dbHelper.groupsPageQueryString(netid);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -57,7 +51,7 @@ app.prepare().then(() => {
     console.log('Selecting data to populate the Course Drop Down');
 
     let queryString = dbHelper.dropDownDepartmentQueryString();
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -69,7 +63,7 @@ app.prepare().then(() => {
     console.log('Selecting courses within dept: ' + department);
 
     let queryString = dbHelper.dropDownCourseQueryString(department);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -81,7 +75,7 @@ app.prepare().then(() => {
     console.log('Selecting all users for dropdown');
 
     let queryString = dbHelper.allUsersQueryString(netid);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -93,7 +87,7 @@ app.prepare().then(() => {
     console.log('Selecting tutoring information for: ' + netid);
 
     let queryString = dbHelper.selectTutoringQueryString(netid);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -106,7 +100,7 @@ app.prepare().then(() => {
     console.log('Removing user: ' + netid + ' from group: ' + groupID);
 
     let queryString = dbHelper.removeUserFromGroupQueryString(netid, groupID);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -117,7 +111,7 @@ app.prepare().then(() => {
     console.log('Selecting flow data for: ' + netid);
 
     let queryString = dbHelper.flowQueryString(netid);
-    return submitQueryString(pool, res, queryString, true);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -133,7 +127,7 @@ app.prepare().then(() => {
     const name = req.body.name;
 
     let queryString = dbHelper.createNewUserQueryString(netid, name);
-    return submitQueryString(pool, res, queryString, false);
+    return db.submitQueryString(res, queryString, false);
   });
 
   /**
@@ -147,11 +141,11 @@ app.prepare().then(() => {
     const favCourse = req.body.favoriteCourse;
 
     let queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
-    submitQueryString(pool, res, queryString, false);
+    db.submitQueryString(res, queryString, false);
 
     for (course in courses) {
       let queryString = dbHelper.takesCourseQueryString(netid, courses[course].courseNumber);
-      submitQueryString(pool, res, queryString, false);
+      db.submitQueryString(res, queryString, false);
     }
     return res.json({success: true});
   });
@@ -164,7 +158,7 @@ app.prepare().then(() => {
     console.log('** RECEIVED POST REQUEST for Student **')
 
     let queryString = dbHelper.createUpdateStudentQueryString(req.body);
-    return submitQueryString(pool, res, queryString, false);
+    return db.submitQueryString(res, queryString, false);
   });
 
   /**
@@ -176,7 +170,7 @@ app.prepare().then(() => {
     console.log(req.body)
 
     let queryString = dbHelper.insertTutorQueryString(req.body);
-    return submitQueryString(pool, res, queryString, false);
+    return db.submitQueryString(res, queryString, false);
   });
 
   /**
@@ -222,12 +216,12 @@ app.prepare().then(() => {
     const course = req.body.courseID;
     const year = 'Fall 2018';
     let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
-    let result = submitQueryString(pool, res, studyGroupQueryString, false);
+    let result = db.submitQueryString(pool, res, studyGroupQueryString, false);
 
     const users = req.body.users.split(",");
     for (user in users) {
       let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users[user])
-      let result = submitQueryString(pool, res, inStudyGroupQueryString, false);
+      let result = db.submitQueryString(pool, res, inStudyGroupQueryString, false);
     }
     return;
   });
@@ -261,21 +255,6 @@ app.prepare().then(() => {
   console.error(ex.stack)
   process.exit(1)
 })
-
-submitQueryString = function(pool, res, queryString, shouldSend) {
-  console.log('Submitting query: ' + queryString);
-  pool.query(queryString, (dberr, dbres) => {
-    if (dberr != null) {
-      console.error(dberr);
-      return null;
-    }
-    console.log('results: ', dbres.rows);
-    if (shouldSend) {
-      return res.json(dbres.rows);
-    }
-    return;
-  });
-}
 
 generateGroupID = function() {
   let max = 9999;

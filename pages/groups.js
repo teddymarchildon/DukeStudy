@@ -73,8 +73,8 @@ class GroupsContent extends React.Component {
             ))}
           </CardContent>
           <CardActions>
-            <Button onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>
             <Button onClick={() => this.handleContactGroup(group.members)} size="small"> Contact Group </Button>
+            <Button onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>            
           </CardActions>
         </Card>
         ))}

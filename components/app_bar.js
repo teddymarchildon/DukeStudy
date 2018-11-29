@@ -78,6 +78,12 @@ class SearchAppBar extends React.Component {
     super(props)
   }
 
+  onKeyPress = (event) => {
+    if (event.key=='Enter') {
+      console.log(event.target.value);
+    }
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -98,6 +104,7 @@ class SearchAppBar extends React.Component {
                   root: classes.inputRoot,
                   input: classes.inputInput,
                 }}
+                onKeyPress={this.onKeyPress}
               />
             </div>
             <LogoutButton props={classes}/>

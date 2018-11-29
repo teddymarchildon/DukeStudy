@@ -79,6 +79,7 @@ class CourseDropDown extends React.Component {
         >
           {this.state.selectedCourseName}
         </Button>
+        
         <Menu
           id="course-drop-down"
           anchorEl={anchorCourseEl}

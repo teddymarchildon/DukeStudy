@@ -13,7 +13,6 @@ class RatingsDropDown extends React.Component {
     };
   }
 
-
   handleClick = event => {
     this.setState({
       anchorEl: event.currentTarget,

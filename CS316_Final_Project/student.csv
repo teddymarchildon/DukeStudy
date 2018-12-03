@@ -257,7 +257,7 @@ rtk12,Rob Kraeling,NURSING,,,2022,3.64,tdo3,7450
 kc306,Ka Man Misty Choi,NURSING,,,2019,3.66,hmku,23623
 ifm3,Bella Miller,PHYSICS,,,2021,3.81,dt35,20142
 ta121,Taha Ahsin,SPANISH,POLSCI,,2019,2.73,kposs,10050
-ds382,Dontavius Sanders,COMPSCI,,,2020,3.66,kf134,
+ds382,Dontavius Sanders,COMPSCI,,,2020,3.66,kf134,10050
 mm738,Michelle Mao,POLSCI,NURSING,,2020,2.51,jrc105,8566
 ys238,YuQin Shen,ENGLISH,VMS,,2019,3.8,bz61,15291
 jc586,Jenna Clayborn,COMPSCI,,,2022,3.37,yc78,2628
@@ -288,7 +288,7 @@ ql98,Qingzhong Liang,STA,ECON,,2021,2.85,tholmes,22620
 wf47,Winnie Filemonsen,PSY,,,2022,2.58,jfcmd,8801
 skw31,Sheridan Wilbur,NURSING,,,2019,3.86,aa173,23091
 cds58,Courtney Sanford,ECON,,,2020,2.98,pn33,20042
-ecp30,Elizabeth Petersen,BIOLOGY,PSY,,2021,3.95,wpo,
+ecp30,Elizabeth Petersen,BIOLOGY,PSY,,2021,3.95,wpo,20042
 srb67,Shefali Bijwadia,POLSCI,,,2021,2.71,verko001,1911
 oco3,Nanma Okeani,ECON,,,2020,2.86,ans33,14831
 jmg126,Jason Gerber,NEUROSCI,BME,,2021,2.52,diber001,22041
@@ -350,7 +350,7 @@ sac67,Stephen Childs,BME,PUBPOL,,2020,2.82,bjc18,18813
 vr80,Vanessa Real Williams,EDUC,,,2022,2.86,mameyer,3559
 eaw70,Emily Wittke,ENVIRON,,,2020,3.89,js277,15522
 go19,Gaston Onetto,PHYSICS,,,2021,2.97,cpr,16816
-mdc56,Mia Carlyle,ECON,,,2020,3,avl9,15961
+mdc56,Mia Carlyle,ECON,,,2020,3.0,avl9,15961
 hso4,Holly O'Hearn,BIOLOGY,,,2019,2.68,bjg22,15486
 arc66,Alyssa Calland,EDUC,,,2021,2.92,owenw,3532
 ms612,Michael Saporito,BME,,,2022,2.67,plange,21163
@@ -482,7 +482,7 @@ kc345,Karina Chavez Santana,PUBPOL,,,2021,2.67,pm78,22831
 mbo10,Melanie Overcash,CULANTH,,,2019,3.38,jonm,12560
 pec16,Peyton Cox,HISTORY,ECON,,2019,3.13,myers011,21836
 abc49,Amy Cheng,ECON,BIOLOGY,,2021,2.85,rodri001,15965
-rw193,Ruixin Wang,NURSING,ECON,,2022,3,jk150,20742
+rw193,Ruixin Wang,NURSING,ECON,,2022,3.0,jk150,20742
 nb197,Nitin Bansal,PSY,POLSCI,,2021,2.71,manga002,9015
 mm735,Maurice McIntyre,CULANTH,,,2022,3.72,parke001,21753
 lw252,Liqi Wang,PUBPOL,,,2020,2.55,gurle002,13005
@@ -532,7 +532,7 @@ nc150,Narayan Chetry,COMPSCI,CHEM,,2020,3.71,skiban,2606
 gj46,Geonsoo Jin,NURSING,,,2020,3.39,lewis013,13564
 dmp54,Dayna Price,SOCIOL,STA,,2021,2.75,dc275,9881
 tp168,Tommy Pratt,PHYSICS,PUBPOL,,2020,3.35,ashle005,21568
-mjn29,Mike Nunez,PUBPOL,,,2021,3,bogga002,13579
+mjn29,Mike Nunez,PUBPOL,,,2021,3.0,bogga002,13579
 zz162,Ziang Zhou,PUBPOL,,,2021,3.97,grant021,19471
 rpv5,Rachel VanRyzin,FRENCH,,,2020,2.79,fbb4,4417
 ah392,Aili Hao,COMPSCI,BIOLOGY,,2021,3.87,sls77,2711
@@ -659,7 +659,7 @@ lrl22,Lisa Lebovici,ENVIRON,MATH,,2020,2.64,jab,4200
 kw237,Kennedy Ware,ECON,,,2022,3.73,chq,3301
 bjt28,Benjamin Thompson,NURSING,NEUROSCI,,2020,2.57,weisb002,22662
 db223,Daniel Becerra,ARTHIST,,,2020,2.69,hammill,22176
-Dec-44,Delisa Clay,BIOLOGY,,,2020,2.74,johns609,23233
+dec44,Delisa Clay,BIOLOGY,,,2020,2.74,johns609,23233
 kr96,Kara Richey,POLSCI,,,2022,3.54,yu6,22170
 ys220,Yudong Sun,POLSCI,,,2022,2.8,ct247,8459
 jm614,Julia Monsarrat,NURSING,,,2019,3.7,cbray,20736
@@ -816,7 +816,7 @@ aka36,Alana Atkins,MATH,,,2021,3.05,mk176,6903
 jfh25,John Hessler,PSY,ENGLISH,,2022,3.1,tseng005,8799
 rbw17,Bobby Wade Jr.,PUBPOL,ME,,2021,3.66,sd34,17078
 mah104,Michael Haselton,PUBPOL,,,2021,3.65,uk17,20176
-mb535,Michelle Butcher,NEUROSCI,,,2019,3,jh483,22041
+mb535,Michelle Butcher,NEUROSCI,,,2019,3.0,jh483,22041
 cs493,Chaichontat Sriworarat,PSY,BME,,2022,2.75,lr55,8819
 agc26,Alex Culbert,EDUC,,,2022,3.88,ia6,23568
 wt45,Weiyi Tang,POLSCI,SOCIOL,,2021,2.53,guilak,20020
@@ -837,7 +837,7 @@ sct32,Sarah Thomas,PSY,,,2019,3.7,zhang054,9092
 kak73,Kristie Kusibab,COMPSCI,PSY,,2021,3.44,grant,2606
 nbh11,Nathaniel Hartley,SOCIOL,,,2021,3.12,warne002,9851
 vvk7,Vivienne Kim,ECON,NURSING,,2022,3.45,stall013,3450
-sa342,Saba Ali,CULANTH,PUBPOL,,2019,3,wang0083,2031
+sa342,Saba Ali,CULANTH,PUBPOL,,2019,3.0,wang0083,2031
 rz78,Rui Zhang,PUBPOL,ECON,,2021,2.58,xs37,19892
 scb38,Sasha Burwell,BIOLOGY,,,2019,3.15,phalpin,20046
 rpc21,Ryan Culhane,BIOSTAT,PSY,,2021,3.83,gehri003,21324
@@ -996,7 +996,7 @@ xs58,Xuecong Sun,BME,BIOLOGY,,2019,2.98,olmed001,15631
 sr340,Sachet Ray,NURSING,VMS,,2022,3.47,tes40,23053
 hab22,Henry Burns,NURSING,POLSCI,,2019,3.37,sab82,17308
 cl443,Carmen Lessley,PHIL,,,2021,3.97,lpd7,14190
-ckn5,Claire North,ECON,,,2019,3.87,28-Jan,3322
+ckn5,Claire North,ECON,,,2019,3.87,jan28,3322
 wanis02w,Eduardo Wanis Teixeira,BIOLOGY,,,2020,2.98,johns425,4748
 ctw23,Camden Willeford,ECE,,,2021,2.68,sge1,3649
 lac90,Lauren Cordova,PSY,,,2021,3.4,fras0001,20040
@@ -1038,7 +1038,7 @@ gak15,Griffin Kennard,ECON,,,2019,3.87,hueckel,17440
 yl607,Yunjuan Liu,POLSCI,STA,,2021,3.96,sam126,21124
 db271,Dimitrios Bailas,PHIL,STA,,2021,2.75,alm65,19726
 kkm29,Kelsey Mummert,PSY,ECON,,2022,3.97,boller,8855
-ah427,Abigail Hsiung,NURSING,STA,,2019,3.43,jeles001,
+ah427,Abigail Hsiung,NURSING,STA,,2019,3.43,jeles001,8855
 ajb112,Alex Boss,COMPSCI,,,2021,3.62,hong0008,2606
 mah136,Makayla Harkins,BIOLOGY,,,2022,3.24,sr96,1514
 tcl25,Thomas Lutken,ECON,,,2021,2.58,jy101,16796
@@ -1083,7 +1083,7 @@ js739,Julia Sandridge,BIOLOGY,,,2020,3.92,jre18,12500
 ag406,Armon Ghodoussi,ME,,,2019,2.76,ac586,1705
 ckt3,Christelle Tan,LINGUIST,PUBPOL,,2019,3.72,mbt29,23148
 alv13,Addie Van Emon,BME,,,2021,2.85,rosen031,1704
-lk166,Lindsey Knapp,BME,,,2022,3,bkb18,23012
+lk166,Lindsey Knapp,BME,,,2022,3.0,bkb18,23012
 dkg14,Kim Grinhaus,SOCIOL,,,2021,3.84,ejm55,9850
 sjv8,Samantha Votzke,PSY,,,2019,3.89,mckin028,8800
 am641,Amik Mandal,NURSING,,,2020,2.63,xdong,13676
@@ -1145,7 +1145,7 @@ oelsc02c,Jordan Oelschlager,NEUROSCI,COMPSCI,,2021,3.23,daz3,19582
 bgm17,Brandon Mannarino,CMRS,,,2019,2.7,frazi018,25439
 rsc30,Riley Cohen,BME,,,2021,3.69,hendr024,21644
 jr340,James Ray,POLSCI,,,2022,2.52,anthonys,21520
-jsc84,Josh Coopersmith,ECE,NURSING,,2019,2.64,cis15,
+jsc84,Josh Coopersmith,ECE,NURSING,,2019,2.64,cis15,21520
 sd270,Shakira Dineshkumar,PUBPOL,,,2019,2.97,nk145,12998
 hrk4,Hanna Kemeny,NURSING,,,2021,3.74,sm403,7450
 elf26,Leo Fisher Jr.,BIOLOGY,,,2019,3.63,kdp3,24306
@@ -1278,7 +1278,7 @@ lp186,Logan Polsinello,HISTORY,,,2019,3.32,pjc8,19374
 asi5,Andrew Ishizuka,VMS,NURSING,,2021,3.05,mk153,14784
 cmk60,Caroline Kealoha,COMPSCI,,,2020,3.44,daw64,2604
 nie,Nelia Ekeji,PUBPOL,,,2022,3.08,mille012,17288
-hn52,Hoang Nguyen,PSY,,,2019,3,sk271,8799
+hn52,Hoang Nguyen,PSY,,,2019,3.0,sk271,8799
 maz17,Micayla Zynda,PUBPOL,PSY,,2022,2.88,lkc18,19888
 jh553,Jiyuan Huang,PUBPOL,,,2021,3.86,coraz001,18547
 ml426,Lily Liu,POLSCI,,,2021,3.59,ws39,19032
@@ -1353,7 +1353,7 @@ kam137,Kerry Mallinson,EOS,,,2019,3.19,lk109,23414
 hc234,Hazel Coleman,ECON,,,2019,3.46,cd132,14831
 sc612,Shixing Cao,PUBPOL,COMPSCI,,2019,3.83,thoma095,16424
 ash43,Andrea Herman,ECON,CULANTH,,2022,3.07,amg120,23790
-vn40,Varun Nair,SOCIOL,,,2019,3,mgs15,9911
+vn40,Varun Nair,SOCIOL,,,2019,3.0,mgs15,9911
 os34,Dara Sontan,PUBPOL,,,2022,3.02,sdmoore,16094
 phw11,Patrick Whitman,STA,,,2019,2.68,tgh15,10232
 ese8,Erin Emmons,BME,,,2019,2.96,jmv20,20821
@@ -1366,7 +1366,7 @@ itb2,Ivory Brown,COMPSCI,BIOLOGY,,2020,2.82,ans33,2669
 alk43,Amanda Kidd,PUBPOL,,,2020,2.51,ka93,8086
 sew76,Sarah Watkins,PUBPOL,,,2019,2.78,as897,8230
 trm34,Tristan Malhotra,POLSCI,,,2020,3.86,mbt29,19022
-sbf18,Spencer Flynn,EDUC,,,2019,3.3,lp94,
+sbf18,Spencer Flynn,EDUC,,,2019,3.3,lp94,19022
 ur10,Uthra Ranganathan,ECON,,,2021,3.47,krk10,18757
 jjk50,Chumba Koech,ME,,,2022,2.82,mm505,6546
 tm229,Thandolwethu Mamba,PHIL,,,2019,3.36,kmn34,7776
@@ -1438,7 +1438,7 @@ hb122,Hannah Bartlebaugh,BME,COMPSCI,,2020,3.83,bmd11,22423
 hrh12,Haylee Haas,ECON,,,2019,2.78,isilver,13557
 zarak02g,Ricardo Zarak,BIOLOGY,,,2021,3.84,at100,1837
 ar399,Akanksha Ray,NURSING,NEUROSCI,,2019,3.67,ac206,20514
-bb258,Baran Bodur,PUBPOL,,,2019,3.47,chilu001,
+bb258,Baran Bodur,PUBPOL,,,2019,3.47,chilu001,20514
 mn155,Mahnoor Nazeer,COMPSCI,,,2019,3.11,bales001,7906
 cm272,Carri Murphy,ECON,BIOLOGY,,2021,3.53,mer47,14832
 rsl33,Sawyer Lyons,BME,,,2021,2.9,bfb9,23012
@@ -1584,7 +1584,7 @@ nef10,Nadia Ford,SOCIOL,,,2019,2.66,eda,24961
 bdc26,Bennett Carpenter,BME,,,2021,3.42,oe13,23791
 sgn8,Sarah Neff,PUBPOL,,,2020,3.35,ma000008,21962
 tjj21,Tirzah Johnson,PHYSICS,,,2022,2.79,lv21,15768
-xl218,Chelsea Liu,VMS,,,2022,3.21,rf94,
+xl218,Chelsea Liu,VMS,,,2022,3.21,rf94,15768
 om40,Olivia Morales,BIOLOGY,,,2022,2.85,oconn002,10282
 jy217,Julius Yudelson,STA,,,2022,3.99,kened001,17475
 cjb86,Chitra Balakrishnan,SOCIOL,,,2022,3.15,ker32,20151
@@ -1730,7 +1730,7 @@ hbw5,Hannah Wyatt,NURSING,,,2022,3.06,allen161,22911
 labon02w,Kristin Labonte,PSY,,,2021,3.91,jrt40,1299
 mhb44,Meg Bost,ECE,,,2021,2.67,as897,3651
 eak42,Katya Khlystova,POLSCI,,,2020,3.55,njw10,23574
-jdm70,Justin Mitchell,BIOLOGY,CHEM,,2019,3,rajesh,21475
+jdm70,Justin Mitchell,BIOLOGY,CHEM,,2019,3.0,rajesh,21475
 hoenk02w,Kurt Hoenke,COMPSCI,,,2020,3.15,garma003,2631
 ll281,Lawrence Luk,CHEM,ECON,,2020,3.92,wmgrill,21735
 ht128,Hiroaki Tanaka,NEUROSCI,,,2021,3.84,kmh134,19671
@@ -2113,7 +2113,7 @@ skf5,Stephanie Fowlkes,CEE,,,2020,2.79,jad58,2107
 yz227,Yan Zhang,BIOLOGY,BME,,2019,3.95,mmg007,23236
 dgw8,Darryl Wade,PUBPOL,COMPSCI,,2021,2.75,sam68,21418
 willa04w,Joe Willaman,ME,,,2019,2.79,geb23,1705
-sr218,Simon Rios Jr.,BIOLOGY,,,2019,3,colem049,17901
+sr218,Simon Rios Jr.,BIOLOGY,,,2019,3.0,colem049,17901
 crm80,Catherine McMillan,EDUC,BME,,2019,2.96,lar24,3517
 yl410,Yuheng Liao,PUBPOL,POLSCI,,2019,3.88,diehl005,23304
 lw234,Isaac Wong,COMPSCI,,,2022,3.9,chm24,24220
@@ -2150,8 +2150,8 @@ sd357,Shelsea Duran,ECON,FRENCH,,2019,2.88,fm102,3314
 aia9,Ali Shan Ali Bhai,PSY,,,2020,3.26,dh180,5027
 rr140,Renee Ragin,ECON,,,2019,3.47,villalwj,20248
 asb84,Ann Benson,PUBPOL,ECE,,2020,3.72,drbarr,22164
-spd21,Samantha Davies,NURSING,,,2021,3,bgs17,20833
-kl259,Kyle Levenberg,STA,,,2019,3.04,mi16,
+spd21,Samantha Davies,NURSING,,,2021,3.0,bgs17,20833
+kl259,Kyle Levenberg,STA,,,2019,3.04,mi16,20833
 asv17,Anna Ellement,BME,,,2022,2.61,caj38,12868
 bgc11,Benjamin Chen,BME,,,2021,3.51,raman03g,23979
 ks503,Ke Sheng,HISTORY,,,2019,3.57,dcr,19227
@@ -2199,7 +2199,7 @@ khq,Kevin Quick,SOCIOL,,,2021,3.12,dpf6,9792
 az112,Amy Zipperer,BIOLOGY,,,2021,2.64,rh137,21475
 jsy9,Jonathan Yonke,COMPSCI,ECON,,2020,2.63,butte001,2675
 wmb22,William Berger,ECE,,,2020,2.83,jmh159,3606
-wy56,Winston Yau,NEUROSCI,,,2020,3,jcs72,8767
+wy56,Winston Yau,NEUROSCI,,,2020,3.0,jcs72,8767
 mjh96,Michael Haysley,POLSCI,,,2020,3.47,led7,22800
 rj129,Rishabh Jain,PHIL,,,2021,2.82,ker32,13196
 wb65,William Battle-McDonald,ECE,MATH,,2020,2.79,coleman,13747
@@ -2250,7 +2250,7 @@ fed5,Fiona Danner,PUBPOL,,,2019,3.16,mjp50,8229
 kmg58,Kati Glass,BIOLOGY,PUBPOL,,2022,3.12,da37,1545
 ky79,Kun Yuan,NURSING,POLSCI,,2020,3.87,kaw34,18457
 mlk38,Megan Kelly,PUBPOL,ECON,,2022,3.14,jit2,23765
-Dec-47,Drew Colman,HISTORY,,,2022,3.01,jjs84,5116
+dec47,Drew Colman,HISTORY,,,2022,3.01,jjs84,5116
 kl299,Kangcheng Lin,ME,,,2021,2.74,tfk3,16342
 le54,Liesl Eibschutz,ECE,BIOLOGY,,2019,2.65,ksm68,3739
 chl25,Caitlin Lamb,BIOLOGY,,,2019,2.67,uk17,13827
@@ -2290,7 +2290,7 @@ yz403,Yuri Zambenedetti Streciwik,ECON,PUBPOL,,2020,3.22,gjf7,3343
 lff5,Luis Freile,ARTHIST,,,2020,3.67,dneedham,577
 dsd20,Doruk Doganay,PSY,BIOLOGY,,2021,2.91,hawes005,8814
 dv56,Daniel Vigilante,BIOLOGY,,,2022,3.3,lgb4,19267
-sk569,Sinja K�_ppers,BIOLOGY,,,2019,3.42,evans122,25316
+sk569,Sinja Küppers,BIOLOGY,,,2019,3.42,evans122,25316
 nr121,Nithin Ragunathan,ECE,,,2021,3.16,srp48,3649
 yz492,Yuduo Zhang,MATH,,,2021,3.13,proia001,21519
 jfn4,Jack Nichols,PSY,ECON,,2022,3.95,ak264,20040
@@ -2348,7 +2348,7 @@ ccc80,Charlotte Cowdery,ECE,,,2021,3.8,chc18,3703
 hw186,Haotian Wang,PSY,,,2021,2.7,wesleyh,12991
 mrc47,Manuella Clark-Cotton,BIOLOGY,,,2022,2.99,tclark,1489
 cw312,Caroline Waring,PUBPOL,COMPSCI,,2022,2.79,al287,15570
-tw183,Tianyu Wang,ME,,,2021,2.63,aakwari,
+tw183,Tianyu Wang,ME,,,2021,2.63,aakwari,15570
 ker40,Kristen Rhodin,AAAS,BME,,2020,2.95,ak30,19184
 inyan02g,Brian Inyang,BIOLOGY,,,2021,3.99,chm24,4748
 smp81,Shahrik Punja,SPANISH,,,2019,2.83,yl552,10110
@@ -2398,7 +2398,7 @@ rp197,Rina Plotkin,BIOLOGY,,,2020,2.61,jory,12352
 yw326,Yixin Wang,NEUROSCI,,,2022,3.46,bear,8820
 delan02g,David DeLaney,ENVIRON,,,2019,3.69,is85,21872
 jb549,Jullian Bao,COMPSCI,,,2022,2.56,nm76,22020
-kct18,Katherine Tighe,ECE,MATH,,2022,3.37,gb32,25011
+kct18,Katherine Tighe,ECE,MATH,,2022,3.37,gb32,22020
 moz2,Marco Zava,ECON,,,2019,2.85,bih2,14980
 reddy03w,Bhaskar Reddy,NURSING,,,2020,3.95,dmcshea,23109
 bks19,Bailey Sanders,PUBPOL,PSY,,2019,3.14,batch008,24458
@@ -2409,7 +2409,7 @@ srm80,Sofia Molina,CHEM,,,2020,3.44,eisen004,19342
 tds28,Tim Shea,NURSING,,,2020,3.34,sk564,13676
 rms60,Rachel Simpson,POLSCI,,,2021,3.44,onait001,23888
 khw19,Katie Waeldner,NEUROSCI,,,2022,3.22,hdavid,20466
-march03g,C̩line Marchand,NURSING,,,2019,3.91,jl209,23184
+march03g,Céline Marchand,NURSING,,,2019,3.91,jl209,23184
 us15,Uriel Salazar,CHEM,,,2019,3.76,mh256,2400
 dll34,Daniel Landa,COMPSCI,,,2022,3.92,bjburns,2631
 bng11,Bryan Groves,ENGLISH,,,2020,2.73,dthiele,3815
@@ -2485,7 +2485,7 @@ djl38,David Leonhardt,PSY,,,2021,3.79,sp200,8955
 rdw28,Rebekah Wellons,ENVIRON,BIOSTAT,,2021,3.03,fb36,21567
 vr75,Vinieth Raju,COMPSCI,BIOLOGY,,2019,2.57,brs29,18466
 dbs31,Daniela Schneider,COMPSCI,,,2021,3.84,gr46,2625
-myv2,Manan Vasani,NURSING,,,2019,3.39,cz127,
+myv2,Manan Vasani,NURSING,,,2019,3.39,cz127,2625
 klh83,Kelly Hann,PUBPOL,COMPSCI,,2022,2.5,cmb100,23489
 krx,Katie Xu,PSY,PUBPOL,,2021,3.58,mh146,22544
 kt194,Kara Tobey,EDUC,,,2021,2.73,cmm48,3516
@@ -2566,7 +2566,7 @@ cmk75,Chris Kirkman,NEUROSCI,POLSCI,,2020,3.98,eck00001,21441
 mjb97,Mitchell Bognar,COMPSCI,,,2020,3.91,lmv10,6921
 yg147,Yiwen Gao,ECE,,,2022,3.3,svm7,17449
 mjs131,Maya Stephens,NURSING,ECE,,2020,3.57,sk271,20740
-ams243,Andrew Shin,BIOLOGY,,,2022,3.95,sh356,
+ams243,Andrew Shin,BIOLOGY,,,2022,3.95,sh356,20740
 zc90,Zhao Chen,ME,,,2019,3.03,jolantam,1706
 ak520,Amir Khazraei,CULANTH,ME,,2019,2.52,sps34,20762
 aag44,Ashlyn Gruber,NURSING,,,2019,3.19,lcr13,20739
@@ -2737,7 +2737,7 @@ wps9,Will Sowers Jr.,PSY,BME,,2020,3.92,adgun,8805
 mb351,Michael Belden,PUBPOL,ECON,,2021,3.75,ksc28,19894
 jo111,Jonathan Ottaway,BME,PUBPOL,,2022,3.67,paat0001,1687
 mid7,Maleah Densby,PSY,,,2022,3.55,kv70,9086
-zy41,Melissa You,CHEM,,,2019,3,th95,12686
+zy41,Melissa You,CHEM,,,2019,3.0,th95,12686
 jc456,Jian-geng Chiou,EDUC,PUBPOL,,2021,3.07,lcb47,24109
 knr11,Krishna Ravindra,POLSCI,,,2022,3.03,tdb,8676
 mel60,Michelle Larsen,NURSING,,,2022,2.6,ja107,20834
@@ -2841,7 +2841,7 @@ sb411,Sid Bhaskara,ECE,,,2019,2.96,hoffm039,17432
 dke3,Daniel Ettlin,COMPSCI,,,2020,3.29,sd319,2692
 hp104,Hao Pang,ECE,,,2019,2.69,sjs35,16342
 cst21,Callie Thomas,ME,PSY,,2021,3.93,cz127,20322
-nd114,Nicolas de Porras-Isla-Fern��ndez La Ca,PSY,,,2019,2.9,hdavid,8829
+nd114,Nicolas de Porras-Isla-Fernández La Ca,PSY,,,2019,2.9,hdavid,8829
 egd10,Ella Dunham,BME,,,2021,3.73,rb6,16580
 mpr23,Megan Ragusa,SOCIOL,ECE,,2019,3.68,ander077,9878
 dse6,Dylan Eiger,ECON,,,2021,2.82,lr23,15961
@@ -2924,7 +2924,7 @@ ehb24,Elizabeth Beckman,PHIL,ECON,,2020,2.68,alb119,12650
 jmb221,Jessica Bilskie,BME,,,2021,3.75,apm16,20181
 murph03w,John Murphy,PUBPOL,,,2022,3.47,mwfoster,15801
 tmp35,Taylor Plett,PUBPOL,ECON,,2020,3.52,jjm34,8213
-dt146,Diane Tran,PUBPOL,,,2020,3,jpollara,19230
+dt146,Diane Tran,PUBPOL,,,2020,3.0,jpollara,19230
 rtm32,Rachael Mudd,ECON,,,2020,3.58,angri001,23206
 sp314,Shivani Purohit,BIOLOGY,,,2019,2.63,wkourany,21830
 me115,Maram Elnagheeb,STA,,,2021,2.64,tlc83,23542
@@ -2934,7 +2934,7 @@ em220,Ellie Majure,POLSCI,,,2020,2.68,esr26,8395
 mrb72,Michael Brunetti,BIOLOGY,,,2019,3.77,pagach,15730
 es323,Elissa Starheim,CEE,ECON,,2020,3.25,mabre002,23921
 rvh10,Rees Horton,NURSING,,,2021,3.34,cxc2,24037
-rpt10,Rondle Tote,PSY,,,2020,3,jw220,15219
+rpt10,Rondle Tote,PSY,,,2020,3.0,jw220,15219
 xx64,Xuan Xie,ME,EDUC,,2019,2.73,jmb127,16342
 rac31,Rachel Gray,MATH,,,2022,2.62,ztm7,2675
 yg140,Yiwei Gong,HISTORY,,,2020,3.05,vm6,20070
@@ -2957,7 +2957,7 @@ dsj8,Dharmvir Jaswal,HISTORY,COMPSCI,,2019,3.92,al339,20033
 sas29,Shahrazad Shareef,ME,,,2022,3.39,kcpbkk,6547
 rih4,Bobby Harris,NEUROSCI,,,2020,3.65,awn8,8861
 jy242,Justin Yang,COMPSCI,,,2020,3.89,dkg8,23264
-sre16,Sam Elliott,NURSING,,,2022,3,mbm61,23099
+sre16,Sam Elliott,NURSING,,,2022,3.0,mbm61,23099
 jmc171,Jeanette Carneglia,COMPSCI,,,2019,3.39,nunne001,14361
 las113,Lisa Sundeen,BIOLOGY,,,2022,3.29,tg64,13827
 ak516,Aditya Kakrania,CHEM,STA,,2019,3.82,yz467,12695
@@ -2984,7 +2984,7 @@ ecc44,Erin Crumpler,BME,HISTORY,,2019,2.86,pd107,1700
 kg188,Katherine Gan,PUBPOL,,,2022,2.67,cm130,3313
 sel50,Sydny Long,BME,,,2021,3.77,clyde,1716
 slh52,Shannan Hayes,PSY,,,2022,2.56,kse4,23210
-htn12,Hieu Nguyen,CULANTH,,,2022,2.89,manch001,
+htn12,Hieu Nguyen,CULANTH,,,2022,2.89,manch001,23210
 na119,Namratha Atluri,BME,,,2022,3.14,rabil001,1704
 hjw16,Hannah Wang,BIOLOGY,STA,,2022,3.54,bfe,1542
 gao7,Guillermo Ortuno Crespo,PUBPOL,,,2020,2.66,pv18,19876
@@ -2995,9 +2995,9 @@ sfm19,Sarah McDonnell,NURSING,CEE,,2020,2.8,act38,20742
 la131,Lily Appiah-Kubi,ME,ECON,,2019,2.85,gella001,1676
 lrw33,Lauren Wheeler,BIOLOGY,,,2021,2.9,vjh3,21540
 kja32,Kris Anderson,BIOLOGY,BME,,2019,3.78,admay,24185
-xc131,Xavier Callapi̱a,PSY,,,2022,3.09,jad58,15220
+xc131,Xavier Callapiña,PSY,,,2022,3.09,jad58,15220
 jw600,Jiaxing Wang,BIOLOGY,,,2021,2.89,brs19,1495
-13-May,Miguel Yzaga,POLSCI,,,2019,3.47,tower,22212
+may13,Miguel Yzaga,POLSCI,,,2019,3.47,tower,22212
 aj270,Aishwarya Jaishankar,EDUC,,,2019,2.77,ivn,18707
 lsr26,Liam Reynolds,ENGLISH,ECON,,2019,3.65,malen005,22089
 gam52,Ginger Moore,SOCIOL,ECON,,2020,3.92,rl237,9813
@@ -3023,7 +3023,7 @@ alm127,Abbey Milwicz,PUBPOL,ENVIRON,,2020,3.95,morri017,20787
 ekd11,Elijah Deveaux,ENGLISH,,,2021,2.76,grubin,15299
 jl639,Junfei Li,HISTORY,,,2020,3.43,scale006,15203
 dsy5,David Yates,CULANTH,ECE,,2021,2.72,erp16,20750
-sp322,Sera Pekel,COMPSCI,,,2021,3,warrens,2598
+sp322,Sera Pekel,COMPSCI,,,2021,3.0,warrens,2598
 amf85,Amanda Fox,NEUROSCI,,,2020,3.98,hks14,8952
 hjh17,Holly Holder,ME,,,2021,3.83,psun,2178
 cjd67,Connor Davis,ECON,BIOLOGY,,2019,3.99,ad255,3343
@@ -3107,7 +3107,7 @@ mab184,Melissa Burney,BME,PUBPOL,,2022,2.61,hts2,16580
 ntp5,Ngoc Phan,BME,,,2019,3.63,enp2,22424
 rdt24,Ryan Tower,PSY,,,2022,2.51,blg26,19019
 sts30,Seth Sykora-Bodie,PHIL,POLSCI,,2019,3.33,cr113,24380
-kmw106,Katie Weir,ECON,,,2021,2.58,blg25,
+kmw106,Katie Weir,ECON,,,2021,2.58,blg25,24380
 cty4,Clarissa Young,BME,,,2022,3.44,holla043,18353
 kn125,Karen Noessner,ECE,,,2020,3.41,jl337,3646
 cac77,Catherine Cahn,PUBPOL,,,2021,2.57,dbb,15819
@@ -3124,7 +3124,7 @@ jc500,James Long,SOCIOL,,,2020,2.93,mhl20,9833
 als152,Anna Slingerland,COMPSCI,,,2021,2.91,jaf54,15744
 kmp65,Kim Powell,BIOLOGY,,,2020,3.85,etc3,1835
 kwf10,Kyle Finke,NEUROSCI,,,2021,3.04,jswenson,18436
-adm66,Andr̩ Mego,NURSING,,,2022,3.07,deb43,23748
+adm66,André Mego,NURSING,,,2022,3.07,deb43,23748
 mh241,Mu He,PUBPOL,,,2021,3.45,mollo002,18241
 gss26,Gayan Seneviratna,NURSING,,,2022,3.02,jl410,17310
 dh202,Danielle Holt,PUBPOL,,,2019,2.94,edk16,17911
@@ -3152,7 +3152,7 @@ jc695,Jin Cho,PHIL,HISTORY,,2022,3.73,bwj7,7780
 sns37,Shalin Shah,POLSCI,,,2019,3.2,cfs27,20293
 hk239,Kayla Kwon,POLSCI,ENGLISH,,2019,3.66,idris002,8646
 mny3,Michael Young,BME,,,2022,2.5,mruth001,1690
-ajr91,Alejandro Rodriguez-Vi̱a Martinez,ECON,,,2021,3.34,kmamato,22579
+ajr91,Alejandro Rodriguez-Viña Martinez,ECON,,,2021,3.34,kmamato,22579
 jcf44,Jack Fitzpatrick,COMPSCI,BIOLOGY,,2019,3.32,barros,17878
 asq3,Allen Qiu,CHEM,,,2019,2.5,jac120,12673
 jp429,JoonYup Park,NURSING,,,2020,2.92,clg3,23674
@@ -3240,7 +3240,7 @@ rc182,Rui Chen,BIOLOGY,,,2020,3.92,as847,21047
 sls147,Shari Scott,BIOLOGY,,,2019,2.63,ojf,21396
 jwb75,Joey Baker,EDUC,,,2020,3.49,cohen015,3562
 ksm55,Katherine McDonald,ECON,,,2022,3.24,jwettach,21941
-ak275,Abhishek Koneru,ME,,,2020,2.92,cb309,
+ak275,Abhishek Koneru,ME,,,2020,2.92,cb309,21941
 hr68,Holly Ren,NURSING,MATH,,2021,3.86,eaf16,22909
 lb320,Lori Brien,ENVIRON,NURSING,,2020,3.69,kuan,8092
 dkw23,Dawit Woldeyohannes,HISTORY,,,2019,3.83,pate02w,16623
@@ -3420,7 +3420,7 @@ yw325,Yan Wang,NURSING,,,2022,2.63,jaj26,23089
 ch360,Chuan He,ECON,ENGLISH,,2019,3.85,dt47,8459
 cej24,Chris Johnson,VMS,COMPSCI,,2021,3.24,emf23,13031
 km411,Kelly McDowell,NURSING,BME,,2021,2.69,sotol001,23642
-bm209,Brian McCarroll,SOCIOL,,,2019,3,jl410,9835
+bm209,Brian McCarroll,SOCIOL,,,2019,3.0,jl410,9835
 amg63,Ariana Gallegos,ECE,,,2019,2.93,marti066,3707
 adm74,Alexander Marsh,COMPSCI,,,2020,2.94,sa227,2591
 mdh54,Matt Holbrook,ECON,,,2021,3.36,cht11,24695
@@ -3455,7 +3455,7 @@ jcy7,Jiyun Yoon,BIOLOGY,ECE,,2021,3.59,dwj2,22930
 my112,Ming Yang,COMPSCI,,,2020,3.22,morri054,17620
 amd119,Ali Davis,ECON,,,2022,3.91,sk271,3409
 sr353,Sarah Robey,ECON,,,2021,3.86,pmanos,8459
-ca165,Cynthia Amelia,PUBPOL,COMPSCI,,2019,2.71,dbw9,
+ca165,Cynthia Amelia,PUBPOL,COMPSCI,,2019,2.71,dbw9,8459
 rdd27,Rich Dietz,PUBPOL,,,2021,3.27,rm130,14603
 ap416,Ayana Paul,POLSCI,,,2022,2.94,warrens,21477
 ies5,Ilona Stanback,ENVIRON,,,2022,3.22,mo35,21402
@@ -3529,7 +3529,7 @@ ear51,Elizabeth Reneau,ECON,EDUC,,2021,3.74,ar422,22572
 tnc13,Teresa Contreras-O'Reilly,BME,,,2020,3.09,skeen001,1666
 amt64,Aaron Tarnasky,COMPSCI,,,2022,2.52,mr173,2654
 pa94,Pallavi Avasarala,COMPSCI,,,2019,2.78,mts34,2614
-vd49,Vach̩ Darbinyan,ME,,,2022,2.96,schipper,3607
+vd49,Vaché Darbinyan,ME,,,2022,2.96,schipper,3607
 cwh34,Chandler Haun,ECON,,,2022,2.57,enr2,17411
 arp71,Austin Peay,ME,,,2020,3.52,jh243,6547
 dmm90,Maxton Mauney Jr.,COMPSCI,,,2022,3.88,dg201,2671
@@ -3542,7 +3542,7 @@ aim11,Axel Magnusson,EDUC,ECE,,2021,3.74,dag20,13029
 jk324,Jillian Kohn,BIOLOGY,,,2022,2.91,sd345,22556
 nja14,Nathan Adamson,BIOLOGY,ME,,2022,2.94,jcs48,23989
 mxh2,Mark Hollwedel,HISTORY,,,2022,3.94,df113,5378
-Sep-49,Sarah Perrin,BIOLOGY,,,2019,2.57,aj127,20046
+sep49,Sarah Perrin,BIOLOGY,,,2019,2.57,aj127,20046
 dpm25,Dan McGough,BIOLOGY,,,2022,2.52,rv80,12639
 lmd47,Laura Dominguez,PSY,,,2019,3.92,dc284,8766
 acl57,Sandy Lynn,ENGLISH,ECON,,2021,3.82,krc24,3845
@@ -3637,7 +3637,7 @@ eld28,Lucian Aravapalli,BIOLOGY,,,2019,2.7,tdm47,21386
 qz69,Qiushi Zhang,PUBPOL,COMPSCI,,2021,3.64,jds15,41
 pc135,Pawel Charasz,BIOLOGY,,,2022,3.58,mruth001,19130
 vyx,Victor Xiao,ECON,,,2019,3.15,mfs9,3348
-mtb38,Matt Brantley,ME,NEUROSCI,,2019,3,thoma095,6547
+mtb38,Matt Brantley,ME,NEUROSCI,,2019,3.0,thoma095,6547
 srb70,Sam Buchman,BIOLOGY,CHEM,,2021,2.76,bo14,1486
 io26,Iuliia Oblasova,STA,,,2022,3.69,tanak001,22617
 pet6,Evan Talbert,PUBPOL,,,2020,2.54,weisb002,22961
@@ -3744,7 +3744,7 @@ ers59,Elisabeth Seyferth,PUBPOL,PSY,,2021,2.96,bwj7,8230
 mdf18,Marina Frattaroli,ECON,,,2022,3.99,renaudmt,23967
 amh137,Anne Hickey,ECE,PSY,,2019,3.92,jas119,3614
 cf192,Chengyu Fu,COMPSCI,,,2019,3.3,enderlin,3614
-tmp22,Taji Phillips,NURSING,ENVIRON,,2021,3,lmr42,17308
+tmp22,Taji Phillips,NURSING,ENVIRON,,2021,3.0,lmr42,17308
 djh56,David Hugo,VMS,STA,,2021,2.97,parso016,10104
 sx20,Shengjie Xu,PUBPOL,,,2021,2.53,knaac001,23400
 jew54,Jessica Wilkinson,BME,NEUROSCI,,2022,3.44,sd132,1666
@@ -4071,7 +4071,7 @@ cp282,Claire Pappa,ENVIRON,,,2020,3.41,bdriehuy,15524
 mj205,Minghui Jiang,POLSCI,,,2019,2.9,dbp19,19029
 gk82,Grant Kim,ECON,,,2021,2.83,cwp10,20585
 nm173,Nicolas Macri Badessich,NURSING,,,2020,2.59,rmr26,20742
-mmg51,"Madeleine ""Mac"" Gagne'",BIOLOGY,,,2019,3.36,yellen,12704
+mmg51,Madeleine "Mac" Gagne',BIOLOGY,,,2019,3.36,yellen,12704
 cjt27,Cristian Tolento,COMPSCI,,,2022,3.15,dkg8,15496
 mm668,Mary Markwordt,PUBPOL,,,2021,3.86,hayst002,19419
 yy228,Yukun Yang,POLSCI,,,2020,3.66,sjg33,21520
@@ -4138,7 +4138,7 @@ rt150,Rachel Tull,ECE,ECON,,2021,3.33,lcm,3651
 ct153,Christina Tekie,NURSING,,,2020,3.1,hulet001,17302
 ncs28,Nate Smith,PUBPOL,,,2022,3.87,mgw21,23400
 bmh58,Braden Hammond,POLSCI,BME,,2021,3.36,ga7,19028
-jo102,Jack̩e Okoli,PSY,NURSING,,2022,3.75,smith466,16799
+jo102,Jackée Okoli,PSY,NURSING,,2022,3.75,smith466,16799
 zrh5,Zack Holtz,BIOLOGY,,,2020,3.87,pwald,1837
 tcb37,Tristan Baker,PSY,,,2020,3.02,ass40,8828
 rg248,Ricardo Grieshaber Bouyer Rodrigues,PUBPOL,,,2020,2.98,mgl5,21837
@@ -4244,12 +4244,12 @@ md320,Michael Dong,ECON,,,2021,2.79,mbk11,20042
 atg22,Drew Genuit,ME,,,2020,3.4,meintjes,20322
 toa7,Jide Aminu,BIOSTAT,,,2021,3.17,amr93,20715
 jei11,Julia Isaacson,BIOLOGY,PHIL,,2021,3.88,zh79,21346
-lm362,Lea Ren Macalma,NURSING,,,2019,3.81,jgm40,
+lm362,Lea Ren Macalma,NURSING,,,2019,3.81,jgm40,21346
 bs263,Brian Sandker,ECON,,,2020,3.6,rj30,3490
 klb66,Kate Branch,POLSCI,,,2020,3.29,ace30,19031
 lhm15,Lexi Magliarditi,SOCIOL,,,2019,3.74,rec42,22688
 spl10,Sharon Levine,ECON,,,2021,2.95,jp120,18508
-ags42,Amelia Steinbach,BIOLOGY,,,2019,3,lc167,13899
+ags42,Amelia Steinbach,BIOLOGY,,,2019,3.0,lc167,13899
 reh38,Rhiannon Harvey,PUBPOL,,,2019,2.71,ahz3,8151
 lc178,Lee Chen,BIOLOGY,ME,,2020,2.62,twc10,1837
 tjg34,Trevor Gonzalez,PUBPOL,PHYSICS,,2020,3.15,rl237,19064
@@ -4363,7 +4363,7 @@ bdl33,Brian Linder,COMPSCI,,,2020,3.86,kp68,2711
 rb337,Rupinder Bakhshi,ECON,BIOLOGY,,2022,3.59,deb43,22548
 mm734,Melanie Martinez,BIOLOGY,,,2022,3.76,to60,25316
 jd382,Jianwei Du,PHIL,,,2020,3.31,chuanyli,2807
-nvh3,Nichole Hollingsworth,COMPSCI,,,2020,3,stein012,2618
+nvh3,Nichole Hollingsworth,COMPSCI,,,2020,3.0,stein012,2618
 xt22,Norah Tan,PUBPOL,ME,,2019,3.04,aa187,18247
 ekk12,Emma Keaton,BIOLOGY,ECON,,2021,3.77,ambuvi,1478
 aqw,Arlynn White III,PUBPOL,,,2022,3.31,cb408,3296
@@ -4414,7 +4414,7 @@ mab143,Michael Bergen,BME,,,2022,3.63,pb29,16446
 jd385,Jason Dong,AAAS,,,2021,3.79,sw69,23888
 th186,Tatyanna Henderson,EOS,ECON,,2020,3.14,mgm28,22359
 sp349,Sena Park,ECON,,,2020,2.64,he000004,15964
-sx35,Sinan Xiong,POLSCI,ENVIRON,,2022,3,dts19,8522
+sx35,Sinan Xiong,POLSCI,ENVIRON,,2022,3.0,dts19,8522
 dcs43,Lola Sanchez-Carrion,PSY,,,2019,2.53,ls272,20495
 sk458,Siddharth Kawadiya,CHEM,NURSING,,2020,3.02,bobhart,2367
 zs76,Jesse Sun,EOS,,,2019,2.54,jiang001,20126
@@ -4787,7 +4787,7 @@ twh11,Teig Hennessy,BME,,,2020,2.81,antliff,1700
 jag90,Jacob Granick,ENGLISH,NURSING,,2019,3.34,gy32,20269
 jm622,Joaquin Menendez,ME,,,2020,3.98,wkbmd,16342
 ram105,Roberto Medrano,POLSCI,,,2019,2.6,jap112,20252
-mdl57,Mark Lyzinski,SOCIOL,,,2022,3,edelm001,9880
+mdl57,Mark Lyzinski,SOCIOL,,,2022,3.0,edelm001,9880
 wx48,Connie Xiong,ENVIRON,ME,,2020,3.13,raman03g,16301
 cva4,Chris Arora,CULANTH,ECON,,2022,3.04,rosof001,24428
 keo12,Kirsten Overdahl,VMS,ECON,,2022,3.71,sjl36,20825
@@ -4796,7 +4796,7 @@ yg41,Andrew Gao,CULANTH,ENGLISH,,2022,2.86,db44,60
 rsh25,Ritwik Heda,ECON,,,2019,3.36,salzberg,3297
 gkb11,Ganimat Brah,STA,,,2019,3.48,ds381,10221
 sn181,Sizo Ncube,BIOLOGY,,,2021,3.2,samsa001,21046
-crj23,Connor Johnston,COMPSCI,PUBPOL,,2021,3.42,jw140,
+crj23,Connor Johnston,COMPSCI,PUBPOL,,2021,3.42,jw140,21046
 mej28,Mikaela Johnson,PSY,,,2019,3.87,jknight,20495
 kl211,Kangan Li,BME,,,2020,3.64,jp189,22027
 zaf3,Zack Flagel,ME,,,2021,3.3,ht119,24252
@@ -4833,7 +4833,7 @@ cpd28,Curtis Duggins,NURSING,,,2019,3.94,mna11,15909
 aa493,Ala Amini,PSY,NEUROSCI,,2022,2.81,ahw22,9091
 tan20,Tiffany Nash,PSY,,,2019,3.61,kbradley,8955
 cw319,Chris West,STA,ME,,2022,3.17,jdf55,13020
-bn61,Brooke Nelson,NEUROSCI,PUBPOL,,2021,3.32,muhlb001,
+bn61,Brooke Nelson,NEUROSCI,PUBPOL,,2021,3.32,muhlb001,13020
 on18,Onyema Nwanaji-Enwerem,BME,,,2020,2.5,dag71,22027
 ams190,Allison Stolte,MATH,PSY,,2021,3.05,moshrain,6901
 jpw37,James Wolf,ECON,,,2019,3.54,ac206,21348
@@ -4995,7 +4995,7 @@ rec43,Robert Chen,VMS,,,2019,3.18,brown337,547
 hew18,Hannah Wolfe,EDUC,BIOLOGY,,2019,3.98,cmf17,13027
 vm75,Vincenzo Malo,NURSING,,,2019,3.23,bdriehuy,22914
 jar122,James Rogness,PUBPOL,NURSING,,2022,2.99,sd233,8147
-ndw14,Nathan Wright,ME,EDUC,,2020,3.68,casa,
+ndw14,Nathan Wright,ME,EDUC,,2020,3.68,casa,8147
 cdm69,Colin McKew,SPANISH,,,2022,3.4,kearn026,24406
 ys235,Yanming Shou,EDUC,,,2021,3.86,masayuki,3570
 mns11,Maggie Stiggleman,STA,,,2020,3.32,hb14,10180
@@ -5036,7 +5036,7 @@ gk72,Gerald Kwok,ECE,,,2020,3.18,kw254,17432
 park02g,Soyoung Park,CHEM,ME,,2021,3.05,jsm94,15743
 mh451,Miaraha Humayun,BME,PUBPOL,,2019,3.21,bfr5,20181
 mxd,Muxin Diao,ECE,,,2019,2.84,cw332,3687
-qam,Qaiser Mahmood,PUBPOL,,,2020,3.73,18-Dec,22807
+qam,Qaiser Mahmood,PUBPOL,,,2020,3.73,dec18,22807
 tmj37,Troy Jackson,ENGLISH,,,2019,3.52,marcu006,21370
 peet02g,Michael Peet,COMPSCI,,,2022,3.05,ah29,15847
 branj02c,Nick Branjord,EDUC,,,2020,3.82,sulli046,3517
@@ -5054,7 +5054,7 @@ sf175,Stephanie Fanjul,NURSING,,,2020,2.96,nb171,23108
 tb257,Tobias Bech,COMPSCI,,,2022,3.47,wed3,14925
 web21,Will Barclay,ECON,NURSING,,2021,3.98,jmd61,15965
 isb12,Imali Bandara,BIOLOGY,,,2019,3.53,mna11,12703
-19-Apr,Allie Roberts,ARTHIST,,,2019,3.92,chung020,23238
+apr19,Allie Roberts,ARTHIST,,,2019,3.92,chung020,23238
 wdr9,Wilson Ricketts,NURSING,,,2022,3.61,kim00082,23087
 zjb4,Zhuri Bryant,ENGLISH,ME,,2021,2.63,cjp22,14807
 bh175,Bing Ho,PUBPOL,ECON,,2020,3.72,dprice,22771
@@ -5135,7 +5135,7 @@ sl304,Rob Lee,BIOLOGY,,,2019,3.52,rich0001,1465
 re56,Rosie Eidelman,PSY,,,2019,2.59,hertz004,8766
 mlm131,Michelle Minton,NURSING,PUBPOL,,2020,2.82,koont003,18959
 el172,Eric Lin,POLSCI,,,2020,3.61,mille021,17078
-mln19,Madison Novice,NEUROSCI,,,2022,2.57,dsherwoo,
+mln19,Madison Novice,NEUROSCI,,,2022,2.57,dsherwoo,17078
 mhm45,Madison Massey,HISTORY,,,2019,2.68,mp183,21837
 jwz6,Jay Zussman,ECE,,,2019,3.42,rp133,17428
 ss986,Stella Su,ECON,,,2020,3.48,njp9,15964
@@ -5147,7 +5147,7 @@ nga8,Nura Al-Shibli,PUBPOL,BIOLOGY,,2019,3.13,sc248,23488
 cy121,Chaofei Yang,COMPSCI,,,2022,2.86,mckin037,14361
 mjd66,Megan Dorogi,ECON,,,2020,2.58,kim00057,8459
 bp107,Brooke Palus,NEUROSCI,,,2020,3.85,bogge002,16749
-an191,Aksel Nordgaard Masias,PUBPOL,,,2021,3,arj11,15570
+an191,Aksel Nordgaard Masias,PUBPOL,,,2021,3.0,arj11,15570
 jgb44,Jordan Bryan,COMPSCI,,,2020,3.69,rohde,2604
 cushm02w,Charles Cushman,CULANTH,,,2022,3.58,dcj16,1947
 bmc36,Brittany Chapman,EDUC,,,2020,2.55,kv65,18804
@@ -5215,7 +5215,7 @@ rlp33,Reagan Portelance,NURSING,ME,,2019,3.83,jelov001,7423
 etc21,Thomas Cullom IV,BIOLOGY,CHEM,,2020,3.94,sobol001,17426
 ts286,Tyler Sprouse,CEE,PUBPOL,,2021,3.06,av85,16426
 sk597,Shawn Klein,ENVIRON,,,2020,3.37,crtaylor,18667
-jw502,Jason Wang,NURSING,,,2020,3,sjm45,25048
+jw502,Jason Wang,NURSING,,,2020,3.0,sjm45,25048
 whw6,Will White,ME,,,2020,2.85,jf198,1666
 hower03w,Shari Hower,PSY,POLSCI,,2021,3.1,jrt14,9105
 mmn25,Mikela Nylander-French,MATH,,,2020,3.56,jgeorgi,6896
@@ -5249,7 +5249,7 @@ bwl9,Benjamin Luzar,PSY,,,2020,3.89,lb311,21361
 jcr75,Joseph Roso,NURSING,ECE,,2020,3.46,pm11,20318
 lad65,Lisa Duemmling,ME,ECON,,2022,2.71,jhm33,3607
 sz130,Shengnan Zhu,COMPSCI,,,2020,2.87,mlq2,22156
-newco02w,Tim Newcombe,BME,,,2022,3,kk337,20821
+newco02w,Tim Newcombe,BME,,,2022,3.0,kk337,20821
 sdp38,Steven Powell,NURSING,BIOLOGY,,2022,3.95,dodd0003,23668
 ljw35,Liya Wu,ECE,,,2022,3.92,de32,17432
 nqj,Noah Johnson,ECON,,,2021,2.97,benve001,14318
@@ -5389,7 +5389,7 @@ al327,Arjun Lakhanpal,PUBPOL,,,2022,3.66,ealef,14929
 jw422,Jing Wang,STA,,,2022,3.61,xl205,10181
 elw42,Emily Wright,STA,,,2021,3.83,tlb67,10210
 sb536,Sophia Bunnell,CEE,,,2022,2.51,whm9,2166
-rms59,Roseline Simanjuntak,COMPSCI,,,2019,3.72,nb171,
+rms59,Roseline Simanjuntak,COMPSCI,,,2019,3.72,nb171,2166
 lnb22,Lauren Smith,COMPSCI,,,2021,3.09,mfulk,2631
 ajd57,Adam Doll,PUBPOL,,,2020,2.68,vl21,18741
 jcv10,Juan Velasquez,ECE,,,2020,3.44,stenberg,16469
@@ -5489,7 +5489,7 @@ epr13,Paige Roberts,PUBPOL,,,2019,3.76,freed003,8054
 dag58,Don Gex,PHIL,,,2019,2.93,pfa,16959
 koeni02w,Zak Koenig,PSY,,,2019,3.74,wem4,8764
 af201,Amber Raza,BIOLOGY,,,2020,3.08,yan00002,13593
-ts315,Tracy Schumpert,BME,EOS,,2021,3.84,es114,
+ts315,Tracy Schumpert,BME,EOS,,2021,3.84,es114,13593
 reill02w,Will Reilly,BIOLOGY,NURSING,,2019,3.13,cfd16,1504
 akh19,Ali Horn,VMS,,,2022,2.95,wiener,17367
 jgb17,Grant Buttram,PHYSICS,,,2022,2.53,jx83,16817
@@ -5569,7 +5569,7 @@ pnn2,Prabhakar Nanduri,PSY,BME,,2022,2.68,huang008,8982
 tf94,Todd Fleming,BME,,,2022,3.1,mbv5,23979
 dfq,Dryden Quigley,BIOLOGY,,,2022,3.92,pap5,4123
 sea26,Salo Abraham Bandel,SOCIOL,COMPSCI,,2020,3.58,gpalmer,9973
-abb54,Andr̩a Ball,POLSCI,BIOLOGY,,2020,3.5,dunca021,82
+abb54,Andréa Ball,POLSCI,BIOLOGY,,2020,3.5,dunca021,82
 lps17,Laurel Smith,BME,,,2019,3.1,snc36,13022
 am714,Daniel Munoz,ME,MATH,,2019,3.88,kamei001,1705
 aml87,Adriana Lapuerta,COMPSCI,,,2019,3.52,jungsang,2634
@@ -5602,7 +5602,7 @@ nbb,Nam Bui,COMPSCI,,,2020,3.88,dt35,2606
 wap11,Wade Powell,ME,NEUROSCI,,2019,3.57,psb20,2177
 xx59,Xuelian Xu,PUBPOL,,,2022,2.95,vc15,17078
 adf24,Andrew Francis,EDUC,ME,,2021,3.22,jbb15,17991
-ll308,Longzhao Luo,ME,BME,,2019,3.38,kwj5,
+ll308,Longzhao Luo,ME,BME,,2019,3.38,kwj5,17991
 ah358,Adam Hockaday,ECON,,,2022,3.31,kjw,16824
 kz70,Kathryn Zimmerman,VMS,,,2021,3.17,as851,3845
 sl548,Shengyu Li,BIOLOGY,,,2022,3.75,mmr43,21453
@@ -5839,7 +5839,7 @@ jaj74,Jeremy Jacobs,CHEM,PSY,,2019,3.73,ty41,2359
 btw20,Brooke Wiggins,BIOLOGY,,,2021,2.89,grs22,7767
 lh282,Lucas Hoffmann,NEUROSCI,,,2022,3.29,gaby,7776
 jrm110,Jim Moxley IV,BME,MUSIC,,2019,2.71,hardi041,1704
-cb391,Carolina Bernal-Ramirez,ECON,COMPSCI,,2020,3,sangv001,3297
+cb391,Carolina Bernal-Ramirez,ECON,COMPSCI,,2020,3.0,sangv001,3297
 crh54,Courtney Hill,PUBPOL,,,2020,3.33,kt110,14632
 hmm39,Halle Morris,SPANISH,,,2022,2.92,setji002,10069
 sat49,Sam Thumma,STA,,,2019,2.85,jas119,10184
@@ -5883,7 +5883,7 @@ sk531,Mark Kang,ME,,,2020,3.59,kirkp001,16342
 sph21,Suzanne Hallquist,PSY,,,2020,3.63,sm271,20075
 ksn10,Katherine Nicholas,EOS,,,2022,3.72,dbw11,18251
 psb23,Pradnya Bhandari,BME,,,2021,3.23,tbb23,20821
-cr218,Chloe Ricks,PUBPOL,,,2019,3.49,28-Jan,23887
+cr218,Chloe Ricks,PUBPOL,,,2019,3.49,jan28,23887
 jlp115,Jaichaun Paige,STA,,,2021,2.66,jl886,10210
 hy63,Huihao Yan,CHEM,STA,,2019,3.49,sapyt001,2368
 dm370,David Min,CULANTH,,,2021,3.18,smith060,2842
@@ -5933,11 +5933,11 @@ lfm21,Laurie Muzzy,ECON,,,2019,3.46,rlw,20042
 johns04w,Chris Johnson,ECON,,,2021,3.78,tj72,23561
 wds16,Drake Sanders,MATH,,,2019,2.86,jsp54,10181
 kah138,Khalid Hassan,HISTORY,CHEM,,2021,3.48,dm128,5385
-vgp4,Virginia Pan,PSY,ME,,2020,3,asl37,9094
+vgp4,Virginia Pan,PSY,ME,,2020,3.0,asl37,9094
 mct18,Michelle Sroka,ECON,,,2021,3.34,hh69,22563
 wes11,William Sabiston,EOS,EDUC,,2021,3.53,rajag007,21849
 jdm80,Jake Melnick,ENGLISH,,,2020,2.92,kaw34,3842
-kc329,Katie Cosgrove,PUBPOL,,,2019,2.97,kfm15,
+kc329,Katie Cosgrove,PUBPOL,,,2019,2.97,kfm15,3842
 nan16,Natalia Nunez,NURSING,,,2020,2.95,brown177,23744
 cgc36,Charles Clinard,POLSCI,,,2021,3.07,ker32,17122
 ws134,Bill Sun,ME,COMPSCI,,2022,2.71,cphaynes,2177
@@ -5988,7 +5988,7 @@ sah84,Sierra Hodges,COMPSCI,,,2021,2.63,weinthal,2598
 rjb52,Robyn Bernier,NURSING,ENGLISH,,2021,2.79,pikuei,20742
 dk173,Doyong Kim,BIOLOGY,,,2019,3.18,yang0029,23989
 wtm12,William Mullen,BIOLOGY,,,2020,3.73,jcliffor,19042
-jv100,Jes̼s Valdiviezo Mora,ECON,,,2022,3.85,kh269,16100
+jv100,Jesús Valdiviezo Mora,ECON,,,2022,3.85,kh269,16100
 jf233,Josh Finesilver,BIOLOGY,PSY,,2022,3.06,adu,21453
 ajp63,Alicia Porile,ECON,PUBPOL,,2019,3.5,jcumming,21473
 mbb40,Matthew Brecher,ME,,,2019,3.6,snp2,1666
@@ -6012,7 +6012,7 @@ mcg52,Maddie Go,EOS,,,2019,3.63,vvk4,16031
 harmo02c,Steve Harmon,BIOLOGY,CULANTH,,2020,3.65,mpc24,12940
 sd379,Samantha DeMarsh,PUBPOL,,,2022,2.7,hnw13,8234
 rms67,Riddhi Shah,ENGLISH,EDUC,,2019,2.8,rss2,18295
-jhb42,Jonathan Bethke,MATH,STA,,2022,3,jmoody77,6875
+jhb42,Jonathan Bethke,MATH,STA,,2022,3.0,jmoody77,6875
 yz481,Yunxi Zhao,CULANTH,,,2019,3.96,morri029,20607
 dc290,Dongrak Choi,PSY,,,2021,3.55,vitek001,9080
 xz198,Cinlo Zhao,HISTORY,CHEM,,2022,3.5,shaw0002,5083
@@ -6082,7 +6082,7 @@ dr205,Divya Rajasekaran,BME,,,2022,2.98,cltfltr,15631
 aw338,Ashley Whitcomb,ECON,VMS,,2022,3.57,lp70,15504
 nat9,Nicole Diehl,STA,NEUROSCI,,2019,3.51,dhinton,10225
 jt295,Judin Thomas,COMPSCI,,,2021,2.85,dbp19,18466
-jrw106,Jess Williams,EOS,,,2021,3,tpl12,22179
+jrw106,Jess Williams,EOS,,,2021,3.0,tpl12,22179
 nhh6,Nora Hafez,SOCIOL,,,2020,3.62,gmalek,23987
 jgf7,Jack Ferrante,ECE,,,2020,3.36,am704,3687
 zcr4,Zoe Ripecky,MATH,,,2022,3.23,olmed001,6973
@@ -6106,7 +6106,7 @@ mrp48,Maria Papadopoulos,CEE,COMPSCI,,2021,3.27,mccar043,2109
 jky4,Jeff York,PUBPOL,,,2019,3.46,mtornai,24257
 jrw91,Ross Winston,NURSING,,,2021,2.82,rd127,18958
 cof3,Christopher Fry,PUBPOL,,,2019,3.58,arc65,8048
-ll253,Lasia Lo,COMPSCI,,,2022,3,mb283,2598
+ll253,Lasia Lo,COMPSCI,,,2022,3.0,mb283,2598
 wrb15,Willa Brooks,NURSING,,,2019,2.68,mh139,23054
 dpk12,Daniel Keeley,BME,MATH,,2022,3.75,wu000050,16580
 rch39,Ryan Huie,CHEM,BIOLOGY,,2021,3.62,sieburth,2338
@@ -6119,7 +6119,7 @@ mkm77,Maya Manciagli,SOCIOL,,,2020,3.31,meh,21355
 wma6,Wade Allred,BIOLOGY,,,2020,3.3,sms59,1470
 hpr2,Harshada Rajani,ECON,CHEM,,2020,3.75,finlaymc,22565
 ysb2,Yishak Bililign,HISTORY,,,2021,2.95,wak12,25095
-ns183,Nicolas Sanchez,ECON,,,2022,3,tms48,4170
+ns183,Nicolas Sanchez,ECON,,,2022,3.0,tms48,4170
 ffb6,Franz Belz,NEUROSCI,,,2019,2.71,king0126,19582
 kms164,Kevin Solomon,BIOLOGY,,,2021,3.3,jb65,17474
 jfd18,Joseph Dougherty,BME,,,2021,3.02,crw38,21559
@@ -6134,20 +6134,20 @@ akt21,Ali Thursland,PUBPOL,,,2022,3.68,av64,8048
 jek46,Jameson Kavel,PHIL,,,2020,3.74,lk90,20871
 thp11,Thomas Polley,ENVIRON,,,2020,3.55,ihr3,1500
 bjm60,Barret Manfre,FRENCH,,,2020,3.64,kk337,13130
-jsl33,Jeffrey Li,PSY,,,2021,3,lueth001,23902
+jsl33,Jeffrey Li,PSY,,,2021,3.0,lueth001,23902
 js494,Jeremy Spater,BIOSTAT,,,2020,3.85,ceb92,25472
 ne29,Nicole Enciso,CULANTH,NURSING,,2020,3.03,sbs4,8062
 blr19,Bianca Rochelle,POLSCI,,,2019,3.23,cmb100,20233
 cla24,Camille Ampey,BIOLOGY,CULANTH,,2019,2.56,jr219,1504
 ip45,Ismael Perez,PUBPOL,,,2019,3.5,marcu006,22956
-jft15,Jacob Turobiner,BME,NURSING,,2020,2.76,mas196,
+jft15,Jacob Turobiner,BME,NURSING,,2020,2.76,mas196,22956
 cag44,Caslin Gilroy,BIOLOGY,CULANTH,,2022,2.97,ssl37,4107
 kmh113,Kevin Huang,POLSCI,,,2021,2.88,jje22,22212
 ak380,Andreas Kreitschmann,PUBPOL,,,2019,3.26,crc56,20501
 dkw22,Drew Webster,PUBPOL,EDUC,,2021,2.9,tjr3,20171
-slt59,Stacy Thomas,ME,BME,,2022,3.78,amakhulu,
+slt59,Stacy Thomas,ME,BME,,2022,3.78,amakhulu,20171
 ada42,Alana Agron,PUBPOL,COMPSCI,,2019,3.31,carte013,21245
-yl553,Yezi Lyu,PUBPOL,BME,,2019,3,krb7,15570
+yl553,Yezi Lyu,PUBPOL,BME,,2019,3.0,krb7,15570
 ekd12,Kayley Dotson,PSY,VMS,,2020,3.37,green045,23230
 hmm43,Harris Masterson,HISTORY,PSY,,2019,3.51,jef28,18710
 iab6,Isabel Billig,BIOLOGY,,,2019,3.89,bdf21,12638
@@ -6177,7 +6177,7 @@ harri03c,Shane Harris,ECE,,,2021,2.68,jg186,18353
 price03w,Sean Price,EDUC,,,2021,3.28,bjg27,22459
 yz458,Yunyao Zhu,NURSING,BME,,2020,3.04,ca159,23103
 bfw10,Bonnie Wyatt,BME,HISTORY,,2019,3.46,ta131,1705
-dso8,David Orenstein,STA,COMPSCI,,2020,3,sc386,10197
+dso8,David Orenstein,STA,COMPSCI,,2020,3.0,sc386,10197
 rm308,Robby Meese,PUBPOL,,,2022,2.81,egs4,16094
 pdn8,Poorva Navalgundkar,PSY,,,2021,3.27,jr79,8764
 rl193,Ryan Lee,ECE,,,2021,3.08,briggsme,17604
@@ -6217,7 +6217,7 @@ klc78,Kendall Clay,BIOLOGY,,,2021,2.68,buhr0001,21396
 bo44,Bryce Olsen,PUBPOL,,,2022,2.97,cpi,8282
 sr367,Watson Ren,COMPSCI,NEUROSCI,,2021,3.29,sh459,18804
 pjt15,Phoebe Thompson,COMPSCI,,,2019,3.76,cpj9,2692
-les79,Lindsay Sapienza,COMPSCI,,,2021,3,bh61,17430
+les79,Lindsay Sapienza,COMPSCI,,,2021,3.0,bh61,17430
 anr44,Ashley Russell,LINGUIST,BIOLOGY,,2019,2.74,sc9,12925
 bgd10,Bryan David,ECE,,,2021,3.94,jap59,16342
 sct23,Shelby Turner,BME,EOS,,2020,2.86,bass,16580
@@ -6331,7 +6331,7 @@ als145,Lucy St Charles,ME,,,2022,3.5,sapyt001,2178
 haa16,Henock Asaye,CHEM,,,2020,2.58,kfm15,18033
 cz73,Carolyn Zhang,ECE,,,2021,3.04,rps23,3716
 sjj18,Sydney Johnson,SOCIOL,PUBPOL,,2022,3.09,kweeks,24961
-ak313,Anish Kottu,ME,,,2022,2.62,mws7,
+ak313,Anish Kottu,ME,,,2022,2.62,mws7,24961
 dam80,David Miron,ECON,,,2020,3.58,skeen001,15504
 ttv4,Thuy Van,STA,HISTORY,,2020,3.81,ah29,10181
 w99hersh,Chris Hersh,BME,,,2020,2.75,devea002,1651
@@ -6358,7 +6358,7 @@ sarba02g,Keith Sarbaugh,POLSCI,,,2019,3.36,jk150,19034
 bs118,Banafsheh Sharif-Askary,COMPSCI,,,2019,3.88,jaj26,2634
 forne03w,Jordan Forney,BIOLOGY,,,2019,3.14,ej82,21396
 zem5,Zachery Mielko,COMPSCI,,,2022,3.29,harer,2606
-gsr13,Garrett Roscoe,NURSING,,,2021,3,mal52,23058
+gsr13,Garrett Roscoe,NURSING,,,2021,3.0,mal52,23058
 ikp3,Ivana Premasinghe,NURSING,,,2022,3.82,endow,18955
 mz135,Mingyu Zhang,PUBPOL,,,2021,3.97,baz5,8086
 mmr50,Mark Rothrock,ECON,NEUROSCI,,2021,3.23,dhinton,16796
@@ -6368,7 +6368,7 @@ rib9,Ryan Briggs,BIOLOGY,,,2022,2.5,smg4,5687
 bac40,Bryanna Carpenter,BIOLOGY,NEUROSCI,,2021,3.73,tdo3,24306
 sjm67,Sarah Majors,COMPSCI,,,2021,3.16,le62,2654
 wl181,Wei-Hsien Lee,BIOLOGY,,,2020,3.84,mee22,25322
-nlm27,Natalia Mart�_nez Gil,BIOLOGY,,,2020,3.64,bridg020,10556
+nlm27,Natalia Martínez Gil,BIOLOGY,,,2020,3.64,bridg020,10556
 kaw49,Katie Walzer,SOCIOL,,,2022,3.23,cn33,22166
 jmb186,James Boyd,STA,,,2020,3.05,linar001,17485
 smf60,Sam Freakley,NEUROSCI,ECON,,2021,3.09,bartl017,23230
@@ -6415,7 +6415,7 @@ agp16,Andrew Peipers,POLSCI,,,2021,3.3,roger134,21996
 meh77,Madeline Halpert,PUBPOL,,,2021,3.38,fekra001,18774
 nhd6,Nicole Dalal,ECON,PSY,,2021,2.52,radtk002,17360
 sk590,Amie Kim,NURSING,VMS,,2022,2.81,cwp10,23263
-stlou02c,N̩h̩mie St Louis,PSY,HISTORY,,2022,2.64,ivn,8944
+stlou02c,Néhémie St Louis,PSY,HISTORY,,2022,2.64,ivn,8944
 lr162,Larry Rogers,BIOLOGY,,,2020,3.05,sz44,17277
 hz99,Haibei Zhu,BIOLOGY,POLSCI,,2020,2.83,weinfurt,21396
 clb103,Callie Beasley,NURSING,,,2021,3.42,odj2,23118
@@ -6432,7 +6432,7 @@ jrt41,Jorden Taveirne,PSY,,,2021,2.6,mam153,9086
 jg401,Jen Goldshtein,ECE,,,2022,3.35,bdh24,22278
 hms43,Helene Snyder,PUBPOL,,,2021,3.86,sdb13,15755
 ps204,Prayo Smitasin,COMPSCI,,,2022,3.45,drew0001,2625
-bar33,Benny Romero Jr.,NURSING,BIOLOGY,,2019,3,am245,23180
+bar33,Benny Romero Jr.,NURSING,BIOLOGY,,2019,3.0,am245,23180
 can30,Corrine Nief,PUBPOL,,,2019,3.02,jg80,8151
 yl472,Yuncheng Liu,PSY,,,2021,3.76,jh202,8845
 mdp50,Michael Pupi,PUBPOL,,,2019,3.9,cdr42,20537
@@ -6688,7 +6688,7 @@ ebm23,Evan Mapes,NURSING,,,2020,2.58,adl16,23671
 es321,Ethan Shen,ECON,,,2021,2.74,aa389,8199
 jcu6,Jake Ulrich,PUBPOL,,,2022,2.67,mwa5,3324
 jrl53,Jordan Lowrey,CULANTH,PSY,,2020,2.54,jw616,22445
-mn184,Mat�_as Navarro,PUBPOL,,,2020,3.79,hhs8,16094
+mn184,Matías Navarro,PUBPOL,,,2020,3.79,hhs8,16094
 acg51,Alex Gourley,COMPSCI,,,2020,3.46,dam53,21068
 ekl16,Edwin Lee,PSY,,,2022,3.79,wz97,22828
 abf18,Alicia Fields,NURSING,,,2022,3.01,sangv001,21703
@@ -6715,7 +6715,7 @@ kw278,Karen Wu,MUSIC,BIOLOGY,,2022,2.79,gr46,7202
 ndh13,Nicole Higgins,POLSCI,NURSING,,2022,3.46,jory,20152
 jc686,Jennifer Chan,PUBPOL,,,2021,2.62,wiener,16093
 da153,Doulat Bibi Aliyar,COMPSCI,,,2020,3.66,tmb18,2693
-mpg22,M�_nica Gutierrez,BIOLOGY,,,2020,3.89,smv12,21453
+mpg22,Mónica Gutierrez,BIOLOGY,,,2020,3.89,smv12,21453
 mhb27,Max Beninger,ECON,,,2021,3.6,ceb84,3420
 hmv6,Hung Vu,NURSING,BIOLOGY,,2022,3.6,msw46,23053
 ahk20,Amy Kim,NURSING,ME,,2020,3.03,djk44,22910
@@ -6742,7 +6742,7 @@ orp,Olivia Pennoyer,ECON,,,2020,3.02,ew40,23751
 mh458,Mingkhuan Hangboonsukkul,ENGLISH,,,2021,3.34,blau0001,23652
 sas160,Scott Scarneo,CEE,,,2022,2.9,edk22,2166
 po26,Pablo Ortiz,HISTORY,,,2022,3.37,pm11,22307
-Sep-48,Sarah Proctor,BIOLOGY,,,2020,3.43,im77,20038
+sep48,Sarah Proctor,BIOLOGY,,,2020,3.43,im77,20038
 erw34,Eric Wahlstedt,SOCIOL,,,2021,3.76,jw476,21863
 wx19,Weizhi Xiong,NURSING,,,2020,3.43,pw87,23623
 cgl24,Crystal Locklear,COMPSCI,,,2022,3.22,hh190,21068
@@ -6886,7 +6886,7 @@ jic6,Jesse Crayle,ENVIRON,,,2019,3.85,skshenoy,22379
 vrp6,Vinit Parekh,ECE,PUBPOL,,2019,3.11,mdb95,13081
 ibc,Isibel Caraballo,BIOLOGY,COMPSCI,,2019,2.95,cdj19,17474
 enk18,Nur Kumru,BIOLOGY,,,2020,3.81,svm7,21491
-lrh33,Liam Hathaway,ECON,,,2020,3,schro016,17360
+lrh33,Liam Hathaway,ECON,,,2020,3.0,schro016,17360
 bab102,Benjamin Broman,NEUROSCI,,,2022,3.28,ga79,8825
 kms193,Kaleigh Smyrk,BIOLOGY,,,2022,2.51,casey006,21453
 it18,Isak Tranvik,ECE,,,2020,3.68,cm130,3700
@@ -7111,7 +7111,7 @@ jp233,Julia Powers,BME,MATH,,2022,3.4,murdo009,1704
 bkd8,Brandon Dalla Rosa,ECON,BIOLOGY,,2021,3.05,mille202,20379
 ty48,Tianqi Yang,ENVIRON,,,2021,3.91,ah133,20059
 meb126,Morgan Belina,BME,,,2020,2.6,se33,2136
-ss971,Shubhi Sharma,ENGLISH,,,2019,2.57,mfa,22093
+ss971,Shubhi Sharma,ENGLISH,,,2019,2.57,mfa,2136
 dg190,Dominique Guillaume,BIOLOGY,,,2021,3.28,mccoy023,20471
 jei7,Jess Issacharoff,PUBPOL,,,2021,3.91,jf104,15348
 cam128,Chloe McGlynn,BIOLOGY,,,2022,3.65,gover001,21396
@@ -7495,7 +7495,7 @@ jyw13,Jenny Wu,EDUC,,,2019,3.13,nadle001,3511
 vo18,Vivian Olabamiji,PUBPOL,ECON,,2022,3.37,kll32,8147
 hk216,Ashley Kwon,ENGLISH,,,2019,3.72,jwc46,3981
 vg81,Veronica Gough,BIOLOGY,,,2019,3.56,mp77,23846
-hl295,Jerry Louh,COMPSCI,,,2021,3.88,mjb134,
+hl295,Jerry Louh,COMPSCI,,,2021,3.88,mjb134,23846
 hd85,Hannah Deckelbaum,ENVIRON,,,2022,3.08,tl149,4264
 ga87,Gianna Affi,PUBPOL,,,2022,3.19,kilts001,19891
 elk5,Emily Kuty,NURSING,,,2019,3.15,blg26,18786
@@ -7535,7 +7535,7 @@ rat24,Ruhama Tereda,NURSING,,,2020,3.87,robirob,21712
 voo3,Valedie Oray,BIOLOGY,ENGLISH,,2019,3.81,tl233,17426
 jj142,James Jordan,PSY,,,2020,3.74,nlm28,20495
 js636,Jaehoon Sung,ECON,ECE,,2019,3.25,jesko,21941
-hg75,Harshil Garg,BME,,,2021,3,lansford,21964
+hg75,Harshil Garg,BME,,,2021,3.0,lansford,21964
 mdf31,Mariana Fisher,BIOLOGY,,,2022,3.62,tucce001,1482
 jsl47,Julia Li,ME,,,2019,2.62,kraus002,2176
 mhg20,Mel Goss,NURSING,,,2021,3.53,do28,16846
@@ -7607,7 +7607,7 @@ pl131,Polin Liu,ECON,,,2022,2.95,jew55,20371
 mev13,Michael Vanaman,SOCIOL,,,2020,2.77,tirya02w,20151
 axl4,Alec Lintz,PSY,ME,,2022,3.15,hayst001,8653
 jfj7,Justin Jorge,BME,,,2021,2.63,jcg77,20821
-ajs118,Andreas Santos,BME,,,2020,3,bwp2,1666
+ajs118,Andreas Santos,BME,,,2020,3.0,bwp2,1666
 dp155,Dhruthi Patel,PUBPOL,,,2021,3.5,murph063,21338
 etm19,Eileen Molzberger,SPANISH,BIOLOGY,,2020,3.99,ravi,18273
 mqt3,Michael Tian,BIOLOGY,PUBPOL,,2021,3.55,jmp108,18924
@@ -7674,7 +7674,7 @@ cw377,Chenwei Wu,COMPSCI,,,2019,2.54,tuckerja,2634
 jav20,Julia Villegas,STA,,,2021,3.54,kjs57,10232
 his4,Harry Sanderson,ME,ECE,,2020,3.15,ds179,3607
 kx27,Karoline Xiong,ECON,ME,,2019,3.74,fried029,14979
-cg208,Claire Gibbs,ME,,,2021,3.1,tw201,
+cg208,Claire Gibbs,ME,,,2021,3.1,tw201,14979
 rc285,Ruthran Chandrasekar,PUBPOL,,,2021,3.52,kgn5,16114
 jis15,Javin Schwartzman,ME,,,2021,2.85,dm375,2178
 maf76,Michael Freeman,ME,,,2019,2.73,bobhart,2178
@@ -7768,7 +7768,7 @@ pb148,Priyanka Balaji,BME,,,2020,3.14,tenor002,16580
 dyh7,Daniel Hwang,PHIL,BME,,2019,3.04,demarchi,7692
 ewn5,Earl Navarro,BME,,,2019,3.63,ad192,22072
 ma382,Maya Ashkenazi,BME,,,2021,2.51,doole005,22027
-jpc34,Jack Cohen,COMPSCI,CULANTH,,2021,3,acw56,15847
+jpc34,Jack Cohen,COMPSCI,CULANTH,,2021,3.0,acw56,15847
 jk369,Jee Young Kim,BME,,,2022,3.69,clabranc,16444
 nrl13,Natalie Larson,PSY,,,2020,3.22,chaud002,8766
 dme13,Derek Eidum,ECE,,,2019,3.92,al132,20062
@@ -7801,7 +7801,7 @@ mr340,Michelle Rodriguez,NURSING,,,2022,3.38,alg62,22909
 fbc4,Francesca Calderon,CULANTH,ECE,,2020,3.34,kdw32,23659
 ebd11,Evan Deboard,COMPSCI,,,2021,2.72,klb77,3690
 rg204,Renata Gomez,PUBPOL,,,2019,2.51,gupti002,18741
-thr,Tyler Rice,EDUC,,,2021,3,abt28,3519
+thr,Tyler Rice,EDUC,,,2021,3.0,abt28,3519
 kj122,Karen Janke,ENGLISH,,,2019,3.53,lparedes,3912
 trm39,Travis McNamara,COMPSCI,BIOLOGY,,2020,3.42,tanak001,2646
 nbm7,Noah Martin,CHEM,,,2020,2.79,wah,12673
@@ -7920,8 +7920,8 @@ aie3,Izaak Earnhardt,ECE,STA,,2020,3.73,ready001,3701
 th252,Tongyo Han,PSY,BME,,2020,3.43,ott,18842
 arr54,Alma Rodriguez,COMPSCI,,,2019,2.85,nw26,2663
 mnw8,Molly Williamson,BME,,,2021,3.63,shaase,1690
-rh224,Ruoyu Hu,HISTORY,BME,,2021,3,meb84,20213
-yl487,Yifeng Liu,NURSING,PUBPOL,,2021,3,st243,18958
+rh224,Ruoyu Hu,HISTORY,BME,,2021,3.0,meb84,20213
+yl487,Yifeng Liu,NURSING,PUBPOL,,2021,3.0,st243,18958
 hjh18,Huvon Hutchinson Goodridge,ECON,CULANTH,,2020,3.45,smith322,22929
 zel2,Zachary Levine,POLSCI,NURSING,,2019,3.53,ajrober5,8459
 jr345,John Rees,BIOLOGY,,,2019,3.05,kec64,21386
@@ -7948,7 +7948,7 @@ cmm150,Colleen Maloney,MATH,,,2021,3.26,kings006,24253
 krm65,Keeran Murphy,BIOLOGY,PSY,,2020,3.39,mk338,15730
 njl22,Natalie Lewis,NEUROSCI,NURSING,,2022,3.77,dja4,22577
 abh37,Tripp Hostetter III,PSY,,,2021,2.55,cohen011,8778
-jcb90,Julia Beck,BIOLOGY,POLSCI,,2022,3,tljohns,15265
+jcb90,Julia Beck,BIOLOGY,POLSCI,,2022,3.0,tljohns,15265
 eal49,Elizabeth Lamb,POLSCI,PUBPOL,,2019,3.69,nks26,21890
 nz33,Noah Zimmermann,NURSING,,,2021,2.76,georg053,20833
 ras85,Robert Shaw M.D.,COMPSCI,,,2020,3.4,cfreeman,15847
@@ -7992,7 +7992,7 @@ kjm53,Kieran Manzella,ECON,,,2021,2.84,pfeaver,3297
 xmz,Michelle Zhang,BIOLOGY,ECON,,2020,3.19,donia,24306
 snm44,Stella McMullen,ECE,,,2021,2.86,svr4,22189
 wy35,William Ye,PSY,,,2022,3.27,al132,15220
-24-Apr,Abby Roberts,ECON,,,2019,3.9,domin004,3345
+apr24,Abby Roberts,ECON,,,2019,3.9,domin004,3345
 we22,Wissal El Hachimi,COMPSCI,PUBPOL,,2020,3.7,craci001,2692
 th224,Gary Hu,ECON,POLSCI,,2022,3.17,web18,25352
 danda02w,Ragha Dandamudi,BIOLOGY,,,2022,3.76,march004,4110
@@ -8030,7 +8030,7 @@ ear42,Erik Reiss,POLSCI,,,2021,3.12,jacks004,8397
 lg175,Laurynn Garcia,COMPSCI,BME,,2021,3.26,bowes007,2604
 klm80,Katherine McCusker,PUBPOL,,,2022,3.47,kam61454,21962
 mma45,Madison Alvarado,BIOLOGY,,,2020,2.59,colli005,1543
-jcs109,Jonah Sinclair,BME,,,2019,3,lb326,22424
+jcs109,Jonah Sinclair,BME,,,2019,3.0,lb326,22424
 bmo3,Brynne O'Shea,NURSING,,,2022,3.97,gsp4,20739
 cl418,Caleb Lines,PUBPOL,,,2019,3.64,anm52,23561
 arl26,Andy Lack Jr.,PUBPOL,,,2022,2.59,cm241,8088
@@ -8047,7 +8047,7 @@ yx139,Yifan Xiao,BIOLOGY,,,2021,2.67,jbh44,19728
 jfg19,Jessica Gokhberg,BME,,,2021,2.75,thl4,14752
 clb84,Carina Block,PUBPOL,BIOLOGY,,2019,3.04,rmc60,15820
 gid,Genesis Dawson,BME,,,2019,3.53,lhr9,1679
-zmv,Zak VanKeuren,ENVIRON,,,2021,3,ks124,21506
+zmv,Zak VanKeuren,ENVIRON,,,2021,3.0,ks124,21506
 rh22,Regina Henderson,ECON,,,2020,3.79,ohler001,3349
 ef83,Erina Fujino,CEE,,,2019,3.41,fjeld,23547
 shc33,Samantha Collins,ECON,,,2022,2.58,sam125,18527
@@ -8064,7 +8064,7 @@ kdg28,Kelsey Gold,MUSIC,BIOLOGY,,2022,3.85,sf118,16288
 jg360,Julia Gundlach,EDUC,,,2019,2.85,cfulker,19060
 mcs74,Mary Struble,MATH,,,2021,3.72,brady017,15779
 sr189,Surya Ravichandran,PSY,,,2021,3.63,andol001,16749
-3-Oct,Olivia TumSuden,HISTORY,NURSING,,2019,2.8,prove001,5304
+oct3,Olivia TumSuden,HISTORY,NURSING,,2019,2.8,prove001,5304
 emb71,Emma Burke,PUBPOL,,,2019,3.98,akj12,8225
 mx37,Menghao Xu,NURSING,,,2020,3.89,cs519,25392
 jv113,Jackie Vicksman,BIOLOGY,,,2021,3.91,mw243,17426
@@ -8270,7 +8270,7 @@ tad36,Troy Duncan,ECON,BIOLOGY,,2022,3.3,gdav,13557
 sc561,Saachi Chawla,ECE,CULANTH,,2022,3.64,gwk,24981
 cac156,Christine Carroll,POLSCI,,,2020,2.86,munger,8617
 aef44,Amy Fredette,COMPSCI,,,2022,3.21,srp48,2629
-aah29,Adrianne Harris,BIOLOGY,,,2021,3,wsg6,20062
+aah29,Adrianne Harris,BIOLOGY,,,2021,3.0,wsg6,20062
 ams220,Andrew Spafford,HISTORY,,,2020,3.41,db48,5110
 ctj12,Chavis Jones,PUBPOL,,,2022,3.21,al258,22807
 pr100,Pablo Rion Echeverria,SOCIOL,ECON,,2019,3.99,mkk16,9850
@@ -8294,7 +8294,7 @@ sb404,Sara Bott,NEUROSCI,BIOLOGY,,2019,3.07,dsr25,8866
 cjl35,Cheryl Lee,PUBPOL,ECE,,2022,3.95,wap8,21776
 sjt27,Sean Tate,PSY,,,2019,2.61,ajg47,16798
 bwa6,Brian Allen,BME,,,2022,3.99,walte018,17434
-cws40,Cooper Stinson,BIOLOGY,,,2021,3,mc230,1477
+cws40,Cooper Stinson,BIOLOGY,,,2021,3.0,mc230,1477
 dhd4,Delaney Dryfoos,ECE,EDUC,,2019,3.16,flutzoni,21568
 jkg25,Jamie Glueck,NURSING,,,2020,3.87,lsatterw,20742
 sak58,Stephen Kennefick,NURSING,PUBPOL,,2020,3.39,hy106,20834
@@ -8303,7 +8303,7 @@ spa16,Sarah Amundson,ECE,,,2021,3.7,patka001,3648
 mii4,Maya Iskandarani,POLSCI,,,2020,2.73,slowi001,21385
 tps27,Thomas Stirrat,BIOLOGY,,,2022,2.98,tej12,13899
 acj31,Alex Johnson,ENVIRON,,,2019,3.19,jcs48,21517
-mbs66,Melanie Smitherman,POLSCI,,,2022,3,rh91,20252
+mbs66,Melanie Smitherman,POLSCI,,,2022,3.0,rh91,20252
 cf190,Claire Furino,NURSING,ME,,2022,2.73,hdavid,21705
 rwf11,Ryan Fu,ECON,,,2019,3.1,leela,18503
 eem34,Emma McFarlane,NEUROSCI,,,2022,3.28,miecz001,21061
@@ -8352,7 +8352,7 @@ acs79,Amber Strange,SOCIOL,,,2019,2.84,bl127,14324
 alg90,Anna Gilpin,SPANISH,,,2022,3.94,omk,10031
 jap114,Joshua Pajak,ENVIRON,,,2021,3.6,ssager,4221
 vt46,Vincent Tse,PUBPOL,,,2021,2.89,rs138,8071
-sn185,Sara Naghavi,SOCIOL,,,2019,3,fischerm,17849
+sn185,Sara Naghavi,SOCIOL,,,2019,3.0,fischerm,17849
 wsm12,Will Myers,PUBPOL,,,2020,2.65,ds381,4170
 qz48,Qiang Zhang,BIOLOGY,,,2019,3.16,shofe001,12641
 hs232,Hannah Sipes,POLSCI,,,2020,3.16,lm338,19037
@@ -8376,7 +8376,7 @@ rtg14,Rob Galligan,BIOLOGY,,,2019,2.87,dolor001,20062
 msb72,Maddie Braksick,PUBPOL,,,2019,3.78,gross016,24905
 nas55,Nicholas Strash,BIOLOGY,NURSING,,2020,3.64,klm15,1619
 fusse02w,Jon Fussell,EDUC,,,2020,3.27,dj93,3558
-cc602,Crist�_bal Clemente Rodr�_galvarez,PUBPOL,BIOLOGY,,2020,3.76,lds5,24476
+cc602,Cristóbal Clemente Rodrígalvarez,PUBPOL,BIOLOGY,,2020,3.76,lds5,24476
 hhc7,Haley Clifton,NEUROSCI,,,2019,2.83,aa497,21441
 btw19,Ben Williams,CULANTH,,,2022,3.55,tc239,22266
 ztd,Zoie Diana,PSY,PUBPOL,,2022,3.97,jjm34,8768
@@ -8385,7 +8385,7 @@ dc299,Daniel Chen,POLSCI,,,2020,2.51,nm76,22826
 mcdow016,Lisa McDowell,ECE,PUBPOL,,2021,2.83,aa145,3666
 fep5,Felicity Palma,BIOLOGY,,,2019,2.5,bfe,21491
 adb67,Adam Booth,SOCIOL,,,2019,3.76,holme01w,18708
-bemis02g,Abbey Bemis,ME,,,2021,3.17,md232,
+bemis02g,Abbey Bemis,ME,,,2021,3.17,md232,18708
 maf48,Meggan Cashwell,PUBPOL,ME,,2021,2.54,sp148,18244
 pw119,Peter Wang,PSY,POLSCI,,2022,2.76,colli005,21825
 sd362,Sunny Ding,SPANISH,,,2019,3.9,cm445,24404
@@ -8478,7 +8478,7 @@ sfe2,Sam Eure,BIOLOGY,ECON,,2019,3.56,mc394,1494
 sjh72,Sara Hall,NURSING,COMPSCI,,2022,2.99,ak159,20736
 beh23,Brittany Halberstadt,ECE,,,2022,3.32,ms524,21870
 jbg34,Jack Gillespie,NURSING,NEUROSCI,,2021,3.71,lab59,23263
-rig6,Rodrigo Garc�_a-Huidobro Gamboa,PUBPOL,,,2022,3.8,crivera,15570
+rig6,Rodrigo García-Huidobro Gamboa,PUBPOL,,,2022,3.8,crivera,15570
 lz110,Lan Zhuang,STA,,,2020,3.94,hahn0003,6905
 tpl9,Trieu Le,BME,COMPSCI,,2020,3.03,je84,6547
 rgt6,Ravi Tolani,CULANTH,,,2019,3.83,tjr26,14927
@@ -8538,7 +8538,7 @@ dkp13,Dhruv Patel,COMPSCI,,,2021,3.37,sa239,2692
 ald59,Andre Diniz,ENVIRON,,,2020,2.58,cah62,19747
 lfn3,Laura Navarrete,PUBPOL,,,2022,3.63,jmp31,12996
 rgm29,Ryan Mann,ME,ECON,,2021,3.93,crw38,1705
-yz400,Yurui Zhan,NURSING,,,2019,3,ml243,18955
+yz400,Yurui Zhan,NURSING,,,2019,3.0,ml243,18955
 ms773,Micalyn Struble,HISTORY,NEUROSCI,,2020,3.97,kfm15,10077
 ec243,Eduardo Coronado Sroka,ECON,,,2020,3.81,arb120,3276
 smm117,Stone Mathers,POLSCI,ME,,2019,3.67,pjblack,14617
@@ -8665,12 +8665,12 @@ cn78,Chinemerem Nwosu,ME,,,2021,3.94,kw120,1705
 ss970,Shruti Sharma,NURSING,,,2020,3.06,sam126,20742
 rs457,Rachaintr Sasirajpornchai,COMPSCI,,,2019,3.92,jh202,17620
 bjw64,Bernard Witek,COMPSCI,,,2022,3.42,dk79,3614
-wlg14,William Grant Jr.,NURSING,,,2020,3.07,kroll001,
+wlg14,William Grant Jr.,NURSING,,,2020,3.07,kroll001,3614
 jmc170,Janelle Carmichael,POLSCI,,,2019,3.22,meg2,8513
 tx20,Harry Xu,BME,,,2020,3.5,lms112,23013
 trj13,Trinity Johns,PUBPOL,ECON,,2020,3.04,jlv15,5189
 ap388,Amir Perk,NURSING,,,2021,3.73,jp50,23185
-nt77,Neb Tibebu,ME,,,2019,3,df94,3607
+nt77,Neb Tibebu,ME,,,2019,3.0,df94,3607
 yns5,Yesh Shah,ENGLISH,PUBPOL,,2021,3.37,zc101,3914
 mic23,Inessa Chandra,ECE,,,2022,3.16,dfd7,14557
 jgb41,Jensyn Bradley,BME,,,2022,3.73,cww27,1706
@@ -8953,7 +8953,7 @@ tkk5,Travis Knoll,ECON,POLSCI,,2022,3.24,tfk3,16824
 sh490,Samia Haimoura,PUBPOL,PHYSICS,,2022,2.84,hv17,8086
 epd11,Emma DeRose,BIOLOGY,,,2021,3.88,ss314,17088
 cid6,Carlos Diaz,BME,,,2022,3.03,apm16,18036
-ech39,Eliza Harrison,ENVIRON,,,2022,3,tyc5,21506
+ech39,Eliza Harrison,ENVIRON,,,2022,3.0,tyc5,21506
 dbm38,Destiny Mulero,BIOLOGY,,,2022,3.94,kolli001,20038
 fk43,Fanjie Kong,ENGLISH,,,2022,3.13,wbrown,15299
 jw518,Joe Wang,ECON,,,2019,3.78,coleman,15964
@@ -9096,7 +9096,7 @@ rhl10,Ray Liu,ECE,,,2021,3.29,sdc52,3720
 smo43,Sachi Oshima,PSY,,,2019,3.35,emm17,8764
 smn21,Shannon Smith,SOCIOL,,,2019,3.59,violi001,5026
 el165,Ema Lazic,ECON,,,2020,3.01,freib002,20378
-dab108,Donald Baker,CEE,NURSING,,2021,3,mjfeiler,2114
+dab108,Donald Baker,CEE,NURSING,,2021,3.0,mjfeiler,2114
 mnm29,Mario Moreno,BIOLOGY,NURSING,,2022,3.39,aerkanli,19130
 akn17,Annie Nosek,BIOLOGY,NURSING,,2022,2.7,set10,1504
 sbs44,Sara Shmueli,ECE,,,2021,3.7,bmc25,17604
@@ -9130,7 +9130,7 @@ ns203,Naod Sebhatleab,PSY,,,2020,3.79,el58,8825
 yl300,Yating Li,PUBPOL,,,2022,2.84,wtj,19231
 mtg15,Michael Gaffney,COMPSCI,,,2022,3.16,de32,2604
 jh458,Jennifer Hong,BIOLOGY,,,2020,3.08,samei001,24185
-ebm22,Emily Marun,PSY,,,2022,3,jl499,8989
+ebm22,Emily Marun,PSY,,,2022,3.0,jl499,8989
 mah140,Asia Honeysuckle,SOCIOL,BIOLOGY,,2020,3.68,ztm7,9813
 dl206,Dai Li,SOCIOL,,,2022,2.89,ass40,19273
 aa496,Aidan Aronhime,PSY,ECE,,2022,2.56,prr,8943
@@ -9190,7 +9190,7 @@ jng23,Jared Gloria,NEUROSCI,,,2021,3.37,almenoff,20466
 asm74,Andrew Mikhail,NURSING,,,2020,3.77,dmb50,20736
 ka166,Kevin Arocha,EOS,,,2019,2.94,eh206,16038
 afs34,Alexander Saba,POLSCI,,,2021,2.9,ty41,19037
-gew12,Gretchen Wright,BIOLOGY,,,2022,3,jl209,8825
+gew12,Gretchen Wright,BIOLOGY,,,2022,3.0,jl209,8825
 jj238,Jong In (Leon) Jun,COMPSCI,,,2021,3.08,blazi001,2606
 dl263,Dongyao Lei,PSY,,,2022,3.27,bgs22,16797
 vl45,Vincent Lin,ECON,,,2022,2.74,cnp11,3297
@@ -9217,8 +9217,8 @@ rnk10,Njeri Kara,CULANTH,,,2019,2.71,jsd39,8062
 ech45,Ethan Hicks,ECON,,,2022,3.18,ceb91,24751
 sjw55,Sebastian Waldron,PUBPOL,,,2022,3.46,green061,12997
 me122,Meghan Exline,HISTORY,,,2022,2.56,scw40,21816
-acl43,Aaron Lucander,STA,,,2019,3,jy98,10181
-mab172,Mat�_as Barbero,POLSCI,,,2020,3.92,zafar002,20250
+acl43,Aaron Lucander,STA,,,2019,3.0,jy98,10181
+mab172,Matías Barbero,POLSCI,,,2020,3.92,zafar002,20250
 ls338,Lakshmi Suresh,ECON,,,2021,3.32,gls20,15961
 pms47,Paula Sakuma,ECON,,,2022,2.68,nss12,3335
 ph95,Peter Horvath,PUBPOL,,,2022,2.55,bah34,8151
@@ -9445,7 +9445,7 @@ hk196,Hosung Kim,ME,BIOLOGY,,2022,3.83,kgl8,20322
 wcb23,Will Brodner,ENGLISH,,,2022,3.69,drc34,3989
 khk20,Kumaravelu Kumar,POLSCI,BIOLOGY,,2020,3.31,bfe,8370
 sr356,Sam Rosenthal,SOCIOL,,,2022,2.63,josh,16088
-kmc113,Katherine Cottrell,ECON,,,2021,3,gls20,3506
+kmc113,Katherine Cottrell,ECON,,,2021,3.0,gls20,3506
 sk591,Seijung Kim,SOCIOL,,,2021,3.76,waugh003,9817
 vcn5,Chizoba Nwankwo,EDUC,PSY,,2021,3.29,linar001,17875
 jjw47,Jessica White,BIOLOGY,PHYSICS,,2021,3.84,yy215,21396
@@ -9495,7 +9495,7 @@ elh39,Ella Head,PUBPOL,,,2020,3.22,eck00001,23444
 ehs18,Ella Stevens,BIOLOGY,BME,,2020,2.52,gs23,4200
 vg74,Vinay Ramachandra Gowda,STA,PSY,,2019,2.74,jdj49,3713
 cjd62,Chris Davis,FRENCH,,,2022,3.03,aph39,4508
-jrd57,John Day,NURSING,NEUROSCI,,2022,3,mehen,23091
+jrd57,John Day,NURSING,NEUROSCI,,2022,3.0,mehen,23091
 ll317,Lauren Laviolette,MATH,,,2020,2.59,lx50,22836
 whe2,Will Eisner,CULANTH,,,2022,3.59,yan00002,7099
 ba108,Bhuvesh Arora,BIOLOGY,POLSCI,,2021,3.3,stclaire,20037
@@ -9654,7 +9654,7 @@ swc25,Scotty Carlson,PUBPOL,,,2021,3.12,dbp19,16093
 ks487,Kinjal Sanghvi,ECON,NURSING,,2019,3.96,herna014,20379
 pi10,Elly Im,PHIL,,,2021,3.7,mmr43,22699
 nas38,Nura Sediqe,BIOLOGY,,,2020,2.66,fakad001,4200
-hc215,Hao Cui,PHIL,ECON,,2020,3,jhl38,17131
+hc215,Hao Cui,PHIL,ECON,,2020,3.0,jhl38,17131
 ajs149,Andrew Sander,PSY,,,2019,3.45,davis010,8769
 tmf17,Tara Fagan,ECON,,,2021,3.48,ccg26,22232
 krf13,Katie Freedy,COMPSCI,ENGLISH,,2019,3.5,covie001,15744
@@ -9685,7 +9685,7 @@ dl266,Derrick Lam,BIOLOGY,,,2020,2.54,jones267,21540
 agk19,Adam Krekorian,NURSING,,,2019,3.27,huffm007,20514
 ct179,Cheenu Tiwari,COMPSCI,,,2022,3.35,jcp51,2692
 szx2,Stephen Xu,BIOLOGY,,,2021,3.84,lewd1,1489
-jeb116,Joe Berlin,ECON,,,2019,3,mr231,15965
+jeb116,Joe Berlin,ECON,,,2019,3.0,mr231,15965
 trd12,Timothy Darlington,BIOLOGY,ECE,,2021,3.15,das76,1545
 dl235,Dexter Liu,BME,,,2021,2.73,phill079,1649
 bhask02g,Janani Bhaskar,PUBPOL,,,2020,3.89,rb172,8051
@@ -9759,7 +9759,7 @@ eau6,Emily Ury,EOS,,,2021,3.82,ams107,16032
 eld33,Emma Dolan,ENGLISH,,,2019,2.76,wmp7,3824
 sb530,Saravanan Balasubramani,ECON,ME,,2019,3.51,nyk3,20444
 dl275,Dylan Lev,SOCIOL,ECE,,2021,3.58,qp2,16099
-pm195,Petra Moln��r,POLSCI,,,2019,3.5,andol001,8464
+pm195,Petra Molnár,POLSCI,,,2019,3.5,andol001,8464
 na148,Naman Agarwal,PUBPOL,,,2021,3.7,ksn4,12997
 yjs4,Yusef Sabra,PUBPOL,,,2019,2.86,rose0034,3150
 rhh18,Henry Hilliard,BME,,,2020,3.66,rck11,20821
@@ -9782,7 +9782,7 @@ aeb94,Anne Barnes,NEUROSCI,,,2020,2.81,middl001,8861
 yn42,Yimin Ni,ECE,,,2019,3.74,jk351,23999
 sy165,Sing Yang Yoo,SOCIOL,,,2019,2.77,sh424,2842
 ajl82,Adam Lin,BIOLOGY,PUBPOL,,2020,2.68,tw201,1459
-ejp37,Edgar Pati̱o Donayre Hart,ENVIRON,,,2020,3.24,dab109,21562
+ejp37,Edgar Patiño Donayre Hart,ENVIRON,,,2020,3.24,dab109,21562
 sb537,Simran Bansal,ECON,,,2021,3.84,drenat,23751
 rtf7,Ryan Freeman,PUBPOL,,,2022,2.51,arb120,15819
 fqf,Forrest Friesen,HISTORY,,,2020,3.03,jm217,22019
@@ -9824,7 +9824,7 @@ jct39,Josie Tarin,BIOSTAT,,,2021,2.66,kll32,24841
 mf206,Miranda Sutton,CHEM,ME,,2022,3.82,man9,2364
 kv60,Kristin Van Slooten,PSY,,,2019,3.73,fm106,17414
 tnn4,Trac Norris,MATH,ECON,,2020,3.48,bk44,7002
-jjh66,Jonathan Henderson,PUBPOL,,,2020,3,mds71,8156
+jjh66,Jonathan Henderson,PUBPOL,,,2020,3.0,mds71,8156
 cp258,Claret Presley,COMPSCI,,,2021,3.99,skovac,21375
 cec42,Christina Cesarz,ECON,CHEM,,2020,3.04,kulminsk,3504
 dwr11,David Roy,BIOLOGY,,,2020,3.39,lo11,17088
@@ -9842,7 +9842,7 @@ tgg5,Tyler Garrard,ECON,,,2022,3.29,nss12,14833
 pmw28,Perry Wong,EDUC,,,2020,2.85,bartz001,3558
 rck23,Roger Kriegl III,BME,,,2022,3.97,sk486,13022
 brasw02c,Megan Braswell,STA,,,2021,3.28,djm60,17483
-rg180,Riya Gilja,SOCIOL,ECE,,2020,3,rj30,9833
+rg180,Riya Gilja,SOCIOL,ECE,,2020,3.0,rj30,9833
 keh68,Katlin Harker,HISTORY,BIOLOGY,,2019,2.85,owzar001,20605
 ff33,Fei Fang,AAAS,,,2022,2.54,awn8,9813
 tyl7,Tristan Lee,BME,,,2021,3.46,avl9,1687
@@ -10009,11 +10009,11 @@ sjg41,Sammy Garland,PUBPOL,,,2021,3.95,kann0001,21887
 fg62,Faustino Galang,ENGLISH,,,2020,2.66,dmb4,15300
 syl15,Sonia Lau,ENGLISH,BIOLOGY,,2020,2.86,nechyba,3854
 mm698,Melinda Melvin,ENVIRON,NEUROSCI,,2019,3.63,jg393,4081
-egp10,Erica Proffitt,HISTORY,ECON,,2021,3,sun00007,5541
+egp10,Erica Proffitt,HISTORY,ECON,,2021,3.0,sun00007,5541
 sm555,Sneha Mitra,ECON,PSY,,2020,3.4,ss595,3347
 cen25,Charles Nathan,PUBPOL,,,2019,3.92,brown229,15755
 jrg65,Julia Gianneschi,CEE,,,2020,3.7,rm135,23546
-kh347,Karen Herrera Zamora,ME,,,2022,2.57,band0002,
+kh347,Karen Herrera Zamora,ME,,,2022,2.57,band0002,23546
 dmc87,Debora Cordero Martinez,COMPSCI,,,2022,3.15,wharton,18804
 jh475,Johnny Hong,BIOLOGY,,,2022,2.52,urban006,1465
 mm684,Masooma Maqsoodi,ME,,,2019,3.86,taa3,16342
@@ -10098,7 +10098,7 @@ ns226,Nikhil Sridhar,ECON,,,2019,2.73,das84,24976
 jc650,Jie Chen,NEUROSCI,,,2019,2.79,eballeis,21442
 rjs67,Rohan Singh,ME,,,2020,3.67,xjliao,1705
 hmr19,Hannah Royal,BME,,,2019,3.63,murug002,13022
-jpc44,James Conklin,NEUROSCI,,,2019,3.92,jms272,
+jpc44,James Conklin,NEUROSCI,,,2019,3.92,jms272,13022
 aew60,Andy Whiteley,MATH,,,2021,3.54,hain,18121
 atr24,Allen Reed,PUBPOL,,,2021,2.97,mckee020,8213
 axh,Ava Hurlock,COMPSCI,SOCIOL,,2021,3.34,turi0002,2614
@@ -10134,7 +10134,7 @@ wn26,Wai May Ng,PUBPOL,,,2021,3.87,aks39,8536
 lg220,Lauren Givens,PSY,,,2022,2.57,smw89,8766
 eg172,Eyal Gibstein,PUBPOL,,,2020,3.06,vl21,23653
 dlp22,Dylan Peters,POLSCI,,,2019,3.12,tjstraum,12093
-am716,Andr̩ Macieira Braga Costa,EDUC,BIOLOGY,,2020,3.35,avm10,24711
+am716,André Macieira Braga Costa,EDUC,BIOLOGY,,2020,3.35,avm10,24711
 bba9,Bankole Akinbinu Jr.,COMPSCI,,,2022,2.7,kishn001,3690
 nkd9,Nikki Delmolino,ECON,,,2022,3.55,jr79,16959
 cv83,Casper Versteeg,NEUROSCI,,,2022,3.16,ke27,16749
@@ -10169,7 +10169,7 @@ kjs59,Kristine Stanners,ECON,,,2021,2.94,jmp15,3339
 cbj13,Carly Jones,EDUC,,,2020,3.58,kd120,24351
 ks512,Kristopher Schneider,NEUROSCI,ME,,2019,2.94,ss311,20075
 lmb94,Lisa Beyeler,PUBPOL,,,2020,3.29,drsmith,19016
-iis,Iliana Staneva,NURSING,ECON,,2022,3,mvr6,20743
+iis,Iliana Staneva,NURSING,ECON,,2022,3.0,mvr6,20743
 pg113,Pranav Ganapathy,BIOLOGY,ME,,2021,3.63,ritt,1542
 jg272,Jaime Gonzalez,BIOLOGY,,,2021,3.06,srp27,10556
 maj29,Michael Jauch,CULANTH,,,2021,2.64,wang0092,1854
@@ -10243,7 +10243,7 @@ iem3,nikki Mitchell,PUBPOL,,,2019,3.52,polla007,18247
 qr8,Qingrong Ruan,COMPSCI,,,2019,3.28,ssm9,2692
 mmv12,Mariana Vasquez Sanchez,COMPSCI,,,2020,3.82,mousa001,2711
 sm669,Samarth Menta,ECON,ECE,,2021,3.83,jo42,20373
-wc94,Won Suk Choi,PJMS,CEE,,2019,3,noor,22773
+wc94,Won Suk Choi,PJMS,CEE,,2019,3.0,noor,22773
 aeg48,Anna Go,ECE,BIOLOGY,,2021,3.98,jsb76,3683
 er118,Evan Reed,COMPSCI,,,2022,3.28,pw63,18466
 rag49,Rachel Gevlin,COMPSCI,ECE,,2022,2.5,glb2,3614
@@ -10251,7 +10251,7 @@ mr369,Maya Rajavel,POLSCI,,,2020,3.79,zhang054,21827
 cb380,Carolin Benack,BIOLOGY,PSY,,2019,3.4,rdr13,17853
 bdj11,Brian Jones,PSY,,,2022,2.89,jw140,9105
 mj193,Meilin Jiang,SOCIOL,ME,,2020,3.83,berry033,9792
-beb49,Brock Baker,PUBPOL,ECE,,2022,3,ja110,8280
+beb49,Brock Baker,PUBPOL,ECE,,2022,3.0,ja110,8280
 lno2,Laura Okolie,CEE,ME,,2021,3.1,sulli025,22961
 lf156,Leslie-Anne Flego,PUBPOL,,,2022,2.9,waj5,8068
 mmr53,Madeline Reyes,ME,,,2022,3.36,mrego,20322
@@ -10372,8 +10372,8 @@ jed57,Jade Davis,BIOLOGY,PUBPOL,,2020,2.94,mew23,25318
 kch37,Kathryn Howley,CHEM,,,2020,2.73,guilak,2400
 szews02w,Brian Szews,ME,,,2021,3.86,lcb47,1666
 ss908,Sami Soliman,ME,BIOLOGY,,2019,3.73,jizatt,16342
-jlm178,Jessica Mielcarek,PUBPOL,,,2020,3,jrmacf,20006
-Jan-51,Jacob Nagelberg,ME,,,2021,3.83,ggharpha,1706
+jlm178,Jessica Mielcarek,PUBPOL,,,2020,3.0,jrmacf,20006
+jan51,Jacob Nagelberg,ME,,,2021,3.83,ggharpha,1706
 nath02w,Munindra Nath,ME,COMPSCI,,2022,3.94,murug002,16342
 cch41,Connor Henderson,BME,,,2020,2.75,gross016,1682
 shk22,Sean Kelly,CULANTH,ENGLISH,,2021,3.29,el13,23220
@@ -10431,7 +10431,7 @@ lya,Lissette Araya,PUBPOL,,,2020,3.3,swynn,12637
 bjc45,Bethany Cieslowski,SOCIOL,,,2020,3.99,rtb19,19273
 stk7,Shane Killarney,BME,PUBPOL,,2022,3.09,mda18,23979
 tem27,Taylor Milbrath,MUSIC,ENGLISH,,2019,3.39,knanda,7141
-nlb36,Nicolas Bascu̱an,CEE,ECON,,2021,3.83,mjk46,25320
+nlb36,Nicolas Bascuñan,CEE,ECON,,2021,3.83,mjk46,25320
 cyx2,Chris Xu,CHEM,,,2021,3.6,ahm23,19342
 bjc49,Brittany Catcher,COMPSCI,,,2020,2.5,let24,7906
 gmk12,Garrett Kelly,ECON,,,2019,3.23,rpb26,3409
@@ -10449,7 +10449,7 @@ sjg36,Stephen Garrett Jr.,PUBPOL,BME,,2019,3.8,sully,25108
 jp362,Jessica Perlman,RELIGION,MATH,,2022,2.62,jfdem,16791
 rz88,Rohma Zubair,POLSCI,,,2019,3.6,rl237,16877
 wz110,Aria Zhang,BME,,,2021,3.85,mh396,1650
-mcs66,Marina Smalling,BIOLOGY,,,2022,3,kpd7,19566
+mcs66,Marina Smalling,BIOLOGY,,,2022,3.0,kpd7,19566
 cjb83,Clay Becker,CULANTH,,,2021,3.07,bentl003,18531
 njh33,Nate Heeter,ENGLISH,,,2021,3.6,jdedingr,4061
 knh25,Kim Hallowes,ME,ARTHIST,,2021,3.33,xzhang10,3607
@@ -10620,7 +10620,7 @@ dkg13,David Gardner,LINGUIST,,,2021,3.51,asd42,21084
 sb501,Saloni Bulchandani,PSY,,,2021,3.11,ma126,8827
 cef39,Christine Crute,ECON,,,2022,3.76,lap46,3346
 js804,Jiahui Shen,BIOLOGY,,,2020,3.7,sm684,22556
-als166,Alison Smith,ME,NEUROSCI,,2022,3.43,dbr1,
+als166,Alison Smith,ME,NEUROSCI,,2022,3.43,dbr1,22556
 rag61,Ryan Gottberg,EDUC,,,2022,2.75,pmd20,3557
 sbh33,Sether Hanson,HISTORY,,,2020,3.35,jar66,21797
 yl565,Wen Lu,COMPSCI,,,2022,3.93,deb43,18771
@@ -10767,7 +10767,7 @@ ers63,Evan Seiden,NURSING,MATH,,2022,3.02,dneal,20739
 pl125,Peace Lee,ME,,,2022,2.6,el68,6547
 jrs142,Jeffrey Strich,ECE,,,2022,3.98,parr,14541
 mjp59,Michael Postiglione,NEUROSCI,,,2021,2.94,bower005,13796
-am753,Aanchal Mittal,ME,,,2022,3.35,28-Jan,1705
+am753,Aanchal Mittal,ME,,,2022,3.35,jan28,1705
 nc125,Nichole Cella,ME,,,2022,2.73,rjb10,6546
 lt167,Lynn Talouzian,BIOLOGY,,,2019,2.8,da37,21830
 hmm25,Hannah McDaniel,MATH,BME,,2019,3.23,rek8,22059
@@ -10984,7 +10984,7 @@ vp103,Vrundaben Patel,MATH,,,2020,2.5,apg8,6897
 mw340,Matt Wisner,CEE,,,2022,3.97,atl,2114
 gn19,Gabor Nyeki,BME,CEE,,2022,3.18,sah2,1716
 tsw9,Tyler Watters,MATH,,,2019,3.45,jhover,6930
-rt157,Ria Thimmaiahgari,BIOLOGY,,,2020,3,lsr27,4123
+rt157,Ria Thimmaiahgari,BIOLOGY,,,2020,3.0,lsr27,4123
 vla6,Viviana Aragon,ENVIRON,,,2021,3.58,djr8,25171
 may02c,Rob May,ECE,,,2020,3.44,bbr12,3647
 fss11,Felix Steinruecke,CHEM,SPANISH,,2021,3.51,jg134,22993
@@ -11060,7 +11060,7 @@ hd95,Hadi Derakhshanmanesh,BIOLOGY,,,2021,3.59,raj00002,21453
 njc12,Noa Cnaan-On,NEUROSCI,,,2022,2.52,krang001,8767
 zy71,Zicheng Yuan,MATH,PUBPOL,,2021,2.6,avp13,21507
 mtm58,Maggie McManus,COMPSCI,ECE,,2021,3.6,bgao,2614
-17-Apr,Ashu Raman,PUBPOL,,,2022,3.25,lml28,8230
+apr17,Ashu Raman,PUBPOL,,,2022,3.25,lml28,8230
 az79,Alan Zambeli-Ljepovic,PUBPOL,,,2022,3.14,ml163,25269
 egn3,Elizabeth Nowlin,COMPSCI,,,2021,2.91,af74,22277
 kjm17,Kevin Miao,ME,,,2020,2.97,jmp33,1705
@@ -11079,7 +11079,7 @@ blw27,Brittany White,COMPSCI,,,2019,2.79,hsukim,2614
 kag74,Keith Glassbrook,ECE,,,2021,3.35,dukes002,3739
 rfb14,Robert Bruech,CULANTH,,,2020,3.17,mrc58,2025
 sbv7,Bradley Varnell,POLSCI,,,2022,3.74,lausi001,8555
-Jan-46,Jeremy Nelson,NURSING,,,2021,3.61,ts312,23103
+jan46,Jeremy Nelson,NURSING,,,2021,3.61,ts312,23103
 sr336,Srisuhruth Ramisetty,PUBPOL,,,2022,2.92,skene,17869
 bp142,Bret Pinsker,BIOLOGY,,,2020,3.49,pja22,12500
 cem81,Carlos Manzano,ME,,,2021,3.04,cjg47,6547
@@ -11133,7 +11133,7 @@ lcd26,Lindsay Dahora,BME,,,2019,2.6,am618,1650
 aph35,Andrew Homann,BME,,,2022,2.95,atj5,1692
 obe,Onastasia Ebright,BME,,,2019,2.9,olson016,23979
 wtf7,Bill Fris,ECON,,,2022,3.18,mds71,3450
-ag478,An�_bal Granada Gonz��lez,COMPSCI,,,2021,3.5,cward,2634
+ag478,Aníbal Granada González,COMPSCI,,,2021,3.5,cward,2634
 xh71,Xinyi Hong,POLSCI,PSY,,2022,3.1,tlz3,19039
 ib42,Ioanna Bourla,COMPSCI,,,2020,2.89,de32,13747
 avb11,Sandra Bocharnikov,PUBPOL,,,2021,2.79,aps31,17911
@@ -11179,7 +11179,7 @@ sl376,Sherry Liu,BIOLOGY,CHEM,,2019,2.9,jwowen,17426
 aae21,Amika Ekanem,NURSING,STA,,2021,3.18,dm128,13564
 bd126,Brian Dalluge,ME,,,2021,3.09,kp60,20322
 mch65,Callie Humphrey,ECE,EDUC,,2021,2.86,sv162,16163
-16-Mar,Michael Ruth,PUBPOL,,,2020,3.94,jk224,19231
+mar16,Michael Ruth,PUBPOL,,,2020,3.94,jk224,19231
 wf45,Weijia Fu,BME,SOCIOL,,2022,3.07,smith624,1666
 gs173,Guangji Sun,BME,,,2021,3.98,walte018,7809
 apf22,Andrew Frank,POLSCI,,,2019,2.88,mwest,23957
@@ -11228,7 +11228,7 @@ jtl45,Jose Labbe,NURSING,,,2021,3.06,mcampa,23642
 ps131,Phillip Stillman,BIOLOGY,PUBPOL,,2020,2.52,tjstraum,17277
 sis3,Sam Sherman,CEE,,,2022,3.87,jy98,17113
 chen03g,Min Chen,ENVIRON,,,2019,3.19,guy00005,16540
-msm86,Melissa Makar,PHYSICS,,,2021,3,benja013,16415
+msm86,Melissa Makar,PHYSICS,,,2021,3.0,benja013,16415
 rmj21,Reilly Johnson,PSY,,,2022,3.63,lha4,9082
 sbc33,Syann Cadogan,FRENCH,PUBPOL,,2020,3.09,ts306,23279
 ltc7,Lefko Charalambous,ECE,ECON,,2019,3.94,jph30,3648
@@ -11248,7 +11248,7 @@ yj124,Yaxuan Jiao,COMPSCI,,,2021,3.31,ac205,21068
 ch350,Caroline Heitmann,BME,,,2022,3.56,salzberg,18813
 yc359,Yufeng Chen,NURSING,,,2020,3.27,slf13,23621
 jpr26,Jordan Roberts,PSY,,,2019,3.3,dbp19,5027
-vtn3,Veronica Niamba,ECE,BME,,2019,3.54,gra12,25011
+vtn3,Veronica Niamba,ECE,BME,,2019,3.54,gra12,5027
 sjw30,Jessica Wang,ECON,,,2021,3.57,weinb001,20589
 peng02c,Jing Peng,BIOLOGY,,,2021,3.57,mlk26,23989
 cmt71,Charlotte Thomas,POLSCI,,,2022,3.4,cunni016,8391
@@ -11699,7 +11699,7 @@ mnc16,Miranda Crouse,ECE,SPANISH,,2021,3.85,ls275,3614
 dab107,Daniel Berrick,NURSING,,,2019,3.06,shaw0002,23480
 jam184,John McNeil,EDUC,ECON,,2020,2.86,sam66,23568
 acn20,Anna Northup,PSY,,,2022,3.49,rmh22,9096
-pd94,Paelina DeStephano,ME,,,2022,2.98,cohen011,
+pd94,Paelina DeStephano,ME,,,2022,2.98,cohen011,9096
 ssl36,Siyun Lee,ECON,,,2022,3.27,niw3,15964
 kee12,Katie Eppinger,ARTHIST,ECON,,2022,3.8,em172,14187
 xy56,Xiaoyang Yao,BIOLOGY,ENVIRON,,2019,3.4,ses69,1567
@@ -11854,7 +11854,7 @@ ls301,Luke Sallmen,POLSCI,ENVIRON,,2019,2.84,aec29,24106
 hy130,Haley Yeager,BIOLOGY,,,2019,3.42,seanm,20037
 dbm41,Dalia Mendoza-Sanchez,COMPSCI,,,2020,3.69,pshah,21068
 dnu2,Daniel Uzochukwu,ECE,,,2021,3.84,aj287,22189
-11-Feb,Felix Bolton,ECON,,,2021,3.55,manka001,14318
+feb11,Felix Bolton,ECON,,,2021,3.55,manka001,14318
 ald66,Alyssa Davy,BIOLOGY,,,2022,3.47,meh,21540
 ze3,Zakiyah Edmonds-Sills,BME,,,2019,3.56,maa80,1716
 swg11,Sean Grossnickle,PUBPOL,BME,,2022,2.78,charl005,16079
@@ -11879,7 +11879,7 @@ hk179,Hsuan-Cheng Kuo,ECON,,,2020,3.71,mmalouf,14832
 raina03w,Hema Raina,STA,,,2021,3.76,std20,10225
 krz3,Karen Zhao,EDUC,,,2020,3.82,cummi008,22267
 ewf7,Ethan Ford,CHEM,,,2021,3.2,ea139,2358
-bt95,Brandon Tejeda Garzon,VMS,,,2021,3,deg23,3845
+bt95,Brandon Tejeda Garzon,VMS,,,2021,3.0,deg23,3845
 mos11,Maddie Swotes,PUBPOL,,,2019,3.45,ag117,8155
 ql89,Qiu Lin,NURSING,,,2022,2.94,jmh159,23119
 jds153,Joseph Swinney,PSY,,,2019,3.59,gdt,8858
@@ -11920,7 +11920,7 @@ gb139,Gabby Bashist,BME,CULANTH,,2020,2.72,ksc28,1681
 fz49,Fangyuan Zheng,ECON,,,2022,3.39,tes40,3307
 ibh4,Ida Hjermitslev,PUBPOL,,,2019,3.83,w99ryan,12663
 jb570,Joseph Banham,HISTORY,,,2020,2.87,fakad001,5137
-agh22,Anna-Karin Hess,ECON,,,2021,3,greg,18505
+agh22,Anna-Karin Hess,ECON,,,2021,3.0,greg,18505
 jkk22,Jonathon Kuo,ECON,,,2022,3.11,mm382,16056
 jml142,Josie Link,POLSCI,,,2020,2.91,johns609,8419
 kem88,Kelly Marsh,ECE,,,2019,3.57,ee46,22277
@@ -11937,7 +11937,7 @@ cx45,Chenxi Xu,MATH,,,2019,3.76,oac6,7013
 hlg20,Heather Grune,ECON,,,2020,2.57,ap27,21941
 jc677,Joe Cullen,PUBPOL,,,2019,3.77,newby001,21119
 haa21,Hanine Atwi,STA,,,2022,3.01,rgs22,15479
-mrh57,Morgan Hersh,ME,,,2022,2.99,df113,
+mrh57,Morgan Hersh,ME,,,2022,2.99,df113,15479
 gw60,Guoyin Wang,POLSCI,,,2020,2.59,zh17,8068
 ars91,Amit Sarma,SOCIOL,,,2019,2.67,ss972,14395
 cro8,Cameron Olsen,ENVIRON,POLSCI,,2022,3.62,jm332,21503
@@ -11950,7 +11950,7 @@ cam114,Carly Mirabile,PUBPOL,BME,,2019,3.8,mn148,21413
 mmk62,Mary Kiser,POLSCI,,,2020,3.5,ball03w,1935
 rc267,Romaine Campbell,ECON,BME,,2022,3.42,kjm3,3334
 cam157,Carley McQuain,PUBPOL,,,2020,3.7,mds100,22807
-xz237,Xiaochen Zhou,BIOLOGY,COMPSCI,,2021,3,hause006,1494
+xz237,Xiaochen Zhou,BIOLOGY,COMPSCI,,2021,3.0,hause006,1494
 klb71,Kelly Buchanan,NEUROSCI,,,2022,3.92,stapl004,20734
 msn22,Marcelo Nogueira,ECON,,,2019,3.81,nkalow,3343
 dg193,Divyank Goswami,BIOLOGY,PUBPOL,,2022,3.91,sk27,1514
@@ -11976,7 +11976,7 @@ sds56,Sean Stewart,CHEM,STA,,2021,2.53,hk110,12686
 rz76,Rena Zhong,VMS,,,2021,3.75,dja4,4565
 mhb45,Marlin Boggs,PSY,,,2022,3.55,cmp27,15220
 rfs19,Rebecca Supple,ECON,,,2019,3.19,kcpbkk,18810
-brb17,Brian Bigler,ECON,PSY,,2020,3,coe00007,3307
+brb17,Brian Bigler,ECON,PSY,,2020,3.0,coe00007,3307
 zw156,Zian Wang,ENGLISH,PUBPOL,,2022,3.39,ee46,3990
 nb175,Nadia Bagretsova,PSY,ME,,2020,3.94,mccon002,19019
 yl573,Yangyujin Liu,MATH,,,2022,3.41,hillygus,6935
@@ -12106,7 +12106,7 @@ cmk61,Christy Kuesel,ENVIRON,CEE,,2021,2.53,lcollins,1489
 kah132,Katharine Harper,ENGLISH,,,2019,3.27,jrm107,23396
 mju3,Mike Ungvarsky,HISTORY,,,2021,3.14,ns53,5128
 gs176,George Sanchez,BIOLOGY,POLSCI,,2022,3.92,jones470,1535
-cd261,Shre̩ Daniels,POLSCI,,,2019,3.43,amb95,19031
+cd261,Shreé Daniels,POLSCI,,,2019,3.43,amb95,19031
 jh459,Judd Howard,COMPSCI,,,2019,3.4,jdolbow,2598
 mrt32,Rose Trimpey-Warhaftig,PSY,,,2020,3.35,kbj8,24135
 bendo02c,Mike Bendokaitis,EDUC,BME,,2021,2.59,jmk50,10897
@@ -12135,7 +12135,7 @@ jls144,Jessica Saunders,BME,,,2022,2.69,ky38,16580
 jmp105,Joseph Pecoraro,BIOLOGY,,,2020,3.62,cas177,23814
 bls77,Brandon Scholz,ECE,PUBPOL,,2021,3.27,trr9,24701
 kh304,Kat Hefter,PHIL,,,2021,3.88,ek85,18772
-emw63,Everett Werner,BME,COMPSCI,,2022,3,jk224,1704
+emw63,Everett Werner,BME,COMPSCI,,2022,3.0,jk224,1704
 ch373,Catherine Henderson,STA,,,2019,3.04,parso016,6938
 rbr22,Rebecca Ross,NEUROSCI,ECE,,2020,3.03,hss7,8925
 jpr31,James Rumsey,BIOLOGY,ECON,,2021,2.98,kg142,19725
@@ -12199,7 +12199,7 @@ jpb53,John Bumpus,EDUC,,,2022,2.93,ker32,3519
 yz495,Yi Zhou,PHIL,,,2021,3.35,kksmith,7701
 avp11,Alexandra Paul,NURSING,PUBPOL,,2022,3.82,kuo00004,22913
 cmc176,Catie Carberry,POLSCI,,,2019,3.56,rp2,22826
-tms70,Thomas Schaefer,NURSING,,,2021,3,lparedes,23181
+tms70,Thomas Schaefer,NURSING,,,2021,3.0,lparedes,23181
 bb228,Beepul Bharti,PUBPOL,,,2019,2.77,ns255,8230
 nw83,Nan Wang,ECON,,,2022,2.62,jew55,3450
 rsw27,Ryan Ware,PHYSICS,,,2021,2.63,hardi041,25002
@@ -12215,7 +12215,7 @@ bbp13,Bhrij Patel,NEUROSCI,,,2022,2.69,crowl012,21824
 dah67,Daniel Huapaya Noriega,PUBPOL,,,2020,3.76,rb241,8081
 jag77,Joshua Greenberg,COMPSCI,,,2021,3.74,rds12,2692
 ajh123,Alana Hyman,POLSCI,,,2020,3.52,sej20,8618
-vf19,Vida Falahatian,PUBPOL,,,2020,3,kjj15,23853
+vf19,Vida Falahatian,PUBPOL,,,2020,3.0,kjj15,23853
 bjs78,Brad Schupack,PUBPOL,,,2022,2.78,erdma001,8230
 dp215,Darwin Perry,BIOLOGY,,,2019,3.55,lmm89,22556
 pmk13,Philip Kariuki,BIOLOGY,,,2019,3.73,dietrich,21490
@@ -12353,7 +12353,7 @@ anl27,Alli Leiva,BIOLOGY,,,2019,2.76,pm78,20271
 eml60,Emily Limerick,PHIL,,,2019,3.62,pg111,20466
 nm194,Natalie Mlakar,PHYSICS,,,2020,2.94,lwydna,22823
 cvd8,Carolyn Diaz,POLSCI,,,2020,2.55,kenne022,21385
-jrb119,Jack Bateman Jr.,SOCIOL,,,2022,3,dc246,9839
+jrb119,Jack Bateman Jr.,SOCIOL,,,2022,3.0,dc246,9839
 cgp16,Cristina Perez,ECON,,,2022,2.56,mvr6,23790
 ym132,Yuqi Ma,ENVIRON,NEUROSCI,,2020,3.79,alb154,19747
 cs480,Chiara Settineri,PSY,EDUC,,2020,2.76,cnp25,20495
@@ -12420,7 +12420,7 @@ hvk5,Hannah Madigan,ME,BIOLOGY,,2019,3.91,bb268,1705
 slm119,Sena McCrory,PUBPOL,BIOLOGY,,2022,2.55,mm505,4170
 cdc61,Chantel Charais,NURSING,BIOLOGY,,2022,2.75,mbm61,20833
 sch9,Steve Hong,PSY,BIOLOGY,,2020,3.37,rice0017,9064
-asb93,Alexandra B̦gner,ENVIRON,,,2021,2.99,gab7,13563
+asb93,Alexandra Bögner,ENVIRON,,,2021,2.99,gab7,13563
 sj218,Sujeiry Jimenez,VMS,ECON,,2019,3.73,ks315,16614
 ceh84,Chloe Hubbe,HISTORY,,,2021,3.05,gerri004,15288
 sa66,Sean Adkins,PUBPOL,,,2019,2.8,huang027,22807
@@ -12686,7 +12686,7 @@ dsh48,Dustin Harris,NEUROSCI,BIOLOGY,,2019,2.97,nk78,19741
 mjm152,Matthew Mizota,BME,ME,,2019,3.13,kew52,21163
 kjt31,Kayana Tyson,CHEM,,,2022,3.94,emh62,19341
 zl123,Zhenhua Liu,PSY,,,2020,2.93,hanso003,20040
-rem63,Rachael Mahle,PSY,,,2019,3.82,cis15,
+rem63,Rachael Mahle,PSY,,,2019,3.82,cis15,20040
 nsw15,Nathan Webb,ECON,,,2020,2.76,rathmell,16109
 mr379,Monissa Richards,BME,,,2020,2.88,coleman,1716
 jds160,Jeff Samit,CHEM,,,2020,3.02,tenor002,2364
@@ -12776,7 +12776,7 @@ nad18,Nico de Sola,STA,,,2022,2.89,nm59,17483
 bhatt02g,Bhargav Bhatt,NURSING,COMPSCI,,2022,3.89,qz60,22084
 cmf68,Camden Ford,ECON,,,2020,3.35,jmarcus,3299
 hlb11,Heather Bayless,ME,,,2022,2.95,ogj,20322
-ku18,Emir ��rey,HISTORY,,,2019,3.92,silmsber,5124
+ku18,Emir Ürey,HISTORY,,,2019,3.92,silmsber,5124
 ak199,Anastasia Karklina,PUBPOL,,,2020,2.8,dainotto,8202
 jm497,Jason Micelotta,POLSCI,,,2019,3.27,erh22,20251
 rd173,Richard Downing,POLSCI,,,2022,3.38,ecm48,25086
@@ -12828,7 +12828,7 @@ jh605,Junru Hu,ECON,BIOLOGY,,2019,3.12,dv65,3322
 jc576,Jieun Cho,NEUROSCI,BME,,2020,2.84,gml8,8767
 bd127,Britain Dawson,ECE,,,2021,3.45,rs447,3606
 ehj8,Evan Jozkowski,CEE,STA,,2022,3.02,kw254,2129
-sa280,Samir Agadi,NURSING,,,2020,3,lh78,23087
+sa280,Samir Agadi,NURSING,,,2020,3.0,lh78,23087
 hp99,Heesu Park,BME,,,2022,3.94,bw91,21964
 amw76,Ashley Wilson,BIOLOGY,,,2022,3.57,eb116,19566
 clk34,Chris Klasson,PUBPOL,MUSIC,,2022,3.62,copel002,13841
@@ -12853,7 +12853,7 @@ rg169,Robyn Guo,BME,,,2020,3.6,ks482,1692
 aet31,Andres Taquechel,PSY,,,2022,3.79,ar354,21415
 jrp78,Julia Palmucci,BIOLOGY,NEUROSCI,,2022,2.54,psk9,4196
 rrp17,Ryan Piersma,ECE,,,2019,3.75,mrh36,3687
-led31,Lauren Deluca,CEE,,,2019,3,im77,2111
+led31,Lauren Deluca,CEE,,,2019,3.0,im77,2111
 hfe2,Harry Elworthy,ME,,,2022,3.65,w99ryan,1706
 ab512,Arushi Biswas,ENGLISH,,,2021,2.98,watte003,22091
 dy67,Dong Yao,BIOLOGY,,,2019,3.98,costa009,1500
@@ -12958,7 +12958,7 @@ pca9,Patricia Alvarez,ECON,,,2022,3.35,blk18,3314
 jg355,Jade Grimes,PUBPOL,,,2022,3.63,kdp3,24468
 dg194,Deepti Gopinath,ENGLISH,,,2021,2.51,tlc10,337
 acw63,Avery Westerlund,POLSCI,,,2019,2.93,small007,8555
-caj39,Cristi��n Ju��rez,ENVIRON,,,2022,2.89,avm13,19377
+caj39,Cristián Juárez,ENVIRON,,,2022,2.89,avm13,19377
 bhr16,Bryan Rusch,NURSING,,,2022,3.7,eac3,23088
 ll331,Lan Liu,ECE,,,2022,3.19,pellsjj,3648
 jl781,Junbo Li,NURSING,CULANTH,,2019,3.1,jww13,17302
@@ -12985,7 +12985,7 @@ tww18,Trent Williams,EOS,BME,,2020,3.3,mgm28,10977
 hrj5,Gracie Joo,NEUROSCI,BIOLOGY,,2019,3.81,ljm42,19741
 acs89,Ashleigh Smith,BIOLOGY,,,2019,2.64,patka001,17413
 sv144,Sarah Vanderbilt,COMPSCI,,,2019,3.44,rmr7,6921
-tmn21,Travis Nicks,PUBPOL,ECON,,2022,3,cd271,12637
+tmn21,Travis Nicks,PUBPOL,ECON,,2022,3.0,cd271,12637
 eb54,Emma Boulding,POLSCI,,,2022,2.94,cs249,20020
 ds451,Derek Soeder,PUBPOL,COMPSCI,,2019,3.4,fishe034,8228
 as893,Adrineh Shakelian,PSY,ENVIRON,,2021,2.85,mrego,23210
@@ -12999,7 +12999,7 @@ ojc4,Octavio Colmenares,ECON,,,2019,3.64,mea31,18507
 oan3,Olivia Nagpal,ECON,,,2020,3.17,ljs5,20371
 jpo7,Joshua Owsiany,BIOLOGY,,,2022,3.56,mc77,4123
 bt82,Betul Teymur,BME,ECON,,2021,3.81,ah133,1706
-zmh4,Zech Houser,HISTORY,NURSING,,2019,3,ab690,2842
+zmh4,Zech Houser,HISTORY,NURSING,,2019,3.0,ab690,2842
 jrb85,Josh Bruce,POLSCI,,,2021,2.67,ub10,8062
 il47,Itay Katsav,ECON,,,2020,3.13,jao33,17441
 jwr32,James Rasmussen,PSY,,,2021,3.65,ljn7,9104
@@ -13065,7 +13065,7 @@ xs35,Xin Song,PUBPOL,,,2021,2.52,ma35,15334
 jlk89,JohnCarlo Kristofich,ECON,,,2019,3.34,jrl57,20486
 dar65,Daniel Raftis,ECE,,,2020,2.67,garst001,23806
 mtk13,Mikhal Kidane,PUBPOL,COMPSCI,,2020,3.27,pbloom,22771
-psm28,Pedro Mendon̤a,PSY,POLSCI,,2019,3.77,ks501,20466
+psm28,Pedro Mendonça,PSY,POLSCI,,2019,3.77,ks501,20466
 ajr71,Alex Rego,BIOLOGY,,,2020,3.08,sbs4,1494
 mlp77,Melanie Paul-Hackett,PUBPOL,,,2020,3.84,wilke003,22956
 krw43,Kamryn Washington,ENVIRON,POLSCI,,2020,2.98,ec117,20300
@@ -13151,7 +13151,7 @@ cc458,Chong Chen,ECE,,,2020,2.68,wj25,22277
 rwp18,Ryan Parks,PUBPOL,,,2020,2.98,dag71,21413
 ad380,Ankitha Durvasula,PUBPOL,,,2022,3.76,jjs84,24761
 dap53,Daria Patterson-Smith,VMS,,,2022,3.95,pruit001,14970
-ba107,Benjamin Alemparte,BME,BIOLOGY,,2019,2.62,alb119,
+ba107,Benjamin Alemparte,BME,BIOLOGY,,2019,2.62,alb119,14970
 yj102,Alice Jiang,ME,NURSING,,2019,3.25,prr,1705
 mem65,Mary Elizabeth McLaughlin,ECON,,,2021,2.63,mdb95,17299
 nlj11,Nora Jacobson,BIOLOGY,,,2021,3.17,sjohnsen,21386
@@ -13227,14 +13227,14 @@ bg132,Betsy George-Ayrish,POLSCI,,,2019,3.4,cl297,14956
 kms151,Katrina Schaafsma,PUBPOL,BIOLOGY,,2021,2.92,husai001,8057
 dra28,Daniel Andrussier,BME,PUBPOL,,2021,3.26,jmarcus,1656
 jae45,Jared Edwards,PSY,,,2019,3.83,moorman,9101
-tl227,Tiara Little,NEUROSCI,,,2020,2.98,nunne001,
+tl227,Tiara Little,NEUROSCI,,,2020,2.98,nunne001,9101
 cjb73,Colin Brustad,PUBPOL,ECE,,2022,2.88,cr259,18241
 vb90,Vaclav Bednar,POLSCI,,,2022,3.85,ac183,21502
 aml105,Anna Lewis,POLSCI,,,2020,3.88,adg47,8062
 ald57,Allison Dear,NURSING,,,2021,3.27,pkw3,17307
 als168,Alnesha Speight,PSY,,,2020,3.83,sthorne,20466
 bph22,Ben Howell,ENGLISH,NURSING,,2021,3.98,cu6,3824
-av141,Austin Verissimo,NEUROSCI,,,2019,3.37,easle004,
+av141,Austin Verissimo,NEUROSCI,,,2019,3.37,easle004,3824
 sh397,Shu Yin Hoi,PSY,SOCIOL,,2021,2.52,jswanson,8395
 yn54,Yuki Nakanishi,PHYSICS,,,2022,3.15,jm204,7868
 sh485,Shilin Huang,COMPSCI,,,2020,3.33,let24,2717
@@ -13426,7 +13426,7 @@ jkh39,Joshua Helmkamp,THEATRST,CHEM,,2020,3.01,fried029,3033
 lla11,Laura Anthony,PSY,MATH,,2019,3.3,steph069,19715
 mer91,Megan Richards,BME,,,2019,2.66,koont003,1708
 pathe02c,Priyanka Pather,PUBPOL,,,2019,3.39,maj8,21119
-Sep-64,Sally Pohlman,ECON,ECE,,2020,2.8,jnv4,18515
+sep64,Sally Pohlman,ECON,ECE,,2020,2.8,jnv4,18515
 hw187,Haochen Wang,NURSING,ENVIRON,,2022,3.38,ajg47,23052
 xj13,Xiaomeng Jia,BIOLOGY,,,2019,3.12,mjb134,22025
 es296,Emily Sun,HISTORY,,,2019,2.79,tedde003,20036
@@ -13456,7 +13456,7 @@ sg434,Shannon Gifford,CULANTH,BME,,2022,3.94,etc14,22583
 oj9,Omari Johnson,PUBPOL,,,2022,2.7,eldai002,19231
 eka11,Edem Asamoa,BIOLOGY,,,2021,3.75,lching,21453
 kls111,Kimberly Swenson,HISTORY,,,2021,3.31,fb32,20073
-jst33,James Toscano Jr.,ME,,,2021,3.52,alm65,
+jst33,James Toscano Jr.,ME,,,2021,3.52,alm65,20073
 ral30,Russell Llave,BME,,,2019,3.87,zhang073,22072
 dbk17,Daniel Kastenbaum,NURSING,,,2021,3.83,mge3,22912
 theef02c,Jeff Theefs,ECON,,,2020,2.99,jm225,20042
@@ -13628,7 +13628,7 @@ cpm40,Chris Murphy,EDUC,BME,,2022,2.57,stclaire,3520
 hw231,Ho Yan Holly Wu,ECON,,,2021,3.52,al287,18515
 shp20,Spencer Perkins,NEUROSCI,POLSCI,,2021,3.12,muoio,7796
 df109,Danielle Fayad,ECON,ME,,2019,3.73,emb60,21553
-jhk38,Jenna Katz,MATH,,,2022,3,mb242,16960
+jhk38,Jenna Katz,MATH,,,2022,3.0,mb242,16960
 mlm130,Mary Motley,NURSING,,,2019,3.41,sp148,20736
 rs334,Reena Sandhu,CHEM,,,2021,2.84,pg111,19341
 csm50,Caitlin Muse,LINGUIST,,,2022,3.42,cward,13766
@@ -13706,7 +13706,7 @@ oeb6,Olivia Brownley,NEUROSCI,,,2022,3.72,sc534,19741
 jbc62,Brodie Craig,ECON,,,2022,3.67,msd39,21118
 pa95,Piyush Agarwal,PSY,STA,,2020,2.59,zd9,12648
 sbj12,Sarah Zigler,ECE,BME,,2019,3.31,kam184,17448
-Jan-37,James Nealy Jr.,NURSING,,,2022,3,ecc31,23109
+jan37,James Nealy Jr.,NURSING,,,2022,3.0,ecc31,23109
 tme13,Trina Eagal,STA,,,2019,3.1,bcs36,22809
 akn18,Alex Niebergall,NURSING,SOCIOL,,2019,3.93,mbj6,18943
 jmp126,Justin Pack,ME,,,2022,3.24,bi6,16342
@@ -13805,7 +13805,7 @@ kw280,Kristin Whitley,BIOLOGY,BME,,2020,3.13,jw28,21453
 ers55,Emma Schmaltz,ENGLISH,,,2021,2.83,ostarn,15766
 map101,Madeline Porter,COMPSCI,,,2019,2.93,allen161,2684
 ams207,Alex Sanfilippo,PSY,,,2019,2.98,smk32,22838
-sa311,Samantha Ahmed,BIOLOGY,,,2019,2.88,jjw29,
+sa311,Samantha Ahmed,BIOLOGY,,,2019,2.88,jjw29,22838
 xl254,Xinyan Lin,MATH,BIOLOGY,,2019,3.33,alexa019,25505
 ntg7,Noah Graham,COMPSCI,,,2020,3.12,djr8,14888
 ew129,Ellen Weburg,BIOLOGY,,,2021,2.7,livin001,1494
@@ -13813,7 +13813,7 @@ cem87,Corinne Mayle,PUBPOL,,,2022,2.72,cwv,8088
 jw642,Jonathan Wu,HISTORY,BIOLOGY,,2019,3.16,srp55,23169
 bze2,Ben Edelstein,BME,ECON,,2021,3.38,charl005,21739
 jas220,Janet Shaw,ME,,,2019,3.26,mb223,1705
-zc107,Zhuo Chen,BME,EOS,,2021,3,gbc8,22229
+zc107,Zhuo Chen,BME,EOS,,2021,3.0,gbc8,22229
 rcs47,Chip Stern,PSY,CULANTH,,2019,3.54,jm20,7212
 mkt15,Michael Tran,PSY,,,2019,3.4,oband001,20495
 jl624,Jim Liu,ECON,BIOLOGY,,2021,3.59,dsilv001,3335
@@ -13957,7 +13957,7 @@ wl177,Wending Lin,BIOLOGY,,,2022,2.73,lgb4,20458
 egw12,Gracy Whitaker,PUBPOL,,,2019,3.98,sv136,13004
 mte7,Matthew Ennis,CMRS,,,2022,2.93,jmp3,21089
 bas80,Brock Salzman,BIOLOGY,,,2021,2.52,xwang,18528
-at310,Adam Tietje,ME,PUBPOL,,2022,3.3,sds52,
+at310,Adam Tietje,ME,PUBPOL,,2022,3.3,sds52,18528
 jg392,John Gross,PUBPOL,,,2020,3.34,jonj,21837
 tre7,Tyler Erickson,ECON,,,2022,3.59,storelli,22929
 wk42,Weiyao Ke,COMPSCI,,,2021,2.66,ydp,2654
@@ -14016,13 +14016,13 @@ as869,Austin Shi,BIOLOGY,,,2020,3.23,rah46,12942
 ea132,Edwin Agnew,PUBPOL,BIOLOGY,,2019,3.69,feng0007,22147
 jir7,Julia Ryskamp,NURSING,,,2022,2.73,snide007,24274
 cs541,Clair Seckner,ECON,,,2022,3.75,jk27,3349
-chand04g,Santhosh Chandrabalan,BME,,,2019,3.57,gl52,
+chand04g,Santhosh Chandrabalan,BME,,,2019,3.57,gl52,3349
 yl470,Yufen Lin,EOS,,,2020,3.19,lam39,18533
 ms735,Misha Savchenko,BIOLOGY,,,2021,3.27,sulle001,24315
 csw40,Katie Wolff,ECE,BIOLOGY,,2019,3.47,gc141,13081
 jad113,Joseph D'Antonio,BME,,,2021,3.55,miche001,21163
 jcl80,Joshua LaFeve,ME,,,2021,2.74,jsc91,2176
-xz162,Isaac Zhang,BME,,,2021,3,hsl,1682
+xz162,Isaac Zhang,BME,,,2021,3.0,hsl,1682
 ob21,Olayode Babatunde,ME,,,2019,3.84,vitek001,20322
 sl540,Sophia LeRose,BME,HISTORY,,2019,2.94,cward,1666
 rpr13,Ryan Rizzuto,CHEM,,,2020,3.08,smw48,2364
@@ -14038,7 +14038,7 @@ fat9,Francisco Troconis Parra,BIOLOGY,,,2020,3.95,mkm53,1465
 cc556,Chong Cai,ECON,PUBPOL,,2020,3.17,kolli001,15963
 ssl30,Sharice Lloyd,BIOLOGY,,,2019,3.48,ross0064,4123
 dg211,Doherty Guirand,ME,,,2022,2.57,wilde018,6546
-gec21,Gabby Cooper,PUBPOL,STA,,2022,3,michaels,21890
+gec21,Gabby Cooper,PUBPOL,STA,,2022,3.0,michaels,21890
 lwb10,Lucy Burnett,BME,,,2021,2.68,kab119,1656
 rmm65,Rachel Meyers,ECE,,,2019,3.53,wmh10,21870
 jf244,Joshua Farahzad,PSY,,,2019,3.51,taylo233,18902
@@ -14166,7 +14166,7 @@ tam40,Timothy Mentzer,PUBPOL,,,2021,3.55,abw50,16434
 ksl21,Katharyn Loweth,COMPSCI,,,2020,2.85,sr20,24220
 jcm126,Jack Mendelsohn,ECON,,,2021,2.72,jak81,18524
 dl259,Diane Lee,STA,,,2020,2.6,eam109,23684
-sbk15,Stewart Kendrick,NEUROSCI,BIOLOGY,,2019,3,tem14,7788
+sbk15,Stewart Kendrick,NEUROSCI,BIOLOGY,,2019,3.0,tem14,7788
 cea35,Sam Aldave,ECON,,,2021,2.77,irby0002,3491
 cac155,Carly Coco,PUBPOL,PSY,,2019,3.08,toura001,23887
 hsm9,Harsh Mehta,NURSING,,,2020,2.73,enp2,17304
@@ -14237,12 +14237,12 @@ cw249,Chunge Wang,ECON,PSY,,2019,3.91,rha2,20501
 krp38,Kevin Peng,EDUC,,,2021,2.81,djc60,3517
 an172,Axel Nyembwe,HISTORY,,,2019,3.8,mk338,5127
 bld25,Bennett David,BIOLOGY,COMPSCI,,2020,3.2,kas113,14586
-na132,Natalia Androsz,PSY,,,2019,2.94,vinso001,23286
+na132,Natalia Androsz,PSY,,,2019,2.94,vinso001,14586
 mdb80,Matthew Bachman,NEUROSCI,,,2022,3.35,ay68,8954
 rp196,Ruoyao Pan,PUBPOL,,,2021,3.41,jones298,8233
 nad20,Nick De La Cruz,PUBPOL,NURSING,,2019,3.36,ckw18,16110
 ak396,Ashley Khouri,PSY,,,2019,3.13,richa021,25245
-cc434,Chaofan Chen,SOCIOL,,,2021,3,fellin,9889
+cc434,Chaofan Chen,SOCIOL,,,2021,3.0,fellin,9889
 jj237,Jennifer Jewell,ENGLISH,,,2021,3.23,rlbryant,4058
 mc612,Mengkun Chen,PSY,,,2022,2.99,beher001,8955
 jp414,Justin Pei,LINGUIST,,,2022,3.13,jjm29,13025
@@ -14283,7 +14283,7 @@ vic4,Victor Chu,BME,,,2021,3.79,jc573,1669
 ddp23,Duchoang Pham,NURSING,MATH,,2020,2.52,gulati,23263
 kas159,Kyle Sharp,NURSING,,,2021,3.62,heitn001,23630
 singh09w,Vivek Singh,COMPSCI,,,2021,3.42,tanak001,15496
-ebb20,Eladio Bobadilla,MATH,EDUC,,2022,3,ses99,6902
+ebb20,Eladio Bobadilla,MATH,EDUC,,2022,3.0,ses99,6902
 mah145,Mohsin Haider,ME,,,2021,3.81,kaw34,16342
 gn31,Genoveva Ntirugelegwa,PHYSICS,,,2021,3.53,bmt18,20141
 lmv20,Layne Vanatta,PSY,BIOLOGY,,2020,3.12,norri003,14606
@@ -14291,7 +14291,7 @@ djs74,Daniel Song,COMPSCI,,,2020,3.83,sbm8,23264
 ejc40,Enoch Chang,BIOLOGY,,,2020,3.38,jje22,21396
 cfl6,Chris Lazinski,MATH,,,2019,2.51,jbw24,6903
 ia46,Izzet Akosman,CEE,,,2022,3.32,jto10,3749
-pja24,Peter Anderson,ECON,,,2021,2.6,18-Dec,19187
+pja24,Peter Anderson,ECON,,,2021,2.6,dec18,19187
 mml51,Madison Lash,PSY,ENVIRON,,2020,2.9,jqw4,22838
 sfu,Sarah Frances Uffman,PSY,,,2019,3.12,gtwiss,23576
 js697,Jacqueline Scott,BIOLOGY,CLST,,2020,3.63,af54,1486
@@ -14341,7 +14341,7 @@ occ5,Owen Cook,PUBPOL,ECON,,2020,2.55,elles001,12998
 mk369,Min Kyung Kim,BIOLOGY,,,2022,3.67,sb135,25316
 ncg12,Noelle Garbaccio,PUBPOL,BME,,2020,2.75,tc239,23922
 sw406,Shuguang Wang,ECON,,,2021,3.59,attar001,14935
-jjb62,Jessica Bursey,ENGLISH,,,2020,2.65,ray00052,22093
+jjb62,Jessica Bursey,ENGLISH,,,2020,2.65,ray00052,14935
 hnh11,Hannah Humayun,ME,COMPSCI,,2021,3.2,tln12,3607
 tk137,Timothy Kim,ECON,,,2019,2.95,atc11,3314
 sf197,Sherry Feng,SOCIOL,,,2022,3.11,pjc23,22137
@@ -14376,7 +14376,7 @@ jh606,Jesse Herche,BME,,,2020,3.85,selim001,1700
 dh255,Daniel Hoyos,NURSING,,,2021,3.9,schipper,24297
 zx53,Zi Xiong,ECE,,,2022,2.84,rgn3,17449
 ys91,Yasmine Singh,BME,HISTORY,,2019,3.59,gb118,21163
-cs505,Carolina Segu�_,NEUROSCI,,,2019,3.35,pm78,24600
+cs505,Carolina Seguí,NEUROSCI,,,2019,3.35,pm78,24600
 ajf40,Aidan Fitzgerald,PUBPOL,COMPSCI,,2019,2.79,wl66,8229
 nkp6,Neelesh Pandey,COMPSCI,,,2020,3.51,mw94,18852
 hs171,Hersh Singh,BIOLOGY,NURSING,,2020,2.56,blobe001,21386
@@ -14553,7 +14553,7 @@ asc78,Anna Callahan,ECE,BIOLOGY,,2019,3.8,ab621,21568
 acw60,Aaron Williams,ME,PSY,,2019,2.84,cpiot,6547
 hlc21,Henry Cobbs,PUBPOL,ECON,,2019,2.97,bfv67,8051
 cwp12,Christina Pipkin,SPANISH,,,2019,3.24,sjh70,19872
-lpr7,Louden Richason,COMPSCI,,,2019,3,dm316,2654
+lpr7,Louden Richason,COMPSCI,,,2019,3.0,dm316,2654
 kaz7,Kyle Zingler,BME,COMPSCI,,2022,2.75,water013,20821
 sj225,Sarah Jacobs,BIOLOGY,NURSING,,2019,3.75,agm12,4110
 csp29,Connor Pfeiffer,ME,,,2022,3.75,haa14,16342
@@ -14613,7 +14613,7 @@ sc488,Shayna Cheek,ENGLISH,,,2020,3.2,clc48,22869
 aes103,Amy Stewart,ME,PUBPOL,,2021,3.89,jlk,6547
 stg20,Shema Gordon,ECE,BIOLOGY,,2019,2.9,mcfar011,3720
 yz399,Yinglu Zhang,CEE,PUBPOL,,2020,3.31,rkw11,2193
-bml41,Brandon L̻,ENGLISH,,,2022,2.97,finlaymc,23405
+bml41,Brandon Lê,ENGLISH,,,2022,2.97,finlaymc,23405
 nev4,Nicholas Verrochi,PSY,,,2021,3.76,jh512,21446
 ied4,De'Ivyion Drew,PUBPOL,,,2021,3.03,lb311,8071
 hl350,Heather Lipps,ME,,,2019,2.69,kravi001,1666
@@ -14644,7 +14644,7 @@ mdq3,Michael Quintin,COMPSCI,,,2019,2.72,ph27,24220
 eab94,Elizabeth Bueti,ECON,MATH,,2022,3.57,yc284,22232
 tc206,Tianyi Chen,PUBPOL,,,2022,3.25,mm382,15583
 mc546,Michael Castro,COMPSCI,,,2019,3.04,mbayelo,2671
-tr28,Teresa Ro,BME,,,2022,2.62,abv10,
+tr28,Teresa Ro,BME,,,2022,2.62,abv10,2671
 td138,Tarun Desai,BIOLOGY,COMPSCI,,2020,2.52,jm620,1543
 mg83,Mayra Henry,SOCIOL,POLSCI,,2022,3.56,cd132,9899
 km402,Karina Moreno Bueno,BIOLOGY,PHYSICS,,2019,3.65,sks14,23318
@@ -14924,7 +14924,7 @@ zc109,Zeyu Chen,PSY,,,2022,2.6,macle002,8769
 av175,Alejandro Vogel,COMPSCI,,,2022,3.04,sulli053,17430
 aef42,Alessandra Ferrero,BME,,,2021,2.58,lee00255,21568
 jp386,Jonghwan Park,POLSCI,,,2019,2.83,od11,19032
-smj69,Sophia Jeffery,ECON,PSY,,2021,3,ggl2,15964
+smj69,Sophia Jeffery,ECON,PSY,,2021,3.0,ggl2,15964
 jda38,Jason Atwood,NEUROSCI,,,2020,3.76,rcm45,21440
 jec83,Jamie Cohen,BIOLOGY,SOCIOL,,2022,2.82,irby0002,1612
 djc62,Daniel Cheong,PUBPOL,HISTORY,,2022,2.76,dyj2,16090
@@ -15057,7 +15057,7 @@ mrt25,Mirko Tancredi,BIOLOGY,,,2020,2.98,denny015,1549
 jl694,Jeremy Liang,CHEM,BME,,2022,3.09,jk150,15743
 mk401,Michaela Kotarba,BIOLOGY,,,2019,2.67,riede001,1835
 sel45,Sandra Luksic,NEUROSCI,ENVIRON,,2020,2.8,king0126,22577
-rc178,Rebecca Canada,ENVIRON,PSY,,2021,3,pc18,21503
+rc178,Rebecca Canada,ENVIRON,PSY,,2021,3.0,pc18,21503
 acm76,Amelia Meier,BME,MATH,,2020,3.8,que00001,24687
 mag96,Matthew Gallardo,COMPSCI,,,2021,3.79,alv16,2591
 gmf10,Gillian Fedor,COMPSCI,,,2022,3.64,sg394,22277
@@ -15112,7 +15112,7 @@ am534,Alexandria Murphy,COMPSCI,POLSCI,,2019,3.5,clt39,22265
 sjs89,Steve Shaw,PUBPOL,BME,,2022,3.52,count004,8057
 wh132,William Huang,ECON,,,2020,3.5,kmn34,18527
 bka9,Bhavya Allena,BME,COMPSCI,,2022,2.64,meb84,1704
-asl49,Aaron Lowe,ECON,,,2019,3,ee35,16109
+asl49,Aaron Lowe,ECON,,,2019,3.0,ee35,16109
 mb547,Maria Elena Becerra Chu,ECE,NURSING,,2020,3.18,twc10,17124
 nkp5,Neil Pruthi,NURSING,,,2021,3.67,tdo3,23672
 zvp2,Zara Porter,ME,ECON,,2021,2.61,marti091,20322
@@ -15156,7 +15156,7 @@ picha02c,Alexandra Pichardo,LINGUIST,,,2022,3.75,covie001,20504
 tm282,Toniesha Morton-Ali,EDUC,,,2020,2.54,bgilliam,10897
 alp58,Ally Perez,SOCIOL,HISTORY,,2019,3.01,lk171,22604
 rms55,Reed Shaffer,PUBPOL,,,2020,2.78,gr71,8280
-mb585,Mallory Bryant,NEUROSCI,PUBPOL,,2020,3.86,jqw4,
+mb585,Mallory Bryant,NEUROSCI,PUBPOL,,2020,3.86,jqw4,8280
 tc257,Tianshu Chen,NEUROSCI,,,2021,3.69,lrichman,21442
 dm322,Dhanush Madabusi,PUBPOL,ECE,,2022,3.96,voora001,21834
 mk371,Maksym Kosachevskyy,PHIL,,,2021,2.98,caj38,7739
@@ -15251,7 +15251,7 @@ kjs72,Kyle Salley,NEUROSCI,,,2022,3.67,cphaynes,22041
 dsm2,Dave McGregor,PSY,NURSING,,2021,3.95,nbs6,24317
 aej28,Allison Janowski,ENGLISH,,,2022,2.74,wmgrill,23276
 cjd56,Chris DiNardo,BIOLOGY,,,2021,3.96,fakad001,17426
-cag35,Caroline Garriott,BIOLOGY,,,2020,2.56,tc239,
+cag35,Caroline Garriott,BIOLOGY,,,2020,2.56,tc239,17426
 waw14,William Willis III,ME,ECON,,2021,3.77,parso016,20322
 rc281,Richard Chen,BME,,,2020,2.95,chi00002,1651
 beb53,Brittany Beavers,ME,VMS,,2020,2.52,cr113,24252
@@ -15306,7 +15306,7 @@ jeb104,Julia Black,NEUROSCI,,,2019,3.48,dan30,7776
 cx36,Can Xie,PUBPOL,,,2019,3.19,ljb48,20501
 ec226,Euna Cho,COMPSCI,,,2020,3.45,ftb,21068
 zx51,Alex Xiao,CULANTH,ECE,,2022,3.46,dsilv001,1883
-ak384,Alina Khurgel,ENVIRON,ME,,2021,3,mg410,15522
+ak384,Alina Khurgel,ENVIRON,ME,,2021,3.0,mg410,15522
 myc9,Monroe Chen,ECON,,,2020,2.69,dietrich,3299
 bz44,Bihan Zhuang,ECON,,,2020,3.42,liq,3292
 ss810,Simran Singh,PUBPOL,,,2019,3.22,lee00255,22565
@@ -15334,9 +15334,9 @@ cap68,Clare Parker,PUBPOL,NEUROSCI,,2019,2.93,kla41,12998
 jed68,Jacob Darr,EOS,,,2020,2.7,endow,16031
 ap475,Sun Phatraprasit,ECON,,,2022,3.72,bradleys,23908
 hz96,Hazel Zhang,BIOLOGY,,,2020,3.21,short003,20040
-ml467,Megan Lancaster,BME,STA,,2019,3,sdr43,21163
+ml467,Megan Lancaster,BME,STA,,2019,3.0,sdr43,21163
 cgw19,Carrie Wang,ENVIRON,CHEM,,2021,3.06,stein022,19669
-yw257,Yifan Wu,BIOLOGY,,,2019,3,gradd001,21460
+yw257,Yifan Wu,BIOLOGY,,,2019,3.0,gradd001,21460
 bll33,Brandon Lindsey,HISTORY,PUBPOL,,2022,3.63,cc454,21788
 hc218,Hsin-Pai Cheng,BME,,,2019,2.84,kuo00004,21652
 sjk45,Stuart Ki,PSY,,,2019,3.55,rwidenho,8769
@@ -15498,7 +15498,7 @@ nd115,Nelbie Anne Duran,CHEM,,,2020,3.17,jfe4,18042
 vp93,Victoria Pannell,ECON,,,2022,3.53,kak69,22929
 cbt13,Callie Turner,STA,VMS,,2022,3.91,jx77,15067
 bcb31,Ben Burchfiel,HISTORY,,,2020,3.93,mcs77,23681
-eyc9,Ely Cossio Roma̱a,ME,,,2019,3.78,jw476,6546
+eyc9,Ely Cossio Romaña,ME,,,2019,3.78,jw476,6546
 kh294,Kate Hahn,PSY,PUBPOL,,2022,2.61,cf180,7212
 ckm19,Christian Meyer,ECON,,,2020,3.57,rjb9,3449
 mp380,Michaela Pigue,POLSCI,VMS,,2021,3.33,morey005,19040
@@ -15680,11 +15680,11 @@ lp157,Lucy Pruzan,MATH,,,2020,2.86,eah75,17601
 mkt20,Matt Takanen,BIOLOGY,,,2021,2.79,te33,20752
 jek42,Everett Knudsen,PSY,,,2022,3.1,fm102,9101
 yz244,Heather Zhou,CULANTH,,,2021,2.79,rae11,19057
-Sep-63,Sarah Petry,NURSING,ECON,,2019,2.7,mh237,22912
+sep63,Sarah Petry,NURSING,ECON,,2019,2.7,mh237,22912
 ajw84,Asha Williams,BIOLOGY,VMS,,2021,2.69,franemcg,17277
 jd328,Javin DeLaurier,POLSCI,,,2019,3.73,doole005,19032
 jnz3,Juliana Zemke,NURSING,,,2021,3.8,ty51,23623
-zae2,Zo�� Englander,ME,,,2022,3.42,josep013,16342
+zae2,Zoë Englander,ME,,,2022,3.42,josep013,16342
 fb75,Fan Bu,PUBPOL,,,2020,3.58,pjblack,14940
 cpl26,Caitlin Luby,ARTHIST,,,2021,3.71,michaels,24110
 sa356,Shakeel Ahmed,ENGLISH,PSY,,2020,3.33,per2,19825
@@ -15758,7 +15758,7 @@ dab92,Daron Blankenship,NURSING,,,2021,3.4,sam152,23670
 jdc95,John Collins II,ECE,MATH,,2022,3.29,ew41,3614
 ckn6,Christopher Nguyen,ECE,,,2019,2.85,wetse001,13819
 ayz5,Amy Zhao,NEUROSCI,,,2021,2.74,sk270,19741
-ec204,Emily Chang,POLSCI,,,2019,3,chen0032,19037
+ec204,Emily Chang,POLSCI,,,2019,3.0,chen0032,19037
 cal66,Cecily Larison,BIOLOGY,EOS,,2021,2.92,amj,17112
 mb439,Malcolm Brown,GERMAN,,,2022,3.91,djg7,4764
 dl188,Dongye Lu,ECON,,,2019,3.96,rdb19,3420
@@ -15794,7 +15794,7 @@ js692,JK Suh,PSY,,,2020,3.62,halab001,5027
 keq5,Kyle Quattrocchi,CHEM,,,2019,3.55,av136,12678
 sjd46,Sophie Dalldorf,ECE,NEUROSCI,,2021,3.91,sp389,22260
 ad202,Angela Delaney Freedman,PUBPOL,,,2020,3.31,bk97,8146
-ay67,Aaron Michael Young,NEUROSCI,,,2022,3,hobbs021,22130
+ay67,Aaron Michael Young,NEUROSCI,,,2022,3.0,hobbs021,22130
 rmb80,Rachelle Broida,NURSING,ECON,,2019,2.93,lri,23050
 jdc87,Jon Churchill,BIOLOGY,,,2021,3.14,yu6,22556
 imb12,Itamar Barak,PSY,ECON,,2020,3.68,simmerme,9015
@@ -15827,7 +15827,7 @@ ap471,Abigayle Patterson,PUBPOL,,,2020,3.32,rs205,19445
 km420,Kaitlyn Pehrson,NEUROSCI,,,2019,3.13,mam161,19581
 jrm120,Jessica Marks,SOCIOL,,,2021,3.47,rj68,9878
 yg143,Ya Guo,ECE,CHEM,,2019,3.48,tong0003,17428
-25-Mar,Mark Radin,PSY,,,2021,2.89,villa007,8829
+mar25,Mark Radin,PSY,,,2021,2.89,villa007,8829
 jk426,Yuna Kim,PSY,,,2022,2.95,nd122,8855
 rk213,Rachel Kositsky,ENVIRON,,,2019,2.53,ky38,12638
 omt,Olivia Tullier,NEUROSCI,,,2022,3.67,jh512,19566
@@ -15907,13 +15907,13 @@ zds5,Zach Siegel,ECON,,,2021,3.88,krb59,15966
 mkb60,Meghna Batra,ME,,,2022,3.76,nak19,16342
 ajw70,Avivah Wang,PUBPOL,ECON,,2019,2.67,buchh001,25055
 as812,Alex Singleton,ME,,,2022,3.18,lobac002,6546
-ib48,Ian Bailey,ECE,,,2022,3.88,barba008,25011
+ib48,Ian Bailey,ECE,,,2022,3.88,barba008,6546
 ajg79,Adam Gonen,STA,PUBPOL,,2022,3.05,lde2,17485
 nnk10,Nurah Koney-Laryea,NURSING,,,2021,2.75,rc166,7378
 oe21,Osemwegie Eghidemwivbie,BME,ECE,,2021,3.38,frr,1704
 ns246,Nikhita Singh,BME,,,2020,3.31,uroni001,1716
 kfb14,Kate Brownstein,PUBPOL,MATH,,2019,3.33,set10,20787
-tqt3,Trung Tran,CULANTH,NEUROSCI,,2021,3,jks32,12561
+tqt3,Trung Tran,CULANTH,NEUROSCI,,2021,3.0,jks32,12561
 smd72,Stephanie Dote,ECON,,,2019,2.87,bear,18526
 hq14,He Qin,VMS,,,2020,2.86,dpn3,19368
 nr85,Nami Reddy,PUBPOL,,,2019,3.23,bigne001,18547
@@ -15941,7 +15941,7 @@ ila4,Isaac Andersen,NURSING,PUBPOL,,2019,2.51,rbc5,20744
 tsh28,Tim Holm,ECON,,,2022,3.08,jmaus,17299
 ta105,Torbjorn Alseth,PUBPOL,,,2021,2.73,fj6,22197
 yac6,Yenashi Castillo Tristani,BIOLOGY,,,2022,2.94,yaggy001,1478
-jk433,Janec Kohlsch�_tter,BIOLOGY,,,2021,3.55,rajag007,19042
+jk433,Janec Kohlschütter,BIOLOGY,,,2021,3.55,rajag007,19042
 klh93,Kat Horvath,PSY,,,2021,2.6,mb591,19019
 am652,Alex Miley,ME,,,2020,2.7,ar422,20322
 dl203,Didong Li,NURSING,,,2020,3.1,cbb2,23671
@@ -15955,7 +15955,7 @@ tjc53,Tara Corbett,BME,BIOLOGY,,2021,2.51,xwang,23013
 yl559,Yizhe Li,NURSING,,,2020,2.73,rs205,23090
 dg189,Damary Gutierrez Hernandez,FRENCH,PUBPOL,,2019,3.49,pbj3,4417
 jwf17,John Ferry,ECON,,,2020,3.15,cvv,8459
-lpn2,Liam Nolan,NURSING,,,2019,3.6,jw445,
+lpn2,Liam Nolan,NURSING,,,2019,3.6,jw445,8459
 ali11,Avery Indermaur,NEUROSCI,ECON,,2022,3.42,ivn,8845
 am729,Aoxue Miao,PUBPOL,,,2019,2.78,do28,23653
 lm342,Lindsay Morgenstein,NURSING,PUBPOL,,2021,2.61,soo00002,23629
@@ -16016,7 +16016,7 @@ kja18,Kaitlyn Andreano,NURSING,PSY,,2019,3.79,mh396,23180
 arw58,Alec Wall,PUBPOL,,,2019,3.78,mtb2,22147
 rjh59,Ryan Huang,NEUROSCI,,,2021,3.83,dmb50,1656
 yc285,Yuan Cheng,NURSING,,,2020,2.51,klitz,23623
-scw43,Samantha Wong,PHYSICS,,,2020,3,wkw6,7933
+scw43,Samantha Wong,PHYSICS,,,2020,3.0,wkw6,7933
 md342,Martin Dietz,ECON,,,2022,2.59,papal002,3346
 ms790,Matt Steyl,HISTORY,,,2022,3.87,ross0016,20488
 mtb39,Maurice Baynard,ECON,,,2022,3.13,mvv,22548
@@ -16066,11 +16066,11 @@ csc65,Skyler Cochrane,BIOLOGY,,,2022,3.97,baile061,1569
 sx51,Sarah Xu,PUBPOL,,,2021,3.56,pp7,23868
 ng140,Nimish Garg,ME,EDUC,,2021,3.43,sd380,16342
 dj132,Deon Jackson Jr.,POLSCI,,,2019,3.75,ssh55,21392
-js664,Justin Savage,POLSCI,,,2022,3.19,mdl28,24725
+js664,Justin Savage,POLSCI,,,2022,3.19,mdl28,21392
 mnn11,Mugi Nguyai,ECON,,,2020,2.82,der22,3420
 lw273,LaQuicha Westervelt,BME,,,2020,3.2,meintjes,16443
 ack42,Andrew Kelleher,ECON,,,2020,3.67,rwb18,3334
-py34,Peining Yang,BME,,,2019,3,jelov001,7809
+py34,Peining Yang,BME,,,2019,3.0,jelov001,7809
 landr02c,Beau Landry,POLSCI,,,2020,2.81,ska16,24166
 yf38,Yuan Fang,BIOLOGY,,,2022,3.96,ew160,18500
 dj115,Divya Juneja,EDUC,BME,,2020,2.76,bjg22,3519
@@ -16090,7 +16090,7 @@ dzy2,Defne Yorgancioglu,POLSCI,BIOLOGY,,2022,3.16,arosette,17120
 adk35,Ashley King,ME,,,2019,2.77,vaupel,2177
 tdm51,TJ Morris,POLSCI,ECON,,2019,3.66,pb146,8449
 slb137,Stephanie Boone,BME,,,2021,3.95,jmp108,1656
-al301,Anna Lukasiewicz,BME,,,2021,3,davis010,19091
+al301,Anna Lukasiewicz,BME,,,2021,3.0,davis010,19091
 dsj10,Daniel Jones III,POLSCI,PSY,,2019,2.92,gt52,19417
 ell20,Emma Landis,ECE,,,2020,3.5,crc56,22260
 ha66,Hadeel Abdelhy,CEE,,,2021,3.44,ccw12,23019
@@ -16157,7 +16157,7 @@ abs62,Adam Snowden,PHYSICS,,,2021,3.85,sdp29,16416
 jsl52,Juan Lasso Velasco,NURSING,,,2019,3.95,ym71,21704
 jbb58,John Benhart,NURSING,,,2021,3.54,dodds002,23059
 asj19,Anna Jenkins,ECE,POLSCI,,2021,3.4,jcd53,23297
-mmu6,Mateusz Urban,ENGLISH,,,2021,3.79,rparkins,22093
+mmu6,Mateusz Urban,ENGLISH,,,2021,3.79,rparkins,23297
 acy14,Annie Yang,POLSCI,,,2021,2.62,johns427,21392
 gfb6,Gea Bozzi,ECE,,,2019,3.87,sr61,17430
 wt56,Wenchih Tseng,ECE,,,2020,3.88,dress002,20062
@@ -16305,7 +16305,7 @@ ds448,Dhanasekar Sundararaman,BME,,,2019,3.96,aj287,1672
 jab190,Jayne Baker,BIOLOGY,,,2022,3.06,hazle001,4107
 lbw11,Lauren Mull,BIOLOGY,PUBPOL,,2020,2.66,mp183,12942
 rr218,Ritika Revoori,PUBPOL,,,2021,3.88,schre009,21062
-jeh76,Jordan Herrmann,ECON,,,2022,3,jml94,20378
+jeh76,Jordan Herrmann,ECON,,,2022,3.0,jml94,20378
 mb507,Miles Burnette,PUBPOL,BME,,2019,2.89,kmp87,23225
 jh569,Jennifer Hausman,ENVIRON,BIOLOGY,,2019,2.72,sun00015,18519
 yy223,Yaming You,ENGLISH,,,2022,3.12,bmr23,23652
@@ -16318,7 +16318,7 @@ anm43,Anthony Monroe,PSY,,,2022,3.23,eward002,8942
 mdm95,Michael Marsack,POLSCI,,,2020,3.99,gse,18032
 jw558,Rich Wang,BME,HISTORY,,2022,3.4,djr8,1672
 mjm131,Matthew Michelson,PUBPOL,,,2020,2.83,buckl002,8146
-pk167,Praveen Karthikeyan,ECE,PUBPOL,,2021,3,ap40,2606
+pk167,Praveen Karthikeyan,ECE,PUBPOL,,2021,3.0,ap40,2606
 hb81,Harrison Ballard,ECE,ECON,,2020,3.23,jb423,17124
 tka11,Tuokpe Ajuyah,BIOLOGY,,,2020,3.43,pew10,1478
 lah87,Lucy Hodson,POLSCI,ECE,,2019,3.53,msb51,21385
@@ -16541,7 +16541,7 @@ amr68,Arturo Reyes,COMPSCI,,,2021,2.68,jbp40,2717
 cx43,Emma Xu,PUBPOL,,,2022,3.02,mjw18,12663
 adr38,Adrian Rivas,BME,,,2019,3.24,kened001,12868
 hh173,Hayden Harrell,PUBPOL,CULANTH,,2019,2.96,acl61,16093
-Sep-52,Sarah Putney,BME,,,2019,3.41,abj20,16932
+sep52,Sarah Putney,BME,,,2019,3.41,abj20,16932
 hsl9,Harrison Labban,COMPSCI,,,2020,2.67,schme001,17620
 xw128,Xin Wang,ME,,,2020,3.96,dprice,1705
 sgw20,Stephen Wahlig,ARTHIST,,,2021,3.77,sem74,2789
@@ -16595,7 +16595,7 @@ ou7,Agatha Umeh,EDUC,BME,,2022,3.81,aww34,10897
 jsw55,Jessica West,ECE,,,2019,3.93,jss25,3628
 rr150,Rohan Rajan,PUBPOL,,,2022,2.98,yl552,22956
 ma270,Marc Albertsen,ENVIRON,MATH,,2021,3.29,parke114,21403
-8-Feb,Fallon Brown,ECE,NEUROSCI,,2019,3.61,jjw29,3606
+feb8,Fallon Brown,ECE,NEUROSCI,,2019,3.61,jjw29,3606
 cd258,Claire Dunkel,BIOLOGY,,,2021,3.85,yw115,25033
 kap71,Karlie Paschall,CHEM,ARTHIST,,2022,2.51,ao22,2331
 bdc24,Ben Cox,POLSCI,,,2022,3.65,lml28,8495
@@ -16633,7 +16633,7 @@ wh118,Wonsik Han,EDUC,PSY,,2019,2.74,js477,3558
 rgv4,Rob Vezina,ECON,,,2019,3.32,ej82,18527
 kgl12,Kira Latham,ECON,,,2021,3.59,smithlov,588
 kk323,Kara Kalinski,SOCIOL,,,2019,3.83,moo3,22165
-js791,Jennifer Stewart,BIOLOGY,,,2020,3,rf94,21453
+js791,Jennifer Stewart,BIOLOGY,,,2020,3.0,rf94,21453
 naj13,Nicholas Johnson,SOCIOL,NURSING,,2020,2.52,jf119,9813
 had13,Hebron Daniel,BME,,,2022,3.72,sps34,23791
 ym139,Evelyn Mao,PUBPOL,,,2020,2.9,bain0009,3339
@@ -16733,7 +16733,7 @@ cw375,Chenge Wang,ARTHIST,,,2019,2.86,acc81,23565
 mr355,Melissa Rooney,PHYSICS,,,2021,3.19,dme12,7872
 jj215,Joshua Jen,NURSING,,,2019,3.95,adh39,7415
 tsd14,Tiffany de Guzman,COMPSCI,NURSING,,2020,3.64,vvk4,2717
-ecc37,Ellen Cl̩mot Esq.,ENVIRON,,,2020,3.24,clv3,21723
+ecc37,Ellen Clémot Esq.,ENVIRON,,,2020,3.24,clv3,21723
 ia60,Ishita Ahuja,CHEM,ME,,2020,3.01,gerri004,21735
 ll313,Libba Lawrence,POLSCI,COMPSCI,,2019,2.86,brady017,24165
 ps236,Prakash Sundar,BME,,,2020,3.79,jdt35,1708
@@ -16837,7 +16837,7 @@ sbl26,Sarah Lanier,PHYSICS,,,2021,3.54,sdr43,7906
 hy150,Haiyang Yuan,MATH,ME,,2020,3.3,jmd61,6973
 ds377,Dylan Singleton,HISTORY,ECON,,2019,3.57,rlr24,20208
 ab530,Arpan Bhandari,MATH,NURSING,,2019,3.52,ks124,6951
-oab12,Segun Bright,BIOLOGY,,,2022,3,eck00001,23318
+oab12,Segun Bright,BIOLOGY,,,2022,3.0,eck00001,23318
 rep21,Ray Pryor IV,ECON,,,2020,3.86,alheg001,3268
 vl44,Victoria Lasarte,ME,,,2020,3.36,gmy7,2178
 edc26,Ethan Czerniecki,NEUROSCI,PUBPOL,,2022,3.42,cherr019,19671
@@ -16850,7 +16850,7 @@ jcb114,Cam Bogie,PUBPOL,,,2020,2.63,saf22,12637
 fs97,Demi Shen,BIOLOGY,,,2022,3.11,lv21,13899
 zlp,Zachary Pollack,PUBPOL,NURSING,,2019,3.41,rich0001,20537
 csm51,Chloe Meyers,BME,,,2021,3.23,thavolia,1677
-jp433,Joao Pesce Pereira Pinto,ME,,,2020,2.75,cah84,
+jp433,Joao Pesce Pereira Pinto,ME,,,2020,2.75,cah84,1677
 am710,Arunachalam Muthiah,PHYSICS,POLSCI,,2021,3.52,rab69,7865
 sen16,Sarah Nelson,BIOLOGY,PSY,,2019,3.16,cmm138,1535
 ch382,Carson Hill,ECE,,,2022,3.82,adyoder,3720
@@ -16873,7 +16873,7 @@ dar63,David Rothblatt,PSY,HISTORY,,2019,2.76,led7,14883
 hy126,Handi Yu,ECON,,,2020,3.86,qhliu,20566
 hb116,Hemasagar Babu Reddy,BIOLOGY,NURSING,,2019,3.62,adl16,18528
 ijs5,Isabel Shiff,PHYSICS,,,2022,2.99,wong0015,7914
-ajs143,"Alex ""Zen"" Szerszen",CEE,,,2020,2.54,rb328,2116
+ajs143,Alex "Zen" Szerszen,CEE,,,2020,2.54,rb328,2116
 ka180,Kathleen Atkatsh,PUBPOL,,,2022,3.01,wkp,15760
 erc37,Erik Cruz,POLSCI,STA,,2019,3.4,lwn,8370
 cz130,Chixiang Zhang,ME,,,2020,2.64,middl001,2177
@@ -16903,7 +16903,7 @@ yh191,Carol Hu,PUBPOL,,,2021,3.32,tholmes,16093
 dbg17,Dorothy Gheorghiu,BIOLOGY,,,2022,3.53,cmc74,21815
 gfk4,Gray F. Kidd,ENVIRON,MATH,,2019,3.06,chang016,8092
 as904,Arda Sertel,ECE,,,2019,3.17,moret002,3714
-bmd27,Bailey Davis,ECON,,,2020,3.19,sam66,
+bmd27,Bailey Davis,ECON,,,2020,3.19,sam66,3714
 vm89,Vincent Morgan,CHEM,,,2020,2.6,ralucic,19341
 cp264,Chris Poon,BME,BIOLOGY,,2021,3.39,tlc10,13022
 jnh24,Joe Heflin,NEUROSCI,,,2020,3.7,amb95,19582
@@ -17238,7 +17238,7 @@ cbc45,Christopher Cannella,ECON,,,2020,3.19,chudg001,18507
 glj14,Geovanni Janer Carattini,ENVIRON,,,2019,2.52,green061,25180
 ina4,Ilke Arkan,BME,,,2019,3.78,ahz3,18813
 zs68,Zhecheng SHENG,BIOLOGY,,,2020,3.1,kstephen,1549
-ams231,Anthony Solis,ENGLISH,CULANTH,,2019,2.66,dmb65,22093
+ams231,Anthony Solis,ENGLISH,CULANTH,,2019,2.66,dmb65,1549
 ad355,Aly Diaz,PUBPOL,,,2020,2.5,rr49,8054
 jld67,Jacquelyn Dillon,BIOLOGY,NURSING,,2019,2.7,ql21,1521
 baf24,Benjamin Fenton,BME,,,2019,3.33,kac95,7809
@@ -17260,7 +17260,7 @@ dv41,Dmitry Vagner,PHIL,,,2021,3.17,ajc107,7776
 rm376,Ruben Maya-Luevano,NURSING,ARTHIST,,2022,3.84,dja4,23745
 zl192,Carol Ling,COMPSCI,,,2021,2.64,rrf,2693
 akk46,Arnab Kar,BIOLOGY,,,2019,3.74,kuan,18528
-tfl2,Tori Lee,BIOLOGY,POLSCI,,2021,3,cwv,21540
+tfl2,Tori Lee,BIOLOGY,POLSCI,,2021,3.0,cwv,21540
 bmc41,Brendan Cheng,BME,,,2020,3.54,stapl004,1702
 rupp02g,Teresa Rupp,PUBPOL,EDUC,,2020,3.71,biola001,3313
 zy85,Ziting Yang,POLSCI,,,2022,2.78,cdr42,16847
@@ -17297,7 +17297,7 @@ kem54,Katie Moore,PUBPOL,,,2021,3.48,pc18,8536
 jdm95,Julie McClure,PUBPOL,STA,,2021,2.82,maciv001,15755
 yb41,Yash Bajaj,PUBPOL,,,2019,3.43,cnp25,3296
 eb303,Elijiah Brown,BIOLOGY,,,2019,2.66,nicoa001,14586
-cbm36,Conor Makepeace,POLSCI,,,2021,3,ps91,17078
+cbm36,Conor Makepeace,POLSCI,,,2021,3.0,ps91,17078
 jtm47,Jeffrey Mohl,ECON,,,2019,3.12,rkhanna,18515
 anm60,Ashley Myers,PSY,,,2021,3.52,srh6,8800
 cc216,Ryan Campbell,PSY,,,2020,2.64,jd285,8790
@@ -17474,7 +17474,7 @@ trm41,Tim McDade,PSY,,,2019,3.58,nt72,9825
 rap55,Robert Paul,NURSING,,,2020,3.87,vollm002,23622
 db293,Dipin Bishwakarma,BME,AAAS,,2021,2.91,mvw4,7809
 ac499,Arjun Chaudhuri,COMPSCI,,,2021,3.35,sb162,2604
-oos4,Oretunlewa Soyinka,ME,,,2019,2.5,gupti002,
+oos4,Oretunlewa Soyinka,ME,,,2019,2.5,gupti002,2604
 nlc14,Nicolas Coleman,ECON,,,2019,3.91,jcaruso,14832
 jk427,Joel Kim,BIOLOGY,,,2022,2.85,gs108,1465
 jeh65,Jonathon Himes,PUBPOL,,,2019,3.1,gb32,23922
@@ -17490,7 +17490,7 @@ mr284,Madhavi Rajiv,ECON,,,2022,2.8,adkin013,3292
 mm679,Masha Makhmudova,NEUROSCI,,,2019,3.02,mm382,8767
 kaa57,Austin Amandolia,PSY,,,2020,3.81,aharris,8858
 klt51,Kate Thomas,ECON,,,2020,3.07,japorter,15966
-jrb117,James Budinich,NURSING,,,2019,2.69,sud2,
+jrb117,James Budinich,NURSING,,,2019,2.69,sud2,15966
 jyn2,Jonathan Nakagawa,MATH,AAAS,,2019,2.87,wl58,6994
 sd151,Sophia Durand,ECON,,,2022,3.24,amakhulu,18505
 ob4,Oliver Box,BIOLOGY,,,2021,3.61,ahk19,23349
@@ -17571,7 +17571,7 @@ hmp9,Hayley Pearson,LINGUIST,,,2019,2.52,finke003,14304
 mo132,Masaaki Omachi,POLSCI,NURSING,,2020,3.7,cdrea,8464
 am533,Anika Mukherji,SOCIOL,,,2020,2.54,crump017,9810
 seh69,Samuel Horewood,ME,,,2022,3.08,jn43,6546
-fap4,Filippos Papageorgiou,ECE,,,2022,2.7,rmr7,25011
+fap4,Filippos Papageorgiou,ECE,,,2022,2.7,rmr7,6546
 akl22,Andrew Lee,ECE,,,2019,3.39,pankaj,13819
 sj212,Shiyu Jing,COMPSCI,PUBPOL,,2021,2.81,jk224,2598
 ac553,Nixxi Chen,STA,,,2020,2.75,flana002,10196
@@ -17590,7 +17590,7 @@ xz188,Long Zhang,NURSING,,,2022,3.38,rh91,23767
 hnw12,Heather Whittemore,NEUROSCI,,,2021,3.89,ziel0002,20496
 srb68,Sam Billig,STA,,,2019,3.16,vcm6,22189
 jd358,Jason Dictson,CHEM,,,2020,2.98,asd42,19341
-mst33,Mehmet Turkoglu,COMPSCI,PSY,,2020,3,ball03w,2614
+mst33,Mehmet Turkoglu,COMPSCI,PSY,,2020,3.0,ball03w,2614
 kpz3,Kelvin Zhou,ENGLISH,,,2022,3.08,aww34,24158
 cdl36,Curtis Lee,BIOLOGY,RELIGION,,2022,2.6,hawthorn,10556
 sf196,Spencer Ferguson,ECON,,,2020,3.04,wz4,15965
@@ -17612,7 +17612,7 @@ rfl7,Rebecca Lee,CHEM,,,2021,2.86,heath010,15743
 sbm40,Sam Morin,BIOLOGY,,,2020,3.46,ks482,14767
 cfv3,Connor Vasu,NURSING,,,2021,3.32,mgw21,22915
 ls334,Linghao Song,PSY,,,2020,3.16,aes72,24990
-js754,Tom��s Santolaya,COMPSCI,,,2021,3.32,hmg17,2629
+js754,Tomás Santolaya,COMPSCI,,,2021,3.32,hmg17,2629
 yx142,Yimin Xu,BIOLOGY,,,2021,3.93,wf11,17474
 bbn10,Berkley Nahum,ECE,,,2021,2.5,mesar001,3647
 bab99,Brendan Burg,ME,,,2021,3.94,mam76,1706
@@ -17654,7 +17654,7 @@ sr366,Sarah Ruell,NURSING,,,2019,2.6,kann0001,22913
 jp375,Jackie Perez,ENVIRON,,,2020,3.1,rtb19,22962
 jby9,Joshua Young,BIOLOGY,PUBPOL,,2022,3.58,jc409,18038
 sdb68,Sabrina Burri,NURSING,,,2020,3.93,mcdon035,24128
-sd364,Shannon Coats,ECON,GERMAN,,2021,3,mrw29,22579
+sd364,Shannon Coats,ECON,GERMAN,,2021,3.0,mrw29,22579
 jeb99,Jessa Bock,ECON,,,2022,2.99,trantt,3422
 hev,Heidi Vreeland,COMPSCI,NURSING,,2021,3.8,wahid001,2685
 jb577,Jianfei Bi,PUBPOL,,,2019,3.22,ym147,21816
@@ -17680,7 +17680,7 @@ wjb23,Jared Brewer,BME,NEUROSCI,,2020,3.13,roe00001,16580
 jwb58,Jeffrey Blair,BIOLOGY,PUBPOL,,2022,3.13,carro052,21396
 xz225,Xiyuan Zhang,PUBPOL,,,2021,3.84,jhr6,21245
 scb47,Stuart Behling,ME,,,2019,3.76,mm130,6547
-es324,Esteban Sol�_s Picado,NEUROSCI,,,2019,2.89,harew004,19566
+es324,Esteban Solís Picado,NEUROSCI,,,2019,2.89,harew004,19566
 yz259,Yiqin Zhou,ME,ECE,,2022,3.92,chaud002,2176
 ab577,Atanaz Bohlooli,BIOLOGY,BME,,2021,3.56,abv10,21772
 waf4,Wilson Fisher,ECON,NEUROSCI,,2021,2.69,anr16,3273
@@ -17949,10 +17949,10 @@ rcy6,Rob Yale,EDUC,,,2019,3.08,ku,22164
 sfs14,Stephen Shuchart,BME,,,2022,2.98,gross016,7809
 say14,Sara Yeh,PUBPOL,,,2020,3.85,amd161,337
 nin3,Nora Nunn,EDUC,,,2019,3.94,bb195,3517
-sl553,Audrey Liu,NEUROSCI,,,2022,3,mf160,18868
+sl553,Audrey Liu,NEUROSCI,,,2022,3.0,mf160,18868
 sp391,Sabrina Pin,ECON,CEE,,2019,2.55,blg25,24905
 vs100,Visrut Sudhakar,MATH,COMPSCI,,2019,3.73,rlr37,6919
-cac118,Catherine Chamberlin,CEE,,,2022,3,rb308,2109
+cac118,Catherine Chamberlin,CEE,,,2022,3.0,rb308,2109
 corey006,Kristin Corey,ECON,,,2021,3.57,lkh13,21941
 pt110,Pratik Thakral,ME,,,2022,3.62,gsh7,2177
 cfo5,Chidi Onwuka,ME,NURSING,,2020,2.62,eck00001,6546
@@ -17974,7 +17974,7 @@ ht126,Haoqi Tong,CEE,,,2019,3.96,bec2,23547
 awc31,Austin Connors,CULANTH,,,2021,2.93,poggi001,1860
 cb401,Crystal Burgos,BIOLOGY,,,2021,3.62,rl66,22215
 dhp12,David Pfeiffer Jr.,BME,,,2019,3.83,afa9,1679
-lmh91,Leila Hatem,NURSING,SOCIOL,,2022,3,jsd39,20744
+lmh91,Leila Hatem,NURSING,SOCIOL,,2022,3.0,jsd39,20744
 tl177,Tracy Lu,CHEM,NURSING,,2021,3.35,smc9,2331
 kh293,Kaitie Howie,NURSING,,,2022,3.88,kno4,17309
 jy238,Jennifer Yan,COMPSCI,NURSING,,2020,2.93,bass,18852
@@ -18013,7 +18013,7 @@ emm70,Evan Moretti,COMPSCI,,,2022,3.73,sm98,2692
 cmb137,Cam Badour,ECON,CULANTH,,2022,2.67,fowle003,20566
 sn213,Stephanie Nehmeh,PUBPOL,,,2022,2.84,jw34,17291
 mjh81,Manuel Hernandez,BIOLOGY,,,2021,3.57,do22,24306
-yl501,Yoonki Lee,EOS,,,2019,3,blaze001,4682
+yl501,Yoonki Lee,EOS,,,2019,3.0,blaze001,4682
 pmb33,Pat Botros,ECON,,,2022,3.73,cjw18,22525
 kkp17,Keerthi Premkanth,ECON,BME,,2022,3.48,ihr3,21981
 msi6,Meghana Iragavarapu,BIOLOGY,,,2021,3.42,jav14,1520

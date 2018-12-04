@@ -35,14 +35,16 @@ class NewGroupContent extends React.Component {
       courseID: null,
       department: null,
       level: null,
-      users:[this.props.netid]
+      users:[this.props.netid],
+      usersInCourse:[]
     };
   }
 
-  onSelectCourse = (courseNumber) => {
+  onSelectCourse = async (courseNumber) => {
     this.setState({
       courseID: courseNumber,
-    })
+    });
+    const usersInCourse = await fetch('http://35.237.162.74:3000/api/v1/dropdown/user?netid=' + this.props.netid + '&course=' + courseNumber);
   };
 
   onSelectUser = (netid) => {

@@ -81,7 +81,7 @@ class SearchAppBar extends React.Component {
 
   onKeyPress = async (event) => {
     if (event.key=='Enter') {
-      const search = await fetch('http://localhost:3000/api/v1/search/' + event.target.value);
+      const search = await fetch('http://35.237.162.74:3000/api/v1/search/' + event.target.value);
       const result = await search.json();
     }
   }

@@ -126,7 +126,7 @@ class FlowContent extends React.Component {
       favoriteCourse: this.state.favoriteCourse.courseNumber,
     };
     let params = new URLSearchParams(obj);
-    const res = await fetch('http://localhost:3000/api/v1/takesCourses/post', {
+    const res = await fetch('http://35.237.162.74:3000/api/v1/takesCourses/post', {
       method: 'POST',
       body: params
     });
@@ -188,8 +188,8 @@ FlowContent.propTypes = {
 class Flow extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/flow/' + query.netid);
-    const departments = await fetch('http://localhost:3000/api/v1/dropdown/department');
+    const student = await fetch('http://35.237.162.74:3000/api/v1/flow/' + query.netid);
+    const departments = await fetch('http://35.237.162.74:3000/api/v1/dropdown/department');
     const studentJson = await student.json();
     const departmentsJson = await departments.json();
     studentJson[0]['departments'] = departmentsJson;

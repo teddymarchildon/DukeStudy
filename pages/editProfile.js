@@ -88,10 +88,10 @@ StudyForm.propTypes = {
 class EditProfilePage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
+    const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
     const studentJson = await student.json();
 
-    const departments = await fetch('http://localhost:3000/api/v1/dropdown/department');
+    const departments = await fetch('http://35.237.162.74:3000/api/v1/dropdown/department');
     const departmentsJson = await departments.json();
 
     studentJson[0]['departments'] = departmentsJson;

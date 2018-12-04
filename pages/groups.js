@@ -41,7 +41,7 @@ class GroupsContent extends React.Component {
   }
 
   handleLeaveGroup = async (groupID) => {
-    const result = await fetch('http://localhost:3000/api/v1/leaveStudyGroup?netid=' + this.props.netid + '&groupID=' + groupID);
+    const result = await fetch('http://35.237.162.74:3000/api/v1/leaveStudyGroup?netid=' + this.props.netid + '&groupID=' + groupID);
     const json = await result.json();
     window.location.reload();
   }
@@ -74,7 +74,7 @@ class GroupsContent extends React.Component {
           </CardContent>
           <CardActions>
             <Button onClick={() => this.handleContactGroup(group.members)} size="small"> Contact Group </Button>
-            <Button onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>            
+            <Button onClick={() => this.handleLeaveGroup(group.group_id)} size="small"> Leave Group </Button>
           </CardActions>
         </Card>
         ))}
@@ -107,8 +107,8 @@ NewGroupButton.propTypes = {
 class GroupsPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
-    const groups = await fetch('http://localhost:3000/api/v1/groups/' + query.netid);
+    const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
+    const groups = await fetch('http://35.237.162.74:3000/api/v1/groups/' + query.netid);
     const studentJson = await student.json();
     const groupsJson = await groups.json();
 

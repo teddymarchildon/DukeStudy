@@ -32,7 +32,7 @@ class CourseDropDown extends React.Component {
       selectedDepartment: event.target.id
      });
 
-     const courses = await fetch('http://localhost:3000/api/v1/dropdown/course/' + event.target.id);
+     const courses = await fetch('http://35.237.162.74:3000/api/v1/dropdown/course/' + event.target.id);
      console.log('Fetching courses');
      const coursesJson = await courses.json();
      this.setState({

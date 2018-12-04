@@ -60,8 +60,8 @@ TutoringContent.propTypes = {
 class TutoringPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
-    const tutor = await fetch('http://localhost:3000/api/v1/tutoring/' + query.netid);
+    const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
+    const tutor = await fetch('http://35.237.162.74:3000/api/v1/tutoring/' + query.netid);
     const studentJson = await student.json();
     const tutorJson = await tutor.json();
     if (tutorJson[0] == null) {

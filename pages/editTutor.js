@@ -44,7 +44,7 @@ class TutorForm extends React.Component {
 
   saveChanges = async event => {
     let params = new URLSearchParams(this.state);
-    const res = await fetch('http://localhost:3000/api/v1/tutor/post', { method: 'POST', body: params })
+    const res = await fetch('http://35.237.162.74:3000/api/v1/tutor/post', { method: 'POST', body: params })
   };
 
   render() {
@@ -72,8 +72,8 @@ TutorForm.propTypes = {
 class TutoringPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    const student = await fetch('http://localhost:3000/api/v1/student/' + query.netid);
-    const tutor = await fetch('http://localhost:3000/api/v1/tutoring/' + query.netid);
+    const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
+    const tutor = await fetch('http://35.237.162.74:3000/api/v1/tutoring/' + query.netid);
     const studentJson = await student.json();
     const tutorJson = await tutor.json();
     studentJson[0]['tutorInfo'] = tutorJson[0];

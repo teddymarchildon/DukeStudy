@@ -199,6 +199,6 @@ async function registerNewUser(name, netid) {
     name: name,
   };
   let params = new URLSearchParams(obj);
-  const res = await fetch('http://localhost:3000/api/v1/user/post', { method: 'POST', body: params });
+  const res = await fetch('http://35.237.162.74:3000/api/v1/user/post', { method: 'POST', body: params });
   return;
 }

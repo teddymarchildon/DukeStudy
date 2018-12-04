@@ -47,8 +47,12 @@ exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(group
   return `INSERT INTO Study_Group VALUES (${groupID}, \'${courseID}\', \'${year}\');`
 }
 
-exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, netID) {
-  return `INSERT INTO In_Study_Group VALUES (${groupID}, \'${netID}\');`
+exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, users) {
+  var string = 'INSERT INTO In_Study_Group VALUES ';
+  for (user in users) {
+    string += '(' + groupID + ', \'' + users[user] + '\'),'
+  }
+  return string.slice(0, -1);
 }
 
 exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {

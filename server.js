@@ -240,10 +240,8 @@ app.prepare().then(() => {
     let result = db.submitQueryString(res, studyGroupQueryString, false);
 
     const users = req.body.users.split(",");
-    for (user in users) {
-      let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users[user])
-      let result = db.submitQueryString(res, inStudyGroupQueryString, false);
-    }
+    let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
+    let result = db.submitQueryString(res, inStudyGroupQueryString, false);
     return;
   });
 

@@ -1,8 +1,8 @@
 
 exports.config = {
-  user: 'tedmarchildon',
+  user: 'postgres',
   host: 'localhost',
-  database: 'dukestudy',
-  password: 'teddy',
+  database: 'DukeStudy',
+  password: 'dukestudy',
   port: 5432,
 };

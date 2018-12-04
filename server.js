@@ -173,9 +173,10 @@ app.prepare().then(() => {
     const semesters = JSON.parse(req.body.selectedCourseSemesters);
     const favCourse = req.body.favoriteCourse;
 
-    let favClassQS = dbHelper.favoriteClassQueryString(netid, favCourse);
-    db.submitQueryString(res, favClassQS, false);
-
+    if (favCourse !== null) {
+      let favClassQS = dbHelper.favoriteClassQueryString(netid, favCourse);
+      db.submitQueryString(res, favClassQS, false);
+    }
     let takesCourseQS = dbHelper.takesCourseQueryString(netid, courses, semesters);
     db.submitQueryString(res, takesCourseQS, false);
 

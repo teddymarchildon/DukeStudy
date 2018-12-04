@@ -48,8 +48,8 @@ class ProfessorDropDown extends React.Component {
           onClose={this.handleClose}
         >
         {this.props.users.map((professor, index) => (
-          <MenuItem key={professor.netid} id={user.netid} value={user.name} onClick={this.handleClose}>
-          {user.name}
+          <MenuItem key={professor.netid} id={professor.netid} value={professor.name} onClick={this.handleClose}>
+          {professor.name}
           </MenuItem>
         ))}
         </Menu>

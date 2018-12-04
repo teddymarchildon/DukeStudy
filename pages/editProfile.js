@@ -48,7 +48,7 @@ class StudyForm extends React.Component {
     });
   };
 
-  handleSelectCourse = (courseNumber) => {
+  handleSelectCourse = (courseNumber, semester) => {
     this.setState({
       favClass: courseNumber
     });

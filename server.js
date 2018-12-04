@@ -246,13 +246,12 @@ app.prepare().then(() => {
 
     const groupID = generateGroupID();
     const course = req.body.courseID;
-    const year = req.body.courseSemester;
     let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
     let result = db.submitQueryString(res, studyGroupQueryString, false);
-
+    const year = req.body.courseSemester;
     const users = req.body.users.split(",");
     let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
-    result = db.submitQueryString(res, inStudyGroupQueryString, false);
+    let final = db.submitQueryString(res, inStudyGroupQueryString, false);
     return;
   });
 

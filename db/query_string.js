@@ -109,8 +109,8 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
   for (course in courses) {
     let qualityRating = courses[course].qualityRating;
     let instructionRating = courses[course].qualityInstructionRating;
-    let difficulty = courses[course].difficulty;
-    let workload = courses[course].workload;
+    let difficulty = courses[course].difficultyRating;
+    let workload = courses[course].workloadRating;
     string += `(\'${netid}\', \'${courses[course].courseNumber.trim()}\', \'${semesters[course]}\', ${qualityRating}, ${instructionRating}, ${difficulty}, ${workload}), `
   }
   return string.trim().slice(0, -1) + ';';

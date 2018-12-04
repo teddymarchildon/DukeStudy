@@ -136,6 +136,17 @@ app.prepare().then(() => {
   });
 
   /**
+    API for getting the course semesters for a particular course
+  */
+
+  server.get('/api/v1/dropdown/semeseters/:course', (req, res, next) => {
+      const course = req.params.course;
+      console.log('Getting semesters for course: ' + course);
+
+      let queryString = dbHelper.courseSemestersQueryString(course);
+      return db.submitQueryString(res, queryString, true);
+  });
+  /**
     Below is the updating information API
 
   */
@@ -159,13 +170,14 @@ app.prepare().then(() => {
     console.log('** RECEIVED POST REQUEST for Taking Courses **')
     const netid = req.body.netid;
     const courses = JSON.parse(req.body.selectedCourses);
+    const semesters = JSON.parse(req.body.selectedCourseSemesters);
     const favCourse = req.body.favoriteCourse;
 
     let queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
     db.submitQueryString(res, queryString, false);
 
-    // queryString = dbHelper.takesCourseQueryString(netid, courses);
-    // db.submitQueryString(res, queryString, false);
+    queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
+    db.submitQueryString(res, queryString, false);
 
     return res.json({success: true});
   });
@@ -234,7 +246,7 @@ app.prepare().then(() => {
 
     const groupID = generateGroupID();
     const course = req.body.courseID;
-    const year = 'Fall 2018';
+    const year = req.body.courseSemester;
     let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
     let result = db.submitQueryString(res, studyGroupQueryString, false);
 

@@ -67,14 +67,18 @@ exports.favoriteClassQueryString = function favoriteClassQueryString(netid, cour
   return `UPDATE Student SET Favorite_Class=\'${courseNumber.trim()}\' WHERE NetID=\'${netid.trim()}\';`
 }
 
-exports.takesCourseQueryString = function takesCourseQueryString(netid, courses) {
+exports.takesCourseQueryString = function takesCourseQueryString(netid, courses, semesters) {
   var string = 'INSERT INTO Takes_Course VALUES ';
   for (course in courses) {
-    string += '(\'' + netid.trim() + '\', \'' + courses[course].courseNumber.trim() + '\'),'
+    string += '(\'' + netid.trim() + '\', \'' + courses[course].courseNumber.trim() + '\', \'' + semesters[course].trim() + '\'' + '),'
   }
   return string.slice(0, -1) + ';';
 }
 
 exports.allProfessorsQueryString = function allProfessorsQueryString() {
   return 'SELECT NetID, Name FROM Professor;'
+}
+
+exports.courseSemestersQueryString = function courseSemestersQueryString(course) {
+  return `SELECT * FROM Course_Semesters WHERE Course_Numer=\'${course}\';`
 }

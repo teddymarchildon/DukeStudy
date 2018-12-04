@@ -66,12 +66,13 @@ class FlowContent extends React.Component {
     this.state = {
       renderedCourses: [1],
       selectedCourses: [],
+      selectedCourseSemesters: [],
       currentCourse: null,
       favoriteCourse: null,
     };
   }
 
-  onSelectCourse = (courseNumber) => {
+  onSelectCourse = (courseNumber, courseSemester) => {
     var course = {
       courseNumber: courseNumber
     }
@@ -81,8 +82,11 @@ class FlowContent extends React.Component {
     course['workloadRating'] = -1;
     var selectedCourses = this.state.selectedCourses;
     selectedCourses.push(course);
+    var selectedCourseSemesters = this.state.selectedCourseSemesters;
+    selectedCourseSemesters.push(courseSemester);
     this.setState({
       selectedCourses: selectedCourses,
+      selectedCourseSemesters: selectedCourseSemesters,
       currentCourse: course,
     });
   }
@@ -123,6 +127,7 @@ class FlowContent extends React.Component {
     var obj = {
       netid: this.props.netid,
       selectedCourses: JSON.stringify(this.state.selectedCourses),
+      selectedCourseSemesters: JSON.stringify(this.state.selectedCourseSemesters);
       favoriteCourse: this.state.favoriteCourse.courseNumber,
     };
     let params = new URLSearchParams(obj);

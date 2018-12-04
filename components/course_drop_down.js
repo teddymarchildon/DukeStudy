@@ -34,7 +34,7 @@ class CourseDropDown extends React.Component {
 
   handleOpenSemester = event => {
     this.setState({
-      anchorSemesterEl: event.currentTarget;
+      anchorSemesterEl: event.currentTarget
     });
   }
 

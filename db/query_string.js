@@ -1,5 +1,26 @@
 exports.createUpdateStudentQueryString = function createStudentInsertQueryStringFromData(data) {
-  return `UPDATE Student SET name=\'${data['name']}\', primary_major=\'${data['major']}\', primary_minor=\'${data['minor']}\', certificate=\'${data['certificate']}\', favorite_class=\'${data['favClass']}\', favorite_professor=\'${data['favProf']}\' WHERE netid=\'${data['netid']}\';`
+  var string = `UPDATE Student SET `;
+  if (data['name'] != null) {
+    string += `name=\'${data['name']}\',`
+  }
+  if (data['major'] != null) {
+    string += `primary_major=\'${data['major']}\', `
+  }
+  if (data['minor'] != null) {
+    string += `primary_minor=\'${data['minor']}\', `
+  }
+  if (data['certificate'] != null) {
+    string += `certificate=\'${data['certificate']}\', `
+  }
+  if (data['favClass'] != null) {
+    string += `favorite_class=\'${data['favClass']}\', `
+  }
+  if (data['favProf'] != null) {
+    string += `favorite_professor=\'${data['favProf']}\', `
+  }
+  result = string.trim().slice(0, -1);
+  string += ` WHERE netid=\'${data['netid']}\';`
+  return string;
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {

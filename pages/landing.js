@@ -80,6 +80,7 @@ class HomePage extends React.Component {
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <LandingContent
+            name={this.props.name}
             netid={this.props.netid}
             major={this.props.primary_major}
             favClass={`${this.props.department} ${this.props.level}`}

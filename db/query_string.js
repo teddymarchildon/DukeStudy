@@ -1,21 +1,21 @@
 exports.createUpdateStudentQueryString = function createStudentInsertQueryStringFromData(data) {
   var string = `UPDATE Student SET `;
-  if (data['name'] != null) {
+  if (data['name'] !== null && data['name'] !== 'null') {
     string += `name=\'${data['name']}\',`
   }
-  if (data['major'] != null) {
+  if (data['major'] !== null && data['major'] !== 'null') {
     string += `primary_major=\'${data['major']}\', `
   }
-  if (data['minor'] != null) {
+  if (data['minor'] !== null && data['minor'] !== 'null') {
     string += `primary_minor=\'${data['minor']}\', `
   }
-  if (data['certificate'] != null) {
+  if (data['certificate'] !== null && data['certificate'] !== 'null') {
     string += `certificate=\'${data['certificate']}\', `
   }
-  if (data['favClass'] != null) {
+  if (data['favClass'] !== null && data['favClass'] !== 'null') {
     string += `favorite_class=\'${data['favClass']}\', `
   }
-  if (data['favProf'] != null) {
+  if (data['favProf'] !== null && data['favProf'] !== 'null') {
     string += `favorite_professor=\'${data['favProf']}\', `
   }
   result = string.trim().slice(0, -1);

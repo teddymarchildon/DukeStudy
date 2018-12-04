@@ -56,7 +56,7 @@ exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(g
 }
 
 exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {
-  return `DELETE FROM In_Study_Group WHERE Group_ID=\'${groupID.trim()}\' AND NetID=\'${netid.trim()}\';`
+  return `DELETE FROM In_Study_Group WHERE Group_ID=\'${groupID}\' AND NetID=\'${netid.trim()}\';`
 }
 
 exports.flowQueryString = function flowQueryString(netid) {

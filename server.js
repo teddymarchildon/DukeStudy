@@ -139,7 +139,7 @@ app.prepare().then(() => {
     API for getting the course semesters for a particular course
   */
 
-  server.get('/api/v1/dropdown/semeseters/:course', (req, res, next) => {
+  server.get('/api/v1/dropdown/semesters/:course', (req, res, next) => {
       const course = req.params.course;
       console.log('Getting semesters for course: ' + course);
 

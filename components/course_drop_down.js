@@ -75,6 +75,7 @@ class CourseDropDown extends React.Component {
   render() {
     const { anchorDepartmentEl } = this.state;
     const { anchorCourseEl } = this.state;
+    const { anchorSemesterEl } = this.state;
     return (
       <div>
         <Button

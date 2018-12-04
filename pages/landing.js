@@ -34,6 +34,9 @@ class LandingContent extends React.Component {
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              Name: {this.props.name}
+            </Typography>
+            <Typography className={this.props.title} color="textSecondary" gutterBottom>
               Major: {this.props.major}
             </Typography>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>

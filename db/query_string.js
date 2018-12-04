@@ -68,7 +68,7 @@ exports.favoriteClassQueryString = function favoriteClassQueryString(netid, cour
 }
 
 exports.takesCourseQueryString = function takesCourseQueryString(netid, courseNumber) {
-  return `INSERT INTO Takes_Course VALUES (\'${netid}\', \'${courseNumber}\', \'Fall18\');`
+  return `INSERT INTO Takes_Course VALUES (\'${netid.trim()}\', \'${courseNumber.trim()}\', \'Fall18\');`
 }
 
 exports.allProfessorsQueryString = function allProfessorsQueryString() {

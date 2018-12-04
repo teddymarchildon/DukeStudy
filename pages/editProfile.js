@@ -12,6 +12,7 @@ import CourseDropDown from '../components/course_drop_down.js';
 import FormTextField from '../components/form_text_field.js';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+import ProfessorDropDown from '../components/professor_drop_down.js';
 
 const styles = theme => ({
   main: {
@@ -53,6 +54,12 @@ class StudyForm extends React.Component {
     });
   };
 
+  handleSelectProfessor = (netid) => {
+    this.setState({
+      favProf: netid,
+    })
+  }
+
   saveChanges = async () => {
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://35.237.162.74:3000/api/v1/student/post', { method: 'POST', body: params })
@@ -67,15 +74,19 @@ class StudyForm extends React.Component {
             <FormTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <FormTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
             <FormTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
-              <Typography className={this.props.title} color='textSecondary'>
-                Favorite Course
-              </Typography>
-          <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
+            <Typography className={this.props.title} color='textSecondary'>
+              Favorite Professor
+            </Typography>
+            <ProfessorDropDown users={this.props.professors} onSelectUser={this.handleSelectProfessor} />
+            <Typography className={this.props.title} color='textSecondary'>
+              Favorite Course
+            </Typography>
+            <CourseDropDown departments={this.props.departments} onSelectCourse={this.handleSelectCourse}/>
           </CardContent>
           <CardActions>
             <Button onClick={this.saveChanges} size="small"> Save </Button>
           </CardActions>
-      </Card>
+        </Card>
     </div>
     )
   }
@@ -89,12 +100,14 @@ class EditProfilePage extends React.Component {
 
   static async getInitialProps({ query }) {
     const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
-    const studentJson = await student.json();
-
     const departments = await fetch('http://35.237.162.74:3000/api/v1/dropdown/department');
+    const professors = await fetch('http://35.237.162.74:3000/api/v1/dropdown/professor');
+    const studentJson = await student.json();
     const departmentsJson = await departments.json();
+    const professorsJson = await professors.json();
 
     studentJson[0]['departments'] = departmentsJson;
+    studentJson[0]['professors'] = professorsJson;
     return studentJson[0];
   }
 
@@ -114,6 +127,7 @@ class EditProfilePage extends React.Component {
             certificate={this.props.certificate}
             departments={this.props.departments}
             title={this.props.title}
+            professors={this.props.professors}
           />
         </div>
       </div>

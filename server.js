@@ -78,6 +78,16 @@ app.prepare().then(() => {
   });
 
   /**
+  API for selecting professor data
+  */
+
+  server.get('/api/v1/dropdown/professor/', (req, res, next) => {
+    console.log('Selecting all professors for dropdown');
+
+    let queryString = dbHelper.allProfessorsQueryString();
+    return db.submitQueryString(res, queryString, true);
+  });
+  /**
     API For fetching tutoring information
   */
 

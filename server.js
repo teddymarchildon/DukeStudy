@@ -2,7 +2,6 @@ const express = require('express')
 const next = require('next')
 const dbHelper = require('./db/query_string.js');
 const db = require('./db/query.js');
-const { Pool } = require('pg')
 var bodyParser = require('body-parser')
 
 const dev = process.env.NODE_ENV !== 'production'
@@ -227,12 +226,12 @@ app.prepare().then(() => {
     const course = req.body.courseID;
     const year = 'Fall 2018';
     let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
-    let result = db.submitQueryString(pool, res, studyGroupQueryString, false);
+    let result = db.submitQueryString(res, studyGroupQueryString, false);
 
     const users = req.body.users.split(",");
     for (user in users) {
       let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users[user])
-      let result = db.submitQueryString(pool, res, inStudyGroupQueryString, false);
+      let result = db.submitQueryString(res, inStudyGroupQueryString, false);
     }
     return;
   });

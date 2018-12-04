@@ -42,11 +42,11 @@ exports.allUsersQueryString = function allUsersQueryString(netid) {
 }
 
 exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(groupID, courseID, year) {
-  return `INSERT INTO Study_Group VALUES (\'${groupID}\', \'${courseID}\', \'${year}\');`
+  return `INSERT INTO Study_Group VALUES (${groupID}, \'${courseID}\', \'${year}\');`
 }
 
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, netID) {
-  return `INSERT INTO In_Study_Group VALUES (\'${groupID}\', \'${netID}\');`
+  return `INSERT INTO In_Study_Group VALUES (${groupID}, \'${netID}\');`
 }
 
 exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {

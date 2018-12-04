@@ -18,9 +18,9 @@ exports.createUpdateStudentQueryString = function createStudentInsertQueryString
   if (data['favProf'] !== null && data['favProf'] !== 'null') {
     string += `favorite_professor=\'${data['favProf']}\', `
   }
-  result = string.trim().slice(0, -1);
-  string += ` WHERE netid=\'${data['netid']}\';`
-  return string;
+  var result = string.trim().slice(0, -1);
+  result += ` WHERE netid=\'${data['netid']}\';`
+  return result;
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {

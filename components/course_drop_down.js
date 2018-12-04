@@ -68,12 +68,12 @@ class CourseDropDown extends React.Component {
 
 
 
-  handleCloseSemester = event => {
+  handleCloseSemester = (number, semester) => {
     this.setState({
       anchorSemesterEl: null,
-      selectedCourseSemester: event.target.value,
+      selectedCourseSemester: semester,
     });
-    this.props.onSelectCourse(this.state.selectedCourseID, event.target.value);
+    this.props.onSelectCourse(this.state.selectedCourseID, semester);
   }
 
   render() {
@@ -135,7 +135,7 @@ class CourseDropDown extends React.Component {
           onClose={this.handleCloseSemester}
         >
         {this.state.semesters.map((semester, index) => (
-          <MenuItem key={semester.course_number} id={semester.course_number} value={semester.year_semester} onClick={this.handleCloseSemester}>
+          <MenuItem key={semester.course_number} id={semester.course_number} value={semester.year_semester} onClick={() => this.handleCloseSemester(semester.course_number, semester.year_semester)}>
           {semester.year_semester}
           </MenuItem>
         ))}

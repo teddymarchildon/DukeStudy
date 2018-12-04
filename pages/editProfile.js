@@ -33,6 +33,7 @@ class StudyForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: this.props.name,
       netid: this.props.netid,
       major: this.props.major,
       minor: this.props.minor,
@@ -70,6 +71,7 @@ class StudyForm extends React.Component {
       <div style={{width: '25%', margin: '0 auto'}}>
         <Card className={this.props.card}>
           <CardContent>
+            <FormTextField label='Name' id='name' value={this.props.name} onChange={this.handleChange}/>
             <FormTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
             <FormTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <FormTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
@@ -117,6 +119,7 @@ class EditProfilePage extends React.Component {
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <StudyForm
+            name={this.props.name}
             netid={this.props.netid}
             major={this.props.primary_major}
             favClass={this.props.course_number}

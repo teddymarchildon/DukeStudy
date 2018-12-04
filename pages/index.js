@@ -119,7 +119,7 @@ class Login extends React.Component {
     }
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]
-      registerNewUser('test', netid)
+      registerNewUser(netid, netid)
       Router.push(`/userFlow?netid=${netid}`)
     } else {
       alert('Make sure you are using your Duke email')

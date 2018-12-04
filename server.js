@@ -277,7 +277,7 @@ app.prepare().then(() => {
 })
 
 generateGroupID = function() {
+  let min = 7661;
   let max = 9999;
-  let min = 1;
   return Math.floor(Math.random() * (max-min) + min);
 }

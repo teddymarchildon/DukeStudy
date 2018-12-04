@@ -70,7 +70,7 @@ exports.favoriteClassQueryString = function favoriteClassQueryString(netid, cour
 exports.takesCourseQueryString = function takesCourseQueryString(netid, courses) {
   var string = 'INSERT INTO Takes_Course VALUES ';
   for (course in courses) {
-    string += '(' + netid.trim() + ', \'' + courses[course].courseNumber.trim() + '\'),'
+    string += '(\'' + netid.trim() + '\', \'' + courses[course].courseNumber.trim() + '\'),'
   }
   return string.slice(0, -1) + ';';
 }

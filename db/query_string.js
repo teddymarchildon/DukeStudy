@@ -107,10 +107,10 @@ exports.courseSemestersQueryString = function courseSemestersQueryString(course)
 exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses, semesters) {
   var string = `INSERT INTO Rates_Course VALUES `;
   for (course in courses) {
-    let qualityRating = course.qualityRating;
-    let instructionRating = course.qualityInstructionRating;
-    let difficulty = course.difficulty;
-    let workload = course.workload;
+    let qualityRating = courses[course].qualityRating;
+    let instructionRating = courses[course].qualityInstructionRating;
+    let difficulty = courses[course].difficulty;
+    let workload = coursea[course].workload;
     string += `(\'${netid}\', \'${courses[course].courseNumber.trim()}\', \'${semesters[course]}\', ${qualityRating}, ${instructionRating}, ${difficulty}, ${workload}), `
   }
   return string.trim().slice(0, -1) + ';';

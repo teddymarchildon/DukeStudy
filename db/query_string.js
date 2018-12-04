@@ -1,5 +1,5 @@
 exports.createUpdateStudentQueryString = function createStudentInsertQueryStringFromData(data) {
-  return `UPDATE student SET primary_major=\'${data['major']}\', primary_minor=\'${data['minor']}\', certificate=\'${data['certificate']}\', favorite_class=\'${data['favClass']}\', favorite_professor=\'${data['favProf']}\' WHERE netid=\'${data['netid']}\';`
+  return `UPDATE Student SET primary_major=\'${data['major']}\', primary_minor=\'${data['minor']}\', certificate=\'${data['certificate']}\', favorite_class=\'${data['favClass']}\', favorite_professor=\'${data['favProf']}\' WHERE netid=\'${data['netid']}\';`
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {

@@ -50,7 +50,7 @@ exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(group
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, users) {
   var string = 'INSERT INTO In_Study_Group VALUES ';
   for (user in users) {
-    string += '(' + groupID.trim() + ', \'' + users[user].trim() + '\'),'
+    string += '(' + groupID + ', \'' + users[user].trim() + '\'),'
   }
   return string.slice(0, -1) + ';';
 }

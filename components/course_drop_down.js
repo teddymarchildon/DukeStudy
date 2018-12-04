@@ -17,6 +17,7 @@ class CourseDropDown extends React.Component {
       selectedCourseName: 'Course',
       selectedCourseSemester: 'Semester',
       courses: [],
+      semesters: [],
     };
   };
 
@@ -58,6 +59,7 @@ class CourseDropDown extends React.Component {
       anchorCourseEl: null,
       selectedCourseID: event.target.id,
       selectedCourseName: event.target.value,
+      semesters: semestersJson
     });
     // this.props.onSelectCourse(event.target.id);
   };

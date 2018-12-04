@@ -136,7 +136,7 @@ class FlowContent extends React.Component {
       body: params
     });
     const json = await res.json();
-    Router.push(`/landing?netid=${this.props.netid}`)
+    Router.push(`/landing?netid=${this.props.netid}`);
   }
 
   render() {

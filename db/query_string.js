@@ -103,3 +103,15 @@ exports.allProfessorsQueryString = function allProfessorsQueryString() {
 exports.courseSemestersQueryString = function courseSemestersQueryString(course) {
   return `SELECT * FROM Course_Semesters WHERE Course_Number=\'${course}\';`
 }
+
+exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses, semesters) {
+  var string = `INSERT INTO Rates_Course VALUES `;
+  for (course in courses) {
+    let qualityRating = course.qualityRating;
+    let instructionRating = course.qualityInstructionRating;
+    let difficulty = course.difficulty;
+    let workload = course.workload;
+    string += `(\'${netid}\', \'${courses[course].courseNumber.trim()}\', \'${semesters[course]}\', ${qualityRating}, ${instructionRating}, ${difficulty}, ${workload}), `
+  }
+  return string.trim().slice(0, -1) + ';';
+}

@@ -38,7 +38,7 @@ exports.insertTutorQueryString = function insertTutorQueryString(data) {
 }
 
 exports.allUsersQueryString = function allUsersQueryString(netid, courseID) {
-  return `SELECT NetID, Name, Course_Number FROM
+  return `SELECT Takes_Course.NetID, Name, Course_Number FROM
   Takes_Course INNER JOIN Student ON Takes_Course.NetID=Student.NetID
   WHERE Takes_Course.NetID != \'${netid}\' AND Course_Number=\'${courseID}\';`
 }

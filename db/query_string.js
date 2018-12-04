@@ -52,7 +52,7 @@ exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(g
   for (user in users) {
     string += '(' + groupID + ', \'' + users[user] + '\'),'
   }
-  return string.slice(0, -1);
+  return string.slice(0, -1) + ';';
 }
 
 exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {

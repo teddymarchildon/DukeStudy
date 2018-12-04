@@ -44,7 +44,7 @@ exports.allUsersQueryString = function allUsersQueryString(netid, courseID) {
 }
 
 exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(groupID, courseID, year) {
-  return `INSERT INTO Study_Group VALUES (${groupID.trim()}, \'${courseID.trim()}\', \'${year.trim()}\');`
+  return `INSERT INTO Study_Group VALUES (${groupID}, \'${courseID.trim()}\', \'${year.trim()}\');`
 }
 
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, users) {

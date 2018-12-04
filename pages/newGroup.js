@@ -41,10 +41,13 @@ class NewGroupContent extends React.Component {
   }
 
   onSelectCourse = async (courseNumber) => {
+
+    const usersInCourse = await fetch('http://35.237.162.74:3000/api/v1/dropdown/user?netid=' + this.props.netid + '&course=' + courseNumber);
+    const usersInCourseJson = await usersInCourse.json();
     this.setState({
       courseID: courseNumber,
+      usersInCourse: usersInCourseJson
     });
-    const usersInCourse = await fetch('http://35.237.162.74:3000/api/v1/dropdown/user?netid=' + this.props.netid + '&course=' + courseNumber);
   };
 
   onSelectUser = (netid) => {
@@ -73,10 +76,10 @@ class NewGroupContent extends React.Component {
           <Typography className={this.props.title} color="textSecondary">
             Users
           </Typography>
-          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
-          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
-          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
-          <UserDropDown users={this.props.users} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.state.usersInCourse} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.state.usersInCourse} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.state.usersInCourse} onSelectUser={this.onSelectUser} />
+          <UserDropDown users={this.state.usersInCourse} onSelectUser={this.onSelectUser} />
         </CardContent>
         <CardActions>
           <Button onClick={this.saveChanges} size="small"> Save </Button>

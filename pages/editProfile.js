@@ -73,7 +73,6 @@ class StudyForm extends React.Component {
             <FormTextField label='Major' id='major' value={this.props.major} onChange={this.handleChange}/>
             <FormTextField label='Minor' id='minor' value={this.props.minor} onChange={this.handleChange}/>
             <FormTextField label='Certificate' id='certificate' value={this.props.certificate} onChange={this.handleChange}/>
-            <FormTextField label='Favorite Professor' id='favProf' value={this.props.favProf} onChange={this.handleChange}/>
             <Typography className={this.props.title} color='textSecondary'>
               Favorite Professor
             </Typography>

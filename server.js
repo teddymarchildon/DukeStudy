@@ -69,7 +69,7 @@ app.prepare().then(() => {
     Selecting all users for dropdown
   */
 
-  server.get('/api/v1/dropdown/user/', (req, res, next) => {
+  server.get('/api/v1/dropdown/user', (req, res, next) => {
     const netid = req.query.netid;
     const course = req.query.course;
     console.log('Selecting users for dropdown from course: ' + course);

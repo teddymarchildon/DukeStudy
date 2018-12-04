@@ -164,10 +164,9 @@ app.prepare().then(() => {
     let queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
     db.submitQueryString(res, queryString, false);
 
-    for (course in courses) {
-      let queryString = dbHelper.takesCourseQueryString(netid, courses[course].courseNumber);
-      db.submitQueryString(res, queryString, false);
-    }
+    queryString = dbHelper.takesCourseQueryString(netid, courses);
+    db.submitQueryString(res, queryString, false);
+
     return res.json({success: true});
   });
 

@@ -127,7 +127,7 @@ class FlowContent extends React.Component {
     var obj = {
       netid: this.props.netid,
       selectedCourses: JSON.stringify(this.state.selectedCourses),
-      selectedCourseSemesters: JSON.stringify(this.state.selectedCourseSemesters);
+      selectedCourseSemesters: JSON.stringify(this.state.selectedCourseSemesters),
       favoriteCourse: this.state.favoriteCourse.courseNumber,
     };
     let params = new URLSearchParams(obj);

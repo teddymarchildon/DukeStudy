@@ -53,12 +53,14 @@ class CourseDropDown extends React.Component {
   };
 
   handleCloseCourse = async (event) => {
-    const semesters = await fetch('http://35.237.162.74:3000/api/v1/dropdown/semesters/' + event.target.id);
-    const semestersJson = await semesters.json();
     this.setState({
       anchorCourseEl: null,
       selectedCourseID: event.target.id,
       selectedCourseName: event.target.value,
+    });
+    const semesters = await fetch('http://35.237.162.74:3000/api/v1/dropdown/semesters/' + event.target.id);
+    const semestersJson = await semesters.json();
+    this.setState({
       semesters: semestersJson
     });
     // this.props.onSelectCourse(event.target.id);

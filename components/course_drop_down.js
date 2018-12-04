@@ -135,8 +135,8 @@ class CourseDropDown extends React.Component {
           onClose={this.handleCloseSemester}
         >
         {this.state.semesters.map((semester, index) => (
-          <MenuItem key={semester.course_number} id={semester.course_number} value={semester.name} onClick={this.handleCloseSemester}>
-          {semester.name}
+          <MenuItem key={semester.course_number} id={semester.course_number} value={semester.year_semester} onClick={this.handleCloseSemester}>
+          {semester.year_semester}
           </MenuItem>
         ))}
         </Menu>

@@ -80,5 +80,5 @@ exports.allProfessorsQueryString = function allProfessorsQueryString() {
 }
 
 exports.courseSemestersQueryString = function courseSemestersQueryString(course) {
-  return `SELECT * FROM Course_Semesters WHERE Course_Numer=\'${course}\';`
+  return `SELECT * FROM Course_Semesters WHERE Course_Number=\'${course}\';`
 }

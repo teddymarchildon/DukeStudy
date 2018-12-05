@@ -117,5 +117,5 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
 }
 
 exports.coursesQueryString = function coursesQueryString(netid) {
-  return `SELECT * FROM Rates_Course WHERE Rates_Course.NetID=\'${netid}\';`
+  return `SELECT * FROM Takes_Course, Rates_Course WHERE Rates_Course.NetID=\'${netid}\';`
 }

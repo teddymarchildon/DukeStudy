@@ -32,6 +32,10 @@ class SideButtons extends React.Component {
     Router.push(`/landing?netid=${this.props.netid}`)
   }
 
+  handleCoursesClick = (event) => {
+    Router.push(`/courses?netid=${this.props.netid}`);
+  }
+
   handleGroupsClick = (event) => {
     Router.push(`/groups?netid=${this.props.netid}`)
   }
@@ -52,6 +56,9 @@ class SideButtons extends React.Component {
           My Information
         </Button>
         <br></br>
+        <Button variant="contained" id='groups' color="secondary" className={classes.button} onClick={this.handleCoursesClick}>
+          My Courses
+        </Button>
         <Button variant="contained" id='groups' color="secondary" className={classes.button} onClick={this.handleGroupsClick}>
           My Groups
         </Button>

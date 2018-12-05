@@ -136,6 +136,18 @@ app.prepare().then(() => {
   });
 
   /**
+  API for getting the courses data
+  */
+
+  server.get('/api/v1/courses/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting course data for: ' + netid);
+
+    let queryString = dbHelper.coursesQueryString(netid);
+    return db.submitQueryString(res, queryString, true);
+  });
+
+  /**
     API for getting the course semesters for a particular course
   */
 

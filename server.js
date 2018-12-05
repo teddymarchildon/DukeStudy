@@ -185,15 +185,16 @@ app.prepare().then(() => {
     const semesters = JSON.parse(req.body.selectedCourseSemesters);
     const favCourse = req.body.favoriteCourse;
 
+    var queryString = ''
     if (favCourse !== null) {
-      let favClassQS = dbHelper.favoriteClassQueryString(netid, favCourse);
+      queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
       db.submitQueryString(res, favClassQS, false);
     }
-    let takesCourseQS = dbHelper.takesCourseQueryString(netid, courses, semesters);
-    db.submitQueryString(res, takesCourseQS, false);
+    queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
+    db.submitQueryString(res, queryString, false);
 
-    let ratesCourseQS = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-    db.submitQueryString(res, ratesCourseQS, false);
+    let queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
+    db.submitQueryString(res, queryString, false);
 
     return res.json({success: true});
   });

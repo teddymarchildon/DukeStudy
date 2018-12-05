@@ -181,20 +181,21 @@ app.prepare().then(() => {
   server.post('/api/v1/takesCourses/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Taking Courses **')
     const netid = req.body.netid;
-    const courses = JSON.parse(req.body.selectedCourses);
-    const semesters = JSON.parse(req.body.selectedCourseSemesters);
     const favCourse = req.body.favoriteCourse;
-
     var queryString = '';
     if (favCourse !== null) {
       queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
       db.submitQueryString(res, queryString, false);
     }
-    queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
-    let result = db.submitQueryString(res, queryString, false);
 
-    queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-    let rateResult = db.submitQueryString(res, queryString, false);
+    const courses = JSON.parse(req.body.selectedCourses);
+    const semesters = JSON.parse(req.body.selectedCourseSemesters);
+
+    queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
+    let result = db.submitQueryString(res, queryString, false, () => {
+      queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
+      let rateResult = db.submitQueryString(res, queryString, false);
+    });
 
     return res.json({success: true});
   });

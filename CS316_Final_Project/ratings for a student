@@ -1,0 +1,4 @@
+select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload
+from Rates_Course r
+left join Course c on r.Course_Number = c.Course_Number
+where r.NetID = 'hrh12';

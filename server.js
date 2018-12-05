@@ -188,7 +188,7 @@ app.prepare().then(() => {
     var queryString = '';
     if (favCourse !== null) {
       queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
-      db.submitQueryString(res, favClassQS, false);
+      db.submitQueryString(res, queryString, false);
     }
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
     let result = db.submitQueryString(res, queryString, false);

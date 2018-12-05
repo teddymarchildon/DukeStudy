@@ -59,6 +59,7 @@ class SideButtons extends React.Component {
         <Button variant="contained" id='groups' color="secondary" className={classes.button} onClick={this.handleCoursesClick}>
           My Courses
         </Button>
+        <br></br>
         <Button variant="contained" id='groups' color="secondary" className={classes.button} onClick={this.handleGroupsClick}>
           My Groups
         </Button>

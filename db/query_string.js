@@ -117,7 +117,7 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
 }
 
 exports.coursesQueryString = function coursesQueryString(netid) {
-  return `select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload
+  return `select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload, r.Year_Semester
   from Rates_Course r
   left join Course c on r.Course_Number = c.Course_Number
   where r.NetID = \'${netid}\';`

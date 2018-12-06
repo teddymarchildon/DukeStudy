@@ -54,7 +54,7 @@ class CourseContent extends React.Component {
         <Card className={classes.courseCard}>
           <CardContent>
             <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
-              {course.course_number} {course.year_semester}
+              {course.department} {course.level} {course.year_semester}
             </Typography>
             <Typography className={classes.title} color="textSecondary">
               Difficulty: {course.difficulty}

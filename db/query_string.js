@@ -117,5 +117,9 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
 }
 
 exports.coursesQueryString = function coursesQueryString(netid) {
-  return `SELECT * FROM (Rates_Course INNER JOIN Takes_Course ON Rates_Course.NetID=Takes_Course.NetID) WHERE Rates_Course.NetID=\'${netid}\';`
+  return `select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload
+  from Rates_Course r
+  left join Course c on r.Course_Number = c.Course_Number
+  where r.NetID = \'${netid}\';`
+  // return `SELECT * FROM (Rates_Course INNER JOIN Takes_Course ON Rates_Course.NetID=Takes_Course.NetID) WHERE Rates_Course.NetID=\'${netid}\';`
 }

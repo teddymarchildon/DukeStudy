@@ -1,0 +1,248 @@
+--CREATING INDEX--
+CREATE INDEX netid on Student(NetID);
+CREATE INDEX course_num on Course(Course_Number);
+--RATING LOOKUP ---
+
+-- easiest classes at Duke, check -- performed well but need to filter for 0 
+select Course_Number, avg(Difficulty) as avgDifficulty
+from Rates_Course 
+group by Course_Number 
+having avg(Difficulty)!=0
+order by avg(Difficulty) asc 
+limit 10;
+
+-- easiest classes in your major, will major = department then?, need to add the XXX, check -- ran fast, checked for accuracy!  
+select c.Course_Number, c.Department, c.Level, avg(Difficulty) as avgDifficulty
+from Rates_Course r, Student s, Course c
+where s.NetID = 'dpl20'
+and s.Primary_Major = c.Department 
+and c.Course_Number = r.Course_Number
+group by c.Course_Number 
+order by avg(Difficulty) asc 
+limit 10;
+
+-- classes with the least work at Duke, check - ran fast need to filter, check
+select Course_Number, avg(WorkLoad) as avgWorkload
+from Rates_Course  
+group by Course_Number 
+having avg(Workload)!=0
+order by avg(WorkLoad) asc 
+limit 10;
+
+
+-- classes with the least work at Duke in your major, need to add the XXX, check - ran fast 
+select c.Course_Number, c.Department, c.Level,avg(WorkLoad) as avgWorkload
+from Rates_Course r, Student s, Course c  
+where s.NetID = 'dpl20'
+and s.Primary_Major = c.Department 
+and c.Course_Number = r.Course_Number
+group by c.Course_Number 
+order by avg(WorkLoad) asc 
+limit 10;
+
+--classes with highest quality at Duke, check! 
+select r.Course_Number, c.Department, c.Level, avg(Quality_of_course) as avgQuality
+from Rates_Course r, Course c
+where r.Course_Number = c.Course_Number
+group by r.Course_Number, c.Department, c.Level 
+order by avg(r.Quality_of_course) desc 
+limit 10;
+
+--classes with higest quality in your major, check!
+select c.Course_Number, c.Department, c.Level
+from Rates_Course r, Student s, Course c  
+where s.NetID = 'agp11'
+and s.Primary_Major = c.Department 
+and c.Course_Number = r.Course_Number
+group by c.Course_Number, c.Department, c.Level 
+order by avg(Quality_of_course) desc
+limit 10;
+
+
+select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload
+from Rates_Course r
+left join Course c on r.Course_Number = c.Course_Number
+where r.NetID = 'hrh12';
+
+
+-- PROFESSOR LOOKUP--
+
+--classes taught by professors that you have given a high Quality of Instruction rating 
+-- we need to know the NetId of the person and what year and semester they are looking for, check nice! 
+with trans as (
+select Professor_NetID, r.Quality_of_instruction
+from Rates_Course r, Teaches_Course t 
+where NetID = 'egb16'
+and r.Course_Number = t.Course_Number 
+order by Quality_of_instruction 
+limit 10
+)
+select c.Course_Number, c.Department, c.Level, Professor_NetID, Year_Semester
+from Teaches_Course t, Course c 
+where Year_Semester = '2015 Spring Term'
+and c.Course_Number = t.Course_Number
+and Professor_NetID in (select Professor_NetID from trans)
+limit 10;
+
+
+-- 10 students that have taken his course (random) - of a certain current year?, check! 
+select NetID, Course_Number
+from Takes_Course 
+where Course_Number = '25003'
+group by NetID, Course_Number
+limit 10;
+
+-- students that have voted him their favorite professor - check, needed to change the operator but got it 
+
+select s.NetID
+from Student s, Professor p 
+where Favorite_Professor = p.NetID
+and p.Name like '%Jun%Yang%'
+limit 10;
+
+--TA LOOKUP-- completely checked all of that! 
+
+-- all the TAs that teach for a certain course - check 
+select NetID
+from TAs_Course 
+where Course_Number = '18791'
+limit 10;
+
+--all the TAs that teach for a certain course in a given semester - check!
+select NetID
+from TAs_Course 
+where Course_Number = '18791'
+and Year_Semester = '2017 Spring Term'
+limit 10;
+
+--all the TAs that do not teach for a certain semester that you could ask for help - check!
+select NetID
+from TAs_Course 
+where Course_Number = '18791'
+and Year_Semester <> '2017 Fall Term'
+limit 10;
+
+
+
+--TUTORS LOOKUP --
+
+--finding a Tutor that is available on a certain day and their rate, check! 
+select tt.NetID, Days_Available, Rate_Per_Hour
+from Tutors_For t, Tutor tt 
+where t.NetID = tt.NetID
+and t.Course_Number = '25008'
+and tt.Days_Available like '%F%'
+limit 10;
+
+--finding a Tutor that is available on a certain day and their rate is less than some set rate, check! 
+select tt.NetID, Days_Available, Rate_Per_Hour
+from Tutors_For t, Tutor tt 
+where t.NetID = tt.NetID
+and t.Course_Number = '25008'
+and tt.Days_Available like '%F%'
+and Rate_Per_Hour < 13
+limit 10;
+
+
+--classes taught by your favorite professor, check!
+select DISTINCT t.Professor_NetID, p.Name, t.Course_Number 
+from Student s, Professor p, Teaches_Course t 
+where s.NetID = 'hrh12'
+and s.Favorite_Professor = p.NetID
+and p.NetID = t.Professor_NetID
+--and Year_Semester = 'Spring 2018 Term'
+limit 10;
+
+
+--classes taught by the most liked professors at Duke --- need to know the year and the semester - check!
+with trans as(
+select Favorite_Professor, count(*) as peopleWhoLovedProfessor
+from Student 
+group by Favorite_Professor 
+order by count(*) desc 
+limit 10)
+
+select Course_Number, Professor_NetID 
+from  Teaches_Course
+where Professor_NetID in (select Favorite_Professor from trans)
+group by Course_Number, Professor_NetID
+order by Professor_NetID
+limit 100;
+
+--classes taught by the easiest professors at Duke -- check!
+with trans as (
+select Professor_NetID, avg(Difficulty) as avgDifficulty
+from Rates_Course r, Teaches_Course t 
+where r.Course_Number = t.Course_Number
+group by Professor_NetID
+order by avg(Difficulty) asc
+limit 10 
+)
+
+select Course_Number, Professor_NetID
+from Teaches_Course
+where Professor_NetID in (select Professor_NetID from trans)
+group by Course_Number, Professor_NetID
+limit 10;
+
+--TIME LOOKUP ---
+
+--classes available in your major at your favorite time (query through the old class times and find most common)
+--should we add an extra field to course to say if it is currently available? or takes course? - check! 
+with trans as (
+select t.When_Class_Meets, count(*) 
+from Teaches_Course t, Takes_Course tt
+where tt.NetID = 'egb16'
+and t.Course_Number = tt.Course_Number 
+group by When_Class_Meets 
+order by count(*) desc
+limit 3)
+
+select Course_Number, When_Class_Meets 
+from Teaches_Course
+where When_Class_Meets in (select When_Class_Meets from trans)
+order by When_Class_Meets
+limit 1000;
+
+
+-- PROFESSOR LOOKUP--
+
+--all the courses that the professor is teaching this semester - check! 
+select DISTINCT c.Course_Number, c.Department, c.Level, p.Name
+from Teaches_Course t, Professor p, Course c 
+where p.Name like '%Jun%Yang%'
+and c.Course_Number = t.Course_Number
+--and Year_Semester = 'Fall 2018'
+limit 10;
+
+--ratings for a specific professor over all the classes taught by them 
+select avg(Quality_Of_Course) as avgQualityRating, avg(Quality_Of_Instruction) as avgInstructionRating,
+avg(Difficulty) as avgDifficulty, avg(WorkLoad) as avgWorkload, max(p.Name)
+from Teaches_Course t, Rates_Course r, Professor p
+where p.Name like '%Jun%Yang%'
+and p.NetID = t.Professor_NetID
+and r.Course_Number = t.Course_Number
+limit 10;
+
+-- average ratings for the columns for a specific class that a teacher taught check!
+select avg(Quality_Of_Course) as avgQualityRating, avg(Quality_Of_Instruction) as avgInstructionRating,
+avg(Difficulty) as avgDifficulty, avg(WorkLoad) as avgWorkload
+from Teaches_Course t, Rates_Course r
+where r.Course_Number = t.Course_Number
+and r.Course_Number = '2629' 
+limit 10;
+
+--REQUIREMENT LOOKUP --
+
+--classes that you satisfy the pre-requisements of --
+select c.Course_Number, Prerequesites
+from Course c, Takes_Course t 
+where Prerequesites in (select Course_Number
+					  from Takes_Course 
+					  where NetID = 'egb16')
+and c.Course_Number = t.Course_Number
+limit 10;
+
+ 
+
+

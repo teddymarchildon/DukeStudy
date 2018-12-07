@@ -143,13 +143,13 @@ app.prepare().then(() => {
     var values = [];
     if (type=='Course') {
       queryString = dbHelper.courseTableSearchQueryString();
-      values.push(term.toUpperCase())
+      values.push(`%${term.toUpperCase()}%`);
     } else if (type=='Student') {
       queryString = dbHelper.studentTableSearchQueryString();
-      values.push(term);
+      values.push(`%${term}%`);
     } else if (type=='Professor') {
       queryString = dbHelper.professorSearchQueryString();
-      values.push(term);
+      values.push(`%${term}%`);
     }
     return db.submitQueryString(res, queryString, values, true);
   });

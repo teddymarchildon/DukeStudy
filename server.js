@@ -52,7 +52,7 @@ app.prepare().then(() => {
     console.log('Selecting data to populate the Course Drop Down');
 
     let queryString = dbHelper.dropDownDepartmentQueryString();
-    return db.submitQueryString(res, queryString, true);
+    return db.submitQueryString(res, queryString, [], true);
   });
 
   /**
@@ -64,7 +64,7 @@ app.prepare().then(() => {
     console.log('Selecting courses within dept: ' + department);
 
     let queryString = dbHelper.dropDownCourseQueryString();
-    let values = [department]
+    let values = [department];
     return db.submitQueryString(res, queryString, values, true);
   });
 
@@ -90,7 +90,7 @@ app.prepare().then(() => {
     console.log('Selecting all professors for dropdown');
 
     let queryString = dbHelper.allProfessorsQueryString();
-    return db.submitQueryString(res, queryString, true);
+    return db.submitQueryString(res, queryString, [], true);
   });
   /**
     API For fetching tutoring information
@@ -229,7 +229,7 @@ app.prepare().then(() => {
 
     let queryString = dbHelper.createNewUserQueryString();
     let values = [netid, name];
-    return db.submitQueryString(res, queryString, false);
+    return db.submitQueryString(res, queryString, values, false);
   });
 
   /**
@@ -253,7 +253,7 @@ app.prepare().then(() => {
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
     let result = db.submitQueryString(res, queryString, false, () => {
       queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-      let rateResult = db.submitQueryString(res, queryString, false);
+      let rateResult = db.submitQueryString(res, queryString, [], false);
     });
 
     return res.json({success: true});
@@ -277,7 +277,7 @@ app.prepare().then(() => {
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
     let result = db.submitQueryString(res, queryString, false, () => {
       queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-      let rateResult = db.submitQueryString(res, queryString, false);
+      let rateResult = db.submitQueryString(res, queryString, [], false);
     });
 
     return res.json({success: true});
@@ -376,7 +376,7 @@ app.prepare().then(() => {
 
     const users = req.body.users.split(",");
     let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users);
-    return db.submitQueryString(res, inStudyGroupQueryString, true);
+    return db.submitQueryString(res, inStudyGroupQueryString, [], true);
   });
 
   /**

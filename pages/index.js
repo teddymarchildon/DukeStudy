@@ -59,7 +59,7 @@ const styles = theme => ({
 class InformationCard extends React.Component {
   render() {
     return (
-      <div style={{width: '25%', margin: 'auto'}}>
+      <main>
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -70,7 +70,7 @@ class InformationCard extends React.Component {
             </Typography>
           </CardContent>
         </Card>
-      </div>
+      </main>
     )
   };
 }

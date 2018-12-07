@@ -109,11 +109,12 @@ class EditProfilePage extends React.Component {
     const professorsJson = await professors.json();
 
     studentJson[0]['departments'] = departmentsJson;
-    studentJson[0]['professors'] = professorsJson;
+    studentJson[0]['professors'] = getRandom(professorsJson, 100);
     return studentJson[0];
   }
 
   render() {
+
     return (
       <div>
         <SearchAppBar netid={this.props.netid} name={this.props.name}/>
@@ -139,3 +140,15 @@ class EditProfilePage extends React.Component {
 }
 
 export default withStyles(styles)(EditProfilePage);
+
+function getRandom(arr, n) {
+    var result = new Array(n),
+        len = arr.length,
+        taken = new Array(len);
+    while (n--) {
+        var x = Math.floor(Math.random() * len);
+        result[n] = arr[x in taken ? taken[x] : x];
+        taken[x] = --len in taken ? taken[len] : len;
+    }
+    return result;
+}

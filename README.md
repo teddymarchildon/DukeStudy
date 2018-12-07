@@ -16,6 +16,8 @@ npm install
 
 to install all dependencies.
 
+PostgreSQL must
+
 Be sure the PostgreSQL server is running before navigating to the site. Without the server up and running, the database cannot accept queries.
 
 After ensuring the database server is running, in the project directory, run

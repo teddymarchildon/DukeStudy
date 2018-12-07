@@ -36,31 +36,24 @@ class ProfessorContent extends React.Component {
     const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
+        {this.props.courses.map((professor, index) => (
         <Card className={this.props.card}>
           <CardContent>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Name: {this.props.name}
-          //   </Typography>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Major: {this.props.major}
-          //   </Typography>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Minor: {this.props.minor}
-          //   </Typography>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Certificate: {this.props.certificate}
-          //   </Typography>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Favorite Class: {this.props.favClass}
-          //   </Typography>
-          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
-          //     Favorite Prof: {this.props.favProf}
-          //   </Typography>
-          // </CardContent>
+            <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              Name: {professor.name}
+            </Typography>
+            <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              Course: {professor.department} {professor.level}
+            </Typography>
+            <Typography className={this.props.title} color="textSecondary" gutterBottom>
+              Semester: {professor.year_semester}
+            </Typography>
+          </CardContent>
           <CardActions>
-            <Button onClick={() => this.handleContact(this.props.netid)} size="small"> Contact </Button>
+            <Button onClick={() => this.handleContact(professor.netid)} size="small"> Contact </Button>
           </CardActions>
         </Card>
+      ))}
       </div>
     )
   }

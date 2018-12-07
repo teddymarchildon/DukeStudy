@@ -163,12 +163,13 @@ class EditRatingsPage extends React.Component {
   }
 
   render() {
+    const { course } = this.props;
     return (
       <main>
       <SearchAppBar name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} course={{this.props.course}} />
+          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} course={{course}} />
         </div>
       </main>
     )

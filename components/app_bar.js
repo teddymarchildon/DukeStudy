@@ -11,6 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import LogoutButton from './log_out_button.js';
 import fetch from 'node-fetch';
+import Button from '@material-ui/core/Button';
 
 const styles = theme => ({
   root: {

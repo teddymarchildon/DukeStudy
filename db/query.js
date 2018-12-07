@@ -3,7 +3,7 @@ const config = require('./config.js')
 
 const pool = new Pool(config.config);
 
-exports.submitQueryString = function(res, queryString, values, shouldSend, callback = null) {
+exports.submitQueryString = function(res, queryString, values = [], shouldSend, callback = null) {
   console.log('Submitting query: ' + queryString);
   pool.query(queryString, values, (dberr, dbres) => {
     if (dberr != null) {

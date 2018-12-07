@@ -39,8 +39,9 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting Group data for netid: ' + netid);
 
-    let queryString = dbHelper.groupsPageQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.groupsPageQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -62,8 +63,9 @@ app.prepare().then(() => {
     const department = req.params.department;
     console.log('Selecting courses within dept: ' + department);
 
-    let queryString = dbHelper.dropDownCourseQueryString(department);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.dropDownCourseQueryString();
+    let values = [department]
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -76,7 +78,8 @@ app.prepare().then(() => {
     console.log('Selecting users for dropdown from course: ' + course);
 
     let queryString = dbHelper.allUsersQueryString(netid, course);
-    return db.submitQueryString(res, queryString, true);
+    let values = [netid, course]
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -98,7 +101,8 @@ app.prepare().then(() => {
     console.log('Selecting tutoring information for: ' + netid);
 
     let queryString = dbHelper.selectTutoringQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let values = [netid]
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -110,8 +114,9 @@ app.prepare().then(() => {
     const groupID = req.query.groupID;
     console.log('Removing user: ' + netid + ' from group: ' + groupID);
 
-    let queryString = dbHelper.removeUserFromGroupQueryString(netid, groupID);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.removeUserFromGroupQueryString();
+    let values = [netid, groupID]
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -121,8 +126,9 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting flow data for: ' + netid);
 
-    let queryString = dbHelper.flowQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.flowQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -134,14 +140,18 @@ app.prepare().then(() => {
     var term = req.query.term;
     console.log(`Submitting ${type} search for term: ${term}`);
     var queryString;
+    var values;
     if (type=='Course') {
-      queryString = dbHelper.courseTableSearchQueryString(term.toUpperCase());
+      queryString = dbHelper.courseTableSearchQueryString();
+      vales = [term.toUpperCase()]
     } else if (type=='Student') {
-      queryString = dbHelper.studentTableSearchQueryString(term);
+      queryString = dbHelper.studentTableSearchQueryString();
+      values = [term];
     } else if (type=='Professor') {
-      queryString = dbHelper.professorSearchQueryString(term);
+      queryString = dbHelper.professorSearchQueryString();
+      values = [term];
     }
-    return db.submitQueryString(res, queryString, true);
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -152,8 +162,9 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting course data for: ' + netid);
 
-    let queryString = dbHelper.coursesQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.coursesQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -164,40 +175,45 @@ app.prepare().then(() => {
       const course = req.params.course;
       console.log('Getting semesters for course: ' + course);
 
-      let queryString = dbHelper.courseSemestersQueryString(course);
-      return db.submitQueryString(res, queryString, true);
+      let queryString = dbHelper.courseSemestersQueryString();
+      let values = [course];
+      return db.submitQueryString(res, queryString, values, true);
   });
 
   server.get('/api/v1/course/:courseID', (req, res, next) => {
     const course = req.params.courseID;
     console.log('Getting course info for: ' + course);
 
-    let queryString = dbHelper.courseInfoQueryString(course);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.courseInfoQueryString();
+    let values = [course];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   server.get('/api/v1/courseAvg/:courseID', (req, res, next) => {
     const course = req.params.courseID;
     console.log('Getting avg course info for: ' + course);
 
-    let queryString = dbHelper.courseAvgQueryString(course);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.courseAvgQueryString();
+    let values = [course];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   server.get('/api/v1/professor/:netid', (req, res, next) => {
     const netid = req.params.netid;
     console.log('Selecting Professor data for: ' + netid);
 
-    let queryString = dbHelper.professorInfoQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.professorInfoQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   server.get('/api/v1/TAing/:netid', (req, res, next) => {
     const netid = req.params.netid;
     console.log('Selecting TA information for: ' + netid);
 
-    let queryString = dbHelper.taQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.taQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
   /**
     Below is the updating information API
@@ -211,7 +227,8 @@ app.prepare().then(() => {
     const netid = req.body.netid;
     const name = req.body.name;
 
-    let queryString = dbHelper.createNewUserQueryString(netid, name);
+    let queryString = dbHelper.createNewUserQueryString();
+    let values = [netid, name];
     return db.submitQueryString(res, queryString, false);
   });
 
@@ -225,8 +242,9 @@ app.prepare().then(() => {
     const favCourse = req.body.favoriteCourse;
     var queryString = '';
     if (favCourse !== null) {
-      queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
-      db.submitQueryString(res, queryString, false);
+      queryString = dbHelper.favoriteClassQueryString();
+      let values = [netid, favCourse];
+      db.submitQueryString(res, queryString, values, false);
     }
 
     const courses = JSON.parse(req.body.selectedCourses);
@@ -249,7 +267,8 @@ app.prepare().then(() => {
     var queryString = '';
     if (favCourse !== null && favCourse==='true') {
       queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
-      db.submitQueryString(res, queryString, false);
+      let values = [netid, favCourse];
+      db.submitQueryString(res, queryString, values, false);
     }
 
     const courses = JSON.parse(req.body.course);
@@ -300,7 +319,8 @@ app.prepare().then(() => {
     const courseSemester = req.body.courseSemester;
 
     let queryString = dbHelper.insertTAQueryString(netid, courseNumber, courseSemester);
-    return db.submitQueryString(res, queryString, true);
+    let values = [netid, courseNumber, courseSemester];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -316,11 +336,13 @@ app.prepare().then(() => {
 
     if (favorite !== null && favorite === 'true') {
       let queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
-      db.submitQueryString(res, queryString, false);
+      let values = [netid, course.course_number];
+      db.submitQueryString(res, queryString, values, false);
     }
 
     let queryString = dbHelper.updateRatesCourseQueryString(netid, course);
-    return db.submitQueryString(res, queryString, true);
+    let values = [netid, course];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -337,8 +359,11 @@ app.prepare().then(() => {
     const groupID = generateGroupID();
     const course = req.body.courseID;
     const year = req.body.courseSemester;
+
     let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
-    let result = db.submitQueryString(res, studyGroupQueryString, false);
+    let values = [groupID, course, year];
+    let result = db.submitQueryString(res, studyGroupQueryString, values, false);
+
     const users = req.body.users.split(",");
     let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
     return db.submitQueryString(res, inStudyGroupQueryString, true);

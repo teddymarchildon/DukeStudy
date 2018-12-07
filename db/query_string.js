@@ -46,16 +46,16 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
 
 }
 
-exports.createNewUserQueryString = function createNewUserQueryString(netid, name) {
-  return `INSERT INTO Student VALUES (\'${netid.trim()}\', \'${name.trim()}\');`;
+exports.createNewUserQueryString = function createNewUserQueryString() {
+  return `INSERT INTO Student VALUES ($1, $2);`;
 }
 
-exports.groupsPageQueryString = function groupsPageQueryString(netid) {
+exports.groupsPageQueryString = function groupsPageQueryString() {
   return `SELECT * FROM
   In_Study_Group
   INNER JOIN
   Study_Group ON In_Study_Group.Group_ID=Study_Group.Group_ID
-  INNER JOIN Course ON Study_Group.Course_Number=Course.Course_Number WHERE In_Study_Group.NetID != \'${netid.trim()}\' AND In_Study_Group.Group_ID IN (SELECT Group_ID FROM In_Study_Group WHERE NetID=\'${netid.trim()}\');`
+  INNER JOIN Course ON Study_Group.Course_Number=Course.Course_Number WHERE In_Study_Group.NetID != $1 AND In_Study_Group.Group_ID IN (SELECT Group_ID FROM In_Study_Group WHERE NetID=$1);`
 }
 
 exports.dropDownDepartmentQueryString = function dropDownDepartmentQueryString() {

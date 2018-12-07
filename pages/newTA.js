@@ -85,6 +85,7 @@ class TAingPage extends React.Component {
     const studentJson = await student.json();
     const departmentsJson = await departments.json();
     studentJson[0]['departments'] = departmentsJson;
+    return studentJson[0];
   }
 
   render() {

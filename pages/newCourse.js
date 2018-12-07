@@ -101,8 +101,8 @@ class NewCourseContent extends React.Component {
   handleDone = async (event) => {
     var obj = {
       netid: this.props.netid,
-      course: JSON.stringify(this.state.selectedCourse),
-      semeseter: this.state.selectedCourseSemester,
+      course: JSON.stringify(this.state.selectedCourses),
+      semeseter: JSON.stringify(this.state.selectedCourseSemesters),
       favoriteCourse: this.state.favoriteCourse,
     };
     let params = new URLSearchParams(obj);

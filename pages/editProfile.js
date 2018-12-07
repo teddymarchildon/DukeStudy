@@ -64,6 +64,7 @@ class StudyForm extends React.Component {
   saveChanges = async () => {
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://35.237.162.74:3000/api/v1/student/post', { method: 'POST', body: params })
+    Router.push(`/landing?netid=${this.props.netid}`);
   };
 
   render() {

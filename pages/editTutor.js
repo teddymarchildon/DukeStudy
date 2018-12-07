@@ -45,6 +45,7 @@ class TutorForm extends React.Component {
   saveChanges = async event => {
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://35.237.162.74:3000/api/v1/tutor/post', { method: 'POST', body: params })
+    Router.push(`/tutoring?netid=${this.props.netid}`);
   };
 
   render() {

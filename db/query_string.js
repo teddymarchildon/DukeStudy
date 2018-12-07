@@ -23,13 +23,12 @@ exports.createUpdateStudentQueryString = function createStudentInsertQueryString
   return result;
 }
 
-exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
+exports.createSelectQueryString = function createSelectQueryStringFromData() {
   return `select s.*, p.Name as pName, c.Course_Number, c.Department, c.Level
   from Student s
   left join Professor p on p.NetID = s.Favorite_Professor
   left join Course c on s.Favorite_Class = c.Course_Number
   where s.NetID = $1;`
-
 }
 
 exports.createNewUserQueryString = function createNewUserQueryString() {
@@ -72,6 +71,8 @@ exports.insertStudyGroupQueryString = function insertStudyGroupQueryString() {
 }
 
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, users) {
+  //We dont need to use string injection here since none of these values are input from the user
+  //They come from the database only
   var string = 'INSERT INTO In_Study_Group VALUES ';
   for (user in users) {
     string += '(' + groupID + ', \'' + users[user].trim() + '\'),'
@@ -108,6 +109,8 @@ exports.courseSemestersQueryString = function courseSemestersQueryString() {
 }
 
 exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses, semesters) {
+  //We dont need to use string injection here since none of these values are input from the user
+  //They come from the database only
   var string = `INSERT INTO Rates_Course VALUES `;
   for (course in courses) {
     let qualityRating = courses[course].qualityRating;

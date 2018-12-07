@@ -129,8 +129,8 @@ app.prepare().then(() => {
   */
 
   server.get('/api/v1/search', (req, res, next) => {
-    const type = req.query.type;
-    const term = req.query.term;
+    var type = req.query.type;
+    var term = req.query.term;
     console.log(`Submitting ${type} search for term: ${term}`);
     var queryString;
     if (term=="Course") {

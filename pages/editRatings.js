@@ -49,7 +49,7 @@ class EditRatingsContent extends React.Component {
 
   constructor(props){
     super(props);
-    const { course } = this.props.course;
+    const { course } = this.props;
     this.state = {
       currentCourse: course,
       favoriteCourse: null,

@@ -8,8 +8,8 @@ exports.submitQueryString = function(res, queryString, shouldSend, callback = nu
   pool.query(queryString, (dberr, dbres) => {
     if (dberr != null) {
       console.log(dberr);
-      res.send(dberr);
-      return null;
+      return res.json(dberr);
+      // return null;
     }
     console.log('results: ', dbres.rows);
     if (shouldSend) {

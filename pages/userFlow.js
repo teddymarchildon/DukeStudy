@@ -76,10 +76,10 @@ class FlowContent extends React.Component {
     var course = {
       courseNumber: courseNumber
     }
-    course['qualityRating'] = -1;
-    course['qualityInstructionRating'] = -1;
-    course['difficultyRating'] = -1;
-    course['workloadRating'] = -1;
+    course['qualityRating'] = 0;
+    course['qualityInstructionRating'] = 0;
+    course['difficultyRating'] = 0;
+    course['workloadRating'] = 0;
     var selectedCourses = this.state.selectedCourses;
     selectedCourses.push(course);
     var selectedCourseSemesters = this.state.selectedCourseSemesters;

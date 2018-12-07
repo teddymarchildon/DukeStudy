@@ -103,7 +103,7 @@ class EditRatingsContent extends React.Component {
           <Card className={classes.card}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary">
-                {this.props.department} {this.props.course.level} {this.props.course.year_semester}
+                {this.props.department} {this.props.level} {this.props.year_semester}
               </Typography>
               <Typography className={classes.title} color="textSecondary">
                 Quality of Course

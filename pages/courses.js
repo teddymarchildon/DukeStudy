@@ -41,9 +41,7 @@ class CourseContent extends React.Component {
   }
 
   handleEditRatings = async (courseID) => {
-    const result = await fetch('http://35.237.162.74:3000/api/v1/editRatings?netid=' + this.props.netid + '&courseID=' + courseID);
-    const json = await result.json();
-    window.location.reload();
+    Router.push('http://35.237.162.74:3000/editRatings?netid=' + this.props.netid + '&courseID=' + courseID);
   }
 
   render() {

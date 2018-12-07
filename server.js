@@ -249,6 +249,17 @@ app.prepare().then(() => {
   server.post('/api/v1/ratesCourse/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for rating course **')
     console.log(req.body)
+    const netid = req.body.netid;
+    const course = JSON.parse(req.body.course);
+    const favorite = req.body.favoriteCourse;
+
+    if (favorite !== null && favorite === true) {
+      queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
+      db.submitQueryString(res, queryString, false);
+    }
+
+    let queryString = dbHelper.updateRatesCourseQueryString(netid, course);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -272,19 +283,6 @@ app.prepare().then(() => {
     let final = db.submitQueryString(res, inStudyGroupQueryString, false);
     return;
   });
-
-  /**
-  API for adding a user to a study group
-  */
-
-  server.post('/api/v1/inStudyGroup/post', (req, res, next) => {
-    //We need to be sure we have the GroupID here
-    console.log('** RECEIVED POST REQUEST for adding to a study group **')
-    console.log(req.body);
-
-
-  });
-
 
   /**
   Handling all requests

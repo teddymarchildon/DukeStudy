@@ -27,12 +27,17 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
   // return `SELECT * FROM
   // Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
   // WHERE NetID=\'${netid.trim()}\';`
+  // return `select *
+  // c.Course_Number, c.Department, c.Level, p.Name
+  // from Student s, Professor p, Course c
+  // where s.NetID = \'${netid}\'
+  // and s.Favorite_Professor = p.NetID
+  // and s.Favorite_Class = c.Course_Number;`
   return `select *
-  c.Course_Number, c.Department, c.Level, p.Name
-  from Student s, Professor p, Course c
-  where s.NetID = \'${netid}\'
-  and s.Favorite_Professor = p.NetID
-  and s.Favorite_Class = c.Course_Number;`
+  from Student s
+  left join Professor p on p.NetID = s.Favorite_Professor
+  left join Course c on s.Favorite_Class = c.Course_Number
+  where s.NetID = \'${netid}\';`
 
 }
 

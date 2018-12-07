@@ -341,7 +341,7 @@ app.prepare().then(() => {
     const users = req.body.users.split(",");
     let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
     let final = db.submitQueryString(res, inStudyGroupQueryString, false);
-    return;
+    return res.json({success: true});
   });
 
   /**

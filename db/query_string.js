@@ -142,5 +142,5 @@ exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
   Department, Level, Year_Semester,
   avg(WorkLoad) as avgWorkload FROM
   Rates_Course r left join Course c on r.Course_Number = c.Course_Number
-  WHERE Course_Number=\'${courseID}\';`
+  WHERE r.Course_Number=\'${courseID}\';`
 }

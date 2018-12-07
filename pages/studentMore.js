@@ -75,9 +75,9 @@ class HomePage extends React.Component {
   static async getInitialProps({ query }) {
     const user = query.user;
     const other = query.other;
-    const other = await fetch('http://35.237.162.74:3000/api/v1/student/' + other);
-    const otherJson = await other.json()
-    return other[0];
+    const otherUser = await fetch('http://35.237.162.74:3000/api/v1/student/' + other);
+    const otherJson = await otherUser.json()
+    return otherJson[0];
   }
 
   render() {

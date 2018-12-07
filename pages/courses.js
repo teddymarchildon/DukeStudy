@@ -55,13 +55,13 @@ class CourseContent extends React.Component {
               {course.department} {course.level} {course.year_semester}
             </Typography>
             <Typography className={classes.title} color="textSecondary">
-              Difficulty: {course.difficulty}
-            </Typography>
-            <Typography className={classes.title} color="textSecondary">
               Quality of Course: {course.quality_of_course}
             </Typography>
             <Typography className={classes.title} color="textSecondary">
               Quality of Instruction: {course.quality_of_instruction}
+            </Typography>
+            <Typography className={classes.title} color="textSecondary">
+              Difficulty: {course.difficulty}
             </Typography>
             <Typography className={classes.title} color="textSecondary">
               Workload: {course.workload}

@@ -255,12 +255,12 @@ app.prepare().then(() => {
     const semesters = JSON.parse(req.body.semester);
 
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
-    return db.submitQueryString(res, queryString, false, () => {
+    let result = db.submitQueryString(res, queryString, false, () => {
       queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-      return db.submitQueryString(res, queryString, false);
+      let rateResult = db.submitQueryString(res, queryString, false);
     });
 
-    // return res.json({success: true});
+    return res.json({success: true});
   });
 
   /**

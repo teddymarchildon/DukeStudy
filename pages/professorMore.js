@@ -76,7 +76,7 @@ class HomePage extends React.Component {
     const user = query.user;
     const professor = query.other;
     const currentUser = await fetch('http://35.237.162.74:3000/api/v1/student/' + user);
-    const otherUser = await fetch('http://35.237.162.74:3000/api/v1/professor/' + other);
+    const otherUser = await fetch('http://35.237.162.74:3000/api/v1/professor/' + professor);
     const currentUserJson = await currentUser.json();
     const otherJson = await otherUser.json();
     currentUserJson[0]['other'] = otherJson;

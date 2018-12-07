@@ -168,7 +168,7 @@ app.prepare().then(() => {
   });
 
   server.get('/api/v1/course/:courseID', (req, res, next) => {
-    const course = req.params.course;
+    const course = req.params.courseID;
     console.log('Getting course info for: ' + course);
 
     let queryString = dbHelper.courseInfoQueryString(course);

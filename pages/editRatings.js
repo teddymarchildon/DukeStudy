@@ -96,6 +96,7 @@ class EditRatingsContent extends React.Component {
   }
 
   render() {
+    console.log("PROPS: ", this.props);
     const { classes } = this.props;
     const { course } = this.props;
     return (
@@ -156,14 +157,15 @@ class EditRatingsPage extends React.Component {
     coursesJson.map(function(course, index) {
       if (course.course_number.trim() === courseid.trim()) {
         courseToEdit = course;
+        return;
       }
+      return;
     });
     studentJson[0]['course'] = courseToEdit;
     return studentJson;
   }
 
   render() {
-    const { course } = this.props;
     return (
       <main>
       <SearchAppBar name={this.props.name}/>

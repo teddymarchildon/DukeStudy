@@ -7,6 +7,7 @@ exports.submitQueryString = function(res, queryString, shouldSend, callback = nu
   console.log('Submitting query: ' + queryString);
   pool.query(queryString, (dberr, dbres) => {
     if (dberr != null) {
+      console.log(dberr);
       res.send(dberr);
       return null;
     }

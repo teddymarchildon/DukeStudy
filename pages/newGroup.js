@@ -120,7 +120,7 @@ class NewGroupPage extends React.Component {
       studentJson[0]['preCourse'] = courseID;
       studentJson[0]['preLevel'] = level;
       studentJson[0]['preDepartment'] = department;
-      const semesters = await fetch('http://35.237.162.74:3000/api/v1/dropdown/semesters/' + event.target.id);
+      const semesters = await fetch('http://35.237.162.74:3000/api/v1/dropdown/semesters/' + courseID);
       const semestersJson = await semesters.json();
       studentJson[0]['semesters'] = semestersJson;
     }

@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+import React, { Component } from "react";
+import Router from 'next/router';
 import fetch from 'node-fetch';
 import SearchAppBar from '../components/app_bar.js'
 import PropTypes from 'prop-types';

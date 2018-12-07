@@ -99,6 +99,7 @@ class Login extends React.Component {
     event.preventDefault();
     if (this.state.email.length <= 0 || this.state.password.length <= 0) {
       alert('Please fill in your email and password');
+      return;
     }
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]
@@ -116,6 +117,7 @@ class Login extends React.Component {
     event.preventDefault();
     if (this.state.email.length <= 0 || this.state.password.length <= 0) {
       alert('Please fill in your email and password');
+      return;
     }
     if (this.state.email.includes('duke.edu')) {
       const netid = this.state.email.split('@')[0]

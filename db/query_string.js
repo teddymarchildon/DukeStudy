@@ -165,6 +165,6 @@ exports.professorSearchQueryString = function professorSearchQueryString(term) {
 exports.professorInfoQueryString = function professorInfoQueryString(netid) {
   return `SELECT * FROM Professor, Teaches_Course, Course
   WHERE Professor.NetID=\'${netid}\' AND
-  Professor.NetID=Teaches_Course.NetID AND
+  Professor.NetID=Teaches_Course.Professor_NetID AND
   Course.Course_Number=Teaches_Course.Course_Number;`
 }

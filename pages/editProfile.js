@@ -116,7 +116,7 @@ class EditProfilePage extends React.Component {
   render() {
     return (
       <div>
-        <SearchAppBar name={this.props.name}/>
+        <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <StudyForm

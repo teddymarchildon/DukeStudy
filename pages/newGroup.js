@@ -113,7 +113,7 @@ class NewGroupPage extends React.Component {
   render() {
     return (
       <main>
-        <SearchAppBar name={this.props.name}/>
+        <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <NewGroupContent netid={this.props.netid} departments={this.props.departments} netid={this.props.netid} />

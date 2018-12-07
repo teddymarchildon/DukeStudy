@@ -144,7 +144,7 @@ class GroupsPage extends React.Component {
     const NewGroupButtonS = withStyles(styles)(NewGroupButton);
     return (
       <main>
-        <SearchAppBar name={this.props.name}/>
+        <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <GroupsContent netid={this.props.netid} groups={this.props.groups} classes={this.props.classes}/>

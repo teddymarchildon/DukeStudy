@@ -76,7 +76,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <main className={this.props.main}>
-        <SearchAppBar name={this.props.name} />
+        <SearchAppBar netid={this.props.netid} name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <LandingContent

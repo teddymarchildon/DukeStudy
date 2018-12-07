@@ -82,7 +82,7 @@ class CourseSearchPage extends React.Component {
     const NewGroupButtonS = withStyles(styles)(NewGroupButton);
     return (
       <main>
-        <SearchAppBar name={this.props.name}/>
+        <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <CourseSearchContent netid={this.props.netid} courses={this.props.courses} classes={this.props.classes}/>

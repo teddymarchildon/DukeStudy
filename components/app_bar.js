@@ -95,7 +95,7 @@ class SearchMenu extends React.Component {
   handleClose = (term) => {
     this.setState({
       anchorEl: null,
-      selectedSearch: term,
+      selectedTerm: term,
     });
     this.props.onSelectTerm(term);
   };

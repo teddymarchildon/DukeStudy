@@ -25,7 +25,7 @@ const styles = theme => ({
   },
 });
 
-class LandingContent extends React.Component {
+class ProfessorContent extends React.Component {
 
   handleContact = () => {
     let mailString = `mailto:${this.props.netid}@duke.edu`;
@@ -38,25 +38,25 @@ class LandingContent extends React.Component {
       <div style={{width: '25%', margin: 'auto'}}>
         <Card className={this.props.card}>
           <CardContent>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Name: {this.props.name}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Major: {this.props.major}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Minor: {this.props.minor}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Certificate: {this.props.certificate}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Favorite Class: {this.props.favClass}
-            </Typography>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Favorite Prof: {this.props.favProf}
-            </Typography>
-          </CardContent>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Name: {this.props.name}
+          //   </Typography>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Major: {this.props.major}
+          //   </Typography>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Minor: {this.props.minor}
+          //   </Typography>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Certificate: {this.props.certificate}
+          //   </Typography>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Favorite Class: {this.props.favClass}
+          //   </Typography>
+          //   <Typography className={this.props.title} color="textSecondary" gutterBottom>
+          //     Favorite Prof: {this.props.favProf}
+          //   </Typography>
+          // </CardContent>
           <CardActions>
             <Button onClick={() => this.handleContact(this.props.netid)} size="small"> Contact </Button>
           </CardActions>
@@ -66,7 +66,7 @@ class LandingContent extends React.Component {
   }
 }
 
-LandingContent.propTypes = {
+ProfessorContent.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
@@ -74,12 +74,12 @@ class HomePage extends React.Component {
 
   static async getInitialProps({ query }) {
     const user = query.user;
-    const other = query.other;
-    const currentUser = await await fetch('http://35.237.162.74:3000/api/v1/student/' + user);
-    const otherUser = await fetch('http://35.237.162.74:3000/api/v1/student/' + other);
+    const professor = query.other;
+    const currentUser = await fetch('http://35.237.162.74:3000/api/v1/student/' + user);
+    const otherUser = await fetch('http://35.237.162.74:3000/api/v1/professor/' + other);
     const currentUserJson = await currentUser.json();
     const otherJson = await otherUser.json();
-    currentUserJson[0]['other'] = otherJson[0];
+    currentUserJson[0]['other'] = otherJson;
     return currentUserJson[0];
   }
 
@@ -89,16 +89,9 @@ class HomePage extends React.Component {
         <SearchAppBar netid={this.props.netid} name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <LandingContent
-            name={this.props.other.name}
-            netid={this.props.other.netid}
-            major={this.props.other.primary_major}
-            favClass={`${this.props.other.department} ${this.props.other.level}`}
-            favProf={this.props.other.favorite_professor}
-            major={this.props.other.primary_major}
-            minor={this.props.other.primary_minor}
-            certificate={this.props.other.certificate}
-            />
+          <ProfessorContent
+            courses={this.props.other}
+          />
         </div>
       </main >
     );

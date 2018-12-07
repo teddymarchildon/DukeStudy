@@ -182,6 +182,14 @@ app.prepare().then(() => {
     let queryString = dbHelper.courseAvgQueryString(course);
     return db.submitQueryString(res, queryString, true);
   });
+
+  server.get('/api/v1/professor/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting Professor data for: ' + netid);
+
+    let queryString = dbHelper.professorInfoQueryString(netid);
+    return db.submitQueryString(res, queryString, true);
+  });
   /**
     Below is the updating information API
 

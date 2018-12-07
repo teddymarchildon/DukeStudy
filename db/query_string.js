@@ -161,3 +161,10 @@ exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
 exports.professorSearchQueryString = function professorSearchQueryString(term) {
   return `SELECT * FROM Professor WHERE Name LIKE \'%${term}%\';`
 }
+
+exports.professorInfoQueryString = function professorInfoQueryString(netid) {
+  return `SELECT * FROM Professor, Teaches_Course, Course
+  WHERE Professor.NetID=\'${netid}\' AND
+  Professor.NetID=Teaches_Course.NetID AND
+  Course.Course_Number=Teaches_Course.Course_Number;`
+}

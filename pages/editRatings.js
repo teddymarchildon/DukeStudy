@@ -103,7 +103,7 @@ class EditRatingsContent extends React.Component {
           <Card className={classes.card}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary">
-                {this.props.department} {this.props.level} {this.props.year_semester}
+                {this.props.course.department} {this.props.course.level} {this.props.course.year_semester}
               </Typography>
               <Typography className={classes.title} color="textSecondary">
                 Quality of Course
@@ -168,7 +168,7 @@ class EditRatingsPage extends React.Component {
       <SearchAppBar name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} {...this.props.course} />
+          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} course={{this.props.course}} />
         </div>
       </main>
     )

@@ -103,6 +103,9 @@ class EditRatingsContent extends React.Component {
           <Card className={classes.card}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary">
+                {course.department} {course.level} {course.year_semester}
+              </Typography>
+              <Typography className={classes.title} color="textSecondary">
                 Quality of Course
               </Typography>
               <RatingsDropDown onSelectedRating={this.onSelectedQualityCourse} />

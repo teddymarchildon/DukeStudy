@@ -103,7 +103,7 @@ class SearchMenu extends React.Component {
 
   render() {
     const { anchorEl } = this.state;
-    const terms = ['Course', 'Student'];
+    const terms = ['Course', 'Student', 'Professor'];
     return (
       <div>
         <Button
@@ -143,6 +143,8 @@ class SearchAppBar extends React.Component {
         Router.push('/courseSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
       } else if (this.state.searchTerm=='Student') {
         Router.push('/studentSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
+      } else if (this.state.searchTerm=='Professor') {
+        Router.push('/professorSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
       }
     }
   }

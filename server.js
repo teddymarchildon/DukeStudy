@@ -134,11 +134,11 @@ app.prepare().then(() => {
     console.log(`Submitting ${type} search for term: ${term}`);
     var queryString;
     if (type=='Course') {
-      console.log("Course search");
       queryString = dbHelper.courseTableSearchQueryString(term.toUpperCase());
     } else if (type=='Student') {
-      console.log("Student search");
       queryString = dbHelper.studentTableSearchQueryString(term);
+    } else if (type=='Professor') {
+      queryString = dbHelper.professorSearchQueryString(term);
     }
     return db.submitQueryString(res, queryString, true);
   });

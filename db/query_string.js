@@ -24,9 +24,21 @@ exports.createUpdateStudentQueryString = function createStudentInsertQueryString
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
-  return `SELECT * FROM
-  Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
-  WHERE NetID=\'${netid.trim()}\';`
+  // return `SELECT * FROM
+  // Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
+  // WHERE NetID=\'${netid.trim()}\';`
+  return `select s.NetID,
+  s.Name,
+  s.Primary_Major,
+  s.Primary_Minor.
+  s.Favorite_Class,
+  s.Certificate,
+  c.Course_Number, c.Department, c.Level, p.Name
+  from Student s, Professor p, Course c
+  where s.NetID = \'${netid}\'
+  and s.Favorite_Professor = p.NetID
+  and s.Favorite_Class = c.Course_Number;
+`
 }
 
 exports.createNewUserQueryString = function createNewUserQueryString(netid, name) {
@@ -145,4 +157,8 @@ exports.courseAvgQueryString = function courseAvgQueryString(courseID) {
 
 exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
   return `SELECT * FROM Course WHERE Course_Number=\'${courseID}\';`
+}
+
+exports.professorSearchQueryString = function professorSearchQueryString(term) {
+  return `SELECT * FROM Professor WHERE Name LIKE \'%${term}%\';`
 }

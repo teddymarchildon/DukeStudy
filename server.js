@@ -251,7 +251,7 @@ app.prepare().then(() => {
     const semesters = JSON.parse(req.body.selectedCourseSemesters);
 
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
-    let result = db.submitQueryString(res, queryString, false, () => {
+    let result = db.submitQueryString(res, queryString, [], false, () => {
       queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
       let rateResult = db.submitQueryString(res, queryString, [], false);
     });

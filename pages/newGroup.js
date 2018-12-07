@@ -115,7 +115,6 @@ class NewGroupPage extends React.Component {
     const level = query.level;
 
     if (courseID != null &&
-      yearSemester != null &&
       department != null &&
       level != null) {
       studentJson[0]['preCourse'] = courseID;

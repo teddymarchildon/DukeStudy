@@ -138,7 +138,7 @@ exports.courseTableSearchQueryString = function courseTableSearchQueryString() {
 }
 
 exports.studentTableSearchQueryString = function studentTableSearchQueryString() {
-  return `SELECT * FROM Student WHERE Name LIKE \'%$1%\';`
+  return `SELECT * FROM Student WHERE Name LIKE $1;`
 }
 
 exports.courseAvgQueryString = function courseAvgQueryString() {
@@ -154,7 +154,7 @@ exports.courseInfoQueryString = function courseInfoQueryString() {
 }
 
 exports.professorSearchQueryString = function professorSearchQueryString() {
-  return `SELECT * FROM Professor WHERE Name LIKE \'%$1%\';`
+  return `SELECT * FROM Professor WHERE Name LIKE $1;`
 }
 
 exports.professorInfoQueryString = function professorInfoQueryString() {

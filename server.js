@@ -77,7 +77,7 @@ app.prepare().then(() => {
     const course = req.query.course;
     console.log('Selecting users for dropdown from course: ' + course);
 
-    let queryString = dbHelper.allUsersQueryString(netid, course);
+    let queryString = dbHelper.allUsersQueryString();
     let values = [netid, course]
     return db.submitQueryString(res, queryString, values, true);
   });
@@ -100,7 +100,7 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting tutoring information for: ' + netid);
 
-    let queryString = dbHelper.selectTutoringQueryString(netid);
+    let queryString = dbHelper.selectTutoringQueryString();
     let values = [netid]
     return db.submitQueryString(res, queryString, values, true);
   });
@@ -266,7 +266,7 @@ app.prepare().then(() => {
     const favCourse = req.body.favoriteCourse;
     var queryString = '';
     if (favCourse !== null && favCourse==='true') {
-      queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
+      queryString = dbHelper.favoriteClassQueryString();
       let values = [netid, favCourse];
       db.submitQueryString(res, queryString, values, false);
     }
@@ -290,8 +290,16 @@ app.prepare().then(() => {
   server.post('/api/v1/student/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Student **')
 
-    let queryString = dbHelper.createUpdateStudentQueryString(req.body);
-    return db.submitQueryString(res, queryString, true);
+    const data = req.body;
+    let queryString = dbHelper.createUpdateStudentQueryString(data);
+    let values = [data['name'],
+    data['major'],
+    data['minor'],
+    data['certificate'],
+    data['favClass'],
+    data['favProf'],
+    data['netid']]
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -302,8 +310,10 @@ app.prepare().then(() => {
     console.log('** RECEIVED POST REQUEST for Tutor **')
     console.log(req.body)
 
-    let queryString = dbHelper.insertTutorQueryString(req.body);
-    return db.submitQueryString(res, queryString, true);
+    const data = req.body;
+    let values = [data['netid'], data['rate'], data['availability']];
+    let queryString = dbHelper.insertTutorQueryString();
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**
@@ -318,7 +328,7 @@ app.prepare().then(() => {
     const courseNumber = req.body.courseNumber;
     const courseSemester = req.body.courseSemester;
 
-    let queryString = dbHelper.insertTAQueryString(netid, courseNumber, courseSemester);
+    let queryString = dbHelper.insertTAQueryString();
     let values = [netid, courseNumber, courseSemester];
     return db.submitQueryString(res, queryString, values, true);
   });
@@ -335,13 +345,13 @@ app.prepare().then(() => {
     const favorite = req.body.favoriteCourse;
 
     if (favorite !== null && favorite === 'true') {
-      let queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
+      let queryString = dbHelper.favoriteClassQueryString();
       let values = [netid, course.course_number];
       db.submitQueryString(res, queryString, values, false);
     }
 
-    let queryString = dbHelper.updateRatesCourseQueryString(netid, course);
-    let values = [netid, course];
+    let queryString = dbHelper.updateRatesCourseQueryString();
+    let values = [netid, course.course_number, course.year_semester, course.quality_of_course, course.quality_of_instruction, course.difficulty, course.workload];
     return db.submitQueryString(res, queryString, values, true);
   });
 
@@ -360,12 +370,12 @@ app.prepare().then(() => {
     const course = req.body.courseID;
     const year = req.body.courseSemester;
 
-    let studyGroupQueryString = dbHelper.insertStudyGroupQueryString(groupID, course, year);
+    let studyGroupQueryString = dbHelper.insertStudyGroupQueryString();
     let values = [groupID, course, year];
     let result = db.submitQueryString(res, studyGroupQueryString, values, false);
 
     const users = req.body.users.split(",");
-    let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
+    let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users);
     return db.submitQueryString(res, inStudyGroupQueryString, true);
   });
 

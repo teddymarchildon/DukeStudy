@@ -1,43 +1,29 @@
 exports.createUpdateStudentQueryString = function createStudentInsertQueryStringFromData(data) {
   var string = `UPDATE Student SET `;
   if (data['name'] !== null && data['name'] !== 'null') {
-    string += `name=\'${data['name']}\',`
+    string += `name=$1,`
   }
   if (data['major'] !== null && data['major'] !== 'null') {
-    string += `primary_major=\'${data['major']}\', `
+    string += `primary_major=$2, `
   }
   if (data['minor'] !== null && data['minor'] !== 'null') {
-    string += `primary_minor=\'${data['minor']}\', `
+    string += `primary_minor=$3, `
   }
   if (data['certificate'] !== null && data['certificate'] !== 'null') {
-    string += `certificate=\'${data['certificate']}\', `
+    string += `certificate=$4, `
   }
   if (data['favClass'] !== null && data['favClass'] !== 'null') {
-    string += `favorite_class=\'${data['favClass']}\', `
+    string += `favorite_class=$5, `
   }
   if (data['favProf'] !== null && data['favProf'] !== 'null') {
-    string += `favorite_professor=\'${data['favProf']}\', `
+    string += `favorite_professor=$6, `
   }
   var result = string.trim().slice(0, -1);
-  result += ` WHERE netid=\'${data['netid']}\';`
+  result += ` WHERE netid=$7;`
   return result;
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
-  // return `SELECT * FROM
-  // Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
-  // WHERE NetID=\'${netid.trim()}\';`
-  // return `select *
-  // c.Course_Number, c.Department, c.Level, p.Name
-  // from Student s, Professor p, Course c
-  // where s.NetID = \'${netid}\'
-  // and s.Favorite_Professor = p.NetID
-  // and s.Favorite_Class = c.Course_Number;`
-  // return `select *
-  // from Student s
-  // left join Professor p on p.NetID = s.Favorite_Professor
-  // left join Course c on s.Favorite_Class = c.Course_Number
-  // where s.NetID = \'${netid}\';`
   return `select s.*, p.Name as pName, c.Course_Number, c.Department, c.Level
   from Student s
   left join Professor p on p.NetID = s.Favorite_Professor
@@ -62,27 +48,27 @@ exports.dropDownDepartmentQueryString = function dropDownDepartmentQueryString()
   return `SELECT DISTINCT Department FROM Course;`
 }
 
-exports.dropDownCourseQueryString = function dropDownCourseQueryString(department) {
+exports.dropDownCourseQueryString = function dropDownCourseQueryString() {
   return `SELECT Course_Number, Department, Level FROM Course WHERE
-  Department=\'${department.trim()}\';`
+  Department=$1;`
 }
 
-exports.selectTutoringQueryString = function selectTutoringQueryString(netid) {
-  return `SELECT * FROM Tutor WHERE NetID=\'${netid.trim()}\';`
+exports.selectTutoringQueryString = function selectTutoringQueryString() {
+  return `SELECT * FROM Tutor WHERE NetID=$1;`
 }
 
-exports.insertTutorQueryString = function insertTutorQueryString(data) {
-  return `INSERT INTO Tutor VALUES (\'${data['netid']}\', \'${data['rate']}\', \'${data['availability']}\') ON CONFLICT (NetID) DO UPDATE SET Rate_Per_Hour=\'${data['rate']}\', Days_Available=\'${data['availability']}\';`
+exports.insertTutorQueryString = function insertTutorQueryString() {
+  return `INSERT INTO Tutor VALUES ($1, $2, $3) ON CONFLICT (NetID) DO UPDATE SET Rate_Per_Hour=$2, Days_Available=$3;`
 }
 
-exports.allUsersQueryString = function allUsersQueryString(netid, courseID) {
+exports.allUsersQueryString = function allUsersQueryString() {
   return `SELECT Takes_Course.NetID, Name, Course_Number FROM
   Takes_Course INNER JOIN Student ON Takes_Course.NetID=Student.NetID
-  WHERE Takes_Course.NetID != \'${netid.trim()}\' AND Course_Number=\'${courseID.trim()}\';`
+  WHERE Takes_Course.NetID != $1} AND Course_Number=$2;`
 }
 
-exports.insertStudyGroupQueryString = function insertStudyGroupQueryString(groupID, courseID, year) {
-  return `INSERT INTO Study_Group VALUES (${groupID}, \'${courseID.trim()}\', \'${year.trim()}\');`
+exports.insertStudyGroupQueryString = function insertStudyGroupQueryString() {
+  return `INSERT INTO Study_Group VALUES ($1, $2, $3);`
 }
 
 exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(groupID, users) {
@@ -93,16 +79,16 @@ exports.insertInStudyGroupQueryString = function insertInStudyGroupQueryString(g
   return string.slice(0, -1) + ';';
 }
 
-exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString(netid, groupID) {
-  return `DELETE FROM In_Study_Group WHERE Group_ID=\'${groupID}\' AND NetID=\'${netid.trim()}\';`
+exports.removeUserFromGroupQueryString = function removeUserFromGroupQueryString() {
+  return `DELETE FROM In_Study_Group WHERE Group_ID=$2 AND NetID=$1;`
 }
 
-exports.flowQueryString = function flowQueryString(netid) {
-  return `SELECT * FROM Student WHERE NetID=\'${netid.trim()}\';`
+exports.flowQueryString = function flowQueryString() {
+  return `SELECT * FROM Student WHERE NetID=$1;`
 }
 
-exports.favoriteClassQueryString = function favoriteClassQueryString(netid, courseNumber) {
-  return `UPDATE Student SET Favorite_Class=\'${courseNumber.trim()}\' WHERE NetID=\'${netid.trim()}\';`
+exports.favoriteClassQueryString = function favoriteClassQueryString() {
+  return `UPDATE Student SET Favorite_Class=$2 WHERE NetID=$1;`
 }
 
 exports.takesCourseQueryString = function takesCourseQueryString(netid, courses, semesters) {
@@ -117,8 +103,8 @@ exports.allProfessorsQueryString = function allProfessorsQueryString() {
   return 'SELECT NetID, Name FROM Professor;'
 }
 
-exports.courseSemestersQueryString = function courseSemestersQueryString(course) {
-  return `SELECT * FROM Course_Semesters WHERE Course_Number=\'${course}\';`
+exports.courseSemestersQueryString = function courseSemestersQueryString() {
+  return `SELECT * FROM Course_Semesters WHERE Course_Number=$1;`
 }
 
 exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses, semesters) {
@@ -133,53 +119,53 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
   return string.trim().slice(0, -1) + ';';
 }
 
-exports.updateRatesCourseQueryString = function updateRatesCourseQueryString(netid, course) {
-  return `UPDATE Rates_Course SET Quality_Of_Course=${course.quality_of_course}, Quality_Of_Instruction=${course.quality_of_instruction}, Difficulty=${course.difficulty}, Workload=${course.workload} WHERE NetID=\'${netid}\' AND Course_Number=\'${course.course_number}\' AND Year_Semester=\'${course.year_semester}\';`;
+exports.updateRatesCourseQueryString = function updateRatesCourseQueryString() {
+  return `UPDATE Rates_Course SET Quality_Of_Course=$4, Quality_Of_Instruction=$5, Difficulty=$6, Workload=$7 WHERE NetID=$1 AND Course_Number=$2 AND Year_Semester=$3;`;
 }
 
-exports.coursesQueryString = function coursesQueryString(netid) {
+exports.coursesQueryString = function coursesQueryString() {
   return `select r.NetID, c.Course_Number, c.Department, c.Level, r.Quality_Of_Course, r.Quality_Of_Instruction, r.Difficulty, r.Workload, r.Year_Semester
   from Rates_Course r
   left join Course c on r.Course_Number = c.Course_Number
-  where r.NetID = \'${netid}\';`
+  where r.NetID = $1;`
 }
 
-exports.courseTableSearchQueryString = function courseTableSearchQueryString(term) {
-  return `SELECT * FROM Course WHERE Department LIKE \'%${term}%\' OR Level LIKE \'%${term}%\';`
+exports.courseTableSearchQueryString = function courseTableSearchQueryString() {
+  return `SELECT * FROM Course WHERE Department LIKE %$1% OR Level LIKE %$1%;`
 }
 
-exports.studentTableSearchQueryString = function studentTableSearchQueryString(term) {
-  return `SELECT * FROM Student WHERE Name LIKE \'%${term}%\';`
+exports.studentTableSearchQueryString = function studentTableSearchQueryString() {
+  return `SELECT * FROM Student WHERE Name LIKE %$1%;`
 }
 
-exports.courseAvgQueryString = function courseAvgQueryString(courseID) {
+exports.courseAvgQueryString = function courseAvgQueryString() {
   return `select avg(Quality_Of_Course) as avgQualityRating,
   avg(Quality_Of_Instruction) as avgInstructionRating,
   avg(Difficulty) as avgDifficulty,
   avg(WorkLoad) as avgWorkload FROM
-  Rates_Course WHERE Course_Number=\'${courseID}\';`
+  Rates_Course WHERE Course_Number=$1;`
 }
 
-exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
-  return `SELECT * FROM Course WHERE Course_Number=\'${courseID}\';`
+exports.courseInfoQueryString = function courseInfoQueryString() {
+  return `SELECT * FROM Course WHERE Course_Number=$1;`
 }
 
-exports.professorSearchQueryString = function professorSearchQueryString(term) {
-  return `SELECT * FROM Professor WHERE Name LIKE \'%${term}%\';`
+exports.professorSearchQueryString = function professorSearchQueryString() {
+  return `SELECT * FROM Professor WHERE Name LIKE %$1%;`
 }
 
-exports.professorInfoQueryString = function professorInfoQueryString(netid) {
+exports.professorInfoQueryString = function professorInfoQueryString() {
   return `SELECT * FROM Professor, Teaches_Course, Course
-  WHERE Professor.NetID=\'${netid}\' AND
+  WHERE Professor.NetID=$1 AND
   Professor.NetID=Teaches_Course.Professor_NetID AND
   Course.Course_Number=Teaches_Course.Course_Number;`
 }
 
-exports.taQueryString = function taQueryString(netid) {
+exports.taQueryString = function taQueryString() {
   return `SELECT * FROM TAs_Course, Course
-  WHERE TAs_Course.NetID=\'${netid}\' AND TAs_Course.Course_Number=Course.Course_Number;`
+  WHERE TAs_Course.NetID=$1 AND TAs_Course.Course_Number=Course.Course_Number;`
 }
 
-exports.insertTAQueryString = function insertTAQueryString(netid, courseNumber, courseSemester) {
-  return `INSERT INTO TAs_Course VALUES (\'${netid}\', \'${courseNumber}\', \'${courseSemester}\');`
+exports.insertTAQueryString = function insertTAQueryString() {
+  return `INSERT INTO TAs_Course VALUES ($1, $2, $3);`
 }

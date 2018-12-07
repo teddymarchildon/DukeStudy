@@ -206,7 +206,7 @@ app.prepare().then(() => {
     const netid = req.body.netid;
     const favCourse = req.body.favoriteCourse;
     var queryString = '';
-    if (favCourse !== null && favCourse===true) {
+    if (favCourse !== null && favCourse==='true') {
       queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
       db.submitQueryString(res, queryString, false);
     }
@@ -276,7 +276,7 @@ app.prepare().then(() => {
     const course = JSON.parse(req.body.course);
     const favorite = req.body.favoriteCourse;
 
-    if (favorite !== null && favorite === true) {
+    if (favorite !== null && favorite === 'true') {
       queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
       db.submitQueryString(res, queryString, false);
     }

@@ -57,19 +57,19 @@ class EditRatingsContent extends React.Component {
   }
 
   onSelectedQualityCourse = rating => {
-    this.state.currentCourse['qualityRating'] = rating;
+    this.state.currentCourse['quality_of_course'] = rating;
   }
 
   onSelectedQualityInstruction = rating => {
-    this.state.currentCourse['qualityInstructionRating'] = rating;
+    this.state.currentCourse['quality_of_instruction'] = rating;
   }
 
   onSelectedDifficulty = rating => {
-    this.state.currentCourse['difficultyRating'] = rating;
+    this.state.currentCourse['difficulty'] = rating;
   }
 
   onSelectedWorkload = rating => {
-    this.state.currentCourse['workloadRating'] = rating;
+    this.state.currentCourse['workload'] = rating;
   }
 
   onFavoriteClassChange = (event, checked) => {

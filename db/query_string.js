@@ -117,7 +117,7 @@ exports.ratesCourseQueryString = function ratesCourseQueryString(netid, courses,
 }
 
 exports.updateRatesCourseQueryString = function updateRatesCourseQueryString(netid, course) {
-  return `UPDATE Rates_Course SET Quality_Of_Course=${course.qualityRating}, Quality_Of_Instruction=${course.qualityInstructionRating}, Difficulty=${course.difficultyRating}, Workload=${course.workloadRating} WHERE NetID=\'${netid}\' AND Course_Number=\'${course.course_number}\' AND Year_Semester=\'${course.year_semester}\';`;
+  return `UPDATE Rates_Course SET Quality_Of_Course=${course.quality_of_course}, Quality_Of_Instruction=${course.quality_of_instruction}, Difficulty=${course.difficulty}, Workload=${course.workload} WHERE NetID=\'${netid}\' AND Course_Number=\'${course.course_number}\' AND Year_Semester=\'${course.year_semester}\';`;
 }
 
 exports.coursesQueryString = function coursesQueryString(netid) {

@@ -75,9 +75,12 @@ class HomePage extends React.Component {
   static async getInitialProps({ query }) {
     const user = query.user;
     const other = query.other;
+    const currentUser = await await fetch('http://35.237.162.74:3000/api/v1/student/' + user);
     const otherUser = await fetch('http://35.237.162.74:3000/api/v1/student/' + other);
-    const otherJson = await otherUser.json()
-    return otherJson[0];
+    const currentUserJson = await currentUser.json();
+    const otherJson = await otherUser.json();
+    currentUserJson[0]['other'] = otherJson[0];
+    return currentUserJson[0];
   }
 
   render() {
@@ -87,14 +90,14 @@ class HomePage extends React.Component {
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <LandingContent
-            name={this.props.name}
-            netid={this.props.netid}
-            major={this.props.primary_major}
-            favClass={`${this.props.department} ${this.props.level}`}
-            favProf={this.props.favorite_professor}
-            major={this.props.primary_major}
-            minor={this.props.primary_minor}
-            certificate={this.props.certificate}
+            name={this.props.other.name}
+            netid={this.props.other.netid}
+            major={this.props.other.primary_major}
+            favClass={`${this.props.other.department} ${this.props.other.level}`}
+            favProf={this.props.other.favorite_professor}
+            major={this.props.other.primary_major}
+            minor={this.props.other.primary_minor}
+            certificate={this.other.props.certificate}
             />
         </div>
       </main >

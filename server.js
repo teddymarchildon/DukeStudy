@@ -140,16 +140,16 @@ app.prepare().then(() => {
     var term = req.query.term;
     console.log(`Submitting ${type} search for term: ${term}`);
     var queryString;
-    var values;
+    var values = [];
     if (type=='Course') {
       queryString = dbHelper.courseTableSearchQueryString();
-      values = [term.toUpperCase()]
+      values.push(term.toUpperCase()_
     } else if (type=='Student') {
       queryString = dbHelper.studentTableSearchQueryString();
-      values = [term];
+      values.push(term);
     } else if (type=='Professor') {
       queryString = dbHelper.professorSearchQueryString();
-      values = [term];
+      values.push(term);
     }
     return db.submitQueryString(res, queryString, values, true);
   });

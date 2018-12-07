@@ -102,7 +102,7 @@ class NewCourseContent extends React.Component {
     var obj = {
       netid: this.props.netid,
       course: JSON.stringify(this.state.selectedCourses),
-      semeseter: JSON.stringify(this.state.selectedCourseSemesters),
+      semester: JSON.stringify(this.state.selectedCourseSemesters),
       favoriteCourse: this.state.favoriteCourse,
     };
     let params = new URLSearchParams(obj);

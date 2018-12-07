@@ -202,6 +202,7 @@ app.prepare().then(() => {
 
   server.post('/api/v1/addCourse/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for Adding a Course **')
+    console.log(req.body);
     const netid = req.body.netid;
     const favCourse = req.body.favoriteCourse;
     var queryString = '';

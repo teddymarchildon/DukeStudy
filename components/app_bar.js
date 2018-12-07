@@ -14,6 +14,7 @@ import fetch from 'node-fetch';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Router from 'next/router';
 
 const styles = theme => ({
   root: {
@@ -143,9 +144,6 @@ class SearchAppBar extends React.Component {
       } else if (this.state.searchTerm=='Student') {
         Router.push('/studentSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
       }
-
-      const search = await fetch('http://35.237.162.74:3000/api/v1/search?type=' + this.state.searchTerm + '&term=' + event.target.value);
-      const result = await search.json();
     }
   }
 

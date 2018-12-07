@@ -135,12 +135,14 @@ exports.studentTableSearchQueryString = function studentTableSearchQueryString(t
   return `SELECT * FROM Student WHERE Name LIKE \'%${term}%\';`
 }
 
-exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
+exports.courseAvgQueryString = function courseAvgQueryString(courseID) {
   return `select avg(Quality_Of_Course) as avgQualityRating,
   avg(Quality_Of_Instruction) as avgInstructionRating,
   avg(Difficulty) as avgDifficulty,
-  Department, Level, Year_Semester,
   avg(WorkLoad) as avgWorkload FROM
-  Rates_Course r left join Course c on r.Course_Number = c.Course_Number
-  WHERE r.Course_Number=\'${courseID}\';`
+  Rates_Course WHERE Course_Number=\'${courseID}\';`
+}
+
+exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
+  return `SELECT * FROM Course WHERE Course_Number=\'${courseID}\';`
 }

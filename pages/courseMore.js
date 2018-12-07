@@ -60,16 +60,16 @@ class CourseMoreContent extends React.Component {
                   {course.department} {course.level} {course.year_semester}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Quality of Course: {course.quality_of_course}
+                  Quality of Course: {this.props.avg.avgQualityRating}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Quality of Instruction: {course.quality_of_instruction}
+                  Quality of Instruction: {this.props.avg.avgInstructionRating}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Difficulty: {course.difficulty}
+                  Difficulty: {this.props.avg.avgDifficulty}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Workload: {course.workload}
+                  Workload: {this.props.avg.avgWorkload}
                 </Typography>
                 <CardActions>
                   <Button onClick={this.handleDone} size="small"> Create Study Group </Button>
@@ -93,10 +93,12 @@ class CourseMorePage extends React.Component {
     const courseid = query.courseID;
     const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
     const courses = await fetch('http://35.237.162.74:3000/api/v1/course/' + courseid);
+    const avgs = await fetch('http://35.237.162.74:3000/api/v1/courseAvg/' + courseid)
     const studentJson = await student.json();
     const coursesJson = await courses.json();
-
+    const avgsJson = await avgs.json();
     studentJson[0]['courses'] = coursesJson;
+    studentJson[0]['avg'] = avgsJson[0];
     return studentJson[0];
   }
 
@@ -106,7 +108,7 @@ class CourseMorePage extends React.Component {
       <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <CourseMoreContent classes={this.props.classes} netid={this.props.netid} courses={this.props.courses} />
+          <CourseMoreContent classes={this.props.classes} netid={this.props.netid} avg={this.props.avg} courses={this.props.courses} />
         </div>
       </main>
     )

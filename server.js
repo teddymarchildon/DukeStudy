@@ -173,7 +173,15 @@ app.prepare().then(() => {
 
     let queryString = dbHelper.courseInfoQueryString(course);
     return db.submitQueryString(res, queryString, true);
-  })
+  });
+
+  server.get('/api/v1/courseAvg/:courseID', (req, res, next) => {
+    const course = req.params.courseID;
+    console.log('Getting avg course info for: ' + course);
+
+    let queryString = dbHelper.courseAvgQueryString(course);
+    return db.submitQueryString(res, queryString, true);
+  });
   /**
     Below is the updating information API
 

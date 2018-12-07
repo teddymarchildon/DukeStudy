@@ -24,20 +24,16 @@ exports.createUpdateStudentQueryString = function createStudentInsertQueryString
 }
 
 exports.createSelectQueryString = function createSelectQueryStringFromData(netid) {
-  return `SELECT * FROM
-  Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
-  WHERE NetID=\'${netid.trim()}\';`
-//   return `select s.NetID,
-//   s.Name,
-//   s.Primary_Major,
-//   s.Primary_Minor.
-//   s.Certificate,
-//   c.Course_Number, c.Department, c.Level, p.Name
-//   from Student s, Professor p, Course c
-//   where s.NetID = \'${netid}\'
-//   and s.Favorite_Professor = p.NetID
-//   and s.Favorite_Class = c.Course_Number;
-// `
+  // return `SELECT * FROM
+  // Student INNER JOIN Course ON Student.Favorite_Class=Course.Course_Number
+  // WHERE NetID=\'${netid.trim()}\';`
+  return `select *
+  c.Course_Number, c.Department, c.Level, p.Name
+  from Student s, Professor p, Course c
+  where s.NetID = \'${netid}\'
+  and s.Favorite_Professor = p.NetID
+  and s.Favorite_Class = c.Course_Number;`
+
 }
 
 exports.createNewUserQueryString = function createNewUserQueryString(netid, name) {

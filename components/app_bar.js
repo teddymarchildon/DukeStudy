@@ -73,17 +73,77 @@ const styles = theme => ({
   },
 });
 
+class SearchMenu extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      anchorEl: null,
+      selectedTerm: 'Course'
+    };
+  }
+
+  handleClick = event => {
+    this.setState({
+      anchorEl: event.currentTarget,
+    });
+  };
+
+  handleClose = (term) => {
+    this.setState({
+      anchorEl: null,
+      selectedSearch: term,
+    });
+    this.props.onSelectTerm(term);
+  };
+
+  render() {
+    const { anchorEl } = this.state;
+    const terms = ['Course', 'Student'];
+    return (
+      <div>
+        <Button
+          aria-owns={anchorEl ? 'simple-menu' : undefined}
+          aria-haspopup="true"
+          onClick={this.handleClick}
+        >
+        {this.state.selectedTerm}
+        </Button>
+        <Menu
+          id="simple-menu"
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={this.handleClose}
+        >
+        {terms.map((term, index) => (
+          <MenuItem value={term} onClick={() => this.handleClose(term)}>{term}</MenuItem>
+        ))}
+        </Menu>
+      </div>
+    );
+  }
+}
+
 class SearchAppBar extends React.Component {
 
   constructor(props){
-    super(props)
+    super(props);
+    this.state = {
+      searchTerm: 'Course'
+    }
   }
 
   onKeyPress = async (event) => {
     if (event.key=='Enter') {
-      const search = await fetch('http://35.237.162.74:3000/api/v1/search/' + event.target.value);
+      const search = await fetch('http://35.237.162.74:3000/api/v1/search?type=' + this.state.searchTerm + '&term=' + event.target.value);
       const result = await search.json();
     }
+  }
+
+  onSelectSearchTerm = (term) => {
+    this.setState({
+      searchTerm: term
+    });
   }
 
   render() {
@@ -96,6 +156,7 @@ class SearchAppBar extends React.Component {
               Welcome to Duke Study, {this.props.name}
             </Typography>
             <div className={classes.grow} />
+            <SearchMenu onSelectTerm={this.onSelectSearchTerm} />
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />

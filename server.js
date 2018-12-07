@@ -128,9 +128,10 @@ app.prepare().then(() => {
     API for searching a term
   */
 
-  server.get('/api/v1/search/:term', (req, res, next) => {
-    const term = req.params.term;
-    console.log('Submitting search for term: ' + term);
+  server.get('/api/v1/search', (req, res, next) => {
+    const type = req.query.type;
+    const term = req.query.term;
+    console.log(`Submitting ${type} search for term: ${term}`);
 
     return;
   });

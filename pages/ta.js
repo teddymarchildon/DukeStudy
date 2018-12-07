@@ -29,20 +29,19 @@ const styles = theme => ({
     right: 300,
     height: 'auto'
   },
+  groupCard: {
+    marginBottom: theme.spacing.unit * 2
+  },
 });
 
 class TAingContent extends React.Component {
-
-  handleRegister = event => {
-
-  }
 
   render() {
     const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
       {this.props.info.map((course, index) => (
-        <Card className={this.props.card}>
+        <Card className={classes.groupCard}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
               Course: {course.department} {course.level}
@@ -97,7 +96,7 @@ class TAingPage extends React.Component {
         <SearchAppBar netid={this.props.netid} name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <TAingContent netid={this.props.netid} info={this.props.TAInfo}/>
+          <TAingContent classes={this.props.classes} netid={this.props.netid} info={this.props.TAInfo}/>
           <TAButtonS netid={this.props.netid} />
         </div>
       </main >

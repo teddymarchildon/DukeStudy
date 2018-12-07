@@ -303,16 +303,6 @@ app.prepare().then(() => {
   });
 
   /**
-    API for registering that a user takes a course
-    one call to the API for each course
-  */
-
-  server.post('/api/v1/takesCourse/post', (req, res, next) => {
-    console.log('** RECEIVED POST REQUEST for Taking course **')
-    console.log(req.body)
-  });
-
-  /**
     API for rating a course
   */
 

@@ -48,7 +48,7 @@ const styles = theme => ({
 class CourseMoreContent extends React.Component {
 
   handleNewStudyGroup = (course, department, level, semester) => {
-    Router.push(`/newGroup?netid=${this.props.netid}&courseID=${course}&department=${department}&yearSemester=${yearSemester}&level=${level}`);
+    Router.push(`/newGroup?netid=${this.props.netid}&courseID=${course}&department=${department}&yearSemester=${semester}&level=${level}`);
   }
 
   render() {

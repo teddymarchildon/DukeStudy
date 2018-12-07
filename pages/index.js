@@ -62,10 +62,10 @@ class InformationCard extends React.Component {
       <main>
         <Card className={this.props.card}>
           <CardContent>
-            <Typography className={this.props.title} color="textSecondary" gutterBottom>
+            <Typography align='center' className={this.props.title} color="textSecondary" gutterBottom>
               Welcome to DukeStudy
             </Typography>
-            <Typography variant="p" component="p">
+            <Typography align='center' variant="p" component="p">
               A place for Duke Students to discuss classes and form study groups.
             </Typography>
           </CardContent>

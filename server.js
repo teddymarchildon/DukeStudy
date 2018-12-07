@@ -210,8 +210,8 @@ app.prepare().then(() => {
       db.submitQueryString(res, queryString, false);
     }
 
-    const courses = JSON.parse(req.body.selectedCourses);
-    const semesters = JSON.parse(req.body.selectedCourseSemesters);
+    const courses = JSON.parse(req.body.course);
+    const semesters = JSON.parse(req.body.semester);
 
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
     let result = db.submitQueryString(res, queryString, false, () => {

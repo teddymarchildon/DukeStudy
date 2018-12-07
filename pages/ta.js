@@ -86,11 +86,7 @@ class TAingPage extends React.Component {
     const TA = await fetch('http://35.237.162.74:3000/api/v1/TAing/' + query.netid);
     const studentJson = await student.json();
     const TAJson = await TA.json();
-    if (TAJson[0] == null) {
-      studentJson[0]['TAInfo'] = []
-    } else {
-      studentJson[0]['TAInfo'] = TAJson[0];
-    }
+    studentJson[0]['TAInfo'] = TAJson;
     return studentJson[0];
   }
 

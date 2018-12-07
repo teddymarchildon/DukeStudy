@@ -47,7 +47,7 @@ class TAingContent extends React.Component {
   handleRegister = async (event) => {
     let params = new URLSearchParams(this.state);
     const res = await fetch('http://35.237.162.74:3000/api/v1/ta/post', { method: 'POST', body: params });
-    Router.push(`/groups?netid=${this.props.netid}`);
+    Router.push(`/ta?netid=${this.props.netid}`);
   }
 
   render() {

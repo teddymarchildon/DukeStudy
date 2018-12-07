@@ -149,7 +149,7 @@ class EditRatingsPage extends React.Component {
     const courses = await fetch('http://35.237.162.74:3000/api/v1/courses/' + query.netid);
     const studentJson = await student.json();
     const coursesJson = await courses.json();
-    const courseToEdit = null;
+    var courseToEdit = null;
 
     coursesJson.map(function(course, index) {
       if (course.course_number.trim() === courseid.trim()) {

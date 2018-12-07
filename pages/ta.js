@@ -23,6 +23,12 @@ const styles = theme => ({
       marginRight: 'auto',
     },
   },
+  button: {
+    margin: theme.spacing.unit,
+    marginTop: 10,
+    right: 300,
+    height: 'auto'
+  },
 });
 
 class TAingContent extends React.Component {
@@ -62,7 +68,7 @@ class TAButton extends React.Component {
     return (
       <main>
         <Button variant="contained" id='landing' className={classes.button} color="Primary" onClick={() => Router.push(`/newTA?netid=${this.props.netid}`)}>
-          New Group
+          Register as TA
         </Button>
       </main>
     );

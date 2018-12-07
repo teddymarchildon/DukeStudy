@@ -134,7 +134,7 @@ exports.coursesQueryString = function coursesQueryString() {
 }
 
 exports.courseTableSearchQueryString = function courseTableSearchQueryString() {
-  return "SELECT * FROM Course WHERE Department LIKE '%'$1'%' OR Level LIKE '%'$1'%';"
+  return "SELECT * FROM Course WHERE Department LIKE \'%\'$1\'%\' OR Level LIKE \'%\'$1\'%\';"
 }
 
 exports.studentTableSearchQueryString = function studentTableSearchQueryString() {

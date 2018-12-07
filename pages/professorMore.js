@@ -23,6 +23,9 @@ const styles = theme => ({
       marginRight: 'auto',
     },
   },
+  groupCard: {
+    marginBottom: theme.spacing.unit * 2
+  },
 });
 
 class ProfessorContent extends React.Component {
@@ -37,7 +40,7 @@ class ProfessorContent extends React.Component {
     return (
       <div style={{width: '25%', margin: 'auto'}}>
         {this.props.courses.map((professor, index) => (
-        <Card className={this.props.card}>
+        <Card className={classes.groupCard}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
               Name: {professor.name}
@@ -83,6 +86,7 @@ class HomePage extends React.Component {
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
           <ProfessorContent
+            classes={this.props.classes}
             courses={this.props.other}
           />
         </div>

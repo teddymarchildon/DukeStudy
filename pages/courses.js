@@ -44,6 +44,10 @@ class CourseContent extends React.Component {
     Router.push('http://35.237.162.74:3000/editRatings?netid=' + this.props.netid + '&courseID=' + courseID);
   }
 
+  handleNewStudyGroup = (course, department, level) => {
+    Router.push(`/newGroup?netid=${this.props.netid}&courseID=${course}&department=${department}&level=${level}`);
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -69,7 +73,8 @@ class CourseContent extends React.Component {
           </CardContent>
           <CardActions>
             <Button onClick={() => this.handleEditRatings(course.course_number)} size="small"> Edit ratings </Button>
-          </CardActions>
+            <Button onClick={() => this.handleNewStudyGroup(course.course_number, course.department, course.level, course.year_semester)} size="small"> Create Study Group </Button>
+        </CardActions>
         </Card>
         ))}
       </div>

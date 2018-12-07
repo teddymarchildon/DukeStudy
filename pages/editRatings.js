@@ -84,7 +84,7 @@ class EditRatingsContent extends React.Component {
     var obj = {
       netid: this.props.netid,
       course: JSON.stringify(this.state.currentCourse),
-      favoriteCourse: this.state.favoriteCourse.courseNumber,
+      favoriteCourse: this.state.favoriteCourse,
     };
     let params = new URLSearchParams(obj);
     const res = await fetch('http://35.237.162.74:3000/api/v1/ratesCourse/post', {
@@ -96,7 +96,6 @@ class EditRatingsContent extends React.Component {
   }
 
   render() {
-    console.log("PROPS: ", this.props);
     const { classes } = this.props;
     const { course } = this.props;
     return (

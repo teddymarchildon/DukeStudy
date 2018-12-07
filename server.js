@@ -133,9 +133,9 @@ app.prepare().then(() => {
     const term = req.query.term;
     console.log(`Submitting ${type} search for term: ${term}`);
     var queryString;
-    if (term==='Course') {
+    if (term=="Course") {
       queryString = dbHelper.courseTableSearchQueryString(term);
-    } else if (term==='Student') {
+    } else if (term=="Student") {
       queryString = dbHelper.studentTableSearchQueryString(term);
     }
     return db.submitQueryString(res, queryString, true);

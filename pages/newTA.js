@@ -54,7 +54,6 @@ class TAingContent extends React.Component {
     const { classes } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
-      {this.props.info.map((course, index) => (
         <Card className={this.props.card}>
           <CardContent>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
@@ -66,7 +65,6 @@ class TAingContent extends React.Component {
             <Button onClick={this.handleRegister} size="small"> Save </Button>
           </CardActions>
         </Card>
-      ))}
       </div>
     )
   };
@@ -94,7 +92,7 @@ class TAingPage extends React.Component {
         <SearchAppBar netid={this.props.netid} name={this.props.name} />
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <TAingContent netid={this.props.netid} info={this.props.TAInfo} departments={this.props.departments}/>
+          <TAingContent netid={this.props.netid} departments={this.props.departments}/>
         </div>
       </main >
     );

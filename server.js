@@ -271,7 +271,7 @@ app.prepare().then(() => {
     console.log('** RECEIVED POST REQUEST for Student **')
 
     let queryString = dbHelper.createUpdateStudentQueryString(req.body);
-    return db.submitQueryString(res, queryString, false);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -283,7 +283,7 @@ app.prepare().then(() => {
     console.log(req.body)
 
     let queryString = dbHelper.insertTutorQueryString(req.body);
-    return db.submitQueryString(res, queryString, false);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**
@@ -340,7 +340,7 @@ app.prepare().then(() => {
     let result = db.submitQueryString(res, studyGroupQueryString, false);
     const users = req.body.users.split(",");
     let inStudyGroupQueryString = dbHelper.insertInStudyGroupQueryString(groupID, users)
-    return db.submitQueryString(res, inStudyGroupQueryString, false);
+    return db.submitQueryString(res, inStudyGroupQueryString, true);
   });
 
   /**

@@ -13,6 +13,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import url from 'url';
 import SearchAppBar from '../components/app_bar.js';
 import SideButtons from '../components/side_buttons.js';
+import CardActions from '@material-ui/core/CardActions';
 
 const styles = theme => ({
   main: {

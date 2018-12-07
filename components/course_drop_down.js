@@ -12,10 +12,10 @@ class CourseDropDown extends React.Component {
       anchorDepartmentEl: null,
       anchorCourseEl: null,
       anchorSemesterEl: null,
-      selectedDepartment: 'Department',
-      selectedCourseID: null,
-      selectedCourseName: 'Course',
-      selectedCourseSemester: 'Semester',
+      selectedDepartment: this.props.preDepartment == null ? 'Department' : this.props.preDepartment,
+      selectedCourseID: this.props.preCourse,
+      selectedCourseName: this.props.preLevel == null ? 'Course' : this.props.preLevel,
+      selectedCourseSemester: this.props.preSemester == null ? 'Semester' : this.props.preSemester,
       courses: [],
       semesters: [],
     };
@@ -65,8 +65,6 @@ class CourseDropDown extends React.Component {
     });
     // this.props.onSelectCourse(event.target.id);
   };
-
-
 
   handleCloseSemester = (number, semester) => {
     this.setState({

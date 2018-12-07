@@ -47,6 +47,10 @@ const styles = theme => ({
 
 class CourseMoreContent extends React.Component {
 
+  handleNewStudyGroup = (course, department, level, semester) => {
+    Router.push(`/newGroup?netid=${this.props.netid}&courseID=${course}&department=${department}&yearSemester=${yearSemester}&level=${level}`);
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -73,7 +77,7 @@ class CourseMoreContent extends React.Component {
                 </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button onClick={this.handleDone} size="small"> Create Study Group </Button>
+                  <Button onClick={() => this.handleNewStudyGroup(course.course_number, course.department, course.level, course.year_semester)} size="small"> Create Study Group </Button>
                 </CardActions>
           </Card>
         ))}

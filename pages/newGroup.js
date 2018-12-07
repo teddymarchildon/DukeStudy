@@ -32,10 +32,10 @@ class NewGroupContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      courseID: null,
-      department: null,
-      courseSemester: null,
-      level: null,
+      courseID: this.props.preCourse,
+      department: this.props.preDepartment,
+      courseSemester: this.props.preSem,
+      level: this.props.preLevel,
       users:[this.props.netid],
       usersInCourse:[]
     };
@@ -75,7 +75,13 @@ class NewGroupContent extends React.Component {
           <Typography className={this.props.title} color="textSecondary">
             Course
           </Typography>
-          <CourseDropDown departments={this.props.departments} onSelectCourse={this.onSelectCourse} />
+          <CourseDropDown
+            preDepartment={this.props.preDepartment}
+            preLevel={this.props.preLevel}
+            preCourse={this.props.preCourse}
+            preSemester={this.props.preSemester}
+            departments={this.props.departments}
+            onSelectCourse={this.onSelectCourse} />
           <Typography className={this.props.title} color="textSecondary">
             Users
           </Typography>
@@ -105,6 +111,20 @@ class NewGroupPage extends React.Component {
     const studentJson = await student.json();
     const departmentsJson = await departments.json();
 
+    const courseID = query.courseID;
+    const yearSemester = query.yearSemester;
+    const department = query.department;
+    const level = query.level;
+
+    if (courseID != null &&
+      yearSemester != null &&
+      department != null &&
+      level != null) {
+      studentJson[0]['preCourse'] = courseID;
+      studentJson[0]['preSemester'] = yearSemester;
+      studentJson[0]['preLevel'] = level;
+      studentJson[0]['preDepartment'] = department;
+    }
     studentJson[0]['departments'] = departmentsJson;
 
     return studentJson[0];
@@ -116,7 +136,14 @@ class NewGroupPage extends React.Component {
         <SearchAppBar netid={this.props.netid} name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <NewGroupContent netid={this.props.netid} departments={this.props.departments} netid={this.props.netid} />
+          <NewGroupContent
+            netid={this.props.netid}
+            departments={this.props.departments}
+            preCourse={this.props.preCourse}
+            preSemester={this.props.preSemester}
+            preDepartment={this.props.preDepartment}
+            preLevel={this.props.preLevel}
+          />
         </div>
       </main>
     )

@@ -1,0 +1,5 @@
+select s.NetID, c.Course_Number, c.Department, c.Level, p.Name 
+from Student s, Professor p, Course c 
+where s.NetID = 'egb16'
+and s.Favorite_Professor = p.NetID 
+and s.Favorite_Class = c.Course_Number;

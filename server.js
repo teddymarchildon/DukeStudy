@@ -277,7 +277,7 @@ app.prepare().then(() => {
     const favorite = req.body.favoriteCourse;
 
     if (favorite !== null && favorite === 'true') {
-      queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
+      let queryString = dbHelper.favoriteClassQueryString(netid, course.course_number);
       db.submitQueryString(res, queryString, false);
     }
 

@@ -200,6 +200,28 @@ app.prepare().then(() => {
     return res.json({success: true});
   });
 
+  server.post('/api/v1/addCourse/post', (req, res, next) => {
+    console.log('** RECEIVED POST REQUEST for Adding a Course **')
+    const netid = req.body.netid;
+    const favCourse = req.body.favoriteCourse;
+    var queryString = '';
+    if (favCourse !== null && favCourse===true) {
+      queryString = dbHelper.favoriteClassQueryString(netid, favCourse);
+      db.submitQueryString(res, queryString, false);
+    }
+
+    const courses = JSON.parse(req.body.selectedCourses);
+    const semesters = JSON.parse(req.body.selectedCourseSemesters);
+
+    queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
+    let result = db.submitQueryString(res, queryString, false, () => {
+      queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
+      let rateResult = db.submitQueryString(res, queryString, false);
+    });
+
+    return res.json({success: true});
+  });
+
   /**
     Takes Courses API
   */

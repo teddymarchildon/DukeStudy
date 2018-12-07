@@ -106,7 +106,7 @@ class NewCourseContent extends React.Component {
       favoriteCourse: this.state.favoriteCourse,
     };
     let params = new URLSearchParams(obj);
-    const res = await fetch('http://35.237.162.74:3000/api/v1/takesCourses/post', {
+    const res = await fetch('http://35.237.162.74:3000/api/v1/addCourse/post', {
       method: 'POST',
       body: params
     });

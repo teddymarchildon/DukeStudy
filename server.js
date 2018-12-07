@@ -257,7 +257,7 @@ app.prepare().then(() => {
     queryString = dbHelper.takesCourseQueryString(netid, courses, semesters);
     return db.submitQueryString(res, queryString, false, () => {
       queryString = dbHelper.ratesCourseQueryString(netid, courses, semesters);
-      let rateResult = db.submitQueryString(res, queryString, false);
+      return db.submitQueryString(res, queryString, false);
     });
 
     // return res.json({success: true});

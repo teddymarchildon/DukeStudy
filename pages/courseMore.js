@@ -60,16 +60,16 @@ class CourseMoreContent extends React.Component {
                   {course.department} {course.level} {course.year_semester}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Quality of Course: {this.props.avg.avgQualityRating}
+                  Quality of Course: {this.props.avg.avgqualityrating}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Quality of Instruction: {this.props.avg.avgInstructionRating}
+                  Quality of Instruction: {this.props.avg.avginstructionrating}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Difficulty: {this.props.avg.avgDifficulty}
+                  Difficulty: {this.props.avg.avgdifficulty}
                 </Typography>
                 <Typography className={classes.title} color="textSecondary">
-                  Workload: {this.props.avg.avgWorkload}
+                  Workload: {this.props.avg.avgworkload}
                 </Typography>
                 <CardActions>
                   <Button onClick={this.handleDone} size="small"> Create Study Group </Button>

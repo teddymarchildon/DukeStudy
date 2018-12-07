@@ -37,7 +37,7 @@ class TAingContent extends React.Component {
     }
   }
 
-  onSelectCourse = (courseNumber, courseSemester) {
+  onSelectCourse = (courseNumber, courseSemester) => {
     this.setState({
       courseNumber: courseNumber,
       courseSemester: courseSemester

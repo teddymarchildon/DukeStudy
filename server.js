@@ -265,9 +265,10 @@ app.prepare().then(() => {
     const netid = req.body.netid;
     const favCourse = req.body.favoriteCourse;
     var queryString = '';
+    const courseNumber = JSON.parse(req.body.course).course_number;
     if (favCourse !== null && favCourse==='true') {
       queryString = dbHelper.favoriteClassQueryString();
-      let values = [netid, favCourse];
+      let values = [netid, courseNumber];
       db.submitQueryString(res, queryString, values, false);
     }
 

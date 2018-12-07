@@ -125,5 +125,12 @@ exports.coursesQueryString = function coursesQueryString(netid) {
   from Rates_Course r
   left join Course c on r.Course_Number = c.Course_Number
   where r.NetID = \'${netid}\';`
-  // return `SELECT * FROM (Rates_Course INNER JOIN Takes_Course ON Rates_Course.NetID=Takes_Course.NetID) WHERE Rates_Course.NetID=\'${netid}\';`
+}
+
+exports.courseTableSearchQueryString = function courseTableSearchQueryString(term) {
+  return `SELECT * FROM Course WHERE Department LIKE %${term}% OR Level LIKE %${term}%;`
+}
+
+exports.studentTableSearchQueryString = function studentTableSearchQueryString(term) {
+  return `SELECT * FROM Student WHERE Name LIKE %${term}%;`
 }

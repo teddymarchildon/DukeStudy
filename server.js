@@ -132,8 +132,13 @@ app.prepare().then(() => {
     const type = req.query.type;
     const term = req.query.term;
     console.log(`Submitting ${type} search for term: ${term}`);
-
-    return;
+    var queryString;
+    if (term==='Course') {
+      queryString = dbHelper.courseTableSearchQueryString(term);
+    } else if (term==='Student') {
+      queryString = dbHelper.studentTableSearchQueryString(term);
+    }
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**

@@ -140,6 +140,7 @@ class SearchAppBar extends React.Component {
     if (event.key=='Enter') {
       const search = await fetch('http://35.237.162.74:3000/api/v1/search?type=' + this.state.searchTerm + '&term=' + event.target.value);
       const result = await search.json();
+      console.log(result);
     }
   }
 

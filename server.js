@@ -293,6 +293,13 @@ app.prepare().then(() => {
   server.post('/api/v1/ta/post', (req, res, next) => {
     console.log('** RECEIVED POST REQUEST for TA **')
     console.log(req.body)
+
+    const netid = req.body.netid;
+    const courseNumber = req.body.courseNumber;
+    const courseSemester = req.body.courseSemester;
+
+    let queryString = dbHelper.insertTAQueryString(netid, courseNumber, courseSemester);
+    return db.submitQueryString(res, queryString, true);
   });
 
   /**

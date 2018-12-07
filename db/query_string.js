@@ -173,3 +173,7 @@ exports.taQueryString = function taQueryString(netid) {
   return `SELECT * FROM TAs_Course, Course
   WHERE TAs_Course.NetID=\'${netid}\' AND TAs_Course.Course_Number=Course.Course_Number;`
 }
+
+exports.insertTAQueryString = function insertTAQueryString(netid, courseNumber, courseSemester) {
+  return `INSERT INTO TAs_Course VALUES (\'${netid}\', \'${courseNumber}\', \'${courseSemester}\');`
+}

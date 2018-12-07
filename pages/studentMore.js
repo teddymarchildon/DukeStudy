@@ -97,7 +97,7 @@ class HomePage extends React.Component {
             favProf={this.props.other.favorite_professor}
             major={this.props.other.primary_major}
             minor={this.props.other.primary_minor}
-            certificate={this.other.props.certificate}
+            certificate={this.props.other.certificate}
             />
         </div>
       </main >

@@ -50,16 +50,16 @@ class CourseSearchContent extends React.Component {
             <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
               {course.department} {course.level}
             </Typography>
-            <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
+            <Typography key={index} className={classes.title} color="textSecondary" gutterBottom>
               Tags: {course.tags}
             </Typography>
-            <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
+            <Typography key={index} className={classes.title} color="textSecondary" gutterBottom>
               Prerequesites: {course.prerequesites}
             </Typography>
-            </CardContent>
-            <CardActions>
-              <Button onClick={() => Router.push(`/courseMore?netid=${this.props.netid}&courseID=${course.course_number}`)} size="small"> More </Button>
-            </CardActions>
+          </CardContent>
+          <CardActions>
+            <Button onClick={() => Router.push(`/courseMore?netid=${this.props.netid}&courseID=${course.course_number}`)} size="small"> More </Button>
+          </CardActions>
         </Card>
         ))}
       </div>

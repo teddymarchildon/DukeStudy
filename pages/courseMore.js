@@ -76,7 +76,7 @@ class CourseMoreContent extends React.Component {
                 </CardActions>
             </CardContent>
           </Card>
-        )}
+        ))}
       </div>
     );
   };

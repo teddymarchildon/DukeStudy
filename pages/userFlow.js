@@ -135,8 +135,12 @@ class FlowContent extends React.Component {
       method: 'POST',
       body: params
     });
-    const json = await res.json();
-    Router.push(`/landing?netid=${this.props.netid}`);
+    const result = await res.json();
+    if (result.name=='error') {
+      alert('There was an issue adding your courses.');
+    } else {
+      Router.push(`/landing?netid=${this.props.netid}`);
+    }
   }
 
   render() {

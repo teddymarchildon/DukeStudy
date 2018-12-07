@@ -111,6 +111,9 @@ class NewCourseContent extends React.Component {
       body: params
     });
     const json = await res.json();
+    if (json.name=='error') {
+      alert('There was an issue adding your Course to the Database.');
+    }
     Router.push(`/courses?netid=${this.props.netid}`);
   }
 

@@ -138,9 +138,14 @@ class SearchAppBar extends React.Component {
 
   onKeyPress = async (event) => {
     if (event.key=='Enter') {
+      if (this.state.searchTerm=='Course') {
+        Router.push('/courseSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
+      } else if (this.state.searchTerm=='Student') {
+        Router.push('/studentSearchResults?netid=' + this.props.netid + '&term=' + event.target.value);
+      }
+
       const search = await fetch('http://35.237.162.74:3000/api/v1/search?type=' + this.state.searchTerm + '&term=' + event.target.value);
       const result = await search.json();
-      console.log(result);
     }
   }
 

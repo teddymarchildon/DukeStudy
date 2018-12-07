@@ -135,7 +135,7 @@ app.prepare().then(() => {
     var queryString;
     if (type=='Course') {
       console.log("Course search");
-      queryString = dbHelper.courseTableSearchQueryString(term);
+      queryString = dbHelper.courseTableSearchQueryString(term.toUpperCase());
     } else if (type=='Student') {
       console.log("Student search");
       queryString = dbHelper.studentTableSearchQueryString(term);

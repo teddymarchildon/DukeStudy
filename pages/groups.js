@@ -24,7 +24,7 @@ const styles = theme => ({
     },
   },
   groupCard: {
-    marginTop: theme.spacing.unit * 2
+    marginBottom: theme.spacing.unit * 2
   },
   button: {
     margin: theme.spacing.unit,

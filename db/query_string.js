@@ -139,6 +139,7 @@ exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
   return `select avg(Quality_Of_Course) as avgQualityRating,
   avg(Quality_Of_Instruction) as avgInstructionRating,
   avg(Difficulty) as avgDifficulty,
+  Department, Level, Year_Semester,
   avg(WorkLoad) as avgWorkload FROM
   Rates_Course r left join Course c on r.Course_Number = c.Course_Number
   WHERE Course_Number=\'${courseID}\';`

@@ -75,19 +75,19 @@ class NewCourseContent extends React.Component {
   }
 
   onSelectedQualityCourse = rating => {
-    this.state.currentCourse['qualityRating'] = rating;
+    this.state.selectedCourses[0]['qualityRating'] = rating;
   }
 
   onSelectedQualityInstruction = rating => {
-    this.state.currentCourse['qualityInstructionRating'] = rating;
+    this.state.selectedCourses[0]['qualityInstructionRating'] = rating;
   }
 
   onSelectedDifficulty = rating => {
-    this.state.currentCourse['difficultyRating'] = rating;
+    this.state.selectedCourses[0]['difficultyRating'] = rating;
   }
 
   onSelectedWorkload = rating => {
-    this.state.currentCourse['workloadRating'] = rating;
+    this.state.selectedCourses[0]['workloadRating'] = rating;
   }
 
   onFavoriteClassChange = (event, checked) => {

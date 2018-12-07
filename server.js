@@ -26,8 +26,9 @@ app.prepare().then(() => {
     const netid = req.params.netid;
     console.log('Selecting data for: ' + netid)
 
-    let queryString = dbHelper.createSelectQueryString(netid);
-    return db.submitQueryString(res, queryString, true);
+    let queryString = dbHelper.createSelectQueryString();
+    let values = [netid];
+    return db.submitQueryString(res, queryString, values, true);
   });
 
   /**

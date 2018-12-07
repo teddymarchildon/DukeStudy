@@ -42,7 +42,7 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
   from Student s
   left join Professor p on p.NetID = s.Favorite_Professor
   left join Course c on s.Favorite_Class = c.Course_Number
-  where s.NetID = \'${netid}\';`
+  where s.NetID = $1;`
 
 }
 

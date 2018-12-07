@@ -33,7 +33,12 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
   // where s.NetID = \'${netid}\'
   // and s.Favorite_Professor = p.NetID
   // and s.Favorite_Class = c.Course_Number;`
-  return `select *
+  // return `select *
+  // from Student s
+  // left join Professor p on p.NetID = s.Favorite_Professor
+  // left join Course c on s.Favorite_Class = c.Course_Number
+  // where s.NetID = \'${netid}\';`
+  return `select s.*, p.Name, c.Course_Number, c.Department, c.Level
   from Student s
   left join Professor p on p.NetID = s.Favorite_Professor
   left join Course c on s.Favorite_Class = c.Course_Number

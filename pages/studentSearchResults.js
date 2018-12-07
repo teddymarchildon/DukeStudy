@@ -50,10 +50,11 @@ class StudentSearchContent extends React.Component {
             <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
               {student.name}
             </Typography>
+            </CardContent>
             <CardActions>
               <Button onClick={() => Router.push(`/studentMore?user=${this.props.netid}&other=${student.netid}`)} size="small"> More </Button>
             </CardActions>
-          </CardContent>
+
         </Card>
         ))}
       </div>

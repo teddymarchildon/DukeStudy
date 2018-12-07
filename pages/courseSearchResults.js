@@ -50,10 +50,10 @@ class CourseSearchContent extends React.Component {
             <Typography key={index} className={classes.title} color="textPrimary" gutterBottom>
               {course.department} {course.level}
             </Typography>
+            </CardContent>
             <CardActions>
               <Button onClick={() => Router.push(`/courseMore?netid=${this.props.netid}&courseID=${course.course_number}`)} size="small"> More </Button>
             </CardActions>
-          </CardContent>
         </Card>
         ))}
       </div>

@@ -71,10 +71,10 @@ class CourseMoreContent extends React.Component {
                 <Typography className={classes.title} color="textSecondary">
                   Workload: {this.props.avg.avgworkload}
                 </Typography>
+                </CardContent>
                 <CardActions>
                   <Button onClick={this.handleDone} size="small"> Create Study Group </Button>
                 </CardActions>
-            </CardContent>
           </Card>
         ))}
       </div>

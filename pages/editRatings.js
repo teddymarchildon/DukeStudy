@@ -131,6 +131,10 @@ class EditRatingsContent extends React.Component {
   };
 }
 
+EditRatingsContent.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
 class EditRatingsPage extends React.Component {
 
   static async getInitialProps({ query }) {
@@ -155,9 +159,17 @@ class EditRatingsPage extends React.Component {
     return (
       <main>
       <SearchAppBar name={this.props.name}/>
-      <div style={{display: 'flex', alignItems: 'top'}}>
-        <SideButtons netid={this.props.netid}/>
+        <div style={{display: 'flex', alignItems: 'top'}}>
+          <SideButtons netid={this.props.netid}/>
+          <EditRatingsContent netid={this.props.netid} course={this.props.course} />
+        </div>
       </main>
     )
   }
 }
+
+EditRatingsPage.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(EditRatingsPage)

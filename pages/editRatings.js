@@ -106,7 +106,7 @@ class EditRatingsContent extends React.Component {
           <Card className={classes.card}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary">
-                // {course.department} {course.level} {course.year_semester}
+                {course.department} {course.level} {course.year_semester}
               </Typography>
               <Typography className={classes.title} color="textSecondary">
                 Quality of Course
@@ -162,7 +162,7 @@ class EditRatingsPage extends React.Component {
       return;
     });
     studentJson[0]['course'] = courseToEdit;
-    return studentJson;
+    return studentJson[0];
   }
 
   render() {

@@ -138,7 +138,7 @@ EditRatingsContent.propTypes = {
 class EditRatingsPage extends React.Component {
 
   static async getInitialProps({ query }) {
-    
+
     const netid = query.netid;
     const courseid = query.courseID;
     const student = await fetch('http://35.237.162.74:3000/api/v1/student/' + query.netid);
@@ -151,7 +151,7 @@ class EditRatingsPage extends React.Component {
       if (course.course_number === courseid) {
         courseToEdit = coursesJson[course];
       }
-    }
+    });
     studentJson[0]['course'] = courseToEdit;
     return studentJson;
   }

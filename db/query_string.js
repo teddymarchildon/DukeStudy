@@ -168,3 +168,8 @@ exports.professorInfoQueryString = function professorInfoQueryString(netid) {
   Professor.NetID=Teaches_Course.Professor_NetID AND
   Course.Course_Number=Teaches_Course.Course_Number;`
 }
+
+exports.taQueryString = function taQueryString(netid) {
+  return `SELECT * FROM TAs_Course, Course
+  WHERE TAs_Course.NetID=\'${netid}\' AND TAs_Course.Course_Number=Course.Course_Number;`
+}

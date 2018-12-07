@@ -190,6 +190,14 @@ app.prepare().then(() => {
     let queryString = dbHelper.professorInfoQueryString(netid);
     return db.submitQueryString(res, queryString, true);
   });
+
+  server.get('/api/v1/TAing/:netid', (req, res, next) => {
+    const netid = req.params.netid;
+    console.log('Selecting TA information for: ' + netid);
+
+    let queryString = dbHelper.taQueryString(netid);
+    return db.submitQueryString(res, queryString, true);
+  });
   /**
     Below is the updating information API
 

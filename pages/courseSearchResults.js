@@ -79,7 +79,6 @@ class CourseSearchPage extends React.Component {
   }
 
   render() {
-    const NewGroupButtonS = withStyles(styles)(NewGroupButton);
     return (
       <main>
         <SearchAppBar netid={this.props.netid} name={this.props.name}/>

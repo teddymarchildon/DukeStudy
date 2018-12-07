@@ -30,8 +30,8 @@ const styles = theme => ({
 
 class ProfessorContent extends React.Component {
 
-  handleContact = () => {
-    let mailString = `mailto:${this.props.netid}@duke.edu`;
+  handleContact = (netid) => {
+    let mailString = `mailto:${netid}@duke.edu`;
     window.location.href = mailString;
   }
 

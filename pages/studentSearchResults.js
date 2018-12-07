@@ -52,7 +52,7 @@ class StudentSearchContent extends React.Component {
             </Typography>
             <CardActions>
               <Button onClick={() => Router.push(`/studentMore?user=${this.props.netid}&other=${student.netid}`)} size="small"> More </Button>
-            </CardAcions>
+            </CardActions>
           </CardContent>
         </Card>
         ))}

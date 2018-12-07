@@ -49,7 +49,7 @@ class LandingContent extends React.Component {
               Favorite Class: {this.props.favClass}
             </Typography>
             <Typography className={this.props.title} color="textSecondary" gutterBottom>
-              Favorite Prof: {this.props.favProf}
+              Favorite Prof: {this.props.pname}
             </Typography>
           </CardContent>
           <CardActions>

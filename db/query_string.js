@@ -123,8 +123,8 @@ exports.updateRatesCourseQueryString = function updateRatesCourseQueryString(net
   Difficulty=${course.difficultyRating},
   Workload=${course.workloadRating}
   WHERE NetID=\'${netid}\' AND
-  Course_Number=\'${course.course_number} AND
-  Year_Semester=\'${course.year_semester};`;
+  Course_Number=\'${course.course_number}\' AND
+  Year_Semester=\'${course.year_semester}\';`;
 }
 
 exports.coursesQueryString = function coursesQueryString(netid) {

@@ -34,7 +34,7 @@ class NewGroupContent extends React.Component {
     this.state = {
       courseID: this.props.preCourse,
       department: this.props.preDepartment,
-      courseSemester: this.props.preSem,
+      courseSemester: null,
       level: this.props.preLevel,
       users:[this.props.netid],
       usersInCourse:[]
@@ -42,7 +42,6 @@ class NewGroupContent extends React.Component {
   }
 
   onSelectCourse = async (courseNumber, courseSemester) => {
-    console.log(courseSemester);
     const usersInCourse = await fetch('http://35.237.162.74:3000/api/v1/dropdown/user?netid=' + this.props.netid + '&course=' + courseNumber);
     const usersInCourseJson = await usersInCourse.json();
     this.setState({
@@ -79,7 +78,7 @@ class NewGroupContent extends React.Component {
             preDepartment={this.props.preDepartment}
             preLevel={this.props.preLevel}
             preCourse={this.props.preCourse}
-            preSemester={this.props.preSemester}
+            preSemesters={this.props.preSemesters}
             departments={this.props.departments}
             onSelectCourse={this.onSelectCourse} />
           <Typography className={this.props.title} color="textSecondary">
@@ -112,7 +111,6 @@ class NewGroupPage extends React.Component {
     const departmentsJson = await departments.json();
 
     const courseID = query.courseID;
-    const yearSemester = query.yearSemester;
     const department = query.department;
     const level = query.level;
 
@@ -121,9 +119,11 @@ class NewGroupPage extends React.Component {
       department != null &&
       level != null) {
       studentJson[0]['preCourse'] = courseID;
-      studentJson[0]['preSemester'] = yearSemester;
       studentJson[0]['preLevel'] = level;
       studentJson[0]['preDepartment'] = department;
+      const semesters = await fetch('http://35.237.162.74:3000/api/v1/dropdown/semesters/' + event.target.id);
+      const semestersJson = await semesters.json();
+      studentJson[0]['semesters'] = semestersJson;
     }
     studentJson[0]['departments'] = departmentsJson;
 
@@ -140,9 +140,9 @@ class NewGroupPage extends React.Component {
             netid={this.props.netid}
             departments={this.props.departments}
             preCourse={this.props.preCourse}
-            preSemester={this.props.preSemester}
             preDepartment={this.props.preDepartment}
             preLevel={this.props.preLevel}
+            preSemesters={this.props.semesters}
           />
         </div>
       </main>

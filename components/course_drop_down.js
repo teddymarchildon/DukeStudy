@@ -15,9 +15,9 @@ class CourseDropDown extends React.Component {
       selectedDepartment: this.props.preDepartment == null ? 'Department' : this.props.preDepartment,
       selectedCourseID: this.props.preCourse,
       selectedCourseName: this.props.preLevel == null ? 'Course' : this.props.preLevel,
-      selectedCourseSemester: this.props.preSemester == null ? 'Semester' : this.props.preSemester,
+      selectedCourseSemester: 'Semester',
       courses: [],
-      semesters: [],
+      semesters: this.props.preSemesters == null ? [] : this.props.preSemesters,
     };
   };
 

@@ -128,9 +128,9 @@ exports.coursesQueryString = function coursesQueryString(netid) {
 }
 
 exports.courseTableSearchQueryString = function courseTableSearchQueryString(term) {
-  return `SELECT * FROM Course WHERE Department LIKE %${term}% OR Level LIKE %${term}%;`
+  return `SELECT * FROM Course WHERE Department LIKE \'%${term}%\' OR Level LIKE \'%${term}%\';`
 }
 
 exports.studentTableSearchQueryString = function studentTableSearchQueryString(term) {
-  return `SELECT * FROM Student WHERE Name LIKE %${term}%;`
+  return `SELECT * FROM Student WHERE Name LIKE \'%${term}%\';`
 }

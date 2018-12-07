@@ -31,7 +31,6 @@ exports.createSelectQueryString = function createSelectQueryStringFromData(netid
   s.Name,
   s.Primary_Major,
   s.Primary_Minor.
-  s.Favorite_Class,
   s.Certificate,
   c.Course_Number, c.Department, c.Level, p.Name
   from Student s, Professor p, Course c

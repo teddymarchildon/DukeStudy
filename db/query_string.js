@@ -134,3 +134,7 @@ exports.courseTableSearchQueryString = function courseTableSearchQueryString(ter
 exports.studentTableSearchQueryString = function studentTableSearchQueryString(term) {
   return `SELECT * FROM Student WHERE Name LIKE \'%${term}%\';`
 }
+
+exports.courseInfoQueryString = function courseInfoQueryString(courseID) {
+  return `SELECT * FROM Course WHERE Course_Number=\'${courseID}\';`
+}

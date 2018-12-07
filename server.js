@@ -166,6 +166,14 @@ app.prepare().then(() => {
       let queryString = dbHelper.courseSemestersQueryString(course);
       return db.submitQueryString(res, queryString, true);
   });
+
+  server.get('/api/v1/course/:courseID', (req, res, next) => {
+    const course = req.params.course;
+    console.log('Getting course info for: ' + course);
+
+    let queryString = dbHelper.courseInfoQueryString(course);
+    return db.submitQueryString(res, queryString, true);
+  })
   /**
     Below is the updating information API
 

@@ -143,7 +143,7 @@ app.prepare().then(() => {
     var values = [];
     if (type=='Course') {
       queryString = dbHelper.courseTableSearchQueryString();
-      values.push(term.toUpperCase()_
+      values.push(term.toUpperCase())
     } else if (type=='Student') {
       queryString = dbHelper.studentTableSearchQueryString();
       values.push(term);

@@ -153,10 +153,12 @@ class EditRatingsPage extends React.Component {
 
     coursesJson.map(function(course, index) {
       if (course.course_number.trim() === courseid.trim()) {
+        console.log("AHHHH HEHRHEEEE");
         courseToEdit = course;
       }
     });
     studentJson[0]['course'] = courseToEdit;
+    console.log(studentJson[0]);
     return studentJson;
   }
 

@@ -49,8 +49,9 @@ class EditRatingsContent extends React.Component {
 
   constructor(props){
     super(props);
+    const { course } = this.props.course;
     this.state = {
-      currentCourse: this.props.course,
+      currentCourse: course;,
       favoriteCourse: null,
     };
   }
@@ -96,6 +97,7 @@ class EditRatingsContent extends React.Component {
 
   render() {
     const { classes } = this.props;
+    const { course } = this.props;
     return (
       <div style={{width: '25%', margin: 'auto'}}>
         <div style={{display: 'flex', alignItems: 'top'}}>
@@ -103,7 +105,7 @@ class EditRatingsContent extends React.Component {
           <Card className={classes.card}>
             <CardContent>
               <Typography className={classes.title} color="textSecondary">
-                {this.props.course.department} {this.props.course.level} {this.props.course.year_semester}
+                {course.department} {course.level} {course.year_semester}
               </Typography>
               <Typography className={classes.title} color="textSecondary">
                 Quality of Course
@@ -153,12 +155,10 @@ class EditRatingsPage extends React.Component {
 
     coursesJson.map(function(course, index) {
       if (course.course_number.trim() === courseid.trim()) {
-        console.log("AHHHH HEHRHEEEE");
         courseToEdit = course;
       }
     });
     studentJson[0]['course'] = courseToEdit;
-    console.log(studentJson[0]);
     return studentJson;
   }
 
@@ -169,7 +169,7 @@ class EditRatingsPage extends React.Component {
       <SearchAppBar name={this.props.name}/>
         <div style={{display: 'flex', alignItems: 'top'}}>
           <SideButtons netid={this.props.netid}/>
-          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} course={{course}} />
+          <EditRatingsContent classes={this.props.classes} netid={this.props.netid} course={this.props.course} />
         </div>
       </main>
     )
